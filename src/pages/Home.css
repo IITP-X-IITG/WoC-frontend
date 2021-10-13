@@ -1,0 +1,60 @@
+/*@import "compass/reset";*/
+
+.stars, .twinkling, .clouds {
+	position: fixed;
+	display:block;
+	top:0; bottom:0;
+	left:0; right:0;
+	width:100%; height:100%;
+}
+
+.stars {
+	z-index: 0;
+	background: #12263f url('https://image.ibb.co/mjnygo/stars.png') repeat top center;
+}
+
+.twinkling{
+	z-index: 1;
+	background:transparent url('./Images/twinkle_bg1.png') repeat top center;
+	animation: move-twink-back 200s linear infinite;
+}
+
+.clouds{
+	z-index: 2;
+    background:transparent url('https://image.ibb.co/bT4N7T/clouds.png') repeat top center;
+	animation: move-clouds-back 200s linear infinite;
+}
+
+@keyframes move-twink-back {
+	from {background-position:0 0;}
+	to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+	from {background-position:0 0;}
+	to {background-position:10000px 0;}
+}
+.logo{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	height: 100vh;
+}
+.logo img{
+	z-index: 3;
+}
+.logo_img{
+	padding-bottom: 100px;
+}
+.hill_img{
+	width: 100%;
+	height: auto;
+	position: absolute;
+    bottom: 0px;
+    opacity: 90%;
+}
+.tst{
+	background:linear-gradient(to bottom,rgba(50,80,115, 0.4), rgba(50,80,115, 0.3),rgba(50,80,115, 0.2),rgba(50,80,115, 0));
+
+}

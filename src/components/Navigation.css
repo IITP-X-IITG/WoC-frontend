@@ -1,0 +1,22 @@
+.navbar-light .navbar-brand {
+    color: #e4e6e9;
+}
+.bg-light {
+    --bs-bg-opacity: 0;
+    background-color: transparent;
+}
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    z-index: 2;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #e4e6e9;
+}
+.navbar-light .navbar-toggler {
+    color: #e4e6e9;
+    border-color: #e4e6e9;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+}
