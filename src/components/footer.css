@@ -1,0 +1,64 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+}    
+.foot{
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    position: absolute;
+    color: white;
+    width: 100%;
+    padding: 40px;
+    height: 100%;
+}
+.foot h1{
+    font-size: 1.4rem;
+}
+.ql{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+.ql ul li{
+    list-style: none;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.ql ul li a{
+    text-decoration: none;
+    color: white;
+}
+.contact{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.contact a{
+    text-decoration: none;
+    color: white;
+}
+.icon_box{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+}
+.icon_box img{
+    width: 50px;
+    height: 50px;
+}
+.ico{
+    display: flex;
+    flex-direction: row;
+}
+.ico img{
+    height: 40px;
+    width: 40px;
+}
+.copy{
+    z-index: 1;
+   
+    color: white;
+}

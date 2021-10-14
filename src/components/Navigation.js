@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import style_nav from './Navigation.css'
+
 export default function Navigation() {
     return (
         <div style={style_nav}>
