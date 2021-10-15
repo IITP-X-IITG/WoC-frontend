@@ -20,11 +20,10 @@ export default function Home() {
             <div class='twinkling'></div>
             {/* <div class='clouds'></div> */}
             <div className="logo">
-                <img src={logo_codepeak} alt="" srcset="" className="logo_img"/>
+                <img src={logo_codepeak} alt="" srcset="" className="logo_img" />
                 <img src={hill} alt="" srcset="" className="hill_img"/>
             </div>
-            {/* <div className="tst" style={{height:'1000px'}}> 
-            </div> */}
+            {/* <div className="tst" style={{height:'1000px'}}> </div> */}
             {/* <CountUp delay={10} end={100} duration={5} style={{color:'white', zIndex:'2', position:'absolute'}} /> */}
             <div className="abt">
                 <h1 data-aos="fade-up">About Us</h1>
@@ -60,13 +59,13 @@ export default function Home() {
                     <div className="timeline" data-aos="fade-up">
                         <Timeline date='2 DEC' desc='Git and GitHub Workshop'/>
                     </div>
-                    <div className="timeline" >
+                    <div className="timeline" data-aos="fade-up">
                         <Timeline date='3 DEC' desc='Coding Period Starts.'/>
                     </div>
-                    <div className="timeline" >
+                    <div className="timeline" data-aos="fade-up">
                         <Timeline date='6 JAN' desc='Coding Period Ends.'/>
                     </div>
-                    <div className="timeline" >
+                    <div className="timeline" data-aos="fade-up">
                         <Timeline date='9 JAN' desc='Results Announcement and Closing Ceremony.'/>
                     </div>
                 </div>

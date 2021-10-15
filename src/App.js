@@ -5,7 +5,7 @@ import './App.css';
 import Home from './pages/Home'
 import ScrollButton from './components/ScrollButton'
 import { Route, Switch, BrowserRouter} from 'react-router-dom';
-//import Footer from './components/footer'
+import Footer from './components/footer'
 function App() {
   return (
     <div className="App">
@@ -13,7 +13,7 @@ function App() {
         <Switch>
           <Route path="/" component={Home}/>
         </Switch>
-        {/* <Footer/> */}
+        <Footer/>
       </BrowserRouter>
       
       <ScrollButton/>

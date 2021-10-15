@@ -6,12 +6,14 @@ import git from '../pages/Images/GitHub-Mark.png'
 import twitter from '../pages/Images/twitter.png'
 import mail from '../pages/Images/mail.png'
 import footer_style from './footer.css'
+import fb from '../pages/Images/fb.png'
 export default function footer() {
     return (
         <div className="footer" style={footer_style}>
             <div className="foot">
                 <div className="ql">
                     <h1>Quick Links</h1>
+                    <hr/>
                     <ul>
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/">About Us</Link></li>
@@ -20,7 +22,7 @@ export default function footer() {
                 </div>
                 <div className="contact">
                     <h1>Contact Us</h1>
-                    
+                    <hr/>
                     <div className="ico">    
                         <img src={phone} alt="" srcset="" />
                         <p>7007222155</p>
@@ -34,16 +36,16 @@ export default function footer() {
                         <p>IIT Patna</p>
                     </div>
                     <div className="icon_box">
-                        <a href="/"><img src={git} alt="" srcset="" /></a>
+                        <a href="https://github.com/Njack-IITP/"><img src={git} alt="" srcset="" /></a>
                         <a href="mailto:njack.iitp@gmail.com"><img src={mail} alt="" srcset="" /></a>
-                        <a href="/"><img src={twitter} alt="" srcset="" /></a>
+                        <a href="https://twitter.com/njackiitp"><img src={twitter} alt="" srcset="" /></a>
+                        <a href="https://www.facebook.com/njack.iitp/"><img src={fb} alt="" srcset="" /></a>
+                        
                     </div>
                     
                 </div>
             </div>
-            <div className="copy">
-                &copy; 2021 CODEPEAK            
-            </div>
+           
         </div>
     )
 }

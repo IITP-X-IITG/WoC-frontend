@@ -9,11 +9,13 @@
     position: absolute;
     color: white;
     width: 100%;
-    padding: 40px;
-    height: 100%;
+    padding: 40px 90px;
+    height: auto;
+    background-color: #104e9c30;
 }
 .foot h1{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
 }
 .ql{
     width: 50%;
@@ -21,11 +23,17 @@
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
+    margin-left: 30px;
+}
+.ql ul{
+    padding: 0px;
 }
 .ql ul li{
     list-style: none;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.3rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .ql ul li a{
     text-decoration: none;
@@ -46,12 +54,15 @@
     grid-template-columns: repeat(4,auto);
 }
 .icon_box img{
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
 }
 .ico{
     display: flex;
     flex-direction: row;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
 }
 .ico img{
     height: 40px;
@@ -61,4 +72,49 @@
     z-index: 1;
    
     color: white;
+}
+.icon_box img{
+    padding: 10px;
+}
+.icon_box img:hover{
+    width: 75px;
+    height: 75px;
+    transition: width 0.5s, height 0.5s;
+}
+.ico p{
+    font-size: 1.3rem;
+    display: block;
+    margin: auto;
+}
+.foot hr{
+    width: 50%;
+    background-color: white;
+}
+@media only screen and (max-width: 600px) {
+    .foot{
+        flex-direction: column;
+    }
+    .ql{
+        margin-left: 0px;
+    }
+    .foot{
+        padding: 30px;
+    }
+    .ql ul li{
+        margin-left: 5px;
+    }
+    .foot h1{
+        font-size: 1.2rem;
+    }
+    .ql ul li a{
+        font-size: 1.1rem;
+    }
+    .ico p{
+        font-size: 1.1rem;
+    }
+    .foot hr{
+        width: 80%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
 }
