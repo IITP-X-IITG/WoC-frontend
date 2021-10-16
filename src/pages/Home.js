@@ -43,14 +43,14 @@ export default function Home() {
                 <div className="col">
                 <div className="main-timeline">
                     <div className="timeline"  data-aos="fade-up">
-                        < Timeline date='26 OCT' desc='Interested mentors sign up on the website and register their profile.' />
+                        <Timeline date='26 OCT' desc='Interested mentors sign up on the website and register their profile.' />
                     </div>
 
                     <div className="timeline" data-aos="fade-up">
-                    < Timeline date='15 NOV.' desc='Student Registration starts.' />
+                    <Timeline date='15 NOV.' desc='Student Registration starts.'/>
                     </div>
                     <div className="timeline" data-aos="fade-up">
-                    < Timeline date='20 NOV' desc='Mentor Registration ends.' />
+                    <Timeline date='20 NOV' desc='Mentor Registration ends.'/>
                     </div>
 
                     <div className="timeline" data-aos="fade-up">
