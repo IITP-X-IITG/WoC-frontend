@@ -36,10 +36,10 @@ export default function footer() {
                         <p>IIT Patna</p>
                     </div>
                     <div className="icon_box">
-                        <a href="https://github.com/Njack-IITP/"><img src={git} alt="" srcset="" /></a>
-                        <a href="mailto:njack.iitp@gmail.com"><img src={mail} alt="" srcset="" /></a>
-                        <a href="https://twitter.com/njackiitp"><img src={twitter} alt="" srcset="" /></a>
-                        <a href="https://www.facebook.com/njack.iitp/"><img src={fb} alt="" srcset="" /></a>
+                        <a href="https://github.com/Njack-IITP/" target="_blank" rel="noreferrer"><img src={git} alt="" srcset="" /></a>
+                        <a href="mailto:njack.iitp@gmail.com" target="_blank" rel="noreferrer"><img src={mail} alt="" srcset="" /></a>
+                        <a href="https://twitter.com/njackiitp" target="_blank" rel="noreferrer"><img src={twitter} alt="" srcset="" /></a>
+                        <a href="https://www.facebook.com/njack.iitp/" target="_blank" rel="noreferrer"><img src={fb} alt="" srcset="" /></a>
                         
                     </div>
                     
