@@ -1,204 +1,208 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  .conduct-class{
-      text-align: left;
-  }
-  .first-section {
-    z-index: 0;
-    background: #12263f url("https://image.ibb.co/mjnygo/stars.png") repeat top
-      center;
-  
-    padding-bottom: 40px;
-    width: 100vw;
-  }
-  .flex-item {
-    display: flex;
-    align-items: center;
-  }
-  .right-logo {
-    width: 25%;
-    height: 25%;
-    margin-left: 150px;
-  }
-  /* Second Section */
-  .second-section {
-    background-color: rgb(248, 249, 250);
-    padding: 40px;
-    padding-left: 92px;
-    padding-right: 92px;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 2vw));
-  }
-  
-  .heading {
-    margin-left: 180px;
-    padding-top: 120px;
-    margin-bottom: 25px;
-    color: white;
-  }
-  .heading1 {
-    margin-top: -7.44rem;
-  }
-  .info {
-    max-width: 450px;
-    margin-bottom: 1rem;
-    line-height: 2;
-    margin-left: 180px;
-    color: white;
-  }
-  .info1 {
-    max-width: 550px;
-  }
-  /* Card Section */
-  .heading2 {
-    margin-bottom: 2.81rem;
-  }
-  .card-cover {
-    margin-bottom: 20px;
-  }
-  .to-apply-card {
-    max-width: 400px;
-    margin: auto;
-    text-decoration: none;
-    overflow: hidden;
-    transition: all 0.3s;
-    -webkit-perspective: 1px;
-    perspective: 1px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .card-text {
-    margin: 16px 0 20px;
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 25px;
-  }
-  
-  .btn-apply {
-    display: flex;
-    margin-top: auto;
-    margin-bottom: 10px;
-  }
-  .h-100 {
-    height: 100% !important;
-  }
-  .register-button {
-    margin-top: 44px;
-  }
-  .second-section a {
-    color: white;
-    text-decoration: none;
-  }
-  .second-section a:hover {
-    color: white;
-    text-decoration: underline;
-  }
-  /* Third Section */
-  .third-section {
-    background-color: rgb(255, 255, 255);
-    align-items:left;
-  }
-  .heading3 {
-    font-size: 40px;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 10px;
-    text-transform: capitalize;
-  }
-  .logo {
-    display: inline-block;
-    position: relative;
-    /* align-items: center; */
-    justify-content: space-between;
-    width: 70%;
-    margin: 0 auto;
-  }
-  .logo div{
-      /* display: inline-block; */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.conduct-class {
+  text-align: left;
+}
+.first-section {
+  z-index: 0;
+  background: #12263f url("https://image.ibb.co/mjnygo/stars.png") repeat top
+    center;
+
+  padding-bottom: 40px;
+  width: 100vw;
+}
+.flex-item {
+  display: flex;
+  align-items: center;
+}
+.right-logo {
+  width: 25%;
+  height: 25%;
+  margin-left: 150px;
+}
+/* Second Section */
+.second-section {
+  background-color: rgb(248, 249, 250);
+  padding: 40px;
+  padding-left: 92px;
+  padding-right: 92px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 2vw));
+  width: 100vw;
+}
+
+.heading {
+  margin-left: 180px;
+  padding-top: 120px;
+  margin-bottom: 25px;
+  color: white;
+}
+.heading1 {
+  margin-top: -7.44rem;
+}
+.info {
+  max-width: 450px;
+  margin-bottom: 1rem;
+  line-height: 2;
+  margin-left: 180px;
+  color: white;
+}
+.info1 {
+  max-width: 550px;
+}
+/* Card Section */
+.heading2 {
+  margin-bottom: 2.81rem;
+}
+.card-cover {
+  margin-bottom: 20px;
+}
+.to-apply-card {
+  max-width: 400px;
+  margin: auto;
+  text-decoration: none;
+  overflow: hidden;
+  transition: all 0.3s;
+  -webkit-perspective: 1px;
+  perspective: 1px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-text {
+  margin: 16px 0 20px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.btn-apply {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+.h-100 {
+  height: 100% !important;
+}
+.register-button {
+  margin-top: 44px;
+}
+.second-section a {
+  color: white;
+  text-decoration: none;
+}
+.second-section a:hover {
+  color: white;
+  text-decoration: underline;
+}
+/* Third Section */
+.third-section {
+  background-color: rgb(255, 255, 255);
+  align-items: left;
+  width: 100vw;
+}
+.heading3 {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.logo-conduct {
+  display: flex;
+  /* position: relative; */
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+}
+/* .logo div{
+      display: inline-block;
       width: fit-content;
       
+  } */
+.third-button {
+  margin-top: 26px;
+}
+.logo-conduct span {
+  display: block;
+
+  font-family: "Poppins";
+  font-size: 130px;
+  /* width: 40%; */
+  opacity: 0.2;
+}
+.logo1,
+.logo2 {
+  width: 40%;
+}
+@media only screen and (max-width: 1100px) {
+  .flex-item {
+    flex-direction: column;
+  }
+  .heading {
+    margin: auto;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .info {
+    margin-left: 0;
+    margin: auto;
+    text-align: center;
+    max-width: 70vw;
+  }
+  .right-logo {
+    width: 35vw;
+
+    margin: auto;
+    margin-top: 70px;
+  }
+  .second-section {
+    overflow-x: hidden !important;
+  }
+  .heading1 {
+    margin-top: -90px;
+  }
+  .heading2 {
+    text-align: center;
   }
   .logo span {
-    display: block;
-  
-    font-family: "Poppins";
-    font-size: 130px;
-    /* width: 40%; */
-    opacity: 0.2;
+    height: 20%;
   }
-  .logo1,
-  .logo2 {
-    width: 40%;
+}
+@media only screen and (max-width: 450px) {
+  .second-section {
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow-x: hidden !important;
   }
-  @media only screen and (max-width: 1100px) {
-    .flex-item {
-      flex-direction: column;
-    }
-    .heading {
-      margin: auto;
-      margin-bottom: 25px;
-      text-align: center;
-    }
-    .info {
-      margin-left: 0;
-      margin: auto;
-      text-align: center;
-      max-width: 70vw;
-    }
-    .right-logo {
-      width: 35vw;
-  
-      margin: auto;
-      margin-top: 70px;
-    }
-    .second-section {
-      overflow-x: hidden !important;
-    }
-    .heading1 {
-      margin-top: -90px;
-    }
-    .heading2 {
-      text-align: center;
-    }
-    .logo span{
-      height: 20%;
-    }
+  .heading3 {
+    font-size: 30px;
+    text-decoration: none;
   }
-  @media only screen and (max-width: 450px) {
-    .second-section {
-      padding-left: 20px;
-      padding-right: 20px;
-      overflow-x: hidden !important;
-    }
-    .heading3 {
-      font-size: 30px;
-      text-decoration: none;
-    }
+}
+@media only screen and (min-width: 1200px) {
+  .second-section {
+    overflow-x: hidden !important;
   }
-  @media only screen and (min-width: 1200px){
-    .second-section {
-      overflow-x: hidden !important;
-    }
+}
+@media only screen and (min-width: 1500px) {
+  .info {
+    font-size: 25px;
+    max-width: 775px;
   }
-  @media only screen and (min-width: 1500px) {
-    .info {
-      font-size: 25px;
-      max-width: 775px;
-    }
-    .heading {
-      font-size: 60px;
-    }
-    .second-section {
-      overflow-x: hidden !important;
-    }
-    .right-logo {
-      width: 428px;
-    }
-    .heading3 {
-      font-size: 70px;
-    }
+  .heading {
+    font-size: 60px;
   }
-  
+  .second-section {
+    overflow-x: hidden !important;
+  }
+  .right-logo {
+    width: 428px;
+  }
+  .heading3 {
+    font-size: 70px;
+  }
+}

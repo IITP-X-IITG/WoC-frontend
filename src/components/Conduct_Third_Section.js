@@ -6,10 +6,10 @@ function Collab() {
     <>
       <section className="third-section">
         <h3 className="heading3">This time we are together</h3>
-        <div className="logo">
-         <div><img src={Njack} alt="NJACK_IITP" className="logo2" /></div> 
-         <div> <span>+</span></div>
-          <div><img src={CodingClub} alt="IITG_Codingclub" className="logo1" /></div>
+        <div className="logo-conduct">
+         <img src={Njack} alt="NJACK_IITP" className="logo2" /> 
+          <span>+</span>
+          <img src={CodingClub} alt="IITG_Codingclub" className="logo1" />
         </div>
       </section>
     </>

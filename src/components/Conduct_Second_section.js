@@ -48,7 +48,7 @@ function Card() {
                   exciting!
                 </p>
                 <div className="d-grid gap-2 col-6 mx-auto register-button">
-                  <button className="btn btn-primary" type="button">
+                  <button className="btn btn-primary third-button" type="button">
                     <a href="#">Register</a>
                   </button>
                 </div>
