@@ -5,12 +5,12 @@ import Nav from 'react-bootstrap/Nav'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import style_nav from './Navigation.css'
 
-export default function Navigation() {
+export default function Navigation(props) {
     return (
         <div style={style_nav}>
-            <Navbar bg="light" expand="lg">
+            <Navbar bg="light" expand="lg" className={props.hasShadow? 'shadow' : ''}>
             <Container>
-                <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand> 
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
