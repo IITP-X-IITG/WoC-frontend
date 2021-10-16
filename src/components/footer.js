@@ -7,10 +7,10 @@ import twitter from '../pages/Images/twitter.png'
 import mail from '../pages/Images/mail.png'
 import footer_style from './footer.css'
 import fb from '../pages/Images/fb.png'
-export default function footer() {
+export default function footer(props) {
     return (
-        <div className="footer" style={footer_style}>
-            <div className="foot">
+        <div className="footer" style={footer_style} >
+            <div className="foot" style={{ backgroundColor: props.bg ?? ""}}>
                 <div className="ql">
                     <h1>Quick Links</h1>
                     <hr/>
