@@ -78,16 +78,31 @@
   line-height: 25px;
 }
 
-.btn-apply {
+/* .btn-apply {
   display: flex;
   margin-top: auto;
   margin-bottom: 10px;
+} */
+/* .first-button{
+    margin-top: 24px;
+}
+.second-button {
+margin-top: 26px;
+} */
+/* .btn-apply{
+    display: fixed;
+    margin-top: auto;
+    margin-bottom: 10px;
+} */
+.Inside-card-div{
+height: 70%;
 }
 .h-100 {
   height: 100% !important;
 }
-.register-button {
-  margin-top: 44px;
+.btn-apply{
+    /* margin: auto; */
+    margin-top: 5%;
 }
 .second-section a {
   color: white;
@@ -118,14 +133,8 @@
   width: 70%;
   margin: 0 auto;
 }
-/* .logo div{
-      display: inline-block;
-      width: fit-content;
-      
-  } */
-.third-button {
-  margin-top: 26px;
-}
+
+
 .logo-conduct span {
   display: block;
 
@@ -205,4 +214,9 @@
   .heading3 {
     font-size: 70px;
   }
+}
+@media only screen and (min-width: 1350px){
+/* .third-button{
+    margin-top: 24px;
+} */
 }

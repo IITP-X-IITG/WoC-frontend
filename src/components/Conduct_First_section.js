@@ -6,7 +6,7 @@ function Firstsection() {
     <>
      
       <section className="first-section">
-        <h1 className="heading">About CodePeak</h1>
+        <h1 className="heading">ABOUT CODE PEAK</h1>
         <div className="flex-item">
           <div>
             <p className="info">
