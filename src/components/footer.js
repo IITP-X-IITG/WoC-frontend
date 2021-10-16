@@ -7,10 +7,10 @@ import twitter from '../pages/Images/twitter.png'
 import mail from '../pages/Images/mail.png'
 import footer_style from './footer.css'
 import fb from '../pages/Images/fb.png'
-export default function footer() {
+export default function footer(props) {
     return (
-        <div className="footer" style={footer_style}>
-            <div className="foot">
+        <div className="footer" style={footer_style} >
+            <div className="foot" style={{ backgroundColor: props.bg ?? ""}}>
                 <div className="ql">
                     <h1>Quick Links</h1>
                     <hr/>
@@ -36,10 +36,10 @@ export default function footer() {
                         <p>IIT Patna</p>
                     </div>
                     <div className="icon_box">
-                        <a href="https://github.com/Njack-IITP/"><img src={git} alt="" srcset="" /></a>
-                        <a href="mailto:njack.iitp@gmail.com"><img src={mail} alt="" srcset="" /></a>
-                        <a href="https://twitter.com/njackiitp"><img src={twitter} alt="" srcset="" /></a>
-                        <a href="https://www.facebook.com/njack.iitp/"><img src={fb} alt="" srcset="" /></a>
+                        <a href="https://github.com/Njack-IITP/" target="_blank" rel="noreferrer"><img src={git} alt="" srcset="" /></a>
+                        <a href="mailto:njack.iitp@gmail.com" target="_blank" rel="noreferrer"><img src={mail} alt="" srcset="" /></a>
+                        <a href="https://twitter.com/njackiitp" target="_blank" rel="noreferrer"><img src={twitter} alt="" srcset="" /></a>
+                        <a href="https://www.facebook.com/njack.iitp/" target="_blank" rel="noreferrer"><img src={fb} alt="" srcset="" /></a>
                         
                     </div>
                     
