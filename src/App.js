@@ -6,17 +6,19 @@ import Home from './pages/Home'
 import ScrollButton from './components/ScrollButton'
 import { Route, Switch, BrowserRouter} from 'react-router-dom';
 import Footer from './components/footer'
+import Leaderboard from './pages/leaderboard/Leaderboard';
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Switch>
-          <Route path="/" component={Home}/>
+          <Route exact path="/" component={Home} />
+          <Route path="/leaderboard" component={Leaderboard} />
         </Switch>
-        <Footer/>
+        {/* <Footer/> */}
       </BrowserRouter>
       
-      <ScrollButton/>
+      {/* <ScrollButton/> */}
     </div>
   );
 }

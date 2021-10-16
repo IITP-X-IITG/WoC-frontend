@@ -7,6 +7,8 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import Timeline from '../components/timeline_block';
+import ScrollButton from '../components/ScrollButton'
+import Footer from '../components/footer'
 //import logo_codepeak from './Images/LOGOCODEPEAK.png'
 //import CountUp from 'react-countup';
 export default function Home() {
@@ -14,6 +16,7 @@ export default function Home() {
         Aos.init({duration: 800});
     }, [])
     return (
+        <>
         <div style={home_style}>
             <Navigation/>
             <div class='stars'></div>
@@ -72,6 +75,10 @@ export default function Home() {
                 </div>
             </div>
             </div>    
+
         </div>
+        <Footer/>
+        <ScrollButton />
+        </>
     )
 }
