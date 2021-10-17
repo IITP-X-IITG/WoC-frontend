@@ -1,8 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import phone from '../pages/Images/phone.png'
+import {FiSmartphone} from 'react-icons/fi'
+import {AiOutlineMail, AiFillTwitterCircle} from 'react-icons/ai'
+import {GoLocation} from 'react-icons/go'
+import {BsFacebook} from 'react-icons/bs'
 import location from '../pages/Images/location.png'
-import git from '../pages/Images/GitHub-Mark.png'
+
+import { VscGithubInverted } from "react-icons/vsc";
 import twitter from '../pages/Images/twitter.png'
 import mail from '../pages/Images/mail.png'
 import footer_style from './footer.css'
@@ -24,22 +28,22 @@ export default function footer(props) {
                     <h1>Contact Us</h1>
                     <hr/>
                     <div className="ico">    
-                        <img src={phone} alt="" srcset="" />
+                        <FiSmartphone/>
                         <p>7007222155</p>
                     </div>
                     <div className="ico">    
-                        <img src={mail} alt="" srcset="" />
+                        <AiOutlineMail/>
                         <p><a href="mailto:njack@iitp.ac.in">njack@iitp.ac.in</a></p>
                     </div>
                     <div className="ico">    
-                        <img src={location} alt="" srcset="" />
+                        <GoLocation/>
                         <p>IIT Patna</p>
                     </div>
                     <div className="icon_box">
-                        <a href="https://github.com/Njack-IITP/" target="_blank" rel="noreferrer"><img src={git} alt="" srcset="" /></a>
-                        <a href="mailto:njack.iitp@gmail.com" target="_blank" rel="noreferrer"><img src={mail} alt="" srcset="" /></a>
-                        <a href="https://twitter.com/njackiitp" target="_blank" rel="noreferrer"><img src={twitter} alt="" srcset="" /></a>
-                        <a href="https://www.facebook.com/njack.iitp/" target="_blank" rel="noreferrer"><img src={fb} alt="" srcset="" /></a>
+                        <a href="https://github.com/Njack-IITP/" target="_blank" rel="noreferrer"><VscGithubInverted/></a>
+                        <a href="mailto:njack.iitp@gmail.com" target="_blank" rel="noreferrer"><AiOutlineMail/></a>
+                        <a href="https://twitter.com/njackiitp" target="_blank" rel="noreferrer"><AiFillTwitterCircle/></a>
+                        <a href="https://www.facebook.com/njack.iitp/" target="_blank" rel="noreferrer"><BsFacebook/></a>
                         
                     </div>
                     

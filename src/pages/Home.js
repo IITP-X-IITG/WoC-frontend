@@ -1,16 +1,24 @@
 import React from 'react'
 import Navigation from '../components/Navigation'
 import home_style from './Home.css'
-import logo_codepeak from './Images/logocodepeak_rb.png'
-import hill from './Images/websvgmt.svg'
+import logo_codepeak from './Images/logo.png'
+import hill from './Images/mtpnggg.png'
+//import mount from './Images/svgviewer-react-output'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import Timeline from '../components/timeline_block';
 import ScrollButton from '../components/ScrollButton'
 import Footer from '../components/footer'
+//import git from '../pages/Images/GitHub-Mark.png'
+import { VscGithubInverted } from "react-icons/vsc";
+import { AiOutlineFundProjectionScreen } from "react-icons/ai";
+import { CgGitPull } from "react-icons/cg";
+import { FaUniversity } from "react-icons/fa";
+
+
 //import logo_codepeak from './Images/LOGOCODEPEAK.png'
-//import CountUp from 'react-countup';
+import CountUp from '../components/Counter_up';
 export default function Home() {
     useEffect(() => {
         Aos.init({duration: 800});
@@ -23,8 +31,8 @@ export default function Home() {
             <div class='twinkling'></div>
             {/* <div class='clouds'></div> */}
             <div className="logo">
-                <img src={logo_codepeak} alt="" srcset="" className="logo_img" />
-                <img src={hill} alt="" srcset="" className="hill_img"/>
+               <img src={logo_codepeak} alt="" srcset="" className="logo_img"/>
+               <img src={hill} alt="" srcset="" className="hill_img"/>
             </div>
             {/* <div className="tst" style={{height:'1000px'}}> </div> */}
             {/* <CountUp delay={10} end={100} duration={5} style={{color:'white', zIndex:'2', position:'absolute'}} /> */}
@@ -39,6 +47,10 @@ export default function Home() {
                 </p>
             </div>
             <div className="container nwoc_time">
+                <div className="head_time">
+                    <p>Timeline</p>
+                    <hr/>
+                </div>
             <div className="row">
                 <div className="col">
                 <div className="main-timeline">
@@ -74,8 +86,34 @@ export default function Home() {
                 </div>
                 </div>
             </div>
-            </div>    
-
+            </div> 
+            <div className="head_stats">
+                <p data-aos="zoom-in">2020 Statistics</p>
+                <hr/>
+            </div>
+            <div className="counter">
+                <div className='count_block c1' style={{background: 'rgb(16, 31, 46)'}}>
+                   <VscGithubInverted/>
+                   <CountUp end="3000"/>
+                   <p>Participants</p>
+                </div>
+                <div className='count_block c2' style={{background: 'rgb(18, 34, 51)'}}>
+                   <CgGitPull/>
+                   <CountUp end="1800"/>
+                   <p>Pull Requests</p>
+                </div>
+                <div className='count_block c3' style={{background:'rgb(21, 38, 56)'}}>
+                   <AiOutlineFundProjectionScreen/> 
+                   <CountUp end="100"/>
+                   <p>Projects Done</p>
+                </div>
+                <div className='count_block c4' style={{background: 'rgb(23, 44, 66)'}}>
+                   <FaUniversity/>
+                   <CountUp end="320"/>
+                   <p>Universities</p>
+                </div>
+            </div>
+            {/* <CountUp/>    */}
         </div>
         <Footer/>
         <ScrollButton />

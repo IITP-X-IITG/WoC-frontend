@@ -51,12 +51,13 @@
     color: white;
 }
 .icon_box{
+    margin-top: 10px;
     display: grid;
-    grid-template-columns: repeat(4,auto);
+    grid-template-columns: repeat(4,67px);
 }
-.icon_box img{
-    width: 70px;
-    height: 70px;
+.icon_box svg{
+    width: 60px;
+    height: 60px;
 }
 .ico{
     display: flex;
@@ -65,21 +66,22 @@
     margin-bottom: 5px;
 
 }
-.ico img{
-    height: 40px;
-    width: 40px;
+.ico svg{
+    height: 30px;
+    width: 30px;
+    margin-right: 7px;
 }
 .copy{
     z-index: 1;
    
     color: white;
 }
-.icon_box img{
+.icon_box svg{
     padding: 10px;
 }
-.icon_box img:hover{
-    width: 75px;
-    height: 75px;
+.icon_box svg:hover{
+    width: 65px;
+    height: 65px;
     transition: width 0.5s, height 0.5s;
 }
 .ico p{

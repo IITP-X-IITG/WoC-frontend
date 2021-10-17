@@ -10,11 +10,17 @@
 }
 .navbar-light .navbar-nav .nav-link {
     color: #e4e6e9;
+    font-size: 1.1rem;
+    padding: 1.3rem;
+}
+.me-auto{
+    margin-left: auto !important;
+    margin-right: 0px !important;
 }
 .navbar-light .navbar-toggler {
-    color: #e4e6e9;
-    border-color: #e4e6e9;
+ border: none !important;
 }
+
 .navbar{
     position: fixed;
     width: 100%;
@@ -23,4 +29,7 @@
 }
 .bg-light{
     background-color: #12263fe0 !important;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url('../pages/Images/white_nav.png');
 }
