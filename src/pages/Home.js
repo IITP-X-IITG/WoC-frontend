@@ -119,9 +119,9 @@ export default function Home() {
                 <hr/>
             </div>
             <div className="spons_box">
-                <a href="https://www.github.com/" target="_blank"><img src={git_spons} alt="" srcset="" data-aos="zoom-out"/></a>
-                <a href="https://www.digitalocean.com/" target="_blank"><img src={dig_ocean} alt="" srcset="" data-aos="zoom-out"/></a>
-                <a href="https://www.jetbrains.com/" target="_blank"><img src={jetbrain} alt="" srcset="" data-aos="zoom-out"/></a>
+                <a href="https://www.github.com/" target="_blank" rel="noreferrer"><img src={git_spons} alt="" srcset="" data-aos="zoom-out"/></a>
+                <a href="https://www.digitalocean.com/" target="_blank" rel="noreferrer"><img src={dig_ocean} alt="" srcset="" data-aos="zoom-out"/></a>
+                <a href="https://www.jetbrains.com/" target="_blank" rel="noreferrer"><img src={jetbrain} alt="" srcset="" data-aos="zoom-out"/></a>
                 
             </div>
             {/* <CountUp/>    */}
