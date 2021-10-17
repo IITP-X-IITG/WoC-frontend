@@ -507,7 +507,7 @@ svg{
   position: relative;
   font-size: 1.9rem;
   color: white;
-  margin-top: 40px;
+  margin-top: 80px;
 }
 .head_stats hr{
   width: 50%;
@@ -576,4 +576,37 @@ svg{
   .logo_img{
     width: 80%;
   }
+}
+/* Sponsors */
+.spons_box img{
+  width: 150px;
+  height:150px;
+  z-index: 2;
+  position: relative;
+}
+.spons_box{
+  display: grid;
+  grid-template-columns: repeat(3,160px);
+  z-index: 2;
+  position: relative;
+  margin: 30px auto;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  grid-column-gap: 100px;
+  height: 160px;
+}
+.spons_box img:hover{
+  width: 160px;
+  height: 160px;
+  transition: width 0.1s, height 0.1s;
+}
+@media only screen and (max-width: 750px) {
+.spons_box{
+  grid-template-columns: repeat(1,160px);
+  height: 100%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  grid-row-gap: 30px;
+} 
 }

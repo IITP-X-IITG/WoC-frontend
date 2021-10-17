@@ -15,8 +15,9 @@ import { VscGithubInverted } from "react-icons/vsc";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { CgGitPull } from "react-icons/cg";
 import { FaUniversity } from "react-icons/fa";
-
-
+import git_spons from '../pages/Images/GitHub_Logo_custom.png'
+import dig_ocean from '../pages/Images/DO_Logo_Vertical_Blue.png'
+import jetbrain from '../pages/Images/jetbrains-variant-1.png'
 //import logo_codepeak from './Images/LOGOCODEPEAK.png'
 import CountUp from '../components/Counter_up';
 export default function Home() {
@@ -88,7 +89,7 @@ export default function Home() {
             </div>
             </div> 
             <div className="head_stats">
-                <p data-aos="zoom-in">2020 Statistics</p>
+                <p data-aos="zoom-in">Past Statistics</p>
                 <hr/>
             </div>
             <div className="counter">
@@ -112,6 +113,16 @@ export default function Home() {
                    <CountUp end="320"/>
                    <p>Universities</p>
                 </div>
+            </div>
+            <div className="head_stats">
+                <p data-aos="zoom-in">Previous Editions Sponsered by..</p>
+                <hr/>
+            </div>
+            <div className="spons_box">
+                <a href="https://www.github.com/" target="_blank"><img src={git_spons} alt="" srcset="" data-aos="zoom-out"/></a>
+                <a href="https://www.digitalocean.com/" target="_blank"><img src={dig_ocean} alt="" srcset="" data-aos="zoom-out"/></a>
+                <a href="https://www.jetbrains.com/" target="_blank"><img src={jetbrain} alt="" srcset="" data-aos="zoom-out"/></a>
+                
             </div>
             {/* <CountUp/>    */}
         </div>
