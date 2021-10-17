@@ -1,6 +1,7 @@
 .footer{
     display: flex;
     flex-direction: column;
+    width: 100vw;
 }    
 .foot{
     display: flex;
@@ -8,7 +9,7 @@
     z-index: 1;
     position: absolute;
     color: white;
-    width: 100%;
+    width: 100vw;
     padding: 40px 90px;
     height: auto;
     background-color: #071d39;

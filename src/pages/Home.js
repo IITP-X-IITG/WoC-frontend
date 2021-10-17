@@ -7,6 +7,8 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import Timeline from '../components/timeline_block';
+import ScrollButton from '../components/ScrollButton'
+import Footer from '../components/footer'
 //import logo_codepeak from './Images/LOGOCODEPEAK.png'
 //import CountUp from 'react-countup';
 export default function Home() {
@@ -14,6 +16,7 @@ export default function Home() {
         Aos.init({duration: 800});
     }, [])
     return (
+        <>
         <div style={home_style}>
             <Navigation/>
             <div class='stars'></div>
@@ -40,14 +43,14 @@ export default function Home() {
                 <div className="col">
                 <div className="main-timeline">
                     <div className="timeline"  data-aos="fade-up">
-                        < Timeline date='26 OCT' desc='Interested mentors sign up on the website and register their profile.' />
+                        <Timeline date='26 OCT' desc='Interested mentors sign up on the website and register their profile.' />
                     </div>
 
                     <div className="timeline" data-aos="fade-up">
-                    < Timeline date='15 NOV.' desc='Student Registration starts.' />
+                    <Timeline date='15 NOV.' desc='Student Registration starts.'/>
                     </div>
                     <div className="timeline" data-aos="fade-up">
-                    < Timeline date='20 NOV' desc='Mentor Registration ends.' />
+                    <Timeline date='20 NOV' desc='Mentor Registration ends.'/>
                     </div>
 
                     <div className="timeline" data-aos="fade-up">
@@ -72,6 +75,10 @@ export default function Home() {
                 </div>
             </div>
             </div>    
+
         </div>
+        <Footer/>
+        <ScrollButton />
+        </>
     )
 }
