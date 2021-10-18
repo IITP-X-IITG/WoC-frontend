@@ -115,7 +115,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="head_stats">
-                <p data-aos="zoom-in">Previous Editions Sponsered by..</p>
+                <p data-aos="zoom-in">Previous Editions Sponsored by..</p>
                 <hr/>
             </div>
             <div className="spons_box">
@@ -124,7 +124,7 @@ export default function Home() {
                 <a href="https://www.jetbrains.com/" target="_blank" rel="noreferrer"><img src={jetbrain} alt="" srcset="" data-aos="zoom-out"/></a>
                 
             </div>
-            {/* <CountUp/>    */}
+            
         </div>
         <Footer/>
         <ScrollButton />
