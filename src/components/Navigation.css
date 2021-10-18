@@ -17,6 +17,16 @@
     margin-left: auto !important;
     margin-right: 0px !important;
 }
+.me-auto a{
+    text-decoration:none;
+    color: #e4e6e9;
+    font-size: 1.1rem;
+    padding: 0.7rem 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
 .navbar-light .navbar-toggler {
  border: none !important;
 }
