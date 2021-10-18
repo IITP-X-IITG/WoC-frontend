@@ -26,7 +26,15 @@
     margin-left: 1rem;
     margin-right: 1rem;
 }
-
+.navbar-brand a{
+    text-decoration:none;
+    color: #e4e6e9;
+    font-size: 1.1rem;
+    padding: 0.7rem 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
 .navbar-light .navbar-toggler {
  border: none !important;
 }
@@ -38,7 +46,7 @@
     /* background-color: #12263fe0; */
 }
 .bg-light{
-    background-color: #12263fe0 !important;
+    background-color: #12263ff1 !important;
 }
 .navbar-light .navbar-toggler-icon {
     background-image: url('../pages/Images/white_nav.png');

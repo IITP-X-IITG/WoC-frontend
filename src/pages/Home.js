@@ -122,7 +122,6 @@ export default function Home() {
                 <a href="https://www.github.com/" target="_blank" rel="noreferrer"><img src={git_spons} alt="" srcset="" data-aos="zoom-out"/></a>
                 <a href="https://www.digitalocean.com/" target="_blank" rel="noreferrer"><img src={dig_ocean} alt="" srcset="" data-aos="zoom-out"/></a>
                 <a href="https://www.jetbrains.com/" target="_blank" rel="noreferrer"><img src={jetbrain} alt="" srcset="" data-aos="zoom-out"/></a>
-                
             </div>
             
         </div>

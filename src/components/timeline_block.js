@@ -5,7 +5,7 @@ export default function timeline_block(props) {
     
     return (
         <div>
-            <a className="timeline-content">
+            <div className="timeline-content">
                 <span className="timeline-year">{props.date}</span>
                 <div className="timeline-icon">
                 <i className="fa fa-apple" aria-hidden="true"></i>
@@ -16,7 +16,7 @@ export default function timeline_block(props) {
                 <strong>{props.desc}</strong>
                 </p>
                 </div>
-            </a>
+            </div>
         </div>
     )
 }

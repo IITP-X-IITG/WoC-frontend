@@ -30,7 +30,7 @@ function Card() {
                 </p></div> 
                 <div className="d-grid gap-2 col-6 mx-auto">
                   <button className="btn btn-primary btn-apply" type="button">
-                    <a href="#">Register</a>
+                    <a href="/">Register</a>
                   </button>
                 </div>
               </div>
@@ -49,7 +49,7 @@ function Card() {
                 </p></div>
                 <div className="d-grid gap-2 col-6 mx-auto register-button">
                   <button className="btn btn-primary btn-apply" type="button">
-                    <a href="#">Register</a>
+                    <a href="/">Register</a>
                   </button>
                 </div>
               </div>
@@ -73,7 +73,7 @@ function Card() {
                 </p></div> 
                 <div className="d-grid gap-2 col-6 mx-auto">
                   <button className="btn btn-primary btn-apply" type="button">
-                    <a href="#">Register</a>
+                    <a href="/">Register</a>
                   </button>
                 </div>
               </div>

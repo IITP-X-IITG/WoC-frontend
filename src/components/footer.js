@@ -4,13 +4,9 @@ import {FiSmartphone} from 'react-icons/fi'
 import {AiOutlineMail, AiFillTwitterCircle} from 'react-icons/ai'
 import {GoLocation} from 'react-icons/go'
 import {BsFacebook} from 'react-icons/bs'
-import location from '../pages/Images/location.png'
-
 import { VscGithubInverted } from "react-icons/vsc";
-import twitter from '../pages/Images/twitter.png'
-import mail from '../pages/Images/mail.png'
 import footer_style from './footer.css'
-import fb from '../pages/Images/fb.png'
+
 export default function footer(props) {
     return (
         <div className="footer" style={footer_style} >
@@ -21,7 +17,7 @@ export default function footer(props) {
                     <ul>
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/">About Us</Link></li>
-                        <li><Link to="/">Help</Link></li>
+                        <li><Link to="/conduct">Conduct</Link></li>
                     </ul>
                 </div>
                 <div className="contact">
