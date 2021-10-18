@@ -18,8 +18,7 @@ function App() {
         <Switch>
 
           <Route exact path="/" component={Home}/>
-          <Route  path="/conduct" component={Conduct}/>
-
+          <Route path="/conduct" component={Conduct}/>
           <Route path="/leaderboard" component={Leaderboard} />
 
         </Switch>
