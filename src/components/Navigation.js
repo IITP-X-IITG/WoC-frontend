@@ -17,7 +17,7 @@ export default function Navigation(props) {
                 <Nav className="me-auto">
                     <NavLink exact={true} to="/" activeStyle={{color: 'rgb(103 212 223)', borderBottom:'2px solid #589ba2', fontWeight: 500}}>Home</NavLink>
                     <NavLink to="/leaderboard"  activeStyle={{color: 'rgb(103 212 223)', borderBottom:'2px solid #589ba2', fontWeight: 500}}>Leaderboard</NavLink>
-                    <NavLink to="/" >Register</NavLink>
+                    <NavLink to="/conduct" activeStyle={{color: 'rgb(103 212 223)', borderBottom:'2px solid #589ba2', fontWeight: 500}}>Register</NavLink>
                     <NavLink to="/" >Projects</NavLink>
                     <NavLink to="/" >Team</NavLink>
                     <NavLink to="/" >Contact</NavLink>

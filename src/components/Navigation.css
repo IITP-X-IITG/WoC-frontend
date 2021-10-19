@@ -37,7 +37,8 @@
     margin-right: 1rem;
 }
 .navbar-light .navbar-toggler {
- border: none !important;
+    border: none !important;
+ color: rgb(18 38 63);
 }
 
 .navbar{
