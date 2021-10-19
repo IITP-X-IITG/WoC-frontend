@@ -8,7 +8,7 @@ import conduct_styles from './Conduct.css';
 function Conduct() {
   return (
     <div styles={conduct_styles} className="conduct-class" >
-    <NavBar />
+      <NavBar />
       <Firstsection />
       <Card />
       <Collab />

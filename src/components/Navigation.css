@@ -25,6 +25,7 @@
     padding-bottom: 0.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    text-align: center;
 }
 .navbar-brand a{
     text-decoration:none;
