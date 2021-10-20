@@ -7,7 +7,7 @@ function ProjectSearch2018() {
     
     const searchHandler = (e) => {
         console.log(e.target.value)
-        let query = e.target.value.toLowerCase();
+        let query = e.target.value.toLowerCase().trim();
         let temp = [];
         data.forEach((project) => {
             let flag = false;
