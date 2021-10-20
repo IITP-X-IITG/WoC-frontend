@@ -3,7 +3,7 @@
         "repo-url": "https://github.com/NJACKWinterOfCode/nwoc_algorithms",
         "title": "nwoc_algorithms",
         "desc": "A simple collection of algorithms in various languages.",
-        "mentor": ["bhavnaharitsa"],
+        "mentors": ["bhavnaharitsa"],
         "lang": [
             "Any"
         ],
@@ -15,7 +15,7 @@
         "repo-url": "https://github.com/NJACKWinterOfCode/Github_Profile_APP",
         "title": "Github_Profile_APP",
         "desc": "An app that gives the details of an user when a github username is typed.",
-        "mentor": ["naman653","atm1504","bhavnaharitsa"],
+        "mentors": ["naman653","atm1504","bhavnaharitsa"],
         "lang": [
             "Java"
         ],
@@ -27,7 +27,7 @@
         "repo-url": "https://github.com/njackwinterofcode/IITPConfessionsApp",
         "title": "IITPConfessionApp",
         "desc": "An Android app to view and post confessions for IIT Patna activities.",
-        "mentor": ["atm1504","bhavnaharitsa"],
+        "mentors": ["atm1504","bhavnaharitsa"],
         "lang": [
             "Java"
         ],
@@ -39,7 +39,7 @@
         "repo-url": "https://github.com/njackwinterofcode/Android-ScorerApp",
         "title": "Android Scorer App",
         "desc": "A simple app which works as a real time scorer for different games.",
-        "mentor": ["chanmol1999"],
+        "mentors": ["chanmol1999"],
         "lang": [
             "Java"
         ],
@@ -51,7 +51,7 @@
         "repo-url": "https://github.com/njackwinterofcode/iitpConnect",
         "title": "IITPConnect",
         "desc": "IITPConnect",
-        "mentor": ["Anu1601CS"],
+        "mentors": ["Anu1601CS"],
         "lang": [
             "PHP","HTML","CSS","JS"
         ],
@@ -63,7 +63,7 @@
         "repo-url": "https://github.com/njackwinterofcode/flex-originals",
         "title": "Flex Originals",
         "desc": "A video and audio streaming web application.",
-        "mentor": ["Anu1601CS"],
+        "mentors": ["Anu1601CS"],
         "lang": [
             "HTML","CSS","JS"
         ],
@@ -75,7 +75,7 @@
         "repo-url": "https://github.com/njackwinterofcode/sociofolio",
         "title": "Sociofolio",
         "desc": "Sociofolio is a solution for sharing your multiple social networking sites handles with others easily.",
-        "mentor": ["aswinzz"],
+        "mentors": ["aswinzz"],
         "lang": [
             "React","Hasura"
         ],
@@ -87,7 +87,7 @@
         "repo-url": "https://github.com/njackwinterofcode/onRoad",
         "title": "OnRoad",
         "desc": "An App to find and share rides. Aim of the app is to provide rides to passengers in private or public cars at reduced costs, depenbding on the availability.",
-        "mentor": ["thebishaldeb"],
+        "mentors": ["thebishaldeb"],
         "lang": [
             "Java"
         ],
@@ -99,7 +99,7 @@
         "repo-url": "https://github.com/njackwinterofcode/keep_clone",
         "title": "Keep Clone",
         "desc": "A Google Keep clone",
-        "mentor": ["thebishaldeb"],
+        "mentors": ["thebishaldeb"],
         "lang": [
             "HTML","CSS","JS"
         ],
@@ -111,7 +111,7 @@
         "repo-url": "https://github.com/njackwinterofcode/Instances",
         "title": "Instances",
         "desc": "This is a site to post blogs (here we call it Instances). Anyone can read the blogs but needs to sign up or login to post one.",
-        "mentor": ["thebishaldeb"],
+        "mentors": ["thebishaldeb"],
         "lang": [
             "HTML","CSS","JS"
         ],
@@ -123,7 +123,7 @@
         "repo-url": "https://github.com/njackwinterofcode/TheZalophusBlog",
         "title": "The Zalophus Blog",
         "desc": "A site for writers to publish their blogs.",
-        "mentor": ["thebishaldeb"],
+        "mentors": ["thebishaldeb"],
         "lang": [
             "NodeJS","ExpressJS","Mongoose"
         ],
@@ -135,7 +135,7 @@
         "repo-url": "https://github.com/njackwinterofcode/companion-beta",
         "title": "Companion Beta",
         "desc": "An app that asks daily questions and then provides a best estimate of the mental condition of the user.",
-        "mentor": ["WJayesh"],
+        "mentors": ["WJayesh"],
         "lang": [
             "Java"
         ],
@@ -147,7 +147,7 @@
         "repo-url": "https://github.com/njackwinterofcode/SpacerTranslator",
         "title": "Spacer Translator",
         "desc": "A project for Flutter International hackathon Hack19",
-        "mentor": ["rkishan516"],
+        "mentors": ["rkishan516"],
         "lang": [
             "Java"
         ],
@@ -159,7 +159,7 @@
         "repo-url": "https://github.com/njackwinterofcode/FlutterSpace",
         "title": "Flutter Space",
         "desc": "An App for Blind People which speaks whatever the object is in front of them.",
-        "mentor": ["rkishan516"],
+        "mentors": ["rkishan516"],
         "lang": [
             "Java"
         ],
@@ -171,7 +171,7 @@
         "repo-url": "https://github.com/njackwinterofcode/Space_B__ars",
         "title": "Space B_ars",
         "desc": "This is a game made on Python, and runs on the PyGame libraries.",
-        "mentor": ["LakshyAAAgrawal"],
+        "mentors": ["LakshyAAAgrawal"],
         "lang": [
             "Python"
         ],
@@ -183,7 +183,7 @@
         "repo-url": "https://github.com/njackwinterofcode/TranslateX",
         "title": "TranslateX",
         "desc": "An Android App based on NLP(Natural Language processing) to translate text from one language to another",
-        "mentor": ["naman653","ShivangiSingh17","somenath1435"],
+        "mentors": ["naman653","ShivangiSingh17","somenath1435"],
         "lang": [
             "Java"
         ],
@@ -195,7 +195,7 @@
         "repo-url": "https://github.com/njackwinterofcode/Github_Profile_APP",
         "title": "Github Profile app",
         "desc": "An app that gives the details of an user when a github username is typed.",
-        "mentor": ["naman653"],
+        "mentors": ["naman653"],
         "lang": [
             "Java"
         ],
@@ -207,7 +207,7 @@
         "repo-url": "https://github.com/njackwinterofcode/awesome-drones",
         "title": "Awesome Drones",
         "desc": "A curated list of awesome drones, builds, kits, DIYs, resources and other related things.",
-        "mentor": ["piyushchauhan"],
+        "mentors": ["piyushchauhan"],
         "lang": [
             "Drones"
         ],
@@ -219,7 +219,7 @@
         "repo-url": "https://github.com/njackwinterofcode/learn-for-free",
         "title": "Learn For Free",
         "desc": "This project aims to contain free learning resources for all topics you can think of.",
-        "mentor": ["PragatiVerma18"],
+        "mentors": ["PragatiVerma18"],
         "lang": [
             "HTML","CSS","JS"
         ],
@@ -231,7 +231,7 @@
         "repo-url": "https://github.com/njackwinterofcode/matcher-core",
         "title": "Matcher Core",
         "desc": "Pattern-mining module for detecting key-points in images",
-        "mentor": ["rexagod"],
+        "mentors": ["rexagod"],
         "lang": [
             "JS"
         ],
@@ -243,7 +243,7 @@
         "repo-url": "https://github.com/njackwinterofcode/matcher-cli",
         "title": "Matcher CLI",
         "desc": "Pattern-mining module for detecting key-points in images",
-        "mentor": ["rexagod"],
+        "mentors": ["rexagod"],
         "lang": [
             "NodeJS"
         ],
@@ -255,7 +255,7 @@
         "repo-url": "https://github.com/njackwinterofcode/chatbot",
         "title": "ChatBot",
         "desc": "ChatBot",
-        "mentor": ["rexagod"],
+        "mentors": ["rexagod"],
         "lang": [
             "ReactJS"
         ],
@@ -267,7 +267,7 @@
         "repo-url": "https://github.com/njackwinterofcode/JS-OS",
         "title": "JS OS",
         "desc": "An Unified Operating System on the web.",
-        "mentor": ["RAJAGOPALAN-GANGADHARAN"],
+        "mentors": ["RAJAGOPALAN-GANGADHARAN"],
         "lang": [
             "ReactJS"
         ],
@@ -279,7 +279,7 @@
         "repo-url": "https://github.com/njackwinterofcode/Ravenous",
         "title": "Ravenous",
         "desc": "Ravenous",
-        "mentor": ["rajat2502"],
+        "mentors": ["rajat2502"],
         "lang": [
             "ReactJS"
         ],
@@ -291,7 +291,7 @@
         "repo-url": "https://github.com/njackwinterofcode/Physics-quiz",
         "title": "Physics Quiz",
         "desc": "Physics Quiz",
-        "mentor": ["rajat2502"],
+        "mentors": ["rajat2502"],
         "lang": [
             "HTML","CSS","JS"
         ],
@@ -303,7 +303,7 @@
         "repo-url": "https://github.com/njackwinterofcode/Minimal_ToDo",
         "title": "Minimal ToDo",
         "desc": "A fully Material ToDo app with minimal features, just enough to be useful. It can be used as reminder for the daily tasks.",
-        "mentor": ["rob729"],
+        "mentors": ["rob729"],
         "lang": [
             "Kotlin"
         ],
@@ -315,7 +315,7 @@
         "repo-url": "https://github.com/njackwinterofcode/Moviepedia",
         "title": "MoviePedia",
         "desc": "List of movies their actor/actress.",
-        "mentor": ["samagragupta"],
+        "mentors": ["samagragupta"],
         "lang": [
             "Angular"
         ],
@@ -327,7 +327,7 @@
         "repo-url": "https://github.com/njackwinterofcode/sangita",
         "title": "Sangita",
         "desc": "Sangita is a natural language toolkit for Indian languages built in Python.",
-        "mentor": ["SangitaNLP"],
+        "mentors": ["SangitaNLP"],
         "lang": [
             "Python"
         ],
@@ -339,7 +339,7 @@
         "repo-url": "https://github.com/njackwinterofcode/Dynamic-Pricing",
         "title": "Dynamic Pricing",
         "desc": "A mobile application to ease the pain of food wastage.",
-        "mentor": ["narayanshivansh49"],
+        "mentors": ["narayanshivansh49"],
         "lang": [
             "Java"
         ],
@@ -351,7 +351,7 @@
         "repo-url": "https://github.com/njackwinterofcode/SafeVote",
         "title": "Safe Vote",
         "desc": "A blockchain based webapp to facilitate online voting with realtime result in a secured and transparent way.",
-        "mentor": ["narayanshivansh49"],
+        "mentors": ["narayanshivansh49"],
         "lang": [
             "BlockChain","ReactJs","Web3JS"
         ],
@@ -363,7 +363,7 @@
         "repo-url": "https://github.com/njackwinterofcode/RoboTalk",
         "title": "RoboTalk",
         "desc": "An Android app to convert text to speech and vice versa.",
-        "mentor": ["ShivangiSingh17"],
+        "mentors": ["ShivangiSingh17"],
         "lang": [
             "Java"
         ],
@@ -375,7 +375,7 @@
         "repo-url": "https://github.com/njackwinterofcode/marvelUniverse",
         "title": "Marvel Universe",
         "desc": "MarvelsUniverse app is a website made in React, where you can find all your characters in a single place!.",
-        "mentor": ["sudipt1999"],
+        "mentors": ["sudipt1999"],
         "lang": [
             "ReactJS"
         ],
@@ -387,7 +387,7 @@
         "repo-url": "https://github.com/njackwinterofcode/FaceRecApp",
         "title": "FaceRecApp",
         "desc": "A MERN ( mongodb , express, React , Node ) application , that detects faces in an image. Currently uses an api (clarify api) can detect multiple faces in an image .",
-        "mentor": ["sudipt1999"],
+        "mentors": ["sudipt1999"],
         "lang": [
             "Mongodb","Express","React","Node"
         ],
@@ -399,7 +399,7 @@
         "repo-url": "https://github.com/njackwinterofcode/SucidePrevent",
         "title": "Suicide Prevent",
         "desc": "This is an chat application to chat anonymously on the intension to reduce suicides in Colleges.",
-        "mentor": ["vsaisujeeth"],
+        "mentors": ["vsaisujeeth"],
         "lang": [
             "None"
         ],
@@ -411,7 +411,7 @@
         "repo-url": "https://github.com/njackwinterofcode/endless",
         "title": "Endless",
         "desc": "A completely python-based space-shooter game. In which you have just one aim to survive the longest and keep destroying the enemies that come in your way.",
-        "mentor": ["bvishal8510"],
+        "mentors": ["bvishal8510"],
         "lang": [
             "Python"
         ],
@@ -423,7 +423,7 @@
         "repo-url": "https://github.com/njackwinterofcode/simulate",
         "title": "Simulate",
         "desc": "Collection of simulations and visualizations in a cross platform app made using Flutter.",
-        "mentor": ["yashlamba"],
+        "mentors": ["yashlamba"],
         "lang": [
             "Flutter"
         ],
