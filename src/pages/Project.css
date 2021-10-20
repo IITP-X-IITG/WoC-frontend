@@ -1,0 +1,206 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.project-class {
+  z-index: 0;
+  background: #12263f url("https://image.ibb.co/mjnygo/stars.png") repeat top
+    center;
+}
+
+.container-project {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 78vw;
+  height: 100%;
+
+  margin: 0 auto 0;
+  padding-top: 130px;
+  word-break: break-all;
+}
+
+.bloc-tabs {
+  display: flex;
+}
+.tabs {
+  padding: 15px;
+  text-align: center;
+  width: 50%;
+  background: rgba(128, 128, 128, 0.075);
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+  color: white;
+}
+.tabs:not(:last-child) {
+  border-right: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+.active-tabs {
+  background: white;
+  color: black;
+  border-bottom: 1px solid transparent;
+}
+
+.active-tabs::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 2px);
+  height: 5px;
+  background: rgb(88, 147, 241);
+}
+
+button {
+  border: none;
+}
+.content-tabs {
+  flex-grow: 1;
+}
+.content {
+  background: transparent;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.content h2 {
+  padding: 0px 0 5px 0px;
+}
+.content hr {
+  width: 100px;
+  height: 2px;
+  background: #222;
+  margin-bottom: 5px;
+}
+.content p {
+  width: 100%;
+  height: 100%;
+}
+.active-content {
+  display: block;
+}
+/* Year-Wise-Projects */
+#searchBar {
+  background-color: transparent;
+  border: none;
+  border: 2px solid #a6d2ff;
+  border-radius: 6px;
+  display: block;
+  width: 95%;
+  margin: 20px auto;
+  padding: 8px;
+  font-size: 14px;
+  outline: none;
+  box-shadow: 6px 6px 3px #45889b;
+}
+#searchBar:focus {
+  color: #fff;
+}
+
+.nwoc-repo-card {
+  display: block;
+  margin-bottom: 10px;
+  padding: 18px;
+
+  height: 210px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  position: relative;
+
+  box-shadow: 0px 0px 20px rgb(65 159 159);
+
+  transform: scale(0.99);
+  transition: all 0.2s ease-in-out;
+}
+.nwoc-repo-card:hover {
+  box-shadow: 8px 10px 12px rgb(65 159 159);
+  transform: scale(1);
+}
+.nwoc-repo-card img {
+  filter: invert(100%) sepia(0%) saturate(7442%) hue-rotate(185deg)
+    brightness(116%) contrast(114%);
+}
+.nwoc-repo-card .repo-stats {
+  position: absolute;
+  bottom: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.repo-stats li {
+  display: inline-block;
+  margin-right: 12px;
+  color: white;
+}
+.repo-desc {
+  margin-top: 10px;
+  text-align: left;
+  color: white;
+}
+.repo-mentors {
+  position: absolute;
+  bottom: 42px;
+  color: white;
+}
+
+.repo-mentors a,
+.nwoc-repo-card a {
+  text-decoration: none;
+}
+.repo-title {
+  margin-left: 5px;
+}
+.repo-title:hover,
+.repo-mentors:hover {
+  text-decoration: underline;
+}
+.nwoc-repo-card a {
+  color: white;
+}
+.yr-2021 {
+  color: white;
+}
+@media only screen and (max-width: 605px) {
+  .nwoc-repo-card {
+    height: 270px;
+  }
+}
+@media only screen and (max-width: 510px) {
+  .nwoc-repo-card {
+    height: 270px;
+  }
+  .repo-desc {
+    font-size: 14px;
+  }
+  .repo-mentors {
+    font-size: 13px;
+  }
+  .repo-stats {
+    font-size: 11px;
+    bottom: 6px;
+  }
+}
+@media only screen and (min-width: 770px) and (max-width: 1155px) {
+  .nwoc-repo-card {
+    height: 270px;
+  }
+  .repo-mentors {
+    font-size: 13px;
+    bottom: 48px;
+  }
+  .repo-stats {
+    font-size: 12px;
+    bottom: 6px;
+  }
+}

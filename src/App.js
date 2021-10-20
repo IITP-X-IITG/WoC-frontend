@@ -8,7 +8,7 @@ import { Route, Switch, BrowserRouter} from 'react-router-dom';
 //import Footer from './components/footer'
 import Conduct from './pages/Conduct.js';
 import Leaderboard from './pages/leaderboard/Leaderboard';
-
+import Project from './pages/Project';
 function App() {
   return (
     <div className="App">
@@ -17,6 +17,7 @@ function App() {
           <Route exact path="/" component={Home}/>
           <Route path="/conduct" component={Conduct}/>
           <Route path="/leaderboard" component={Leaderboard} />
+          <Route path="/project" component={Project} />
         </Switch>
         {/* <Footer/> */}
       </BrowserRouter>

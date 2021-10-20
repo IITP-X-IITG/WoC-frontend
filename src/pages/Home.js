@@ -8,7 +8,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import Timeline from '../components/timeline_block';
-//import ScrollButton from '../components/ScrollButton'
+import ScrollButton from '../components/ScrollButton'
 import Footer from '../components/footer'
 //import git from '../pages/Images/GitHub-Mark.png'
 import { VscGithubInverted } from "react-icons/vsc";
@@ -126,7 +126,7 @@ export default function Home() {
             
         </div>
         <Footer/>
-        {/* <ScrollButton /> */}
+        <ScrollButton />
         </>
     )
 }

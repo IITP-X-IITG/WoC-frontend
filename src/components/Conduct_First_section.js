@@ -1,14 +1,14 @@
 import React from "react";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "../pages/Images/logo_right.png";
 function Firstsection() {
   return (
     <>
-     
       <section className="first-section">
-        <h1 className="heading">ABOUT CODE PEAK</h1>
+      <div className="main-div">
         <div className="flex-item">
           <div>
+            <h1 className="heading">ABOUT CODE PEAK</h1>
             <p className="info">
               Code Peak is a month-long programme conducted by Coding Club IIT
               Guwahati and NJACK IIT Patna that helps students understand the
@@ -27,20 +27,23 @@ function Firstsection() {
               larger Open Source Events at a global level.
             </p>
           </div>
-       <img src={Logo} alt="logo_right" className="right-logo"/>
+          <img src={Logo} alt="logo_right" className="right-logo" />
         </div>
+        <div className="second-para">
+          <h1 className="heading heading1">How it works?</h1>
 
-        <h1 className="heading heading1">How it works?</h1>
-        <p className="info info1">
-          Participants can apply for the program either as a student or as a
-          mentor. Mentors are selected through a selection process. The selected
-          mentors propose projects, the best of which are chosen to be included
-          in the program. Students work on these projects in their winter
-          vacations. The mentors review the pull requests and the overall work
-          on their project by various contributors throughout the coding period
-          of the program. At the end of the coding period, the students are
-          compared on the basis of most contributions.
-        </p>
+          <p className="info info1">
+            Participants can apply for the program either as a student or as a
+            mentor. Mentors are selected through a selection process. The
+            selected mentors propose projects, the best of which are chosen to
+            be included in the program. Students work on these projects in their
+            winter vacations. The mentors review the pull requests and the
+            overall work on their project by various contributors throughout the
+            coding period of the program. At the end of the coding period, the
+            students are compared on the basis of most contributions.
+          </p>
+        </div>
+        </div>
       </section>
     </>
   );

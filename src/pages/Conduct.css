@@ -10,18 +10,32 @@
   z-index: 0;
   background: #12263f url("https://image.ibb.co/mjnygo/stars.png") repeat top
     center;
-
+  /* margin: auto; */
   padding-bottom: 40px;
   width: 100vw;
 }
 .flex-item {
   display: flex;
   align-items: center;
+  /* justify-content: center; */
+}
+.main-div{
+  width: fit-content;
+  margin: auto;
+ 
 }
 .right-logo {
   width: 25%;
   height: 25%;
-  margin-left: 150px;
+  margin-left: 40px;
+  margin-top: 126px;
+}
+.second-para {
+  /* display: flex;
+  
+  justify-content: center; */
+  /* position: fixed; */
+  /* margin-left: 204px; */
 }
 /* Second Section */
 .second-section {
@@ -31,12 +45,14 @@
   padding-right: 92px;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 2vw));
   width: 100vw;
+  overflow-x: hidden !important;
 }
 
 .heading {
-  margin-left: 180px;
+  /* margin-left: 180px; */
   padding-top: 120px;
   margin-bottom: 25px;
+  /* text-align: center; */
   color: white;
 }
 .heading1 {
@@ -46,15 +62,19 @@
   max-width: 450px;
   margin-bottom: 1rem;
   line-height: 2;
-  margin-left: 180px;
+  /* margin-left: 180px; */
   color: white;
 }
 .info1 {
-  max-width: 550px;
+  max-width: 650px;
+  /* text-align: center; */
+  /* margin: auto; */
+  /* margin-left: 180px; */
 }
 /* Card Section */
 .heading2 {
   margin-bottom: 2.81rem;
+  text-align: center;
 }
 .card-cover {
   margin-bottom: 20px;
@@ -78,31 +98,15 @@
   line-height: 25px;
 }
 
-/* .btn-apply {
-  display: flex;
-  margin-top: auto;
-  margin-bottom: 10px;
-} */
-/* .first-button{
-    margin-top: 24px;
-}
-.second-button {
-margin-top: 26px;
-} */
-/* .btn-apply{
-    display: fixed;
-    margin-top: auto;
-    margin-bottom: 10px;
-} */
-.Inside-card-div{
-height: 70%;
+.Inside-card-div {
+  height: 70%;
 }
 .h-100 {
   height: 100% !important;
 }
-.btn-apply{
-    /* margin: auto; */
-    margin-top: 5%;
+.btn-apply {
+  /* margin: auto; */
+  margin-top: 5%;
 }
 .second-section a {
   color: white;
@@ -134,18 +138,22 @@ height: 70%;
   margin: 0 auto;
 }
 
-
 .logo-conduct span {
   display: block;
 
   font-family: "Poppins";
-  font-size: 70px;
+  font-size: 130px;
   /* width: 40%; */
   opacity: 0.2;
 }
 .logo1,
 .logo2 {
   width: 40%;
+}
+@media only screen and (min-width: 992px) and (max-width: 1157px) {
+  .btn-apply {
+    margin-top: 18%;
+  }
 }
 @media only screen and (max-width: 1100px) {
   .flex-item {
@@ -160,7 +168,7 @@ height: 70%;
     margin-left: 0;
     margin: auto;
     text-align: center;
-    max-width: 70vw;
+    max-width: 80vw;
   }
   .right-logo {
     width: 35vw;
@@ -168,9 +176,10 @@ height: 70%;
     margin: auto;
     margin-top: 70px;
   }
-  .second-section {
-    overflow-x: hidden !important;
+  .second-para {
+    margin: auto;
   }
+
   .heading1 {
     margin-top: -90px;
   }
@@ -192,11 +201,7 @@ height: 70%;
     text-decoration: none;
   }
 }
-@media only screen and (min-width: 1200px) {
-  .second-section {
-    overflow-x: hidden !important;
-  }
-}
+
 @media only screen and (min-width: 1500px) {
   .info {
     font-size: 25px;
@@ -205,9 +210,7 @@ height: 70%;
   .heading {
     font-size: 60px;
   }
-  .second-section {
-    overflow-x: hidden !important;
-  }
+
   .right-logo {
     width: 428px;
   }
@@ -215,8 +218,20 @@ height: 70%;
     font-size: 70px;
   }
 }
-@media only screen and (min-width: 1350px){
-/* .third-button{
-    margin-top: 24px;
-} */
+@media only screen and (min-width: 1110px) and (max-width: 1500px){
+  .info {
+    font-size: 18px;
+    max-width: 650px;
+  }
+  .heading {
+    font-size: 45px;
+  }
+
+  .right-logo {
+    width: 328px;
+  }
+  .heading3 {
+    font-size: 45px;
+  }
+
 }
