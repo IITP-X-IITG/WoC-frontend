@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Project2018 from "./2018_Projects";
+import ProjectSearch2018 from "./2018_Project_search";
 import Project2019 from "./2019_Projects";
 import Project2020 from './2020_Projects';
 import Project2021 from "./2021_Projects";
@@ -65,8 +66,8 @@ function Projectsection() {
         <div
           className={toggleState === 4 ? "content  active-content" : "content"}
         >
-          <Project2018/>
-         
+          {/* <Project2018/> */}
+         <ProjectSearch2018/>
         </div>
 
       </div>

@@ -1,0 +1,153 @@
+[
+    {
+        "repo-url": "https://github.com/njackwinterofcode/algorithms_with_git",
+        "title": "algorithms-with-git",
+        "desc": "A simple collection of algorithms in various languages.",
+        "mentor": "aryadas98",
+        "lang": [
+            "Any"
+        ],
+        "tag": [
+            "Algorithms"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/njackwinterofcode/Alphynite",
+        "title": "Alphynite",
+        "desc": "Alphynite",
+        "mentor": "sk9331657",
+        "lang": [
+            "HTML",
+            "CSS",
+            "JS"
+        ],
+        "tag": [
+            "Web"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/njackwinterofcode/Alzheimer-s-Disease-Prediction-using-3D-MRI-scans",
+        "title": "Alzheimers-Prediction",
+        "desc": "",
+        "mentor": "mansi1710",
+        "lang": [
+            "Python"
+        ],
+        "tag": [
+            "Machine Learning"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/njackwinterofcode/B.E.N.J.I.",
+        "title": "B.E.N.J.I.",
+        "desc": "B.E.N.J.I.- The Impossible Missions Force's digital assistant",
+        "mentor": "the-ethan-hunt",
+        "lang": [
+            "Python"
+        ],
+        "tag": [
+            "Virtual Assistant"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/njackwinterofcode/cool-name-api",
+        "title": "cool-name-api",
+        "mentor": "mohitkyadav",
+        "lang": [
+            "HTML",
+            "CSS",
+            "JS"
+        ],
+        "tag": [
+            "Web"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/njackwinterofcode/cruzz",
+        "title": "cruzz",
+        "desc": "Welcome aboard!",
+        "mentor": "Monal5031",
+        "lang": [
+            "HTML",
+            "CSS",
+            "JS"
+        ],
+        "tag": [
+            "Web"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/njackwinterofcode/cruzz_app",
+        "title": "cruzz_app",
+        "desc": "Welcome aboard !!",
+        "mentor": "DipanshKhandelwal",
+        "lang": [
+            "Java"
+        ],
+        "tag": [
+            "Android"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/njackwinterofcode/cruzz-web",
+        "title": "cruzz-web",
+        "mentor": "mohitkyadav",
+        "lang": [
+            "HTML,CSS,JS"
+        ],
+        "tag": [
+            "Web"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/njackwinterofcode/Backend",
+        "title": "Datlizer Backend",
+        "desc": "Visualizations in the air",
+        "mentor": "aswinzz",
+        "lang": [
+            "Javacript"
+        ],
+        "tag": [
+            "Python",
+            "Database"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/njackwinterofcode/Frontend",
+        "title": "Datlizer Frontend",
+        "desc": "Visualizations in the air",
+        "mentor": "aswinzz",
+        "lang": [
+            "Javacript"
+        ],
+        "tag": [
+            "Python",
+            "Database"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/njackwinterofcode/evolutions-webapp",
+        "title": "evolutions-webapp",
+        "desc": "What? monferno is evolving!",
+        "mentor": "anshumanv",
+        "lang": [
+            "HTML,CSS,JS"
+        ],
+        "tag": [
+            "Web",
+            "Pokemon"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/njackwinterofcode/Fake-News-Detector",
+        "title": "Fake-News-Detector",
+        "desc": "Real versus fake news",
+        "mentor": "itsmepiyush2",
+        "lang": [
+            "Python"
+        ],
+        "tag": [
+            "Machine Learning"
+        ]
+    }
+]
