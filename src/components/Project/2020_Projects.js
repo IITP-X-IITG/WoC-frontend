@@ -484,7 +484,7 @@ function Project2020() {
                 <div className="repo-desc">An interactive board with plugins focusing on replacing the need of multiple platforms for teaching, presenting, managing or explaining your ideas.</div>
                 <div className="repo-mentors">Mentors: <a href="https://github.com/Kajol-Kumari" target="_blank">Kajol-Kumari</a></div>
                 <ul className="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/>/ HTML/JS/TypeScript</li>
+                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> HTML/JS/TypeScript</li>
                   <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Web</li>
                 </ul>
               </div>

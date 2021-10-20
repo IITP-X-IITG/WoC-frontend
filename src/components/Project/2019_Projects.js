@@ -292,7 +292,7 @@ function Project2019(){
         <div className="repo-mentors">Mentors: <a href="https://github.com/rajat2502" target="_blank">rajat2502</a></div>
         <ul className="repo-stats">
           <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> ReactJS</li>
-          <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Webli&gt;
+          <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Web
         </li></ul>
       </div>
     </div>
@@ -432,7 +432,7 @@ function Project2019(){
       <div className="nwoc-repo-card">
         <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
         <a className="repo-title" href="https://github.com/njackwinterofcode/simulate" target="_blank">Simulate</a>
-        <div className="repo-desc">Collection of simulations and visualizations in a cross platform app made using Flutter.                </div>
+        <div className="repo-desc">Collection of simulations and visualizations in a cross platform app made using Flutter.</div>
         <div className="repo-mentors">Mentors: <a href="https://github.com/yashlamba" target="_blank">yashlamba</a></div>
         <ul className="repo-stats">
           <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> Flutter</li>

@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import data from './2018.json';
 
-function ProjectSearch2018() {
+function Project2018() {
     let [projects, setProjects] = useState(data);
     
     const searchHandler = (e) => {
@@ -42,7 +42,7 @@ function ProjectSearch2018() {
                             <div className="repo-desc">{el.desc}</div>
                             <div className="repo-mentors">Mentors: <a href={"https://github.com/" + el.mentor} target="_blank">{el.mentor}</a></div>
                             <ul className="repo-stats">
-                                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" />{
+                                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> {
                                      el.lang.toString().replaceAll(',', '/') 
                                 }</li>
                                 <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> {el.tag.toString().replaceAll(',', '/') }</li>
@@ -53,4 +53,4 @@ function ProjectSearch2018() {
             })}
         </div></>
 }
-export default ProjectSearch2018;
+export default Project2018;
