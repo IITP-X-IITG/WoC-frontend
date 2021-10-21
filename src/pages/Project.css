@@ -122,6 +122,8 @@ button {
 
   transform: scale(0.99);
   transition: all 0.2s ease-in-out;
+
+  background-color: #0d223cdb;
 }
 .nwoc-repo-card:hover {
   box-shadow: 8px 10px 12px rgb(65 159 159);
