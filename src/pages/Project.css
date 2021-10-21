@@ -21,7 +21,7 @@
 
   margin: 0 auto 0;
   padding-top: 130px;
-  /* word-break: break-all; */
+
 }
 
 .bloc-tabs {
@@ -161,6 +161,9 @@ button {
 .repo-title {
   margin-left: 5px;
 }
+.repo-heading{
+  font-size: 22px;
+}
 .repo-title:hover,
 .repo-mentors:hover {
   text-decoration: underline;
@@ -178,29 +181,44 @@ button {
 }
 @media only screen and (max-width: 510px) {
   .nwoc-repo-card {
-    height: 270px;
+    height: 255px;
+    /* width: 75vw; */
   }
   .repo-desc {
     font-size: 14px;
+   
   }
   .repo-mentors {
     font-size: 13px;
+    text-align:left;
+    bottom: 48px;
   }
   .repo-stats {
     font-size: 11px;
     bottom: 6px;
+    text-align: left;
   }
 }
-@media only screen and (min-width: 770px) and (max-width: 1155px) {
+@media only screen and (min-width: 767px) and (max-width: 1155px) {
   .nwoc-repo-card {
-    height: 270px;
+    height: 265px;
   }
   .repo-mentors {
     font-size: 13px;
     bottom: 48px;
+    text-align: left;
   }
   .repo-stats {
     font-size: 12px;
     bottom: 6px;
+    text-align: left;
+  }
+  .repo-desc{
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 398px){
+  .repo-heading{
+    font-size: 16px;
   }
 }

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import data from './2019.json';
+import data from './2020_details.json';
 
-function Project2019_Search() {
+function Project2020_Search() {
     let [projects, setProjects] = useState(data);
 
     const searchHandler = (e) => {
@@ -37,15 +37,15 @@ function Project2019_Search() {
                 return (
                     <div className="col-lg-6 col-md-6 col-sm-12">
                         <div className="nwoc-repo-card">
-                            <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+                          <div className="repo-heading">  <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
                             <a className="repo-title" href={el["repo-url"]} target="_blank">{el.title}</a>
-                            <div className="repo-desc">{el.desc}</div>
+                            </div>  <div className="repo-desc">{el.desc}</div>
                             <div className="repo-mentors">Mentors: {"  "}
-                            {
-                                el.mentors.map((mentor)=>
-                                   ( <a href={"https://github.com/" + mentor} target="_blank">{mentor + " "}</a>)
-                                )
-                            }
+                                {
+                                    el.mentors.map((mentor) =>
+                                        (<a href={"https://github.com/" + mentor} target="_blank">{mentor + " "}</a>)
+                                    )
+                                }
                             </div>
                             <ul className="repo-stats">
                                 <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> {
@@ -59,4 +59,4 @@ function Project2019_Search() {
             })}
         </div></>
 }
-export default Project2019_Search;
+export default Project2020_Search;

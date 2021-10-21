@@ -14,7 +14,7 @@
     {
         "repo-url": "https://github.com/Team-Tomato/QP-Generator",
         "title": "QP-Generator",
-        "desc": "A web app which helps everyone to generate question paper with ease. We will use T5 parapharser model to rephrase the questions.",
+        "desc": "A web app to generate question paper with T5 parapharser model to rephrase the questions.",
         "mentors": ["AkbarHabeeb"],
         "lang": [
             "React","Flask"
@@ -50,13 +50,13 @@
     {
         "repo-url": "https://github.com/garimasingh128/profext",
         "title": "profext",
-        "desc": "A profile search engine for accessing my all social media profile in one tap.This chrome extension let's you track your profiles on any account in a single click.",
+        "desc": "A profile search engine and chrome extension for accessing my all social media profile in one tap.",
         "mentors": ["garimasingh128"],
         "lang": [
-            "HTML","CSS","JS","(Chrome Extension)"
+            "HTML","CSS","JS"
         ],
         "tag": [
-            "Web"
+            "Web","(Chrome Extension)"
         ] 
     },
     {
@@ -74,7 +74,7 @@
     {
         "repo-url": "https://github.com/upes-open/Placement-Manager",
         "title": "Placement-Manager",
-        "desc": "A Flask application used to managing and maintaining placement related data, activities, updates and more.",
+        "desc": "A Flask application used to manage and maintain placement related data, activities and more.",
         "mentors": ["josharsh"],
         "lang": [
             "HTML","Python"
@@ -155,30 +155,8 @@
             "Discord-Bot"
         ] 
     },
-    {
-        "repo-url": "https://github.com/piyushchauhan/iitp-discord-bot",
-        "title": "IITP-discord-bot",
-        "desc": "A discord bot for IIT Patna community on any discord server.",
-        "mentors": ["piyushchauhan"],
-        "lang": [
-            "JS"
-        ],
-        "tag": [
-            "Discord-Bot"
-        ] 
-    },
-    {
-        "repo-url": "https://github.com/Dacience/DataScientist",
-        "title": "DataScientist",
-        "desc": "DataScientist is a Python library in making to ease the life of a Data Scientist.",
-        "mentors": ["sidhu1012"],
-        "lang": [
-            "Python"
-        ],
-        "tag": [
-            "Data Science"
-        ] 
-    },
+    
+    
     {
         "repo-url": "https://github.com/RAJAGOPALAN-GANGADHARAN/DConsole",
         "title": "DConsole",
@@ -218,7 +196,7 @@
     {
         "repo-url": "https://github.com/PragatiVerma18/Snappify",
         "title": "Snappify",
-        "desc": "A Screenshot app with Screenshot API and React js, that create screenshots of websites with the help of the URL that we will paste to the Input field.",
+        "desc": "A Screenshot app with Screenshot API, that create screenshots of websites with the help of the input URL.",
         "mentors": ["PragatiVerma18"],
         "lang": [
             "HTML","CSS","JS"
@@ -230,7 +208,7 @@
     {
         "repo-url": "https://github.com/RoboticsClubIITJ/ML-DL-implementation",
         "title": "ML-DL-implementation",
-        "desc": "An implementation of ML and DL algorithms from scratch in python using nothing but numpy.",
+        "desc": "Implementing ML and DL algorithms from scratch in python using numpy.",
         "mentors": ["rohansingh9001"],
         "lang": [
             "Python"
@@ -242,7 +220,7 @@
     {
         "repo-url": "https://github.com/smaranjitghose/awesome-portfolio-websites",
         "title": "Awesome-portfolio-websites",
-        "desc": "An open source project aimed at providing free and beautiful templates to everyone for building their portfolio websites and showcase their work to the world.",
+        "desc": "An OS project to provide free and beautiful templates for building their portfolio websites.",
         "mentors": ["smaranjitghose","anushbhatia"],
         "lang": [
             "HTML","CSS","JS"
@@ -374,7 +352,7 @@
     {
         "repo-url": "https://github.com/diyajaiswal11/Bloggitt",
         "title": "Bloggitt",
-        "desc": "A blogging application for users to post their views with Backend on Django and Frontend on HTML, CSS, Bootstrap.",
+        "desc": "A blogging app for users to post their views with Django, HTML, CSS, Bootstrap.",
         "mentors": ["diyajaiswal11"],
         "lang": [
             "Python","HTML"
@@ -422,7 +400,7 @@
     {
         "repo-url": "https://github.com/AbsurdNerd/SimplifyReports",
         "title": "Simplify Reports",
-        "desc": "Simplify Report is an Android Application with backend on Django REST Framework which simplifies the process of reporting cases of fire, crimes and calling an ambulance.",
+        "desc": " An Android app with Django REST Framework which simplifies reporting cases of fire, crimes and calling an ambulance.",
         "mentors": ["dheerajkotwani"],
         "lang": [
             "Kotlin"
@@ -467,23 +445,12 @@
             "GameDev"
         ] 
     },
-    {
-        "repo-url": "https://github.com/pranalishinde28/BlockChain-Test",
-        "title": "BlockChain Test",
-        "desc": " ",
-        "mentors": ["pranalishinde28"],
-        "lang": [
-            " C++","C"
-        ],
-        "tag": [
-            "None"
-        ] 
-    },
+   
     {
         "repo-url": "https://github.com/Canvasbird/canvasboard",
         "title": "CanvasBoard",
-        "desc": "An interactive board with plugins focusing on replacing the need of multiple platforms for teaching, presenting, managing or explaining your ideas.",
-        "mentors": [">Kajol-Kumari"],
+        "desc": "An interactive board with plugins to replace the need of multiple platforms for teaching, presenting or explaining your ideas.",
+        "mentors": ["Kajol-Kumari"],
         "lang": [
             "HTML","JS","TypeScript"
         ],

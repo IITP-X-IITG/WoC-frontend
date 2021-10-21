@@ -10,7 +10,7 @@
   z-index: 0;
   background: #12263f url("https://image.ibb.co/mjnygo/stars.png") repeat top
     center;
-  /* margin: auto; */
+
   padding-bottom: 40px;
   width: 100vw;
 }
@@ -19,10 +19,9 @@
   align-items: center;
   /* justify-content: center; */
 }
-.main-div{
+.main-div {
   width: fit-content;
   margin: auto;
- 
 }
 .right-logo {
   width: 25%;
@@ -30,13 +29,7 @@
   margin-left: 40px;
   margin-top: 126px;
 }
-.second-para {
-  /* display: flex;
-  
-  justify-content: center; */
-  /* position: fixed; */
-  /* margin-left: 204px; */
-}
+
 /* Second Section */
 .second-section {
   background-color: rgb(248, 249, 250);
@@ -49,10 +42,9 @@
 }
 
 .heading {
-  /* margin-left: 180px; */
   padding-top: 120px;
   margin-bottom: 25px;
-  /* text-align: center; */
+
   color: white;
 }
 .heading1 {
@@ -62,14 +54,11 @@
   max-width: 450px;
   margin-bottom: 1rem;
   line-height: 2;
-  /* margin-left: 180px; */
+
   color: white;
 }
 .info1 {
   max-width: 650px;
-  /* text-align: center; */
-  /* margin: auto; */
-  /* margin-left: 180px; */
 }
 /* Card Section */
 .heading2 {
@@ -105,7 +94,6 @@
   height: 100% !important;
 }
 .btn-apply {
-  /* margin: auto; */
   margin-top: 5%;
 }
 .second-section a {
@@ -131,7 +119,7 @@
 }
 .logo-conduct {
   display: flex;
-  /* position: relative; */
+
   align-items: center;
   justify-content: space-between;
   width: 70%;
@@ -143,7 +131,7 @@
 
   font-family: "Poppins";
   font-size: 130px;
-  /* width: 40%; */
+
   opacity: 0.2;
 }
 .logo1,
@@ -172,9 +160,8 @@
   }
   .right-logo {
     width: 35vw;
-
     margin: auto;
-    margin-top: 70px;
+    margin-top: 60px;
   }
   .second-para {
     margin: auto;
@@ -218,7 +205,7 @@
     font-size: 70px;
   }
 }
-@media only screen and (min-width: 1110px) and (max-width: 1500px){
+@media only screen and (min-width: 1110px) and (max-width: 1500px) {
   .info {
     font-size: 18px;
     max-width: 650px;
@@ -228,10 +215,9 @@
   }
 
   .right-logo {
-    width: 328px;
+    width: 320px;
   }
   .heading3 {
     font-size: 45px;
   }
-
 }
