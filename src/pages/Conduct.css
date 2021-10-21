@@ -8,8 +8,8 @@
 }
 .first-section {
   z-index: 0;
-  background: #12263f url("https://image.ibb.co/mjnygo/stars.png") repeat top
-    center;
+  /* background: #12263f url("https://image.ibb.co/mjnygo/stars.png") repeat top
+    center; */
 
   padding-bottom: 40px;
   width: 100vw;
@@ -36,7 +36,7 @@
   padding: 40px;
   padding-left: 92px;
   padding-right: 92px;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 2vw));
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 2vw)); */
   width: 100vw;
   overflow-x: hidden !important;
 }
@@ -109,6 +109,7 @@
   background-color: rgb(255, 255, 255);
   align-items: left;
   width: 100vw;
+  padding-bottom: 10px;
 }
 .heading3 {
   font-size: 40px;
@@ -116,6 +117,7 @@
   text-align: center;
   margin-bottom: 10px;
   text-transform: capitalize;
+  padding-top: 40px;
 }
 .logo-conduct {
   display: flex;
@@ -130,7 +132,7 @@
   display: block;
 
   font-family: "Poppins";
-  font-size: 130px;
+  font-size: 80px;
 
   opacity: 0.2;
 }
@@ -186,6 +188,7 @@
   .heading3 {
     font-size: 30px;
     text-decoration: none;
+    padding-top: 20px;
   }
 }
 

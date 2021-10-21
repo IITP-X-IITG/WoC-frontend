@@ -22,13 +22,13 @@ svg{
 }
 
 .stars {
-  z-index: 0;
+  z-index: -2;
   background: #12263f url("../pages/Images/stars.svg") repeat top
     center;
 }
 
 .twinkling {
-  z-index: 1;
+  z-index: -1;
   background: transparent url("./Images/twinkle_bg1.png") repeat top center;
   animation: move-twink-back 200s linear infinite;
 }
@@ -484,7 +484,6 @@ svg{
   grid-template-columns: repeat(4,auto);
   margin: 30px auto;
   width: 75%;
-  background-color: yellow;
 }
 .count_block{
   z-index: 2;
