@@ -9,6 +9,7 @@ import { Route, Switch, BrowserRouter} from 'react-router-dom';
 import Conduct from './pages/Conduct.js';
 import Leaderboard from './pages/leaderboard/Leaderboard';
 import Project from './pages/Project';
+import Team from './pages/Team/Team'
 function App() {
   return (
     <div className="App">
@@ -18,6 +19,7 @@ function App() {
           <Route path="/conduct" component={Conduct}/>
           <Route path="/leaderboard" component={Leaderboard} />
           <Route path="/project" component={Project} />
+          <Route path="/team" component={Team}/>
         </Switch>
         {/* <Footer/> */}
       </BrowserRouter>
