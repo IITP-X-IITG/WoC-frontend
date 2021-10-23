@@ -1,4 +1,4 @@
-
+import react from 'react';
 import Slider from 'infinite-react-carousel';
 import { makeStyles } from '@material-ui/core/styles';
 import {Paper, Grid, Avatar, Typography, Link, Box, Container, Card, IconButton } from '@material-ui/core';
@@ -95,7 +95,7 @@ function TeamCarousel() {
               <Paper className={classes.root}>
                 <Box letterSpacing={4}><Typography className={classes.head}><h2>OVERALL HEADS</h2></Typography></Box>
                   <Paper className={classes.root2}>
-                  <Slider className={classes.slider} swipe={false} duration={200} autoplay={false} autoplaySpeed={8000}>
+                  <Slider className={classes.slider} swipe={false} duration={10} autoplay={false} autoplaySpeed={8000}>
                   {
                       HeadCarouselUtil.map((page) => (
                           <div>
@@ -133,7 +133,7 @@ function TeamCarousel() {
                   </Paper>
                   <Box letterSpacing={4}><Typography className={classes.tech}><h2>TECHNICAL TEAM</h2></Typography></Box>
                   <Paper className={classes.root2}>
-                  <Slider className={classes.slider} swipe={false} duration={200} autoplay={false} autoplaySpeed={8000}>
+                  <Slider className={classes.slider} swipe={false} duration={10} autoplay={false} autoplaySpeed={8000}>
                   {
                       TechCarouselUtil.map((page) => (
                           <div>
@@ -172,7 +172,7 @@ function TeamCarousel() {
                   </Paper>
                   <Box letterSpacing={4}><Typography className={classes.tech}><h2>OPERATIONS AND SPONSORSHIP TEAM</h2></Typography></Box>
                   <Paper className={classes.root2}>
-                  <Slider className={classes.slider} swipe={false} duration={200} autoplay={false} autoplaySpeed={8000}>
+                  <Slider className={classes.slider} swipe={false} duration={10} autoplay={false} autoplaySpeed={8000}>
                   {
                       OutreachTeam.map((page) => (
                           <div>
@@ -210,7 +210,7 @@ function TeamCarousel() {
                   </Paper>
                   <Box letterSpacing={4}><Typography className={classes.tech}><h2>DESIGN AND CONTENT TEAM</h2></Typography></Box>
                   <Paper className={classes.root2}>
-                  <Slider className={classes.slider} swipe={false} duration={200} autoplay={false} autoplaySpeed={8000}>
+                  <Slider className={classes.slider} swipe={false} duration={10} autoplay={false} autoplaySpeed={8000}>
                   {
                       DesignTeam.map((page) => (
                           <div>
