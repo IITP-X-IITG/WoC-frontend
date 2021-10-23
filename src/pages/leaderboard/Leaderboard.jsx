@@ -144,8 +144,10 @@ const Leaderboard = () => {
 
   return (
     <>
-      <Navigation hasShadow={true} />
-      <div style={style} id='bggg'>
+      <Navigation />
+      <div class='leader-stars'></div>
+      <div class='leader-twinkling'></div>
+      <div style={style} >
         <div className='space'></div>
         <div className='title mb-5 p-3'>LEADERBOARD</div>
         <Container>

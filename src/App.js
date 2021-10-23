@@ -24,7 +24,7 @@ function App() {
         {/* <Footer/> */}
       </BrowserRouter>
       
-      <ScrollButton/>
+      {/* <ScrollButton/> */}
     </div>
   );
 }
