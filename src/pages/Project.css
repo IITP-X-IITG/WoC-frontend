@@ -102,7 +102,7 @@ button {
   padding: 8px;
   font-size: 14px;
   outline: none;
-  box-shadow: 6px 6px 3px #45889b;
+  box-shadow: 0px 0px 11px #45889b;
 }
 #searchBar:focus {
   color: #fff;
@@ -110,7 +110,7 @@ button {
 
 .nwoc-repo-card {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   padding: 18px;
 
   height: 210px;
@@ -118,15 +118,15 @@ button {
   border-radius: 5px;
   position: relative;
 
-  box-shadow: 0px 0px 20px rgb(65 159 159);
+  box-shadow: 0px 0px 10px #45889b;
 
   transform: scale(0.99);
   transition: all 0.2s ease-in-out;
 
-  background-color: #0d223cdb;
+  background-color: rgb(13,35,59);
 }
 .nwoc-repo-card:hover {
-  box-shadow: 8px 10px 12px rgb(65 159 159);
+  box-shadow: 6px  6px 10px #45889b;
   transform: scale(1);
 }
 .nwoc-repo-card img {

@@ -33,7 +33,7 @@
 /* Second Section */
 .second-section {
   background-color: rgb(248, 249, 250);
-  padding: 40px;
+  padding: 30px;
   padding-left: 92px;
   padding-right: 92px;
   /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 2vw)); */
@@ -44,7 +44,6 @@
 .heading {
   padding-top: 120px;
   margin-bottom: 25px;
-
   color: white;
 }
 .heading1 {
@@ -117,7 +116,7 @@
   text-align: center;
   margin-bottom: 10px;
   text-transform: capitalize;
-  padding-top: 40px;
+  padding-top: 15px;
 }
 .logo-conduct {
   display: flex;
@@ -132,7 +131,7 @@
   display: block;
 
   font-family: "Poppins";
-  font-size: 80px;
+  font-size: 90px;
 
   opacity: 0.2;
 }
@@ -194,7 +193,7 @@
 
 @media only screen and (min-width: 1500px) {
   .info {
-    font-size: 25px;
+    font-size: 18px;
     max-width: 775px;
   }
   .heading {
