@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import Project2018 from "./2018_Projects";
 import Project2019_Search from "./2019_Projects";
-import Project2020_Search from "./2020_Project";
+import Project2020_Search from "./2020_Projects";
 import Project2021 from "./2021_Projects";
 
 function Projectsection() {
