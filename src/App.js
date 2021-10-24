@@ -23,8 +23,7 @@ function App() {
         </Switch>
         {/* <Footer/> */}
       </BrowserRouter>
-      
-      {/* <ScrollButton/> */}
+      <ScrollButton/>
     </div>
   );
 }

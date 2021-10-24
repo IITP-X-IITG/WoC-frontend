@@ -6,7 +6,7 @@ import Collab from "../components/Conduct_Third_Section";
 import conduct_styles from "./Conduct.css";
 import Animatedbg from "../components/Animatedbg";
 import Footer from "../components/footer";
-import ScrollButton from "../components/ScrollButton";
+//import ScrollButton from "../components/ScrollButton";
 function Conduct() {
   return (
     <>
@@ -18,7 +18,7 @@ function Conduct() {
         <Collab />
         <Footer />
       </div>
-      <ScrollButton />
+      {/* <ScrollButton /> */}
     </>
   );
 }
