@@ -27,7 +27,7 @@
   width: 25%;
   height: 25%;
   margin-left: 40px;
-  margin-top: 126px;
+  margin-top: 174px;
 }
 
 /* Second Section */
@@ -36,7 +36,6 @@
   padding: 30px;
   padding-left: 92px;
   padding-right: 92px;
-  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 2vw)); */
   width: 100vw;
   overflow-x: hidden !important;
 }
