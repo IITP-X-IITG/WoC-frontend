@@ -7,6 +7,7 @@ import ScrollButton from './components/ScrollButton'
 import { Route, Switch, BrowserRouter} from 'react-router-dom';
 //import Footer from './components/footer'
 import Conduct from './pages/Conduct.js';
+// import Leaderboard from './pages/leaderboard/Leaderboard';
 import Leaderboard from './pages/leaderboard_temp';
 import Project from './pages/Project';
 import Team from './pages/Team/Team'
