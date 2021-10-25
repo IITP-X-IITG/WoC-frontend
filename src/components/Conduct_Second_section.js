@@ -15,7 +15,7 @@ function Card() {
         <div className="row">
           <div
             className="card-cover col-lg-4 col-md-6 col-sm-12"
-            data-aos="fade-right"
+            data-aos="fade-right" data-aos-once="true"
           >
             <div className="h-100 card to-apply-card">
               <div className="card-header">
@@ -23,7 +23,7 @@ function Card() {
               </div>
               <div className="card-body">
                <div className="Inside-card-div"><p className="card-text">
-                  All open-source organizations, Project maintainers are welcome
+                  All OS organizations, Project maintainers are welcome
                   to mentor budding open-source enthusiasts from all different
                   backgrounds. Find students and professionals that share your
                   vision.
@@ -36,7 +36,7 @@ function Card() {
               </div>
             </div>
           </div>
-          <div className=" card-cover col-lg-4 col-md-6" data-aos="fade-up">
+          <div className=" card-cover col-lg-4 col-md-6" data-aos="fade-up" data-aos-once="true">
             <div className="h-100 card to-apply-card">
               <div className="card-header">
                 <h4>Participant</h4>
@@ -58,7 +58,7 @@ function Card() {
 
           <div
             className="card-cover col-lg-4 col-md-12 col-sm-12"
-            data-aos="fade-left"
+            data-aos="fade-left" data-aos-once="true"
           >
             <div className="h-100 card to-apply-card">
               <div className="card-header">
@@ -66,8 +66,7 @@ function Card() {
               </div>
               <div className="card-body">
              <div className="Inside-card-div">  <p className="card-text">
-                  Are you an expert in one (or more) of the projects? Then be a
-                  beacon of light for our participants! As a mentor, you will
+                  Are you an expert in one (or more) of the projects? Then as a mentor, you will
                   guide one team with your insights and experience all through
                   their hackathon journey.
                 </p></div> 

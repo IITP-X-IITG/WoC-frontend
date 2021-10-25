@@ -130,8 +130,8 @@
   display: block;
 
   font-family: "Poppins";
-  font-size: 90px;
-
+  /* font-size: 90px; */
+ font-size: 160px;
   opacity: 0.2;
 }
 .logo1,
@@ -188,8 +188,13 @@
     text-decoration: none;
     padding-top: 20px;
   }
+ 
 }
-
+@media only screen and (max-width: 860px){
+  .logo-conduct span{
+    font-size: 70px;
+  }
+}
 @media only screen and (min-width: 1500px) {
   .info {
     font-size: 18px;
@@ -200,7 +205,7 @@
   }
 
   .right-logo {
-    width: 428px;
+    width: 267px;
   }
   .heading3 {
     font-size: 70px;
