@@ -15,7 +15,7 @@
     background-color: #071d39;
 }
 .foot h1{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 5px;
 }
 .ql{
@@ -32,7 +32,7 @@
 .ql ul li{
     list-style: none;
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -79,13 +79,13 @@
 .icon_box svg{
     padding: 10px;
 }
-.icon_box svg:hover{
+.icon_box a:hover svg{
     width: 65px;
     height: 65px;
     transition: width 0.5s, height 0.5s;
 }
 .ico p{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     display: block;
     margin: auto;
 }
