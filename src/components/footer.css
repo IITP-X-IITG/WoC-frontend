@@ -11,6 +11,7 @@
     color: white;
     width: 100vw;
     padding: 40px 0px;
+    padding-bottom: 60px;
     height: auto;
     background-color: #071d39;
 }
@@ -105,17 +106,22 @@
     align-items:  flex-start;
     padding-right: -10%;
 }
+.together h1{
+   margin-left: 73px;
+}
 .togetherLogo{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
 }
 .togetherLogo img{
-    width: 12rem;
+    width: 10rem;
     height: auto;
 }
 .togetherLogo p{
     margin-left: 25px;
+    margin-right:22px;
     font-size: 3.5rem;
     opacity: 0.3;
     font-family: 'Poppins';
@@ -155,7 +161,7 @@
     
 }
 
-@media only screen and (max-width: 850px)
+@media only screen and (max-width: 870px)
 {
     .togetherLogo img{
         width: 8rem;
@@ -164,7 +170,7 @@
         margin: 0px 20px;
     }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 870px) {
     .hiddenHr{
         display: block;
     }
@@ -175,6 +181,7 @@
     .ql{
         margin-left: 0px;
         padding: 0px;
+        margin-top: 12px;
     }
     .foot{
         padding: 20px;
@@ -204,6 +211,12 @@
         padding: 0px;
     }
     .togetherLogo img{
-        width: 7rem;
+        width: 8rem;
+    }
+    .togetherLogo{
+        margin-top: 0;
+    }
+    .together h1{
+        margin-left:0;
     }
 }
