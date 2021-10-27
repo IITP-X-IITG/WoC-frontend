@@ -26,7 +26,8 @@ export default function footer(props) {
                     <ul>
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/project">Projects</Link></li>
-                        <li><Link to="/conduct">Conduct</Link></li>
+                        <li><Link to="/conduct">Register</Link></li>
+                        <li><Link to="/team">Team</Link></li>
                     </ul>
                 </div>
                 <div className="contact">

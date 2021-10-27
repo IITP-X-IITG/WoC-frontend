@@ -94,6 +94,9 @@
     display: block;
     margin: auto;
 }
+.ico a:hover{
+    text-decoration: underline;
+}
 .foot hr{
     width: 50%;
     background-color: white;
