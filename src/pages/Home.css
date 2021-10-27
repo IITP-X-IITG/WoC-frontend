@@ -272,11 +272,11 @@ svg{
 }
 
 .main-timeline .timeline:nth-child(2n + 1)::before {
-  border-color: #1A7464;
+  border-color: #2d5287;
 }
 
 .main-timeline .timeline:nth-child(2n + 1)::after {
-  border-color: #51a193;
+  border-color: #134169;
 }
 
 .main-timeline .timeline:nth-child(2n + 1) .timeline-icon {
