@@ -7,7 +7,7 @@ import Footer from "../../components/footer";
 import { usePagination, useTable } from "react-table";
 import { Dropdown } from "react-bootstrap";
 import TeamCarousel from "../../components/team/TeamCarousel";
-
+import Animatedbg from '../../components/Animatedbg'
 const Team = () => {
   const columns = useMemo(
     () => [
@@ -146,6 +146,7 @@ const Team = () => {
   return (
     <>
       <Navigation hasShadow={true} />
+      <Animatedbg/>
       <div style={style} id='bggg'>
         <div className='space'></div>
         <div className='title mb-5 p-3'>TEAM</div>
@@ -288,7 +289,7 @@ const Team = () => {
           </div>
         </Container>
         <div className='space'></div>
-        <Footer bg='#12263F' />
+        <Footer/>
       </div>
       {/* <ScrollButton /> */}
     </>
