@@ -56,7 +56,7 @@ export default function Home() {
                 <div className="col">
                 <div className="main-timeline">
                     <div className="timeline"  data-aos="fade-up" data-aos-once="true">
-                        <Timeline date='26 OCT' desc='Interested mentors sign up on the website and register their profile.' />
+                        <Timeline date='28 OCT' desc='Interested mentors sign up on the website and register their profile.' />
                     </div>
 
                     <div className="timeline" data-aos="fade-up" data-aos-once="true">
