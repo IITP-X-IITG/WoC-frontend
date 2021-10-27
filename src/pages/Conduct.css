@@ -159,9 +159,9 @@
     max-width: 80vw;
   }
   .right-logo {
-    width: 35vw;
+    /* width: 35vw; */
     margin: auto;
-    margin-top: 60px;
+    margin-top: 35px;
   }
   .second-para {
     margin: auto;
