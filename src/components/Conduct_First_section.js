@@ -8,40 +8,24 @@ function Firstsection() {
       <div className="main-div">
         <div className="flex-item">
           <div>
-            <h1 className="heading">ABOUT CODE PEAK</h1>
+            <h1 className="heading">How it works?</h1>
             <p className="info">
-              Code Peak is a month-long programme conducted by Coding Club IIT
-              Guwahati and NJACK IIT Patna that helps students understand the
-              paradigm of Open Source contribution and gives them real-world
-              software development experience. The event targets first-timers
-              who wish to participate in Free and Open Source(FOSS)
-              Contributions and the experienced developers who want to show
-              their skills by contributing to real-world projects.
-            </p>
-            <p className="info">
-              The programme follows a mentor-mentee format where we select
-              mentors who bring their own projects to which the participants can
-              contribute keeping the spirit of Open Source in mind. The main aim
-              of the entire event is to lay a foundational base and promote the
-              culture of Open Source in India and prepare them for potentially
-              larger Open Source Events at a global level.
+              The program is available to all the participants in whichever they want, 
+              both as students or as mentors. To be a mentor, participants will go through a selection process. 
+              Selected mentors propose projects, the best of which will be selected for inclusion in the program. 
+              Students work on these projects during their winter vacations. 
+              Points will be allotted if any student raises or solves any issue. 
+              Mentors review pull requests and overall work on your project from various contributors throughout the programming phase of the program. 
+              At the end of the coding period, students will be distinguished on the basis of the bestowal they offer.
+              <br />
+        
+              <br />
+              <br />
+              <br />
+              To register scroll down.
             </p>
           </div>
           <img src={Logo} alt="logo_right" className="right-logo" />
-        </div>
-        <div className="second-para">
-          <h1 className="heading heading1">How it works?</h1>
-
-          <p className="info info1">
-            Participants can apply for the program either as a student or as a
-            mentor. Mentors are selected through a selection process. The
-            selected mentors propose projects, the best of which are chosen to
-            be included in the program. Students work on these projects in their
-            winter vacations. The mentors review the pull requests and the
-            overall work on their project by various contributors throughout the
-            coding period of the program. At the end of the coding period, the
-            students are compared on the basis of most contributions.
-          </p>
         </div>
         </div>
       </section>
