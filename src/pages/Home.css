@@ -80,7 +80,7 @@ svg{
   height: auto;
   position: absolute;
   bottom: -100px;
-  opacity: 90%;
+  /* opacity: 90%; */
 }
 /* .tst{
 	background:linear-gradient(to bottom,rgba(50,80,115, 0.4), rgba(50,80,115, 0.3),rgba(50,80,115, 0.2),rgba(50,80,115, 0));
