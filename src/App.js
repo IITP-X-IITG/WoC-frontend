@@ -14,7 +14,7 @@ import Team from './pages/Team/Team'
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename={window.location.pathname || ''}>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route exact path="/" component={Home}/>
           <Route path="/conduct" component={Conduct}/>
