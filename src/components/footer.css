@@ -55,15 +55,6 @@
     text-decoration: none;
     color: white;
 }
-.icon_box{
-    margin-top: 10px;
-    display: grid;
-    grid-template-columns: repeat(4,67px);
-}
-.icon_box svg{
-    width: 60px;
-    height: 60px;
-}
 .ico{
     display: flex;
     flex-direction: row;
@@ -80,14 +71,6 @@
     z-index: 1;
    
     color: white;
-}
-.icon_box svg{
-    padding: 10px;
-}
-.icon_box a:hover svg{
-    width: 65px;
-    height: 65px;
-    transition: width 0.5s, height 0.5s;
 }
 .ico p{
     font-size: 1.1rem;

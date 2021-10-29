@@ -27,7 +27,7 @@
   width: 25%;
   height: 25%;
   margin-left: 40px;
-  margin-top: 174px;
+  margin-top: 25px;
 }
 
 /* Second Section */
@@ -205,7 +205,8 @@
   }
 
   .right-logo {
-    width: 267px;
+    width: 207px;
+    margin-top: 66px;
   }
   .heading3 {
     font-size: 70px;
@@ -221,7 +222,8 @@
   }
 
   .right-logo {
-    width: 320px;
+    /* width: 320px; */
+    width: 244px;
   }
   .heading3 {
     font-size: 45px;
