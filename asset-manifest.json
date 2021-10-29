@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/WoC-frontend/static/css/main.b5e83b12.chunk.css",
+    "main.js": "/WoC-frontend/static/js/main.926fb6c0.chunk.js",
+    "main.js.map": "/WoC-frontend/static/js/main.926fb6c0.chunk.js.map",
+    "runtime-main.js": "/WoC-frontend/static/js/runtime-main.5b889c02.js",
+    "runtime-main.js.map": "/WoC-frontend/static/js/runtime-main.5b889c02.js.map",
+    "static/css/2.9847e55d.chunk.css": "/WoC-frontend/static/css/2.9847e55d.chunk.css",
+    "static/js/2.8c527dfc.chunk.js": "/WoC-frontend/static/js/2.8c527dfc.chunk.js",
+    "static/js/2.8c527dfc.chunk.js.map": "/WoC-frontend/static/js/2.8c527dfc.chunk.js.map",
+    "static/js/3.13f6d89d.chunk.js": "/WoC-frontend/static/js/3.13f6d89d.chunk.js",
+    "static/js/3.13f6d89d.chunk.js.map": "/WoC-frontend/static/js/3.13f6d89d.chunk.js.map",
+    "index.html": "/WoC-frontend/index.html",
+    "static/css/2.9847e55d.chunk.css.map": "/WoC-frontend/static/css/2.9847e55d.chunk.css.map",
+    "static/css/main.b5e83b12.chunk.css.map": "/WoC-frontend/static/css/main.b5e83b12.chunk.css.map",
+    "static/js/2.8c527dfc.chunk.js.LICENSE.txt": "/WoC-frontend/static/js/2.8c527dfc.chunk.js.LICENSE.txt",
+    "static/media/DO_Logo_Vertical_Blue.420baabf.png": "/WoC-frontend/static/media/DO_Logo_Vertical_Blue.420baabf.png",
+    "static/media/font.css": "/WoC-frontend/static/media/Gilroy-Medium.23dfbc19.ttf",
+    "static/media/GitHub_Logo_custom.4ba58ca2.png": "/WoC-frontend/static/media/GitHub_Logo_custom.4ba58ca2.png",
+    "static/media/iitglogo.cc015ad1.svg": "/WoC-frontend/static/media/iitglogo.cc015ad1.svg",
+    "static/media/jetbrains-variant-1.8c053095.png": "/WoC-frontend/static/media/jetbrains-variant-1.8c053095.png",
+    "static/media/logo.33a91fcb.png": "/WoC-frontend/static/media/logo.33a91fcb.png",
+    "static/media/logo_right.6286de59.png": "/WoC-frontend/static/media/logo_right.6286de59.png",
+    "static/media/mtpnggg.6f60f7c9.png": "/WoC-frontend/static/media/mtpnggg.6f60f7c9.png",
+    "static/media/nwocLogo.980c93bd.svg": "/WoC-frontend/static/media/nwocLogo.980c93bd.svg",
+    "static/media/sps.67e75d57.png": "/WoC-frontend/static/media/sps.67e75d57.png",
+    "static/media/Home.css": "/WoC-frontend/static/media/stars.fcaa1cfc.svg",
+    "static/media/Navigation.css": "/WoC-frontend/static/media/white_nav.c0fe3295.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5b889c02.js",
+    "static/css/2.9847e55d.chunk.css",
+    "static/js/2.8c527dfc.chunk.js",
+    "static/css/main.b5e83b12.chunk.css",
+    "static/js/main.926fb6c0.chunk.js"
+  ]
+}
