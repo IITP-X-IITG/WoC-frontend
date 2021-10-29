@@ -58,11 +58,8 @@ export default function footer(props) {
                     <BsInstagram/>
                         <p><a href="https://www.instagram.com/codingclubiitg/" target="_blank"  rel="noreferrer">IITG CodingClub</a></p>
                     </div>
-                   
-                    
                 </div>
-            </div>
-           
+            </div> 
         </div>
     )
 }
