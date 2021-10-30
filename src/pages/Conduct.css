@@ -138,6 +138,18 @@
 .logo2 {
   width: 40%;
 }
+.btnBox{
+  display: flex;
+  margin-top: 24px;
+  color: white;
+}
+.btnBox button a{
+  color: white;
+  text-decoration: none;
+}
+.btnBox button a:hover{
+  text-decoration: underline;
+}
 @media only screen and (min-width: 992px) and (max-width: 1157px) {
   .btn-apply {
     margin-top: 18%;
@@ -147,6 +159,7 @@
   .flex-item {
     flex-direction: column;
   }
+  
   .heading {
     margin: auto;
     margin-bottom: 25px;
@@ -175,6 +188,24 @@
   }
   .logo span {
     height: 20%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .btnBox{
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+    align-items: center;
+  }
+  .btnBox button{
+    display: block;
+  
+    width: 200px;
+  }
+  .mx-auto{
+    width: 200px;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
   }
 }
 @media only screen and (max-width: 450px) {

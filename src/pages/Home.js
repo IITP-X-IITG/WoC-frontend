@@ -15,7 +15,7 @@ import { VscGithubInverted } from "react-icons/vsc";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { CgGitPull } from "react-icons/cg";
 import { FaUniversity } from "react-icons/fa";
-import git_spons from '../pages/Images/GitHub_Logo_custom.png'
+import git_spons from '../pages/Images/githublogoweb.svg'
 import dig_ocean from '../pages/Images/DO_Logo_Vertical_Blue.png'
 import jetbrain from '../pages/Images/jetbrains-variant-1.png'
 //import logo_codepeak from './Images/LOGOCODEPEAK.png'

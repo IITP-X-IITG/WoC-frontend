@@ -44,7 +44,7 @@ function Card() {
                 </p></div>
                 <div className="d-grid gap-2 col-6 mx-auto register-button">
                   <button className="btn btn-primary btn-apply" type="button">
-                    <a href="/">Stay Tuned!</a>
+                    <a>Stay Tuned!</a>
                   </button>
                 </div>
               </div>

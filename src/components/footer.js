@@ -6,7 +6,7 @@ import {AiOutlineMail, AiFillTwitterCircle} from 'react-icons/ai'
 import {BsFacebook, BsInstagram} from 'react-icons/bs'
 // import { VscGithubInverted } from "react-icons/vsc";
 import footer_style from './footer.css'
-import nwocLogo from '../pages/Images/nwocLogo.svg'
+import nwocLogo from '../pages/Images/nwoc logo.svg'
 import guwLogo from '../pages/Images/iitglogo.svg'
 export default function footer(props) {
     return (

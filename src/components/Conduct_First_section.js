@@ -1,6 +1,9 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "../pages/Images/logo_right.png";
+import CaGuide from '../Files/CampusAmbassadorInfo.pdf'
+import MentorGuide from '../Files/MENTORSGUIDE.pdf'
+
 function Firstsection() {
   return (
     <>
@@ -18,16 +21,30 @@ function Firstsection() {
               Mentors review pull requests and overall work on your project from various contributors throughout the programming phase of the program. 
               At the end of the coding period, students will be distinguished on the basis of the bestowal they offer.
               <br />
-        
-              <br />
-              <br />
+              <div className="btnBox">
+              <div className="d-grid gap-2 col-3 mx-auto">
+                  <button className="btn btn-primary btn-apply" type="button">
+                    <a href={CaGuide} target="_blank" rel="noreferrer">CA Guide</a>
+                  </button>
+                </div>
+                <div className="d-grid gap-2 col-3 mx-auto">
+                  <button className="btn btn-primary btn-apply" type="button">
+                    <a href={MentorGuide} target="_blank" rel="noreferrer">Mentor Guide</a>
+                  </button>
+                </div><div className="d-grid gap-2 col-3 mx-auto">
+                  <button className="btn btn-primary btn-apply" type="button">
+                    <a >Stay Tuned !</a>
+                  </button>
+                </div>
+              </div>
+              
               <br />
               To register scroll down.
             </p>
           </div>
           <img src={Logo} alt="logo_right" className="right-logo" />
         </div>
-        </div>
+      </div>
       </section>
     </>
   );
