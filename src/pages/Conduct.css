@@ -91,9 +91,27 @@
 .h-100 {
   height: 100% !important;
 }
+.btnBox a:hover{
+  text-decoration: underline;
+}
 .btn-apply {
   margin-top: 5%;
+  outline: none;
+  user-select: none;
+  border: none;
+  width: 100%;
 }
+.btn-apply:focus{
+  outline: none;
+  user-select: none;
+  border:none;
+}
+.btn-apply:hover{
+  outline: none;
+  user-select: none;
+  border: none;
+}
+
 .second-section a {
   color: white;
   text-decoration: none;
@@ -143,13 +161,13 @@
   margin-top: 24px;
   color: white;
 }
-.btnBox button a{
+.btnBox a{
   color: white;
   text-decoration: none;
 }
-.btnBox button a:hover{
+/* .btnBox button a:hover{
   text-decoration: underline;
-}
+} */
 @media only screen and (min-width: 992px) and (max-width: 1157px) {
   .btn-apply {
     margin-top: 18%;
@@ -199,7 +217,6 @@
   }
   .btnBox button{
     display: block;
-  
     width: 200px;
   }
   .mx-auto{
@@ -209,6 +226,9 @@
   }
   .right-logo{
     display: none;
+  }
+  .btn-phone{
+    margin-top:1%;
   }
 }
 @media only screen and (max-width: 450px) {
