@@ -10,7 +10,7 @@ import Conduct from './pages/Conduct.js';
 // import Leaderboard from './pages/leaderboard/Leaderboard';
 import Leaderboard from './pages/leaderboard_temp';
 import Project from './pages/Project';
-//import Team from './pages/Team/Team'
+import Team from './pages/Team/Team'
 import TeamTemp from './pages/leaderboard_temp'
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
           <Route path="/conduct" component={Conduct}/>
           <Route path="/leaderboard" component={Leaderboard} />
           <Route path="/project" component={Project} />
-          <Route path="/team" component={TeamTemp}/>
+          <Route path="/team" component={Team}/>
         </Switch>
         {/* <Footer/> */}
       </BrowserRouter>

@@ -1,14 +1,14 @@
 import sps from '../resources/sps.png';
-import rajan_kumar from '../resources/rajan_kumar.png';
-import harshwardhan_bhakkad from '../resources/harshwardhan_bhakkad.png';
-import priyanshi_singh from '../resources/priyanshi_singh.png';
-import athul_krishna_k from '../resources/athul_krishna_k.png';
-import khushi_prasad from '../resources/khushi_prasad.png';
-import pratham_kulkarni from '../resources/pratham_kulkarni';
-import soumadip_das from '../resources/soumadip_das.png';
-import vani_krishna_barla from '../resources/vani_krishna_barla.png';
-import harsh_agarwal from '../resources/harsh_agarwal.png';
-import gunjan_dhanuka from '../resources/gunjan_dhanuka.png';
+import rajan_kumar from '../resources/rajan_kumar.jpg';
+import harshwardhan_bhakkad from '../resources/harshwardhan_bhakkad.jpg';
+import priyanshi_singh from '../resources/priyanshi_singh.jpg';
+import athul_krishna_k from '../resources/athul_krishna_k.jpeg';
+import khushi_prasad from '../resources/khushi_prasad.jpg';
+import pratham_kulkarni from '../resources/pratham_kulkarni.png';
+import soumadip_das from '../resources/soumadip_das.jpg';
+import vani_krishna_barla from '../resources/vani_krishna_barla.jpg';
+import harsh_agarwal from '../resources/harsh_agarwal.jpg';
+import gunjan_dhanuka from '../resources/gunjan_dhanuka.jpeg';
 
 
 const OutreachTeam = [

@@ -1,8 +1,8 @@
 import sps from '../resources/sps.png';
 import kartikay_gupta from '../resources/kartikay_gupta.png';
-import aditya_kumar from '../resources/aditya_kumar.png';
-import aditya_pandey from '../resources/aditya_pandey.png';
-import aman_kumar from '../resources/aman_kumar.png';
+import aditya_kumar from '../resources/aditya_kumar.jpg';
+import aditya_pandey from '../resources/aditya_pandey.jpg';
+import aman_kumar from '../resources/aman_kumar.jpeg';
 
 
 
