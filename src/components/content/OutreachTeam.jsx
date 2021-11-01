@@ -1,115 +1,95 @@
 import sps from '../resources/sps.png';
+import rajan_kumar from '../resources/rajan_kumar.png';
+import harshwardhan_bhakkad from '../resources/harshwardhan_bhakkad.png';
+import priyanshi_singh from '../resources/priyanshi_singh.png';
+import athul_krishna_k from '../resources/athul_krishna_k.png';
+import khushi_prasad from '../resources/khushi_prasad.png';
+import pratham_kulkarni from '../resources/pratham_kulkarni';
+import soumadip_das from '../resources/soumadip_das.png';
+import vani_krishna_barla from '../resources/vani_krishna_barla.png';
+import harsh_agarwal from '../resources/harsh_agarwal.png';
+import gunjan_dhanuka from '../resources/gunjan_dhanuka.png';
 
 
 const OutreachTeam = [
     [
         {
-            "name": "SMITA SAXENA",
-            "img": sps ,
-            "pos": "Sponsorship Head",
-            "lin": "https://www.linkedin.com/in/smita-saxena11/",
-            "mail": "mailto:smitasheena@gmail.com",
+            "name": "Rajan Kumar",
+            "img": rajan_kumar ,
+            "pos": "Associated Manager",
+            "lin": "https://www.linkedin.com/in/rajan-kumar-1296b9212",
+            "mail": "mailto:rajan4705kr@gmail.com",
         },
         {
-          "name": "PRIYANSHU GUPTA",
-          "img": sps ,
-          "pos": "Operations Head",
-          "lin": "https://www.linkedin.com/in/priyanshugupta08/",
-          "mail": "mailto:priyansh18a@iitg.ac.in",
+          "name": "Harshwardhan Bhakkad",
+          "img": harshwardhan_bhakkad ,
+          "pos": "Associated Manager",
+          "lin": "https://www.linkedin.com/in/harsh-bhakkad-12734a202",
+          "mail": "mailto:h.bhakkad@iitg.ac.in",
         },
         {
-          "name": "RITWIK GANGULY",
-          "img": sps ,
-          "pos": "Operations Head",
-          "lin": "https://www.linkedin.com/in/ritganguly/",
-          "mail": "mailto:ritwik18@iitg.ac.in",
+          "name": "Priyanshi Singh",
+          "img": priyanshi_singh ,
+          "pos": "Associated Manager",
+          "lin": "https://www.linkedin.com/in/priyanshi-singh-7362a4219/",
+          "mail": "mailto:priyanshi152002@gmail.com",
         },
       ],
     [
       {
-          "name": "GAURISHANKAR",
-          "img": sps ,
+          "name": "Athul Krishna K",
+          "img": athul_krishna_k,
           "pos": "Associate Manager",
-          "lin": "https://www.linkedin.com/in/gaurishankar-bhattacharyya-663679196/",
-          "mail": "mailto:gaurishankarbhat@iitg.ac.in",
+          "lin": "https://www.linkedin.com/in/athul-krishna-k-688262223",
+          "mail": "mailto:athul_2001me85@iitp.ac.in",
       },
         {
-          "name": "TANISHKA GAUR",
-          "img": sps ,
+          "name": "Khushi Prasad",
+          "img": khushi_prasad ,
           "pos": "Associate Manager",
           "lin": "http://www.linkedin.com/in/tanishkagaur",
-          "mail": "mailto:gaurtanya31@gmail.com",
+          "mail": "mailto:khushi_2001cs38@iitp.ac.in",
         },
         {
-          "name": "ANKITA SINGH",
-          "img": sps,
+          "name": "Pratham Kulkarni",
+          "img": pratham_kulkarni,
           "pos": "Associate Manager",
-          "lin": "https://www.linkedin.com/in/ankita-singh-13bb831aa?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BhE4fRaSmTHSThBK1iCISIQ%3D%3D",
-          "mail": "mailto:ankita18c@iitg.ac.in",
+          "lin": "https://www.linkedin.com/in/pratham-kulkarni-81b24b223/",
+          "mail": "mailto:prathamkulkarni08@gmail.com",
         },
       ],
     [
         {
-            "name": "AMAN BANSAL",
-            "img": sps ,
+            "name": "Soumadip Das",
+            "img": soumadip_das ,
             "pos": "Associate Manager",
-            "lin": "https://www.linkedin.com/in/aman-bansal-4988a1179",
-            "mail": "mailto:bansalaman2000@gmail.com",
+            "lin": "https://www.linkedin.com/in/soumadip-das-6031631b9/",
+            "mail": "mailto:d.soumadip@iitg.ac.in",
         },
         {
-          "name": "AYUSH AGGARWAL",
-          "img": sps ,
+          "name": "Vani Krishna Barla",
+          "img": vani_krishna_barla ,
           "pos": "Associate Manager",
           "lin": "https://www.linkedin.com/in/ayush-aggarwal-a6ba6b192",
           "mail": "mailto:ayushaggarwal533@gmail.com",
         },
         {
-          "name": "PRAKHAR RAJPALI",
-          "img": sps ,
+          "name": "Harsh Agrawal",
+          "img": harsh_agarwal ,
           "pos": "Associate Manager",
-          "lin": "https://www.linkedin.com/in/prakharrajpali/",
-          "mail": "mailto:rprakhar@iitg.ac.in",
+          "lin": "http://www.linkedin.com/in/harshagrawal523/",
+          "mail": "mailto:harshagrawal523@gmail.com",
         },
       ],
     [
         {
-            "name": "ARYAN RATHOD",
-            "img": sps ,
+            "name": "Gunjan Dhanuka",
+            "img": gunjan_dhanuka ,
             "pos": "Associate Manager",
-            "lin": "https://www.linkedin.com/in/chardeux/",
-            "mail": "mailto:raryanaryan_rathod@iitg.ac.in",
+            "lin": "https://www.linkedin.com/in/gunjan-dhanuka/",
+            "mail": "mailto:lucifergd192@gmail.com",
         },
-        {
-          "name": "SOUMYA GUPTA",
-          "img": sps ,
-          "pos": "Associate Manager",
-          "lin": "https://www.linkedin.com/in/soumya-10a/",
-          "mail": "mailto:soumyagupta@iitg.ac.in",
-        },
-        {
-          "name": "SHAMBHAWI BHURE",
-          "img": sps ,
-          "pos": "Associate Manager",
-          "lin": "https://www.linkedin.com/in/shambhawibhure",
-          "mail": "mailto:sbhure@iitg.ac.in",
-        },
-      ],
-    [
-        {
-            "name": "ATISHAY JAIN",
-            "img":  sps,
-            "pos": "Associate Manager",
-            "lin": "https://www.linkedin.com/in/atishay1743",
-            "mail": "mailto:atishay1743@gmail.com",
-        },
-        {
-          "name": "JANHAVI LANDE",
-          "pos": "Associate Manager",
-          "img": sps ,
-          "lin": "www.linkedin.com/in/janhavi12",
-          "mail": "mailto:l.janhavi@iitg.ac.in",
-      },
-      ],
+      ]
 
 ]
 
