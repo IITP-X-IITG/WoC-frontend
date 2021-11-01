@@ -78,6 +78,12 @@
   flex-direction: column;
 }
 
+button{
+  box-shadow:none !important;
+}
+
+
+
 .card-text {
   margin: 16px 0 20px;
   font-size: 17px;
