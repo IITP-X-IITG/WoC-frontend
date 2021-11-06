@@ -8,22 +8,17 @@
 
 .project-class {
   z-index: 0;
-  /* background: #12263f url("https://image.ibb.co/mjnygo/stars.png") repeat top
-    center; */
 }
-
 .container-project {
   display: flex;
   flex-direction: column;
   position: relative;
   width: 78vw;
   height: 100%;
-
   margin: 0 auto 0;
   padding-top: 130px;
 
 }
-
 .bloc-tabs {
   display: flex;
 }
@@ -42,13 +37,11 @@
 .tabs:not(:last-child) {
   border-right: 1px solid rgba(0, 0, 0, 0.274);
 }
-
 .active-tabs {
   background: white;
   color: black;
   border-bottom: 1px solid transparent;
 }
-
 .active-tabs::before {
   content: "";
   display: block;
@@ -60,7 +53,6 @@
   height: 5px;
   background: rgb(88, 147, 241);
 }
-
 button {
   border: none;
 }
@@ -77,12 +69,6 @@ button {
 .content h2 {
   padding: 0px 0 5px 0px;
 }
-/* .content hr {
-  width: 100px;
-  height: 2px;
-  background: #222;
-  margin-bottom: 5px;
-} */
 .content p {
   width: 100%;
   height: 100%;
@@ -92,7 +78,6 @@ button {
 }
 /* Year-Wise-Projects */
 #searchBar {
-  background-color: transparent;
   border: none;
   border: 2px solid #a6d2ff;
   border-radius: 6px;
@@ -115,17 +100,13 @@ button {
   display: block;
   margin-bottom: 15px;
   padding: 18px;
-
   height: 210px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   position: relative;
-
   box-shadow: 0px 0px 10px #45889b;
-
   transform: scale(0.99);
   transition: all 0.2s ease-in-out;
-
   background-color: rgb(13,35,59);
 }
 .nwoc-repo-card:hover {
@@ -179,19 +160,16 @@ button {
 .yr-2021 {
   color: white;
 }
-@media only screen and (max-width: 605px) {
+
+@media only screen and (max-width: 767px) {
   .nwoc-repo-card {
-    height: 270px;
-  }
-}
-@media only screen and (max-width: 510px) {
-  .nwoc-repo-card {
-    height: 255px;
-    /* width: 75vw; */
+    height: 250px;
+    width: 83vw;
+    margin-left: auto;
+    margin-right: auto;
   }
   .repo-desc {
     font-size: 14px;
-   
   }
   .repo-mentors {
     font-size: 13px;
@@ -199,22 +177,38 @@ button {
     bottom: 48px;
   }
   .repo-stats {
-    font-size: 11px;
+    font-size: 13px;
     bottom: 6px;
     text-align: left;
   }
+  .container-project{
+    margin:0;
+    width: 100vw;
+  }
+  .bloc-tabs{
+   padding-left:20px;
+   padding-right:20px;
+  }
+  #searchBar{
+    width: 75vw;
+  }
 }
 @media only screen and (min-width: 767px) and (max-width: 1155px) {
+ 
+  .container-project{
+    margin:0;
+    width: 100vw;
+  }
   .nwoc-repo-card {
     height: 265px;
   }
   .repo-mentors {
-    font-size: 13px;
+    font-size: 14px;
     bottom: 48px;
     text-align: left;
   }
   .repo-stats {
-    font-size: 12px;
+    font-size: 13px;
     bottom: 6px;
     text-align: left;
   }
@@ -225,5 +219,21 @@ button {
 @media only screen and (max-width: 398px){
   .repo-heading{
     font-size: 16px;
+  }
+  .repo-stats{
+    font-size:11px;
+  }
+}
+@media only screen and (max-width: 321px){
+  .nwoc-repo-card {
+    width: 97vw;
+    height:240px;
+  }
+  #searchBar{
+    width: 83vw;
+    margin-left: 22px;
+  }
+  .bloc-tabs{
+   margin-left: 23px;
   }
 }

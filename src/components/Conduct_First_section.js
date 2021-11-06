@@ -30,16 +30,7 @@ function Firstsection() {
                    
                     <a href={CaGuide} target="_blank" rel="noreferrer">
                       <button className="btn btn-primary btn-apply" type="button"> 
-                      {/* <style type="text/css">
-                     {` .btn-apply {
-  margin-top: 5%;
-  outline: none;
-  user-select: none;
-  border: none;
-  width: 100%;
-}
-`}
-                      </style> */}
+                     
                         CA Guide
                       </button>
                     </a>
