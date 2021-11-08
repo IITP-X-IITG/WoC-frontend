@@ -21,7 +21,7 @@ function App() {
           <Route path="/conduct" component={Conduct}/>
           <Route path="/leaderboard" component={Leaderboard} />
           <Route path="/project" component={Project} />
-          <Route path="/team" component={TeamTemp}/>
+          <Route path="/team"><Team/></Route>
         </Switch>
         {/* <Footer/> */}
       </BrowserRouter>
