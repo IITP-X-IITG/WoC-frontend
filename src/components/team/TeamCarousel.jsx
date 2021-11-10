@@ -104,7 +104,7 @@ function TeamCarousel() {
                           <div>
                               <Grid container spacing={1} className={classes.container}>
                                   {page.map((member) => (
-                                      <Grid item xs={12}  md={4}>
+                                      <Grid item xs={12}  md={6}>
                                       <center>
                                         <Typography>
                                           <Avatar src={member.img} className={classes.avatar} variant='circular'  />

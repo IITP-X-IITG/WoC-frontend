@@ -18,7 +18,7 @@ const TechCarouselUtil = [
         {
           "name": "Aditya Kumar",
           "img": aditya_kumar ,
-          "pos": "Technical Head",
+          "pos": "Associate Manager",
           "lin": "https://www.linkedin.com/in/aditya-kumar-337a08218",
           "mail": "mailto:adityakumarsanni.2001@gmail.com",
         },

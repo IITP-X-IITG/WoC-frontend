@@ -9,7 +9,7 @@ import soumadip_das from '../resources/soumadip_das.jpg';
 import vani_krishna_barla from '../resources/vani_krishna_barla.jpg';
 import harsh_agarwal from '../resources/harsh_agarwal.jpg';
 import gunjan_dhanuka from '../resources/gunjan_dhanuka.jpeg';
-
+import hardik_tiwari from '../resources/hardik_tiwari.jpeg';
 
 const OutreachTeam = [
     [
@@ -89,6 +89,13 @@ const OutreachTeam = [
             "lin": "https://www.linkedin.com/in/gunjan-dhanuka/",
             "mail": "mailto:lucifergd192@gmail.com",
         },
+        {
+          "name": "Hardik Tiwari",
+          "img": hardik_tiwari ,
+          "pos": "Associate Manager",
+          "lin": "https://www.linkedin.com/in/hardik-tiwari-153350218",
+          "mail": "mailto:hardik_2001mm15@iitp.ac.in",
+      },
       ]
 
 ]
