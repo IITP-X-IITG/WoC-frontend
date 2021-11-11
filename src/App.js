@@ -10,7 +10,7 @@ import Conduct from './pages/Conduct.js';
 // import Leaderboard from './pages/leaderboard/Leaderboard';
 import Leaderboard from './pages/leaderboard_temp';
 import Project from './pages/Project';
-import Team from './pages/Team/Team'
+import Team from './pages/teamnew'
 import TeamTemp from './pages/leaderboard_temp'
 function App() {
   return (
