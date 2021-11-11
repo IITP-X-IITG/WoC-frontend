@@ -17,7 +17,7 @@ const ueStyles = makeStyles((theme) => ({
     maxWidth: '100%',
   },
   root:{
-    width: '65%',
+    width: '100%',
     paddingTop: '60px',
     paddingLeft:'10px',
     paddingRight:'10px',
@@ -25,8 +25,8 @@ const ueStyles = makeStyles((theme) => ({
     marginTop: '10px',
   },
   root2:{
-    marginLeft:'10%',
-    marginRight:'10%',
+    marginLeft:'2%',
+    marginRight:'2%',
     paddingTop:'4%',
     borderRadius:'0.5%',
     marginTop: '3%',
