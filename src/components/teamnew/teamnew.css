@@ -120,13 +120,12 @@
 .slick-prev:before {
     content: none;
 } */
-
-.slick-next{
+.slick-next {
     right: 20px;
 }
-.slick-prev{
+.slick-prev {
     left: 20px;
-    z-index: 99;
+    z-index: 2;
 }
 @media only screen and (max-width:1100px) {
     .combined{
@@ -139,7 +138,7 @@
         flex-direction: column;
     }
     .icon {
-        width: 250px;
+        width: 270px;
         height: 300px;
     }
     .icon img{
@@ -155,7 +154,7 @@
     .slider hr{
         width: 20%;
     }
-    .slick-next{
+    .slick-next {
         right: 2px;
     }
     .slick-prev{
