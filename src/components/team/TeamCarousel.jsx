@@ -25,7 +25,7 @@ const ueStyles = makeStyles((theme) => ({
     marginTop: '10px',
   },
   root2:{
-    marginLeft: '2%',
+    marginLeft:'2%',
     marginRight:'2%',
     paddingTop:'4%',
     borderRadius:'0.5%',
