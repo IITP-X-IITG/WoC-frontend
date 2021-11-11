@@ -2,6 +2,7 @@ import React from 'react';
 import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 import './Counter_up.css'
+import photo from './resources/madhur_malpani.jpeg'
 export default function Counter_up(props) {
 
     return (
