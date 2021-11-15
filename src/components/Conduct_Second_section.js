@@ -45,8 +45,9 @@ function Card() {
                   No matter you are a beginner or an expert in open-source, we have a space for everyone. Register now to become part of one of the largest open source event.
                 </p></div>
                 <div className="d-grid gap-2 col-6 mx-auto register-button">
-                <a> <button className="btn btn-primary btn-apply btn-phone btn-tab" type="button">
-                    Stay Tuned!
+                <a href="https://forms.gle/hrigmCDy6mL62H1q7" target="_blank" rel="noreferrer"> 
+                <button className="btn btn-primary btn-apply btn-phone btn-tab" type="button">
+                    Register
                   </button>
                   </a>
                 </div>

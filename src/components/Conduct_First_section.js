@@ -48,7 +48,7 @@ function Firstsection() {
                    
                       <a href={STUDENTGUIDE} target="_blank" rel="noreferrer">
                        <button className="btn btn-primary btn-apply" type="button">
-                      Stay Tuned !
+                      StudentGuide
                       </button>
                       </a>
                     
