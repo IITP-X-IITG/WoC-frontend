@@ -436,7 +436,7 @@
     {
         "repo-url": "https://github.com/sshekhar3000/PLANET_HUNT",
         "title": "PLANET HUNT",
-        "desc": "Write 3rd person 3 D arcade game with finished controls and requires a score card and coin collection C# script.",
+        "desc": "Write 3rd person 3D arcade game with finished controls and requires a score card and coin collection C# script.",
         "mentors": ["sshekhar3000"],
         "lang": [
             "C#","Unity"

@@ -15,9 +15,13 @@ import { VscGithubInverted } from "react-icons/vsc";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { CgGitPull } from "react-icons/cg";
 import { FaUniversity } from "react-icons/fa";
-import git_spons from '../pages/Images/githublogoweb.svg'
-import dig_ocean from '../pages/Images/DO_Logo_Vertical_Blue.png'
-import jetbrain from '../pages/Images/jetbrains-variant-1.png'
+//import git_spons from '../pages/Images/githublogoweb.svg'
+//import dig_ocean from '../pages/Images/DO_Logo_Vertical_Blue.png'
+//import jetbrain from '../pages/Images/jetbrains-variant-1.png'
+import gfgLogo from '../pages/Images/gfgLogo.png'
+import cssbattleLogo from '../pages/Images/cssbattleLogo.png'
+import gmcLogo from '../pages/Images/gmcLogo.png'
+import Artboardlogo from '../pages/Images/Artboard.svg'
 //import logo_codepeak from './Images/LOGOCODEPEAK.png'
 import CountUp from '../components/Counter_up';
 export default function Home() {
@@ -32,7 +36,9 @@ export default function Home() {
             <div class='twinkling'></div>
             {/* <div class='clouds'></div> */}
             <div className="logo">
-               <img src={logo_codepeak} alt="" srcset="" className="logo_img"/>
+               <img src={logo_codepeak} alt="" srcset="" className="logo_img" data-aos="zoom-in" data-aos-once="true"/>
+               <p>Sponsored By</p>
+               <a href="https://www.geeksforgeeks.org/" rel="noreferrer" target="_blank"><img src={gfgLogo} alt="" srcset="" className="main_spons_img" data-aos="zoom-in" data-aos-once="true"/></a>
                <img src={hill} alt="" srcset="" className="hill_img"/>
             </div>
             {/* <div className="tst" style={{height:'1000px'}}> </div> */}
@@ -115,13 +121,14 @@ export default function Home() {
                 </div>
             </div>
             <div className="head_stats">
-                <p data-aos="zoom-in" data-aos-once="true">Previous Editions Sponsored by..</p>
+                <p data-aos="zoom-in" data-aos-once="true">Sponsored by..</p>
                 <hr/>
             </div>
             <div className="spons_box">
-                <a href="https://www.github.com/" target="_blank" rel="noreferrer"><img src={git_spons} alt="" srcset="" data-aos="zoom-out" data-aos-once="true"/></a>
-                <a href="https://www.digitalocean.com/" target="_blank" rel="noreferrer"><img src={dig_ocean} alt="" srcset="" data-aos="zoom-out" data-aos-once="true"/></a>
-                <a href="https://www.jetbrains.com/" target="_blank" rel="noreferrer"><img src={jetbrain} alt="" srcset="" data-aos="zoom-out" data-aos-once="true"/></a>
+                <a href="https://www.geeksforgeeks.org/" target="_blank" rel="noreferrer"><img src={gfgLogo} alt="" srcset="" data-aos="zoom-out" data-aos-once="true"/></a>
+                <a href="https://cssbattle.dev/" target="_blank" rel="noreferrer"><img src={cssbattleLogo} alt="" srcset="" data-aos="zoom-out" data-aos-once="true"/></a>
+                <a href="https://givemycertificate.com/" target="_blank" rel="noreferrer"><img src={gmcLogo} alt="" srcset="" data-aos="zoom-out" data-aos-once="true"/></a>
+                <a href="https://artboard.studio/" target="_blank" rel="noreferrer"><img src={Artboardlogo} alt="" srcset="" data-aos="zoom-out" data-aos-once="true"/></a>         
             </div>
             
         </div>

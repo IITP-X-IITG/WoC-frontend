@@ -1,4 +1,4 @@
-import react from 'react';
+
 import Slider from 'infinite-react-carousel';
 import { makeStyles } from '@material-ui/core/styles';
 import {Paper, Grid, Avatar, Typography, Link, Box, Container, Card, IconButton } from '@material-ui/core';
@@ -17,7 +17,7 @@ const ueStyles = makeStyles((theme) => ({
     maxWidth: '100%',
   },
   root:{
-    width: '65%',
+    width: '100%',
     paddingTop: '60px',
     paddingLeft:'10px',
     paddingRight:'10px',
@@ -25,8 +25,8 @@ const ueStyles = makeStyles((theme) => ({
     marginTop: '10px',
   },
   root2:{
-    marginLeft:'10%',
-    marginRight:'10%',
+    marginLeft:'2%',
+    marginRight:'2%',
     paddingTop:'4%',
     borderRadius:'0.5%',
     marginTop: '3%',
@@ -93,15 +93,18 @@ function TeamCarousel() {
       <Container className={classes.maincon}>
           <center>
               <Paper className={classes.root}>
-                <Box letterSpacing={4}><Typography className={classes.head}><h2>OVERALL HEADS</h2></Typography></Box>
+              <Box letterSpacing={4}><Typography className={classes.tech}><h2>OVERALL HEADS</h2></Typography></Box>
                   <Paper className={classes.root2}>
-                  <Slider className={classes.slider} swipe={false} duration={10} autoplay={false} autoplaySpeed={8000}>
-                  {
+                  {/* <Slider className={classes.slider} swipe={false} duration={10} autoplay={false} autoplaySpeed={8000}>*/}
+                  <div style={{
+                    justifyContent:"space-between"
+                  }}>
+                  { 
                       HeadCarouselUtil.map((page) => (
                           <div>
                               <Grid container spacing={1} className={classes.container}>
                                   {page.map((member) => (
-                                      <Grid item xs={12}  md={4}>
+                                      <Grid item xs={12}  md={6}>
                                       <center>
                                         <Typography>
                                           <Avatar src={member.img} className={classes.avatar} variant='circular'  />
@@ -123,13 +126,16 @@ function TeamCarousel() {
                                                 <MailIcon />
                                               </IconButton>
                                           </Grid>
+
                                   ))}
                               </Grid>
                           </div>
                       ))
 
-                  }
-                  </Slider>
+                                  }
+                  </div>
+                  
+                  {/* </Slider> */}
                   </Paper>
                   <Box letterSpacing={4}><Typography className={classes.tech}><h2>TECHNICAL TEAM</h2></Typography></Box>
                   <Paper className={classes.root2}>
@@ -208,7 +214,7 @@ function TeamCarousel() {
                   }
                   </Slider>
                   </Paper>
-                  <Box letterSpacing={4}><Typography className={classes.tech}><h2>DESIGN AND CONTENT TEAM</h2></Typography></Box>
+                  {/* <Box letterSpacing={4}><Typography className={classes.tech}><h2>DESIGN AND CONTENT TEAM</h2></Typography></Box>
                   <Paper className={classes.root2}>
                   <Slider className={classes.slider} swipe={false} duration={10} autoplay={false} autoplaySpeed={8000}>
                   {
@@ -247,7 +253,7 @@ function TeamCarousel() {
 
                   }
                   </Slider>
-                  </Paper>
+                  </Paper> */}
               </Paper>
           </center>
 

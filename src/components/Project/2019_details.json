@@ -1,7 +1,7 @@
 [
     {
         "repo-url": "https://github.com/NJACKWinterOfCode/nwoc_algorithms",
-        "title": "nwoc_algorithms",
+        "title": "NWOC-algorithms",
         "desc": "A simple collection of algorithms in various languages.",
         "mentors": ["bhavnaharitsa"],
         "lang": [
@@ -13,7 +13,7 @@
     },
     {
         "repo-url": "https://github.com/NJACKWinterOfCode/Github_Profile_APP",
-        "title": "Github_Profile_APP",
+        "title": "Github-Profile-APP",
         "desc": "An app that gives the details of an user when a github username is typed.",
         "mentors": ["naman653","atm1504","bhavnaharitsa"],
         "lang": [
