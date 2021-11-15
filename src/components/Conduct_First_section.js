@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "../pages/Images/logo_right.png";
 import CaGuide from "../Files/CampusAmbassadorInfo.pdf";
 import MentorGuide from "../Files/MENTORSGUIDE.pdf";
+import STUDENTGUIDE from "../Files/STUDENTGUIDE.pdf"
 
 function Firstsection() {
   return (
@@ -54,7 +55,7 @@ function Firstsection() {
                   </div>
                   <div className="d-grid gap-2 col-3 mx-auto">
                    
-                      <a>
+                      <a href={STUDENTGUIDE} target="_blank" rel="noreferrer">
                        <button className="btn btn-primary btn-apply" type="button">
                       Stay Tuned !
                       </button>
