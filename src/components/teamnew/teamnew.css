@@ -28,16 +28,20 @@
 }
 
 .icon {
-    margin: 10px 40px;
+    margin: 10px 30px;
     background-color: #23354b;
     border-radius: 20px;
-    width: 200px;
+    width: 220px;
     padding: 20px;
     box-shadow: #172536 0.5px 0.5px 1px 1px;
 }
 .slider1 h2{
     color: white;
     margin-bottom: 10px;
+}
+
+.namecard{
+    margin-top: 15px;
 }
 
 .namecard p {
