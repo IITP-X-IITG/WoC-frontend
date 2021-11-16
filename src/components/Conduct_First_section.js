@@ -15,7 +15,7 @@ function Firstsection() {
               <h1 className="heading">How it works?</h1>
               <p className="info">
                 The program is available to all the participants in whichever
-                they want, both as students or as mentors. To be a mentor,
+                form they want, both as students or as mentors. To be a mentor,
                 participants will go through a selection process. Selected
                 mentors propose projects, the best of which will be selected for
                 inclusion in the program. Students work on these projects during

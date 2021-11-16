@@ -23,7 +23,7 @@ function Card() {
               </div>
               <div className="card-body">
                <div className="Inside-card-div"><p className="card-text">
-                   Join the CodePeak Family,this is your chance to gain valuable experience, pull off awesome events, and build a strong network with similarly motivated individuals helping you in our future professional endeavours.
+                   Join the CodePeak Family, this is your chance to gain valuable experience, pull off awesome events, and build a strong network with similarly motivated individuals helping you in our future professional endeavours.
                 </p></div> 
                 <div className="d-grid gap-2 col-6 mx-auto">
                 <a href="https://forms.gle/AfMsnBUXheGVuCHt5" target="_blank" rel="noreferrer">
@@ -42,7 +42,7 @@ function Card() {
               </div>
               <div className="card-body">
                <div className="Inside-card-div"> <p className="card-text">
-                  No matter you are a beginner or an expert in open-source, we have a space for everyone. Register now to become part of one of the largest open source event.
+                  No matter whether you are a beginner or an expert in open source, we have a space for everyone. Register now to become part of one of the largest open source events.
                 </p></div>
                 <div className="d-grid gap-2 col-6 mx-auto register-button">
                 <a href="https://forms.gle/hrigmCDy6mL62H1q7" target="_blank" rel="noreferrer"> 
@@ -65,7 +65,7 @@ function Card() {
               </div>
               <div className="card-body">
              <div className="Inside-card-div">  <p className="card-text">
-                  Whether you are a specialist in one or more projects? Then as a mentor you will have to guide a bunch of students and help them to expertise in the field of open source contributions.
+                  Are you a specialist in one or more projects? Then as a mentor, you will have to guide a bunch of students and help them to expertise in the field of open source contributions.
                 </p></div> 
                 <div className="d-grid gap-2 col-6 mx-auto">
                 <a href="https://forms.gle/2vasCSVkH3i2zpQG8" target="_blank" rel="noreferrer">
