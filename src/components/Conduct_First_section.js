@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "../pages/Images/logo_right.png";
 import CaGuide from "../Files/CampusAmbassadorInfo.pdf";
 import MentorGuide from "../Files/MENTORSGUIDE.pdf";
+import STUDENTGUIDE from "../Files/STUDENTGUIDE.pdf"
 
 function Firstsection() {
   return (
@@ -14,7 +15,7 @@ function Firstsection() {
               <h1 className="heading">How it works?</h1>
               <p className="info">
                 The program is available to all the participants in whichever
-                they want, both as students or as mentors. To be a mentor,
+                form they want, both as students or as mentors. To be a mentor,
                 participants will go through a selection process. Selected
                 mentors propose projects, the best of which will be selected for
                 inclusion in the program. Students work on these projects during
@@ -45,9 +46,9 @@ function Firstsection() {
                   </div>
                   <div className="d-grid gap-2 col-3 mx-auto">
                    
-                      <a>
+                      <a href={STUDENTGUIDE} target="_blank" rel="noreferrer">
                        <button className="btn btn-primary btn-apply" type="button">
-                      Stay Tuned !
+                      StudentGuide
                       </button>
                       </a>
                     
