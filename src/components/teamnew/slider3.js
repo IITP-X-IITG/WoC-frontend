@@ -51,6 +51,7 @@ export default function Slider3() {
                     </div>
                 </div>
                 </div>
+                
                 <div>
                 <div className = "coord">
                     <div className = "icon">
@@ -67,6 +68,7 @@ export default function Slider3() {
                     </div>
                 </div>
                 </div>
+                
                 <div>
                 <div className = "coord">
                     <div className = "icon">
@@ -83,6 +85,7 @@ export default function Slider3() {
                     </div>
                 </div>
                 </div>
+
                 <div>
                 <div className = "coord">
                     <div className = "icon">

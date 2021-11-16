@@ -569,13 +569,13 @@ svg{
   }
 }
 @media only screen and (max-width: 750px) {
-.spons_box{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  grid-row-gap: 40px;
-} 
+  .spons_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    grid-row-gap: 40px;
+  } 
 }
