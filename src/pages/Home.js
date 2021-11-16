@@ -24,6 +24,7 @@ import gmcLogo from '../pages/Images/gmcLogo.png'
 import Artboardlogo from '../pages/Images/Artboard.svg'
 //import logo_codepeak from './Images/LOGOCODEPEAK.png'
 import CountUp from '../components/Counter_up';
+import Animatedbg from '../components/Animatedbg'
 export default function Home() {
     useEffect(() => {
         Aos.init({duration: 800});
@@ -32,17 +33,17 @@ export default function Home() {
         <>
         <div style={home_style}>
             <Navigation/>
-            <div class='stars'></div>
-            <div class='twinkling'></div>
-            {/* <div class='clouds'></div> */}
+            <Animatedbg/>
+
+            {/* ---------LOGO----------- */}
             <div className="logo">
                <img src={logo_codepeak} alt="" srcset="" className="logo_img" data-aos="zoom-in" data-aos-once="true"/>
                <p>Sponsored By</p>
                <a href="https://www.geeksforgeeks.org/" rel="noreferrer" target="_blank"><img src={gfgLogo} alt="" srcset="" className="main_spons_img" data-aos="zoom-in" data-aos-once="true"/></a>
                <img src={hill} alt="" srcset="" className="hill_img"/>
             </div>
-            {/* <div className="tst" style={{height:'1000px'}}> </div> */}
-            {/* <CountUp delay={10} end={100} duration={5} style={{color:'white', zIndex:'2', position:'absolute'}} /> */}
+
+            {/* -------------ABOUT US------------------- */}
             <div className="abt">
                 <h1 data-aos="fade-up" data-aos-once="true">About Us</h1>
                 <hr/>
@@ -53,47 +54,51 @@ export default function Home() {
                     contributing to real-world projects. 
                 </p>
             </div>
+
+            {/* ----------TIMELINE-------------- */}
             <div className="container nwoc_time">
                 <div className="head_time">
                     <p>Timeline</p>
                     <hr/>
                 </div>
-            <div className="row">
-                <div className="col">
-                <div className="main-timeline">
-                    <div className="timeline"  data-aos="fade-up" data-aos-once="true">
-                        <Timeline date='28 OCT' desc='Interested mentors sign up on the website and register their profile.' />
-                    </div>
+                <div className="row">
+                    <div className="col">
+                    <div className="main-timeline">
+                        <div className="timeline"  data-aos="fade-up" data-aos-once="true">
+                            <Timeline date='28 OCT' desc='Interested mentors sign up on the website and register their profile.' />
+                        </div>
 
-                    <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                    <Timeline date='15 NOV.' desc='Student Registration starts.'/>
-                    </div>
-                    <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                    <Timeline date='20 NOV' desc='Mentor Registration ends.'/>
-                    </div>
+                        <div className="timeline" data-aos="fade-up" data-aos-once="true">
+                        <Timeline date='15 NOV.' desc='Student Registration starts.'/>
+                        </div>
+                        <div className="timeline" data-aos="fade-up" data-aos-once="true">
+                        <Timeline date='20 NOV' desc='Mentor Registration ends.'/>
+                        </div>
 
-                    <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                    <Timeline date='26 NOV' desc='Organising team selects projects and announces them.'/>
+                        <div className="timeline" data-aos="fade-up" data-aos-once="true">
+                        <Timeline date='26 NOV' desc='Organising team selects projects and announces them.'/>
+                        </div>
+                        <div className="timeline" data-aos="fade-up" data-aos-once="true">
+                            <Timeline date='28 NOV' desc='Orientation'/>
+                        </div>
+                        <div className="timeline" data-aos="fade-up" data-aos-once="true">
+                            <Timeline date='2 DEC' desc='Git and GitHub Workshop'/>
+                        </div>
+                        <div className="timeline" data-aos="fade-up" data-aos-once="true">
+                            <Timeline date='3 DEC' desc='Coding Period Starts.'/>
+                        </div>
+                        <div className="timeline" data-aos="fade-up" data-aos-once="true">
+                            <Timeline date='6 JAN' desc='Coding Period Ends.'/>
+                        </div>
+                        <div className="timeline" data-aos="fade-up" data-aos-once="true">
+                            <Timeline date='9 JAN' desc='Results Announcement and Closing Ceremony.'/>
+                        </div>
                     </div>
-                    <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                        <Timeline date='28 NOV' desc='Orientation'/>
-                    </div>
-                    <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                        <Timeline date='2 DEC' desc='Git and GitHub Workshop'/>
-                    </div>
-                    <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                        <Timeline date='3 DEC' desc='Coding Period Starts.'/>
-                    </div>
-                    <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                        <Timeline date='6 JAN' desc='Coding Period Ends.'/>
-                    </div>
-                    <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                        <Timeline date='9 JAN' desc='Results Announcement and Closing Ceremony.'/>
                     </div>
                 </div>
-                </div>
-            </div>
             </div> 
+
+            {/* ---------------PAST STATISTICS---------------- */}
             <div className="head_stats">
                 <p data-aos="zoom-in" data-aos-once="true">Past Statistics</p>
                 <hr/>
@@ -120,6 +125,8 @@ export default function Home() {
                    <p>Universities</p>
                 </div>
             </div>
+
+            {/* ----------SPONSORS------------- */}
             <div className="head_stats">
                 <p data-aos="zoom-in" data-aos-once="true">Sponsored by..</p>
                 <hr/>
@@ -133,7 +140,7 @@ export default function Home() {
             
         </div>
         <Footer/>
-        {/* <ScrollButton /> */}
+
         </>
     )
 }

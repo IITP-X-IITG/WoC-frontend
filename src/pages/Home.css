@@ -1,5 +1,4 @@
-/*@import "compass/reset";*/
-
+/* Font Family */
 body {
   font-family: "Gilroy-Medium";
   overflow-x: hidden !important;
@@ -8,55 +7,8 @@ svg{
   z-index: 3;
   position: relative;
 }
-.stars,
-.twinkling,
-.clouds {
-  position: fixed;
-  display: block;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-}
 
-.stars {
-  z-index: -2;
-  background: #12263f url("../pages/Images/stars.svg") repeat top
-    center;
-}
-
-.twinkling {
-  z-index: -1;
-  background: transparent url("./Images/twinkle_bg1.png") repeat top center;
-  animation: move-twink-back 200s linear infinite;
-}
-
-.clouds {
-  z-index: 2;
-  background: transparent url("https://image.ibb.co/bT4N7T/clouds.png") repeat
-    top center;
-  animation: move-clouds-back 200s linear infinite;
-}
-
-@keyframes move-twink-back {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -10000px 5000px;
-  }
-}
-
-@keyframes move-clouds-back {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 10000px 0;
-  }
-}
+/* --------------LOGO--------------- */
 .logo {
   display: flex;
   flex-direction: column;
@@ -99,6 +51,7 @@ svg{
   z-index: 2;
 }
 
+/*-------- ABOUT US --------------*/
 .abt {
   position: relative;
   z-index: 1;
@@ -123,7 +76,7 @@ svg{
   background-color: white;
 }
 
-/* Timeline */
+/*------------- TIMELINE ----------------- */
 .nwoc_time {
   z-index: 1;
   position: relative;
@@ -482,18 +435,8 @@ svg{
     font-size: 1rem;
   }
 }
-/* @media only screen and (min-width: 1010px){
-	.logo_img{
-		margin-top: 100px;
-	}
-} */
-/* @media only screen and (min-width: 1700px){
-	.hill_img{
-		top: 35vh;
-	}
-} */
 
-/* Number Counter CSS*/
+/* -----------STATISTICS---------------*/
 .counter{
   z-index: 2;
   display: grid;
@@ -592,7 +535,7 @@ svg{
     width: 80%;
   }
 }
-/* Sponsors */
+/* ----------SPONSORS---------------- */
 .spons_box img{
   width: auto;
   height: 50px;
