@@ -4,8 +4,7 @@ import './teamnew.css'
 export default function namecard(props) {
     return (
         <div className = "namecard">
-            <p>{props.name}
-            </p>
+            <p>{props.name} <br/> {props.post} </p>
             <div className = "iconbx">
                 <a href = {props.link1} target = "_blank" rel = "noreferrer">
                     <AiFillLinkedin />
