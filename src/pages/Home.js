@@ -69,7 +69,7 @@ export default function Home() {
                     <Timeline date='15 NOV.' desc='Student Registration starts.'/>
                     </div>
                     <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                    <Timeline date='20 NOV' desc='Mentor Registration ends.'/>
+                    <Timeline date='25 NOV' desc='Mentor Registration ends.'/>
                     </div>
 
                     <div className="timeline" data-aos="fade-up" data-aos-once="true">
