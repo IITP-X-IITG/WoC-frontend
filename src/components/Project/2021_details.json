@@ -180,48 +180,6 @@
         ]
     },
     {
-        "repo-url": "https://github.com/shelcia/dhobi-app",
-        "title": "dhobi-app",
-        "desc": "A web application that can be used to create a meetup",
-        "mentors": [
-            "shelcia"
-        ],
-        "lang": [
-            "JavaScript", "HTML", "CSS"
-        ],
-        "tag": [
-            "Web"
-        ]
-    },
-    {
-        "repo-url": "https://github.com/shelcia/Socialgram",
-        "title": "Socialgram",
-        "desc": "A web application that can be used to create a meetup",
-        "mentors": [
-            "shelcia"
-        ],
-        "lang": [
-            "JavaScript", "HTML", "CSS"
-        ],
-        "tag": [
-            "Web"
-        ]
-    },
-    {
-        "repo-url": "https://github.com/shelcia/ChatApp",
-        "title": "ChatApp",
-        "desc": "A web application that can be used to create a meetup",
-        "mentors": [
-            "shelcia"
-        ],
-        "lang": [
-            "JavaScript", "HTML", "CSS"
-        ],
-        "tag": [
-            "Web"
-        ]
-    },
-    {
         "repo-url": "https://github.com/PranshuPandya/locus-stolker-app",
         "title": "locus-stolker-app",
         "desc": "A live location tracker",
@@ -235,20 +193,6 @@
             "AppDev", "FLutter"
         ]
     },  
-    {
-        "repo-url": "https://github.com/fliptrail/stl-cpp",
-        "title": "stl-cpp",
-        "desc": "Reimplementing the C++ Standard Template Library (STL)",
-        "mentors": [
-            "fliptrail"
-        ],
-        "lang": [
-            "C++"
-        ],
-        "tag": [
-            "DSA"
-        ]
-    },
     {
         "repo-url": "https://github.com/fliptrail/non-monotonic-descent",
         "title": "non-monotonic-descent",
@@ -266,7 +210,7 @@
         "title": "CodepeakSuperDuper",
         "desc": "A web application that can be used to create a meetup",
         "mentors": [
-            "VishalIITP"
+            "VishalIITP","KartuzGupta"
         ],
         "lang": [
             "None"
@@ -280,7 +224,7 @@
         "title": "handbook",
         "desc": "A web application that can be used to create a meetup",
         "mentors": [
-            "rohitkumar9710"
+            "rohitkumar9710","kishlayraj-9"
         ],
         "lang": [
             "None"
@@ -294,7 +238,7 @@
         "title": "Njack-website",
         "desc": "A web application that can be used to create a meetup",
         "mentors": [
-            "Aditya61101"
+            "Aditya61101","PrateekUp"
         ],
         "lang": [
             "None"
