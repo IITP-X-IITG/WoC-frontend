@@ -18,7 +18,7 @@
         "title": "Face-X",
         "desc": "Demonstration of different algorithms and operations on faces",
         "mentors": [
-            "Pritishchugh22"
+            "akshitagupta15june", "anamika-pal"
         ],
         "lang": [
             "Python", "Jupyter Notebook"
@@ -32,10 +32,11 @@
         "title": "HateEater",
         "desc": "detect news/posts that spread hatred",
         "mentors": [
-            "akshitagupta15june", "anamika-pal"
+            
+            "Pritishchugh22"
         ],
         "lang": [
-            "Python", "Jupyter Notebook"
+            "Python"
         ],
         "tag": [
             "Machine Learning"
