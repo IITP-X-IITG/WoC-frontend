@@ -126,6 +126,7 @@ button {
 }
 .repo-stats li {
   display: inline-block;
+  font-size: 14px;
   margin-right: 12px;
   color: white;
 }
