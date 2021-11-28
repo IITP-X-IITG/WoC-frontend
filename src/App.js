@@ -18,7 +18,7 @@ function App() {
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route exact path="/" component={Home}/>
-          <Route path="/conduct" component={Conduct}/>
+          <Route path="/register" component={Conduct}/>
           <Route path="/leaderboard" component={Leaderboard} />
           <Route path="/project" component={Project} />
           <Route path="/team" component={Team} />

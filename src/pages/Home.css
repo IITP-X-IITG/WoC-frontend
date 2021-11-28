@@ -86,11 +86,25 @@ svg{
   width: 100vw;
   height: auto;
   position: absolute;
-  bottom: -100px;
+  bottom: -143px;
   z-index: 1;
 }
+.main_spons_box{
+  display: grid;
+  grid-template-columns: repeat(2, 0.1fr);
+  justify-content: center;
+  width: 100%;
+  grid-column-gap: 25px;
+  
+}
+.main_spons_img1{
+  height: 55px;
+  width: auto;
+  z-index: 2;
+  margin-bottom: 100px;
+}
 .main_spons_img{
-  height: 70px;
+  height: 60px;
   width: auto;
   z-index: 2;
   margin-bottom: 100px;
@@ -106,7 +120,7 @@ svg{
   display: flex;
   flex-direction: column;
   height: auto;
-  padding: 5% 20%;
+  padding: 12% 20%;
 }
 .abt h1 {
   font-size: 1.9rem;
@@ -601,14 +615,14 @@ svg{
 }
 .spons_box{
   display: grid;
-  grid-template-columns: repeat(4, 0.2fr);
+  grid-template-columns: repeat(5, 0.2fr);
   z-index: 2;
   position: relative;
   margin: 30px auto;
   align-items: center;
   width: 100%;
   justify-content: center;
-  grid-column-gap: 100px;
+  grid-column-gap: 41px;
   height: 100px;
 }
 .spons_box img:hover{
@@ -635,4 +649,13 @@ svg{
   margin-bottom: 40px;
   grid-row-gap: 40px;
 } 
+.main_spons_box{
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  grid-row-gap: 0px;
+}
+.main_spons_img1{
+  margin-bottom: 30px;
+}
 }
