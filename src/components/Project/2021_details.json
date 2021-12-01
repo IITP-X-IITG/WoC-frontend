@@ -1,5 +1,19 @@
 [
     {
+        "repo-url": "https://github.com/RAJAGOPALAN-GANGADHARAN/DConsole",  
+        "title": "DConsole",
+        "desc": "A console application that can be used to debug and test your code",
+        "mentors": [
+            "RAJAGOPALAN-GANGADHARAN"
+        ],
+        "lang": [
+            "Go", "HTML", "CSS", "JavaScript", "Python", "C++"
+        ],
+        "tag": [
+             "Web"
+        ]
+    },
+    {
         "repo-url": "https://github.com/spandey1296/Healthcare-Management-System",
         "title": "Healthcare-Management-System",
         "desc": "A web application for managing healthcare services",
@@ -16,7 +30,7 @@
     {
         "repo-url": "https://github.com/akshitagupta15june/Face-X",
         "title": "Face-X",
-        "desc": "Demonstration of different algorithms and operations on faces",
+        "desc": "Demonstration of different algorithms and operations on faces. Despite a variety of open-source face recognition frameworks available, there was no ready-made solution to implement",
         "mentors": [
             "akshitagupta15june", "anamika-pal"
         ],
@@ -28,18 +42,17 @@
         ]
     },
     {
-        "repo-url": "https://github.com/Pritishchugh22/HateEater",
-        "title": "HateEater",
-        "desc": "detect news/posts that spread hatred",
+        "repo-url": "https://github.com/PrateekUp/Njack-website",
+        "title": "SAAR Website Revamp",
+        "desc": "This project is aimed to revamp the existing website with simple, elegant, and modern UI",
         "mentors": [
-            
-            "Pritishchugh22"
+            "rdev12","StrixROX"
         ],
         "lang": [
-            "Python"
+            "HTML","JS"
         ],
         "tag": [
-            "Machine Learning"
+            "Web","SAAS"
         ]
     },
     {
@@ -59,7 +72,7 @@
     {
         "repo-url": "https://github.com/mohit200008/Gam-Learn",
         "title": "Gam-Learn",
-        "desc": "A game that teaches you how to play the game of life",
+        "desc": "project has been designed an quiz portal which will be in a form of a game",
         "mentors": [
             "mohit200008"
         ],
@@ -87,7 +100,7 @@
     {
         "repo-url": "https://github.com/Sparsh1212/gsocanalyzer",
         "title": "GSOC Analyzer",
-        "desc": "A web application that analyzes the data of Google Summer of Code",
+        "desc": "A blazingly fast tool to get the past 12 year analytics of any organisation selected in GSoC Search by tech-stack / organisation name / category or by topic.",
         "mentors": [
             "sparsh1212"
         ],
@@ -100,29 +113,15 @@
     },
     {
         "repo-url": "https://github.com/Saransh-cpp/BookRentApp-Chapter3",
-        "title": "BookRentApp-Chapter3",
-        "desc": "A web application that rents books",
+        "title": "Chapter3 - Book renting app",
+        "desc": "An e-commerce application specifically made for renting books. Functionality has been finalized, albeit with minor issues.",
         "mentors": [
             "Saransh-cpp"
         ],
         "lang": [
             "Dart"
         ],
-        "tag":["AppDev", "FLutter"]
-    },
-    {
-        "repo-url": "https://github.com/RAJAGOPALAN-GANGADHARAN/DConsole",  
-        "title": "DConsole",
-        "desc": "A console application that can be used to debug and test your code",
-        "mentors": [
-            "RAJAGOPALAN-GANGADHARAN"
-        ],
-        "lang": [
-            "Go", "HTML", "CSS", "JavaScript", "Python", "C++"
-        ],
-        "tag": [
-             "Web"
-        ]
+        "tag":["AppDev", "FLutter","Firebase"]
     },
     {
         "repo-url": "https://rajagopalan-gangadharan.github.io/JS-OS/" ,
@@ -141,7 +140,7 @@
     {
         "repo-url": "https://github.com/AmreshSinha/Spotify-Cards-API", 
         "title": "Spotify-Cards-API",
-        "desc": "A web application that can be used to create a Spotify card",
+        "desc": "A unofficial open-source Spotify PromoCards API built to serve Song Cards.",
         "mentors": [
             "AmreshSinha"
         ],
@@ -155,7 +154,7 @@
     {
         "repo-url": "https://github.com/akshat0313/Ak-Meet",
         "title": "Ak-Meet",
-        "desc": "A web application that can be used to create a meetup",
+        "desc": "This Project is like Gmeet where we can organise a meeting on a particular date and time, And this application will notify you by sending email on the account by which you have logged in",
         "mentors": [
             "akshat0313"
         ],
@@ -195,9 +194,24 @@
         ]
     },
     {
+        "repo-url": "https://github.com/Pritishchugh22/HateEater",
+        "title": "HateEater",
+        "desc": "detect news/posts that spread hatred",
+        "mentors": [
+            
+            "Pritishchugh22"
+        ],
+        "lang": [
+            "Python"
+        ],
+        "tag": [
+            "Machine Learning"
+        ]
+    },
+    {
         "repo-url": "https://github.com/PranshuPandya/locus-stolker-app",
         "title": "locus-stolker-app",
-        "desc": "A live location tracker",
+        "desc": "A live location tracking app which allow user to form groups and share their location.",
         "mentors": [
             "PranshuPandya"
         ],
@@ -205,7 +219,7 @@
             "Dart"
         ],
         "tag": [
-            "AppDev", "FLutter"
+            "AppDev", "FLutter","Firebase","Google MAP API"
         ]
     },  
     {
@@ -223,7 +237,7 @@
     {
         "repo-url": "https://github.com/VishalIITP/CodepeakSuperDuper",
         "title": "CodepeakSuperDuper",
-        "desc": "A web application that can be used to create a meetup",
+        "desc": "Adding backend to the existing Codepeak Website using Django.",
         "mentors": [
             "VishalIITP","KartuzGupta"
         ],
@@ -235,17 +249,17 @@
         ]
     },
     {
-        "repo-url": "https://github.com/rohitkumar9710/handbook",
-        "title": "handbook",
-        "desc": "A web application that can be used to create a meetup",
+        "repo-url": "https://github.com/rohitkumar9710/CP-almanac",
+        "title": "CP-almanac",
+        "desc": "A single point access to all the solutions of an everyday programmer’s perplexities!",
         "mentors": [
             "rohitkumar9710","kishlayraj-9"
         ],
         "lang": [
-            "None"
+            "c/c++"
         ],
         "tag": [
-            "None"
+            "DS-ALGo","CP"
         ]
     },
     {
@@ -261,5 +275,20 @@
         "tag": [
             "None"
         ]
+    },
+    {
+        "repo-url": "https://github.com/RupakBiswas-2304/File_authentication",
+        "title": "File-Auth ",
+        "desc": "A  secure-authentication system which verifies users by verifying an uploaded file",
+        "mentors": [
+            "RupakBiswas-2304"
+        ],
+        "lang": [
+            "python"
+        ],
+        "tag": [
+            "Web","React"
+        ]
     }
+    
 ]
