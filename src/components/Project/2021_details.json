@@ -292,6 +292,20 @@
         ]
     },
     {
+        "repo-url": "https://github.com/sarthak-diwan/jses",
+        "title": "JSES- Just Some Everyday Stuff",
+        "desc": "A web app made with React and CryptoJS for various hashings, encodings and encryptions.",
+        "mentors": [
+            "sarthak-diwan"
+        ],
+        "lang": [
+            "HTML","CSS","JS"
+        ],
+        "tag": [
+            "Web","reactJS"
+        ]
+    },
+    {
         "repo-url": "https://github.com/ankit11hab/myBolooTeach",
         "title": "Assessment web-app",
         "desc": "A web application where a teacher as an admin can conduct custom quizzes to evaluate students. It will present features like student's relative performance and weak points too.",
