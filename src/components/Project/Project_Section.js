@@ -3,7 +3,7 @@ import { useState } from "react";
 import Project2018 from "./2018_Projects";
 import Project2019_Search from "./2019_Projects";
 import Project2020_Search from "./2020_Projects";
-import Project2021_Search from "./2021_Projects_v2";
+import Project2021_Search from "./2021_Projects";
 
 function Projectsection() {
   const [toggleState, setToggleState] = useState(1);
@@ -47,6 +47,7 @@ function Projectsection() {
           className={toggleState === 1 ? "content  active-content" : "content"}
         >
           <Project2021_Search/>
+       
          
         </div>
 

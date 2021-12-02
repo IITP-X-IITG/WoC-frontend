@@ -1,5 +1,6 @@
 [
     {
+        "value": false,
         "repo-url": "https://github.com/RAJAGOPALAN-GANGADHARAN/DConsole",  
         "title": "DConsole",
         "desc": "A console application that can be used to debug and test your code",
@@ -7,7 +8,7 @@
             "RAJAGOPALAN-GANGADHARAN"
         ],
         "lang": [
-            "Go", "HTML", "CSS", "JavaScript", "Python", "C++"
+            "Go", "HTML", "CSS", "JS", "Python", "C++"
         ],
         "tag": [
              "Web"
@@ -24,7 +25,7 @@
             "Python", "Jupyter Notebook"
         ],
         "tag": [
-            "Machine Learning"
+            "ML"
         ]
     },
     {
@@ -106,7 +107,7 @@
             "Python", "CSS", "JavaScript", "HTML"
         ],
         "tag": [
-            "Machine Learning", "Web"
+            "ML", "Web"
         ]
     },
     {
@@ -250,16 +251,16 @@
     },
     {
         "repo-url": "https://github.com/PrateekUp/Njack-website",
-        "title": "Njack-website",
-        "desc": "A web application that can be used to create a meetup",
+        "title": "Njack-Website",
+        "desc": "Creating a responsive web application for coding club of IIT Patna - NJACK",
         "mentors": [
             "Aditya61101","PrateekUp"
         ],
         "lang": [
-            "None"
+            "HTML","CSS","JS","ReactJS"
         ],
         "tag": [
-            "None"
+            "Web"
         ]
     },
     {
@@ -288,6 +289,93 @@
         ],
         "tag": [
             "Web"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/sarthak-diwan/jses",
+        "title": "JSES- Just Some Everyday Stuff",
+        "desc": "A web app made with React and CryptoJS for various hashings, encodings and encryptions.",
+        "mentors": [
+            "sarthak-diwan"
+        ],
+        "lang": [
+            "HTML","CSS","JS"
+        ],
+        "tag": [
+            "Web","reactJS"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/ankit11hab/myBolooTeach",
+        "title": "Assessment web-app",
+        "desc": "A web application where a teacher as an admin can conduct custom quizzes to evaluate students. It will present features like student's relative performance and weak points too.",
+        "mentors": [
+            "ankit11hab"
+        ],
+        "lang": [
+            "HTML","CSS","Django"
+        ],
+        "tag": [
+            "Web"
+        ]
+    },
+    {
+        "value":true,
+        "repo-url": "https://github.com/codingiitg/CodePeak-beginner-Cpp",  
+        "title": "Codepeak-Beginner-Cpp",
+        "desc": " ",
+        "mentors": [
+            " "
+        ],
+        "lang": [
+             "C++"
+        ],
+        "tag": [
+             "None","Beginner"
+        ]
+    },
+    {
+        "value":true,
+        "repo-url": "https://github.com/codingiitg/CodePeak-Beginner-Djanogo",  
+        "title": "Codepeak-Beginner-Django",
+        "desc": " ",
+        "mentors": [
+            " "
+        ],
+        "lang": [
+             "Django"
+        ],
+        "tag": [
+             "Web","Backend","Beginner"
+        ]
+    },
+    {   "value":true,
+        "repo-url": "https://github.com/codingiitg/CodePeak-beginner-flutter-project",  
+        "title": "Codepeak-Beginner-Flutter",
+        "desc": " ",
+        "mentors": [
+            " "
+        ],
+        "lang": [
+             "Flutter"
+        ],
+        "tag": [
+             "Android","Beginner"
+        ]
+    },
+    {
+        "value":true,
+        "repo-url": "https://github.com/codingiitg/Codepeak-beginner-HTML-task",  
+        "title": "Codepeak-Beginner-HTML",
+        "desc": " ",
+        "mentors": [
+            " "
+        ],
+        "lang": [
+             "HTML"
+        ],
+        "tag": [
+             "Web","Frontend","Beginner"
         ]
     }
     
