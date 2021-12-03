@@ -1,5 +1,75 @@
 [
     {
+        "avl":true,
+        "repo-url": "https://aviyel.com/projects/9/docz",
+        "title": "Docz",
+        "desc": "Docz makes it easy to write and publish beautiful interactive documentation for your code",
+        "mentors": [
+        ],
+        "lang": [
+            "Typescript", "Javascript"
+        ],
+        "tag": [
+            "ML"
+        ]
+    },
+    {
+        "avl":true,
+        "repo-url": "https://aviyel.com/projects/8/typesense",
+        "title": "Typesense",
+        "desc": "Typesense is a fast, typo-tolerant search engine for building delightful search experiences.",
+        "mentors": [
+        ],
+        "lang": [
+            "c++"
+        ],
+        "tag": [
+            "Search Engine"
+        ]
+    },
+    {
+        "avl":true,
+        "repo-url": "https://aviyel.com/projects/7/mobile-security-framework",
+        "title": "Mobile Security Framework",
+        "desc": "Mobile Security Framework (MobSF) is an automated, all-in-one mobile application (Android/iOS/Windows) pen-testing, malware analysis and security assessment framework capable of performing static and dynamic analysis",
+        "mentors": [
+        ],
+        "lang": [
+            "python","HTML","JAVASCRIPT"
+        ],
+        "tag": [
+            "Security","shell"
+        ]
+    },
+    {
+        "avl":true,
+        "repo-url": "https://aviyel.com/projects/6/chatwoot",
+        "title": "Chatwoot",
+        "desc": "Chatwoot is an open-source omnichannel customer support software. ",
+        "mentors": [
+        ],
+        "lang": [
+            "Vue","HTML","JAVASCRIPT","Ruby"
+        ],
+        "tag": [
+            "SCSS","shell","Web"
+        ]
+    },
+    {
+        "avl":true,
+        "repo-url": "https://aviyel.com/projects/5/hoppscotch",
+        "title": "Hoppscotch",
+        "desc": "Open source API development ecosystem",
+        "mentors": [
+        ],
+        "lang": [
+            "Vue","Javascript","Typescript"
+        ],
+        "tag": [
+            "Security","shell"
+        ]
+    },
+    {
         "value": false,
         "repo-url": "https://github.com/RAJAGOPALAN-GANGADHARAN/DConsole",  
         "title": "DConsole",
@@ -303,6 +373,20 @@
         ],
         "tag": [
             "Web","reactJS"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/harshagrawal523/Portfolyser",
+        "title": "Portfolyser",
+        "desc": "A portfolio website generator. You can enter your details and it will provide you with ready-made HTML code for your very own portfolio page",
+        "mentors": [
+            "sarthak-diwan"
+        ],
+        "lang": [
+            "HTML","Python","Node.js"
+        ],
+        "tag": [
+            "Web","nodeJS"
         ]
     },
     {

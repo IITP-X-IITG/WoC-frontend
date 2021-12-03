@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import data from './2021_details.json';
+import avl from '../../pages/Images/avl.png';
 
 function Project2021_Search() {
     let [projects, setProjects] = useState(data);
@@ -32,16 +33,19 @@ function Project2021_Search() {
             placeholder="Search for Project using tags"
             onChange={(e) => searchHandler(e)}
         />
+        
         <div className="row">
             {projects.map((el) => {
                 return (
                     <div className="col-lg-6 col-md-6 col-sm-12">
                         
-                        {el.value === true ?<div style={{ backgroundImage: `linear-gradient(135deg, #04b471 , rgb(13,35,59) 10%)`}} className="nwoc-repo-card">
-                         <div className="repo-heading">    
-                           <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+                        {el.avl === true ?<div className="nwoc-repo-card"> 
+                        <a href={el["repo-url"]} target="_blank">                
+                         <div className="repo-heading">
+                            <img src={avl} style={{width:"6rem",float:"left"}} />                               
+                           <img className="githubimg" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
                               <a className="repo-title" href={el["repo-url"]} target="_blank">{el.title}</a>
-                          </div>  <div className="repo-desc">{el.desc}</div>
+                          </div></a>      <div className="repo-desc">{el.desc}</div>
                           <div className="repo-mentors">Mentors: {"  "}
                               {
                                   el.mentors.map((mentor) =>
@@ -57,11 +61,12 @@ function Project2021_Search() {
                           </ul>
                       </div>:
                       <div className="nwoc-repo-card">
+                      <a href={el["repo-url"]} target="_blank">
                       <div className="repo-heading"> 
                            
                            <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
                               <a className="repo-title" href={el["repo-url"]} target="_blank">{el.title}</a>
-                          </div>  <div className="repo-desc">{el.desc}</div>
+                          </div></a>  <div className="repo-desc">{el.desc}</div>
                           <div className="repo-mentors">Mentors: {"  "}
                               {
                                   el.mentors.map((mentor) =>

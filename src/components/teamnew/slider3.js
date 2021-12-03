@@ -1,4 +1,7 @@
 import React from 'react'
+import pratyush from '../resources/pratyush.jpg'
+import amresh from '../resources/amresh_sinha.jpeg'
+import sarthak from '../resources/sarthak_diwan.jpeg'
 import Rajan from '../resources/rajan_kumar.jpg'
 import Harsh from '../resources/harshwardhan_bhakkad.jpg'
 import Priyanshi from '../resources/priyanshi_singh.jpg'
@@ -41,16 +44,16 @@ export default function Slider3() {
                 <div className = "coord">
                 
                 <div className = "icon">
-                    <img src = {Harsha}/>
-                        <Namecard name = 'Harsh Agrawal' link1 = "www.linkedin.com/in/harshagrawal523/" link2 = "mailto:harshagrawal523@gmail.com"/>
+                    <img src = {amresh}/>
+                        <Namecard name = 'Amresh' link1 = "https://www.linkedin.com/in/aps-amresh/" link2 = "mailto:s.amresh@iitg.ac.in"/>
                     </div>
                     <div className = "icon">
                     <img src = {Athul}/>
                         <Namecard name = 'Athul Krishna K' link1 = "https://www.linkedin.com/in/athul-krishna-k-688262223" link2 = "mailto:athul_2001me85@iitp.ac.in"/>
                     </div>
                     <div className = "icon">
-                    <img src = {Khushi}/>
-                        <Namecard name = 'Khushi Prasad' link1 = "linkedin/khushi-prasad-7375a4217" link2 = "mailto:khushi_2001cs38@iitp.ac.in"/>
+                    <img src = {Harsha}/>
+                        <Namecard name = 'Harsh Agrawal' link1 = "www.linkedin.com/in/harshagrawal523/" link2 = "mailto:harshagrawal523@gmail.com"/>
                 </div>
                 </div>
                 </div>
@@ -97,8 +100,8 @@ export default function Slider3() {
                         <Namecard name = 'Hardik Tiwari' link1 = "https://www.linkedin.com/in/hardik-tiwari-153350218" link2 = "mailto:hardik_2001mm15@iitp.ac.in"/>
                     </div>
                     <div className = "icon">
-                    <img src = {Gaurav}/>
-                        <Namecard name = 'Gaurav' link1 = "https://www.linkedin.com/in/gaurav-rajput-00125a218" link2 = "mailto:gaurav_2001CB22@iitp.ac.in"/>
+                    <img src = {sarthak}/>
+                        <Namecard name = 'Sarthak Diwan' link1 = "https://www.linkedin.com/in/sarthak-diwan/" link2 = "mailto:s.diwan@iitg.ac.in"/>
                     </div>
                 </div>
                 </div>
@@ -108,10 +111,19 @@ export default function Slider3() {
                     <img src = {Ashutosh}/>
                         <Namecard name = 'Ashutosh Kumar' link1 = "https://www.linkedin.com/in/ashutosh-kumar-53b886211" link2 = "mailto:ashutosh_2001CS11@iitp.ac.in"/>
                 </div>
+                <div className = "icon">
+                    <img src = {Khushi}/>
+                        <Namecard name = 'Khushi Prasad' link1 = "linkedin/khushi-prasad-7375a4217" link2 = "mailto:khushi_2001cs38@iitp.ac.in"/>
+                    </div>
+                <div className = "icon">
+                    <img src = {Gaurav}/>
+                        <Namecard name = 'Gaurav' link1 = "https://www.linkedin.com/in/gaurav-rajput-00125a218" link2 = "mailto:gaurav_2001CB22@iitp.ac.in"/>
+                    </div>
                 
                 
                 </div>
-                </div>    
+                </div>
+                  
             
            
         </Slider>
