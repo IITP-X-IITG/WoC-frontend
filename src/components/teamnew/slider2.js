@@ -1,4 +1,5 @@
 import React from 'react'
+import pratyush from '../resources/pratyush.jpg'
 import Kartikay from '../resources/kartikay_gupta.png'
 import Aditya from '../resources/aditya_kumar.jpg'
 import Padmaja from '../resources/padmaja_joshi.jpeg'
@@ -50,6 +51,12 @@ export default function Slider2() {
                     <img src = {Aman}/>
                         <Namecard name = 'Aman Kumar' link1 = "https://www.linkedin.com/in/akr25/" link2 = "mailto:aman.26262@gmail.com"/>
                     </div>
+                    <div className = "icon">
+                    <img src = {pratyush}/>
+                        <Namecard name = 'Pratyush Kumar' link1 = "https://www.linkedin.com/in/pratyushkumar1032" link2 = "mailto:pk1234pratyushk@gmail.com"/>
+
+                    </div>
+                    
                 </div>
                 </div>
             
