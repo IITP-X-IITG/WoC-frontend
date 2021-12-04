@@ -306,6 +306,20 @@
         ]
     },
     {
+        "repo-url": "https://github.com/ArchismanKarmakar/Pass-Vault-source-code",
+        "title": "Pass Vault",
+        "desc": "Pass Vault is a Open Source Offline Password Manager that works using some custom & in-build libraries. It uses AES256 & SHA256 algos to store data in a AccessDatabase File",
+        "mentors": [
+            "ArchismanKarmakar"
+        ],
+        "lang": [
+            "HTML",".NET"
+        ],
+        "tag": [
+            "Cryptography","encryption"
+        ]
+    },
+    {
         "repo-url": "https://github.com/rohitkumar9710/CP-almanac",
         "title": "CP-almanac",
         "desc": "A single point access to all the solutions of an everyday programmer’s perplexities!",
