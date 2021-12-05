@@ -100,7 +100,7 @@ button {
   display: block;
   margin-bottom: 15px;
   padding: 18px;
-  height: 210px;
+  height: 240px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   position: relative;
@@ -113,11 +113,11 @@ button {
   box-shadow: 6px  6px 10px #45889b;
   transform: scale(1);
 }
-.nwoc-repo-card img {
-  filter: invert(100%) sepia(0%) saturate(7442%) hue-rotate(185deg)
-    brightness(116%) contrast(114%);
+.nwoc-repo-card .githubimg {
+    filter: invert(100%) sepia(0%) saturate(7442%) hue-rotate(185deg)
+      brightness(116%) contrast(114%);
 }
-.nwoc-repo-card .repo-stats {
+.repo-stats {
   position: absolute;
   bottom: 12px;
   list-style: none;
@@ -164,7 +164,7 @@ button {
 
 @media only screen and (max-width: 767px) {
   .nwoc-repo-card {
-    height: 250px;
+    height: 255px;
     width: 83vw;
     margin-left: auto;
     margin-right: auto;
@@ -178,8 +178,8 @@ button {
     bottom: 48px;
   }
   .repo-stats {
-    font-size: 13px;
-    bottom: 6px;
+    font-size: 3px;
+    bottom: 9px;
     text-align: left;
   }
   .container-project{

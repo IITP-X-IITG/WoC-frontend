@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useState, useEffect } from "react";
 import Navigation from "../../components/Navigation";
 import style from "./Leaderboard.css";
 import BTable from "react-bootstrap/Table";
@@ -8,6 +8,58 @@ import { usePagination, useTable } from "react-table";
 import { Dropdown } from "react-bootstrap";
 
 const Leaderboard = () => {
+
+    const[fi, setFi] = useState([]);
+
+    useEffect(() => {
+
+    async function getCSV() {
+      try{
+        const tempfi = [];
+        const target = `https://docs.google.com/spreadsheets/d/e/2PACX-1vQbBtmoTx9NEqcob94XXoIMnorCXObHA7wb84DOhJ5-Qaoxq38Az5Gh8Uk_FHuB5J-uUgLb8RNBpwUO/pub?gid=0&single=true&output=csv`;
+        const result = await fetch(target);
+
+        const data = await result.text();
+        var rows = data.toString().split("\r");
+        for(let i = 0; i < rows.length ; i++){
+          let score = {};
+          let str = rows[i];
+          let s = "";
+          let flag = 0;
+          let arr = [];
+          for(let j = 0; j < str.length; j++){
+            let ch = str[j];
+            if(ch === ','){
+              arr.push(s);
+              s = "";
+              continue;
+            } 
+             s += ch;
+          }
+
+          arr.push(s);
+          score["col1"] = i+1;
+
+          score["col2"] = arr[0];
+          score["col3"] = arr[1];
+
+          tempfi.push(score);
+          
+        }
+
+        setFi(tempfi);
+
+      }catch(error){
+
+        console.log(error);
+
+      }
+    }
+
+    getCSV();
+      
+  },[]);
+
   const columns = useMemo(
     () => [
       {
@@ -26,7 +78,9 @@ const Leaderboard = () => {
     []
   );
 
-  const data = useMemo(
+  const data = useMemo(() => fi,[fi]);
+
+  const dta = useMemo(
     () => [
       {
         col1: "1",
@@ -120,8 +174,10 @@ const Leaderboard = () => {
     []
   );
 
+
+
   const tableInstance = useTable(
-    { columns, data, initialState: { pageIndex: 0, pageSize: 5 } },
+    { columns, data , initialState: { pageIndex: 0, pageSize: 5 } },
     usePagination
   );
 
@@ -199,8 +255,7 @@ const Leaderboard = () => {
                         else
                           return (
                             <td {...cell.getCellProps()}>
-                              <img id='dp' src={cell["value"]["dp"]} alt='' />
-                              {cell["value"]["handle"]}
+                              {cell["value"]}
                             </td>
                           );
                       })}

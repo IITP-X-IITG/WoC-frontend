@@ -3,6 +3,7 @@ import Navigation from '../components/Navigation'
 import home_style from './Home.css'
 import logo_codepeak from './Images/logo.png'
 import hill from './Images/mtpnggg.png'
+import avl from './Images/avl.svg'
 //import mount from './Images/svgviewer-react-output'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -41,7 +42,7 @@ export default function Home() {
                <img src={logo_codepeak} alt="" srcset="" className="logo_img" data-aos="zoom-in" data-aos-once="true"/>
                <p>Powered By</p>
                <div className="main_spons_box">
-               <a href="https://aviyel.com/" target="_blank" rel="noreferrer"><img src={aviyellogo} alt="" srcset="" className="main_spons_img1" data-aos="zoom-in" data-aos-once="true"/></a>
+               <a href="https://aviyel.com/" target="_blank" rel="noreferrer"><img src={avl} alt="" srcset="" className="main_spons_img1" data-aos="zoom-in" data-aos-once="true"/></a>
                <a href="https://www.geeksforgeeks.org/" rel="noreferrer" target="_blank"><img src={gfgLogo} alt="" srcset="" className="main_spons_img" data-aos="zoom-in" data-aos-once="true"/></a>
                </div>
               
@@ -137,7 +138,7 @@ export default function Home() {
                 <hr/>
             </div>
             <div className="spons_box">
-                <a href="https://aviyel.com/" target="_blank" rel="noreferrer"><img src={aviyellogo} alt="" srcset="" data-aos="zoom-out" data-aos-once="true"/></a>
+                <a href="https://aviyel.com/" target="_blank" rel="noreferrer"><img src={avl} alt="" srcset="" data-aos="zoom-out" data-aos-once="true"/></a>
                 <a href="https://www.geeksforgeeks.org/" target="_blank" rel="noreferrer"><img src={gfgLogo} alt="" srcset="" data-aos="zoom-out" data-aos-once="true"/></a>
                 <a href="https://cssbattle.dev/" target="_blank" rel="noreferrer"><img src={cssbattleLogo} alt="" srcset="" data-aos="zoom-out" data-aos-once="true"/></a>
                 <a href="https://givemycertificate.com/" target="_blank" rel="noreferrer"><img src={gmcLogo} alt="" srcset="" data-aos="zoom-out" data-aos-once="true"/></a>
