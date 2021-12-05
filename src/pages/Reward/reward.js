@@ -5,6 +5,7 @@ import Animatedbg from '../../components/Animatedbg'
 import './reward.css'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import {BsStarFill} from 'react-icons/bs';
 import { useEffect } from "react";
 import RewardComp from '../../components/Reward/RewardComp'
 import AviyelLogo from '../Images/avl.svg'
@@ -23,15 +24,15 @@ export default function Reward() {
             <Animatedbg/>
             <Navigation/>
             <div className="reward_head">
-            <h2 data-aos = "zoom-in" data-aos-once = "true">Rewards and Prizes</h2>
+            <h2 data-aos = "zoom-in" data-aos-once = "true">REWARDS AND PRIZES</h2>
             <hr />
             </div>
             <div className="rewardBox right" data-aos="fade-up" data-aos-once = "true">
                 <img src={AviyelLogo} alt="" srcset="" className="rewardLogo" />
                 <RewardComp className="rewardComp" 
                             title='Aviyel' 
-                            abt1='- Top 5 Contributors will get a Swag kit from Aviyel.'
-                            abt2='- Top Contributors of Aviyel projects may get an internship opprtunity.' />
+                        abt1='- Top 5 Contributors will get a Swag kit from Aviyel !'
+                            abt2='- Top Contributors of Aviyel projects may get an internship opportunity !!' />
             </div>
             <div className="rewardBox left" data-aos="fade-up" data-aos-once = "true">
                 <img src={GfgLogo} alt="" srcset="" className="rewardLogo" />
@@ -67,7 +68,7 @@ export default function Reward() {
                 <img src={CodepeakLogo} alt="" srcset="" className="rewardLogo" />
 
                 <RewardComp className="rewardComp" 
-                            title='Codepeak' 
+                            title='CODEPEAK' 
                             abt1='- Top 15 Contributors will get Codepeak Merchandise.'
                             abt2='- Certificate of Merit to top 40 contributorts.'
                             abt3='- Certificate of participation to all participants.' />

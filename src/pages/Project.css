@@ -148,11 +148,14 @@ button {
 .repo-title {
   margin-left: 5px;
 }
+.repo-title-aviyel {
+  margin-left: -45px;
+}
 .repo-heading{
   font-size: 22px;
 }
 .repo-title:hover,
-.repo-mentors:hover {
+.repo-mentors:hover,.repo-title-aviyel:hover {
   text-decoration: underline;
 }
 .nwoc-repo-card a {
@@ -171,6 +174,9 @@ button {
   }
   .repo-desc {
     font-size: 14px;
+  }
+  .repo-title-aviyel {
+    margin-left: -3px;
   }
   .repo-mentors {
     font-size: 13px;
@@ -200,6 +206,7 @@ button {
     margin:0;
     width: 100vw;
   }
+ 
   .nwoc-repo-card {
     height: 265px;
   }
@@ -215,6 +222,11 @@ button {
   }
   .repo-desc{
     font-size: 15px;
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 1300px){
+  .repo-title-aviyel {
+    margin-left: -3px;
   }
 }
 @media only screen and (max-width: 398px){

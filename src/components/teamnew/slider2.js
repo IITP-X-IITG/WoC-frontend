@@ -33,7 +33,7 @@ export default function Slider2() {
                 <div className = "coord">
                     <div className = "icon">
                         <img src = {Kartikay}/>
-                        <Namecard name = 'Kartikay Gupta' link1 = "https://www.linkedin.com/in/kartikay-gupta/" link2 = "mailto:https://www.linkedin.com/in/kartikay-gupta/"/>
+                        <Namecard name = 'Kartikay Gupta' link1 = "https://www.linkedin.com/in/kartikay-gupta/" link2 = "mailto:kartikay.gupta2002@gmail.com"/>
                     </div>
                     <div className = "icon">
                     <img src = {Aditya}/>

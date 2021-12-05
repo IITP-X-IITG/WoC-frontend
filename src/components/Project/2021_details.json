@@ -1,9 +1,10 @@
 [
     {
+        "special":true,
         "avl":true,
         "repo-url": "https://aviyel.com/projects/9/docz",
         "title": "Docz",
-        "desc": "Docz makes it easy to write and publish beautiful interactive documentation for your code",
+        "desc": "Docz makes it easy to write and publish beautiful interactive documentation for your code.",
         "mentors": [
         ],
         "lang": [
@@ -14,6 +15,7 @@
         ]
     },
     {
+        "special":true,
         "avl":true,
         "repo-url": "https://aviyel.com/projects/8/typesense",
         "title": "Typesense",
@@ -21,59 +23,62 @@
         "mentors": [
         ],
         "lang": [
-            "c++"
+            "C++"
         ],
         "tag": [
             "Search Engine"
         ]
     },
     {
+        "special":true,
         "avl":true,
         "repo-url": "https://aviyel.com/projects/7/mobile-security-framework",
         "title": "Mobile Security Framework",
-        "desc": "Mobile Security Framework (MobSF) is an automated, all-in-one mobile application (Android/iOS/Windows) pen-testing, malware analysis and security assessment framework capable of performing static and dynamic analysis",
+        "desc": "Mobile Security Framework (MobSF) is an automated, all-in-one mobile application (Android/iOS/Windows) pen-testing, malware analysis and security assessment framework capable of performing static and dynamic analysis.",
         "mentors": [
         ],
         "lang": [
-            "python","HTML","JAVASCRIPT"
+            "Python","HTML","JS"
         ],
         "tag": [
             "Security","shell"
         ]
     },
     {
+        "special":true,
         "avl":true,
         "repo-url": "https://aviyel.com/projects/6/chatwoot",
         "title": "Chatwoot",
-        "desc": "Chatwoot is an open-source omnichannel customer support software. ",
+        "desc": "Chatwoot is an open-source omnichannel customer support software.",
         "mentors": [
         ],
         "lang": [
-            "Vue","HTML","JAVASCRIPT","Ruby"
+            "Vue","HTML","JS","Ruby"
         ],
         "tag": [
             "SCSS","shell","Web"
         ]
     },
     {
+        "special":true,
         "avl":true,
         "repo-url": "https://aviyel.com/projects/5/hoppscotch",
         "title": "Hoppscotch",
-        "desc": "Open source API development ecosystem",
+        "desc": "Open source API development ecosystem.",
         "mentors": [
         ],
         "lang": [
-            "Vue","Javascript","Typescript"
+            "Vue","JS","Typescript"
         ],
         "tag": [
             "Security","shell"
         ]
     },
     {
-        "value": false,
+
         "repo-url": "https://github.com/RAJAGOPALAN-GANGADHARAN/DConsole",  
         "title": "DConsole",
-        "desc": "A console application that can be used to debug and test your code",
+        "desc": "A console application that can be used to debug and test your code.",
         "mentors": [
             "RAJAGOPALAN-GANGADHARAN"
         ],
@@ -87,7 +92,7 @@
     {
         "repo-url": "https://github.com/akshitagupta15june/Face-X",
         "title": "Face-X",
-        "desc": "Demonstration of different algorithms and operations on faces. Despite a variety of open-source face recognition frameworks available, there was no ready-made solution to implement",
+        "desc": "Demonstration of different algorithms and operations on faces. Despite a variety of open-source face recognition frameworks available, there was no ready-made solution to implement.",
         "mentors": [
             "akshitagupta15june", "anamika-pal"
         ],
@@ -127,7 +132,7 @@
     {
         "repo-url": "https://github.com/StrixROX/SAAR-IITP-Revamped/tree/revamp2",
         "title": "SAAR Website Revamp",
-        "desc": "This project is aimed to revamp the existing website with simple, elegant, and modern UI",
+        "desc": "This project is aimed to revamp the existing website with simple, elegant, and modern UI.",
         "mentors": [
             "rdev12","StrixROX"
         ],
@@ -141,7 +146,7 @@
     {
         "repo-url": "https://github.com/HITK-TECH-Community/Community-Website/",
         "title": "Community Website",
-        "desc": "A website for the community of HITK-TECH",
+        "desc": "A website for the community of HITK-TECH.",
         "mentors": [
             "jackfrost13"
         ],
@@ -155,7 +160,7 @@
     {
         "repo-url": "https://github.com/mohit200008/Gam-Learn",
         "title": "Gam-Learn",
-        "desc": "project has been designed an quiz portal which will be in a form of a game",
+        "desc": "project has been designed an quiz portal which will be in a form of a game.",
         "mentors": [
             "mohit200008"
         ],
@@ -183,7 +188,7 @@
     {
         "repo-url": "https://rajagopalan-gangadharan.github.io/JS-OS/" ,
         "title": "JS-OS",
-        "desc": "A web application that simulates a real operating system",
+        "desc": "A web application that simulates a real operating system.",
         "mentors": [
             "RAJAGOPALAN-GANGADHARAN"
         ],
@@ -211,7 +216,7 @@
     {
         "repo-url": "https://github.com/akshat0313/Ak-Meet",
         "title": "Ak-Meet",
-        "desc": "This Project is like Gmeet where we can organise a meeting on a particular date and time, And this application will notify you by sending email on the account by which you have logged in",
+        "desc": "This Project is like Gmeet where we can organise a meeting on a particular date and time, And this application will notify you by sending email on the account by which you have logged in.",
         "mentors": [
             "akshat0313"
         ],
@@ -225,7 +230,7 @@
     {
         "repo-url": "https://github.com/shelcia/kaagitham"  ,
         "title": "kaagitham",
-        "desc": "A web application that can be used to create a meetup",
+        "desc": "A web application that can be used to create a meetup.",
         "mentors": [
             "shelcia"
         ],
@@ -239,7 +244,7 @@
     {
         "repo-url": "https://github.com/shelcia/noobcodes-docs",
         "title": "noobcodes-docs",
-        "desc": "A web application that can be used to create a meetup",
+        "desc": "A web application that can be used to create a meetup.",
         "mentors": [
             "shelcia"
         ],
@@ -253,7 +258,7 @@
     {
         "repo-url": "https://github.com/Pritishchugh22/HateEater",
         "title": "HateEater",
-        "desc": "detect news/posts that spread hatred",
+        "desc": "detect news/posts that spread hatred.",
         "mentors": [
             
             "Pritishchugh22"
@@ -282,7 +287,7 @@
     {
         "repo-url": "https://github.com/fliptrail/non-monotonic-descent",
         "title": "non-monotonic-descent",
-        "desc": "A non-monotonic descent algorithm",
+        "desc": "A non-monotonic descent algorithm.",
         "mentors": [
             "fliptrail"
         ],
@@ -299,24 +304,10 @@
             "VishalIITP","KartuzGupta"
         ],
         "lang": [
-            "ReactJS", "Django" 
+            "None"
         ],
         "tag": [
-            "Web" , "Backend"
-        ]
-    },
-    {
-        "repo-url": "https://github.com/ArchismanKarmakar/Pass-Vault-source-code",
-        "title": "Pass Vault",
-        "desc": "Pass Vault is a Open Source Offline Password Manager that works using some custom & in-build libraries. It uses AES256 & SHA256 algos to store data in a AccessDatabase File",
-        "mentors": [
-            "ArchismanKarmakar"
-        ],
-        "lang": [
-            "HTML",".NET"
-        ],
-        "tag": [
-            "Cryptography","encryption"
+            "None"
         ]
     },
     {
@@ -336,7 +327,7 @@
     {
         "repo-url": "https://github.com/PrateekUp/Njack-website",
         "title": "Njack-Website",
-        "desc": "Creating a responsive web application for coding club of IIT Patna - NJACK",
+        "desc": "Creating a responsive web application for coding club of IIT Patna - NJACK.",
         "mentors": [
             "Aditya61101","PrateekUp"
         ],
@@ -350,7 +341,7 @@
     {
         "repo-url": "https://github.com/RupakBiswas-2304/File_authentication",
         "title": "File-Auth ",
-        "desc": "A  secure-authentication system which verifies users by verifying an uploaded file",
+        "desc": "A  secure-authentication system which verifies users by verifying an uploaded file.",
         "mentors": [
             "RupakBiswas-2304"
         ],
@@ -364,7 +355,7 @@
     {
         "repo-url": "https://github.com/spandey1296/Healthcare-Management-System",
         "title": "Healthcare-Management-System",
-        "desc": "A web application for managing healthcare services",
+        "desc": "A web application for managing healthcare services.",
         "mentors": [
             "spandey1296"
         ],
@@ -392,7 +383,7 @@
     {
         "repo-url": "https://github.com/harshagrawal523/Portfolyser",
         "title": "Portfolyser",
-        "desc": "A portfolio website generator. You can enter your details and it will provide you with ready-made HTML code for your very own portfolio page",
+        "desc": "A portfolio website generator. You can enter your details and it will provide you with ready-made HTML code for your very own portfolio page.",
         "mentors": [
             "GunjanDhanuka","harshagrawal523"
         ],
@@ -418,7 +409,8 @@
         ]
     },
     {
-        "value":true,
+        "special":true,
+        "avl":false,
         "repo-url": "https://github.com/codingiitg/CodePeak-beginner-Cpp",  
         "title": "Codepeak-Beginner-Cpp",
         "desc": " ",
@@ -433,7 +425,8 @@
         ]
     },
     {
-        "value":true,
+        "special":true,
+        "avl":false,
         "repo-url": "https://github.com/codingiitg/CodePeak-Beginner-Djanogo",  
         "title": "Codepeak-Beginner-Django",
         "desc": " ",
@@ -447,7 +440,8 @@
              "Web","Backend","Beginner"
         ]
     },
-    {   "value":true,
+    {     "special":true, 
+         "avl":false,
         "repo-url": "https://github.com/codingiitg/CodePeak-beginner-flutter-project",  
         "title": "Codepeak-Beginner-Flutter",
         "desc": " ",
@@ -462,7 +456,8 @@
         ]
     },
     {
-        "value":true,
+        "special":true,
+        "avl":false,
         "repo-url": "https://github.com/codingiitg/Codepeak-beginner-HTML-task",  
         "title": "Codepeak-Beginner-HTML",
         "desc": " ",
