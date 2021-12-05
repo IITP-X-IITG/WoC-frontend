@@ -39,12 +39,8 @@ export default function Slider3() {
                 
                 <div>
                 <div className = "coord">
-<<<<<<< HEAD
-                    <div className = "icon">
-=======
                 
                 <div className = "icon">
->>>>>>> 0cd95aa6c574085477ecd91249e315317c1b2ed1
                     <img src = {Harsha}/>
                         <Namecard name = 'Harsh Agrawal' link1 = "www.linkedin.com/in/harshagrawal523/" link2 = "mailto:harshagrawal523@gmail.com"/>
                     </div>

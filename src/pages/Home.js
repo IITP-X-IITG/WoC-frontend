@@ -22,6 +22,7 @@ import gfgLogo from '../pages/Images/gfgLogo.png'
 import cssbattleLogo from '../pages/Images/cssbattleLogo.png'
 import gmcLogo from '../pages/Images/gmcLogo.png'
 import Artboardlogo from '../pages/Images/Artboard.svg'
+import aviyellogo from '../pages/Images/aviyel logo.svg'
 //import logo_codepeak from './Images/LOGOCODEPEAK.png'
 import CountUp from '../components/Counter_up';
 import Animatedbg from '../components/Animatedbg'
@@ -38,8 +39,12 @@ export default function Home() {
             {/* ---------LOGO----------- */}
             <div className="logo">
                <img src={logo_codepeak} alt="" srcset="" className="logo_img" data-aos="zoom-in" data-aos-once="true"/>
-               <p>Sponsored By</p>
+               <p>Powered By</p>
+               <div className="main_spons_box">
+               <a href="https://aviyel.com/" target="_blank" rel="noreferrer"><img src={aviyellogo} alt="" srcset="" className="main_spons_img1" data-aos="zoom-in" data-aos-once="true"/></a>
                <a href="https://www.geeksforgeeks.org/" rel="noreferrer" target="_blank"><img src={gfgLogo} alt="" srcset="" className="main_spons_img" data-aos="zoom-in" data-aos-once="true"/></a>
+               </div>
+              
                <img src={hill} alt="" srcset="" className="hill_img"/>
             </div>
 
@@ -132,6 +137,7 @@ export default function Home() {
                 <hr/>
             </div>
             <div className="spons_box">
+                <a href="https://aviyel.com/" target="_blank" rel="noreferrer"><img src={aviyellogo} alt="" srcset="" data-aos="zoom-out" data-aos-once="true"/></a>
                 <a href="https://www.geeksforgeeks.org/" target="_blank" rel="noreferrer"><img src={gfgLogo} alt="" srcset="" data-aos="zoom-out" data-aos-once="true"/></a>
                 <a href="https://cssbattle.dev/" target="_blank" rel="noreferrer"><img src={cssbattleLogo} alt="" srcset="" data-aos="zoom-out" data-aos-once="true"/></a>
                 <a href="https://givemycertificate.com/" target="_blank" rel="noreferrer"><img src={gmcLogo} alt="" srcset="" data-aos="zoom-out" data-aos-once="true"/></a>
