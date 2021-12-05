@@ -31,7 +31,8 @@ export default function footer(props) {
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/project">Projects</Link></li>
                         <li><Link to="/register">Register</Link></li>
-                        <li><Link to="/team">Team</Link></li>
+                        <li><Link to="/reward">Rewards</Link></li>
+                        <li><Link to="/team">Team</Link></li>            
                     </ul>
                 </div>
 
