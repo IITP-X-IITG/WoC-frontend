@@ -551,14 +551,14 @@ svg{
 }
 /* ----------SPONSORS---------------- */
 .spons_box img{
-  width: auto;
-  height: 50px;
+  width: 150px;
+  height: auto;
   z-index: 2;
   position: relative;
 }
 .spons_box{
   display: grid;
-  grid-template-columns: repeat(5, 0.2fr);
+  grid-template-columns: repeat(3, 0.2fr);
   z-index: 2;
   position: relative;
   margin: 30px auto;
@@ -566,13 +566,14 @@ svg{
   width: 100%;
   justify-content: center;
   grid-column-gap: 41px;
-  height: 100px;
+  grid-row-gap: 20px;
+  height: 250px;
 }
-.spons_box img:hover{
-  width: auto;
-  height: 52px;
+/* .spons_box img:hover{
+  width: 152px;
+  height: auto;
   transition: width 0.1s, height 0.1s;
-}
+} */
 
 @media only screen and (max-width: 1050px) {
   .spons_box{

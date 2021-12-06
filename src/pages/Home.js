@@ -17,7 +17,7 @@ import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { CgGitPull } from "react-icons/cg";
 import { FaUniversity } from "react-icons/fa";
 //import git_spons from '../pages/Images/githublogoweb.svg'
-//import dig_ocean from '../pages/Images/DO_Logo_Vertical_Blue.png'
+import dig_ocean from '../pages/Images/DO_Logo_Vertical_Blue.png'
 //import jetbrain from '../pages/Images/jetbrains-variant-1.png'
 import gfgLogo from '../pages/Images/gfgLogo.png'
 import cssbattleLogo from '../pages/Images/cssbattleLogo.png'
@@ -143,6 +143,8 @@ export default function Home() {
                 <a href="https://cssbattle.dev/" target="_blank" rel="noreferrer"><img src={cssbattleLogo} alt="" srcset="" data-aos="zoom-out" data-aos-once="true"/></a>
                 <a href="https://givemycertificate.com/" target="_blank" rel="noreferrer"><img src={gmcLogo} alt="" srcset="" data-aos="zoom-out" data-aos-once="true"/></a>
                 <a href="https://artboard.studio/" target="_blank" rel="noreferrer"><img src={Artboardlogo} alt="" srcset="" data-aos="zoom-out" data-aos-once="true"/></a>         
+                <a href="https://www.digitalocean.com/" target="_blank" rel="noreferrer"><img src={dig_ocean} alt="" srcset="" data-aos="zoom-out" data-aos-once="true"/></a>         
+                
             </div>
             
         </div>

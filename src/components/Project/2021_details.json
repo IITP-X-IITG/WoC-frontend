@@ -419,6 +419,24 @@
     },
     {
         "value":true,
+        "repo-url": "https://github.com/ArchismanKarmakar/business-website-codepeak2021",  
+        "title": "Hotel Website",
+        "desc": "This project is for getting a business ready website similar to that of ITC Hotels team. So, let's get started. It will be a very good practice for MERN stack web dev. So, let's begin!",
+        "mentors": [
+            "ArchismanKarmakar"
+        ],
+        "lang": [
+             "HTML" , "CSS", "JavaScript", "ReactJS", "Node.js"
+        ],
+        "tag": [
+            "nodejs","react","bootstrap","express","mongodb","MERN Stack Web Dev"
+            
+        ]
+        
+    },
+
+    {
+        "value":true,
         "repo-url": "https://github.com/codingiitg/CodePeak-beginner-Cpp",  
         "title": "Codepeak-Beginner-Cpp",
         "desc": " ",
@@ -476,5 +494,6 @@
              "Web","Frontend","Beginner"
         ]
     }
+    
     
 ]
