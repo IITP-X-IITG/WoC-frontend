@@ -5,7 +5,7 @@
 .reward_head hr{
     display: block;
     margin: auto;
-    width: 300px;
+    width: 340px;
     height: 2px;
 }
 .rewardBox{
@@ -17,7 +17,8 @@
     border: 1px solid #a4c3e0;
     border-radius: 10px;
     box-shadow: 0.5px 0.5px 10.5px 0.5px #f5f5dc4a;
-    background-color: #071d3985;
+    /* background-color: #071d3985; */
+    background-color: rgb(13,35,59);
 }
 .rewardLogo{
     width: 250px;

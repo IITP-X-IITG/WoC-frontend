@@ -39,32 +39,51 @@ function Project2021_Search() {
                 return (
                     <div className="col-lg-6 col-md-6 col-sm-12">
                         
-                        {el.avl === true ?<div className="nwoc-repo-card"> 
+                        {el.special === true ?[el.avl=== true?
+                            <div className="nwoc-repo-card"> 
                         <a href={el["repo-url"]} target="_blank">                
                          <div className="repo-heading">
                             <img src={avl} style={{width:"6rem",float:"left"}} />                               
-                           <img className="githubimg" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
-                              <a className="repo-title" href={el["repo-url"]} target="_blank">{el.title}</a>
+                           {/* <img className="githubimg" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" /> */}
+                              <a className="repo-title-aviyel" href={el["repo-url"]} target="_blank">{el.title}</a>
                           </div></a>      <div className="repo-desc">{el.desc}</div>
-                          <div className="repo-mentors">Mentors: {"  "}
+                          {/* <div className="repo-mentors">Mentors: {"  "}
                               {
                                   el.mentors.map((mentor) =>
                                       (<a href={"https://github.com/" + mentor} target="_blank">{mentor + " "}</a>)
                                   )
                               }
-                          </div>
+                          </div> */}
                           <ul className="repo-stats">
-                              <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> {
+                              <li><img className="githubimg" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> {
                                   el.lang.toString().replaceAll(',', '/')
                               }</li>
-                              <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> {el.tag.toString().replaceAll(',', '/')}</li>
+                              <li><img className="githubimg" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> {el.tag.toString().replaceAll(',', '/')}</li>
                           </ul>
-                      </div>:
+                      </div>: <div style={{ backgroundImage: `linear-gradient(135deg, #04b471 , rgb(13,35,59) 10%)`}} className="nwoc-repo-card">
+                         <div className="repo-heading">    
+                           <img className="githubimg" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+                              <a className="repo-title" href={el["repo-url"]} target="_blank">{el.title}</a>
+                          </div>  <div className="repo-desc">{el.desc}</div>
+                          {/* <div className="repo-mentors">Mentors: {"  "}
+                              {
+                                  el.mentors.map((mentor) =>
+                                      (<a href={"https://github.com/" + mentor} target="_blank">{mentor + " "}</a>)
+                                  )
+                              }
+                          </div> */}
+                          <ul className="repo-stats">
+                              <li><img className="githubimg" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> {
+                                  el.lang.toString().replaceAll(',', '/')
+                              }</li>
+                              <li><img className="githubimg" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> {el.tag.toString().replaceAll(',', '/')}</li>
+                          </ul>
+                      </div>]:
                       <div className="nwoc-repo-card">
                       <a href={el["repo-url"]} target="_blank">
                       <div className="repo-heading"> 
                            
-                           <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+                           <img className="githubimg" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
                               <a className="repo-title" href={el["repo-url"]} target="_blank">{el.title}</a>
                           </div></a>  <div className="repo-desc">{el.desc}</div>
                           <div className="repo-mentors">Mentors: {"  "}
@@ -75,10 +94,10 @@ function Project2021_Search() {
                               }
                           </div>
                           <ul className="repo-stats">
-                              <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> {
+                              <li><img className="githubimg" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> {
                                   el.lang.toString().replaceAll(',', '/')
                               }</li>
-                              <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> {el.tag.toString().replaceAll(',', '/')}</li>
+                              <li><img className="githubimg" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> {el.tag.toString().replaceAll(',', '/')}</li>
                           </ul></div>
                           }
                         

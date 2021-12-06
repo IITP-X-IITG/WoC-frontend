@@ -37,7 +37,7 @@ function Project2019_Search() {
                 return (
                     <div className="col-lg-6 col-md-6 col-sm-12">
                         <div className="nwoc-repo-card">
-                        <div className="repo-heading">    <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+                        <div className="repo-heading">    <img className="githubimg" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
                             <a className="repo-title" href={el["repo-url"]} target="_blank">{el.title}</a>
                            </div> <div className="repo-desc">{el.desc}</div>
                             <div className="repo-mentors">Mentors: {"  "}
@@ -48,10 +48,10 @@ function Project2019_Search() {
                             }
                             </div>
                             <ul className="repo-stats">
-                                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> {
+                                <li><img className="githubimg" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> {
                                     el.lang.toString().replaceAll(',', '/')
                                 }</li>
-                                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> {el.tag.toString().replaceAll(',', '/')}</li>
+                                <li><img className="githubimg" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> {el.tag.toString().replaceAll(',', '/')}</li>
                             </ul>
                         </div>
                     </div>
