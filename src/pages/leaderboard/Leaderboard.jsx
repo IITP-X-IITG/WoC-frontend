@@ -80,99 +80,99 @@ const Leaderboard = () => {
 
   const data = useMemo(() => fi,[fi]);
 
-  const dta = useMemo(
-    () => [
-      {
-        col1: "1",
-        col2: {
-          handle: "akr-25",
-          dp: "https://avatars.githubusercontent.com/u/79211216?v=4",
-        },
-        col3: "312",
-      },
-      {
-        col1: "2",
-        col2: {
-          handle: "akr-25",
-          dp: "https://avatars.githubusercontent.com/u/79211216?v=4",
-        },
-        col3: "312",
-      },
-      {
-        col1: "3",
-        col2: {
-          handle: "akr-25",
-          dp: "https://avatars.githubusercontent.com/u/79211216?v=4",
-        },
-        col3: "312",
-      },
-      {
-        col1: "4",
-        col2: {
-          handle: "akr-25",
-          dp: "https://avatars.githubusercontent.com/u/79211216?v=4",
-        },
-        col3: "312",
-      },
-      {
-        col1: "5",
-        col2: {
-          handle: "akr-25",
-          dp: "https://avatars.githubusercontent.com/u/79211216?v=4",
-        },
-        col3: "312",
-      },
-      {
-        col1: "6",
-        col2: {
-          handle: "akr-25",
-          dp: "https://avatars.githubusercontent.com/u/79211216?v=4",
-        },
-        col3: "312",
-      },
-      {
-        col1: "7",
-        col2: {
-          handle: "akr-25",
-          dp: "https://avatars.githubusercontent.com/u/79211216?v=4",
-        },
-        col3: "312",
-      },
-      {
-        col1: "8",
-        col2: {
-          handle: "akr-25",
-          dp: "https://avatars.githubusercontent.com/u/79211216?v=4",
-        },
-        col3: "312",
-      },
-      {
-        col1: "9",
-        col2: {
-          handle: "akr-25",
-          dp: "https://avatars.githubusercontent.com/u/79211216?v=4",
-        },
-        col3: "312",
-      },
-      {
-        col1: "10",
-        col2: {
-          handle: "akr-25",
-          dp: "https://avatars.githubusercontent.com/u/79211216?v=4",
-        },
-        col3: "312",
-      },
-      {
-        col1: "11",
-        col2: {
-          handle: "akr-25",
-          dp: "https://avatars.githubusercontent.com/u/79211216?v=4",
-        },
-        col3: "312",
-      },
-    ],
-    []
-  );
+  // const dta = useMemo(
+  //   () => [
+  //     {
+  //       col1: "1",
+  //       col2: {
+  //         handle: "akr-25",
+  //         dp: "https://avatars.githubusercontent.com/u/79211216?v=4",
+  //       },
+  //       col3: "312",
+  //     },
+  //     {
+  //       col1: "2",
+  //       col2: {
+  //         handle: "akr-25",
+  //         dp: "https://avatars.githubusercontent.com/u/79211216?v=4",
+  //       },
+  //       col3: "312",
+  //     },
+  //     {
+  //       col1: "3",
+  //       col2: {
+  //         handle: "akr-25",
+  //         dp: "https://avatars.githubusercontent.com/u/79211216?v=4",
+  //       },
+  //       col3: "312",
+  //     },
+  //     {
+  //       col1: "4",
+  //       col2: {
+  //         handle: "akr-25",
+  //         dp: "https://avatars.githubusercontent.com/u/79211216?v=4",
+  //       },
+  //       col3: "312",
+  //     },
+  //     {
+  //       col1: "5",
+  //       col2: {
+  //         handle: "akr-25",
+  //         dp: "https://avatars.githubusercontent.com/u/79211216?v=4",
+  //       },
+  //       col3: "312",
+  //     },
+  //     {
+  //       col1: "6",
+  //       col2: {
+  //         handle: "akr-25",
+  //         dp: "https://avatars.githubusercontent.com/u/79211216?v=4",
+  //       },
+  //       col3: "312",
+  //     },
+  //     {
+  //       col1: "7",
+  //       col2: {
+  //         handle: "akr-25",
+  //         dp: "https://avatars.githubusercontent.com/u/79211216?v=4",
+  //       },
+  //       col3: "312",
+  //     },
+  //     {
+  //       col1: "8",
+  //       col2: {
+  //         handle: "akr-25",
+  //         dp: "https://avatars.githubusercontent.com/u/79211216?v=4",
+  //       },
+  //       col3: "312",
+  //     },
+  //     {
+  //       col1: "9",
+  //       col2: {
+  //         handle: "akr-25",
+  //         dp: "https://avatars.githubusercontent.com/u/79211216?v=4",
+  //       },
+  //       col3: "312",
+  //     },
+  //     {
+  //       col1: "10",
+  //       col2: {
+  //         handle: "akr-25",
+  //         dp: "https://avatars.githubusercontent.com/u/79211216?v=4",
+  //       },
+  //       col3: "312",
+  //     },
+  //     {
+  //       col1: "11",
+  //       col2: {
+  //         handle: "akr-25",
+  //         dp: "https://avatars.githubusercontent.com/u/79211216?v=4",
+  //       },
+  //       col3: "312",
+  //     },
+  //   ],
+  //   []
+  // );
 
 
 

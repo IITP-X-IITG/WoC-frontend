@@ -23,7 +23,6 @@ import gfgLogo from '../pages/Images/gfgLogo.png'
 import cssbattleLogo from '../pages/Images/cssbattleLogo.png'
 import gmcLogo from '../pages/Images/gmcLogo.png'
 import Artboardlogo from '../pages/Images/Artboard.svg'
-import aviyellogo from '../pages/Images/aviyel logo.svg'
 //import logo_codepeak from './Images/LOGOCODEPEAK.png'
 import CountUp from '../components/Counter_up';
 import Animatedbg from '../components/Animatedbg'
