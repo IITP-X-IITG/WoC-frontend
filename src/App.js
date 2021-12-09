@@ -13,10 +13,12 @@ import Project from './pages/Project';
 import Team from './pages/teamnew'
 import Reward from './pages/Reward/reward';
 //import TeamTemp from './pages/leaderboard_temp'
+import ScrollToTop from './components/ScrollToTop';
 function App() {
   return (
     <div className="App">
       <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <ScrollToTop/>
         <Switch>
           <Route exact path="/" component={Home}/>
           <Route path="/register" component={Conduct}/>
@@ -25,7 +27,6 @@ function App() {
           <Route path="/team" component={Team} />
           <Route path="/reward" component={Reward} />
         </Switch>
-        {/* <Footer/> */}
       </BrowserRouter>
       <ScrollButton/>
     </div>
