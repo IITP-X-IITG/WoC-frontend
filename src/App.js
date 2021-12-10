@@ -14,6 +14,7 @@ import Team from './pages/teamnew'
 import Reward from './pages/Reward/reward';
 //import TeamTemp from './pages/leaderboard_temp'
 import ScrollToTop from './components/ScrollToTop';
+import Events from './pages/events/events';
 function App() {
   return (
     <div className="App">
@@ -26,6 +27,7 @@ function App() {
           <Route path="/project" component={Project} />
           <Route path="/team" component={Team} />
           <Route path="/reward" component={Reward} />
+          <Route path='/events' component={Events}/>
         </Switch>
       </BrowserRouter>
       <ScrollButton/>
