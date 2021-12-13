@@ -5,14 +5,6 @@ import Footer from '../components/footer';
 import Leaderboard from './leaderboard/Leaderboard.jsx';
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const getcsv = async () =>{
-
-    console.log("clicked");
-
-    
-}
-
-
 function Leaderboardtemp(){
     return<> 
      <Animatedbg />

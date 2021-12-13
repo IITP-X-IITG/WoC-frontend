@@ -5,7 +5,7 @@ export default function RewardComp(props) {
         <div className="front_ext">
             <div style={{display:'flex'}}>
                 <h1>{props.title}</h1> 
-                <a href={props.link} rel="noreferrer" target='_blank'></a>
+                {/* <a href={props.link} rel="noreferrer" target='_blank'></a> */}
             </div>
             <hr className="exp_hr" />
             <p>{props.abt1}</p>
