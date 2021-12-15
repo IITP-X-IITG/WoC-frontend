@@ -176,3 +176,19 @@ td {
   /* border-color: #12263f85; */
   border: none;
 }
+
+@media only screen and (max-width:400px){
+  .pagination-left, .pagination-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .pagination{
+    align-items: center;
+  }
+  .input-group{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}

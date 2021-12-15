@@ -1,12 +1,11 @@
 import React, { useMemo, useState, useEffect } from "react";
 import Navigation from "../../components/Navigation";
-import style from "./Leaderboard.css";
 import BTable from "react-bootstrap/Table";
 import Container from "react-bootstrap/Container";
 import Footer from "../../components/footer";
 import { usePagination, useTable } from "react-table";
 import { Dropdown } from "react-bootstrap";
-
+import style from "./Leaderboard.css";
 const Leaderboard = () => {
 
     const[fi, setFi] = useState([]);
