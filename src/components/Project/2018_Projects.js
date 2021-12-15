@@ -37,15 +37,15 @@ function Project2018() {
                 return (
                     <div className="col-lg-6 col-md-6 col-sm-12">
                         <div className="nwoc-repo-card">
-                        <div className="repo-heading"> <img className="githubimg" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
-                            <a className="repo-title" href={el["repo-url"]} target="_blank">{el.title}</a>
+                        <div className="repo-heading"> <img className="githubimg" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" alt=""/>
+                            <a className="repo-title" href={el["repo-url"]} target="_blank" rel="noreferrer">{el.title}</a>
                             </div>  <p className="desc-para"><div className="repo-desc">{el.desc}</div></p>
-                            <div className="repo-mentors">Mentors: <a href={"https://github.com/" + el.mentor} target="_blank">{el.mentor}</a></div>
+                            <div className="repo-mentors">Mentors: <a href={"https://github.com/" + el.mentor} target="_blank" rel="noreferrer">{el.mentor}</a></div>
                             <ul className="repo-stats">
-                                <li><img className="githubimg" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> {
+                                <li><img className="githubimg" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" alt=""/> {
                                      el.lang.toString().replaceAll(',', '/') 
                                 }</li>
-                                <li><img className="githubimg" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> {el.tag.toString().replaceAll(',', '/') }</li>
+                                <li><img className="githubimg" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" alt=""/> {el.tag.toString().replaceAll(',', '/') }</li>
                             </ul>
                         </div>
                     </div>

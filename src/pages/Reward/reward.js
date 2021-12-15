@@ -5,7 +5,7 @@ import Animatedbg from '../../components/Animatedbg'
 import './reward.css'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import {BsStarFill} from 'react-icons/bs';
+//import {BsStarFill} from 'react-icons/bs';
 import { useEffect } from "react";
 import RewardComp from '../../components/Reward/RewardComp'
 import AviyelLogo from '../Images/avl.svg'
@@ -31,7 +31,7 @@ export default function Reward() {
                 <img src={AviyelLogo} alt="" srcset="" className="rewardLogo" />
                 <RewardComp className="rewardComp" 
                             title='Aviyel' 
-                        abt1='- Top 5 Contributors will get a Swag kit from Aviyel !'
+                            abt1='- Top 5 Contributors will get a Swag kit from Aviyel !'
                             abt2='- Top Contributors of Aviyel projects may get an internship opportunity !!' />
             </div>
             <div className="rewardBox left" data-aos="fade-up" data-aos-once = "true">

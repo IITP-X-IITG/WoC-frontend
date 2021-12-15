@@ -32,15 +32,15 @@ export default function Slider1() {
                 <div>
                 <div className = "coord">
                     <div className = "icon">
-                        <img src = {Madhur}/>
+                        <img src = {Madhur} alt="" />
                         <Namecard name = 'Madhur Malpani' link1 = "https://www.linkedin.com/in/madhur-malpani-818646196/" link2 = "mailto:madhur.nilu@gmail.com"/>
                     </div>
                     <div className = "icon">
-                    <img src = {Atishay}/>
+                    <img src = {Atishay} alt="" />
                         <Namecard name = 'Atishay Jain' link1 = "www.linkedin.com/in/atishay1743/" link2 = "mailto:atishayjain@iitg.ac.in"/>
                     </div>
                     <div className = "icon">
-                    <img src = {Arpita}/>
+                    <img src = {Arpita} alt="" />
                         <Namecard name = 'Arpita Mahapatra' link1 = "https://www.linkedin.com/in/arpita-mohapatra-65b6a5196" link2 = "arpitamohapatra1812@gmail.com"/>
 
                     </div>
@@ -49,11 +49,11 @@ export default function Slider1() {
                 <div>
                 <div className = "coord">
                     <div className = "icon">
-                    <img src = {Swapnil}/>
+                    <img src = {Swapnil} alt="" />
                         <Namecard name = 'Swapnil Srivastava' link1 = "https://www.linkedin.com/in/s-swapnil" link2 = "mailto:s.swapnil1309@gmail.com"/>
                 </div>
                 <div className = "icon">
-                    <img src = {Vaishak}/>
+                    <img src = {Vaishak} alt="" />
                     <Namecard name = 'Vaishakh' link1 = "https://www.linkedin.com/in/vaishakhsmn/" link2 = "mailto:vaishakhsm@gmail.com"/>
                 </div>    
                 </div>
