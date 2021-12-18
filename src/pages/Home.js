@@ -4,6 +4,7 @@ import home_style from './Home.css'
 import logo_codepeak from './Images/logo.png'
 import hill from './Images/mtpnggg.png'
 import avl from './Images/avl.svg'
+import campusmemories from './Images/Campusmemories.png'
 //import mount from './Images/svgviewer-react-output'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -143,9 +144,12 @@ export default function Home() {
                 <a href="https://www.geeksforgeeks.org/" target="_blank" rel="noreferrer"><img src={gfgLogo} alt="" srcset="" data-aos="zoom-out" data-aos-once="true"/></a>
                 <a href="https://cssbattle.dev/" target="_blank" rel="noreferrer"><img src={cssbattleLogo} alt="" srcset="" data-aos="zoom-out" data-aos-once="true"/></a>
                 <a href="https://givemycertificate.com/" target="_blank" rel="noreferrer"><img src={gmcLogo} alt="" srcset="" data-aos="zoom-out" data-aos-once="true"/></a>
+            </div>
+            <div className="spons_box spons_box1">    
                 <a href="https://artboard.studio/" target="_blank" rel="noreferrer"><img src={Artboardlogo} alt="" srcset="" data-aos="zoom-out" data-aos-once="true"/></a>         
                 <a href="https://www.digitalocean.com/" target="_blank" rel="noreferrer"><img src={dig_ocean} alt="" srcset="" data-aos="zoom-out" data-aos-once="true"/></a>         
-                
+                <a href="https://campusmemories.co.in/" rel="noreferrer" target="_blank"><img src={campusmemories} alt="" srcset="" data-aos="zoom-out" data-aos-once="true"/></a>
+
             </div>
             
         </div>
