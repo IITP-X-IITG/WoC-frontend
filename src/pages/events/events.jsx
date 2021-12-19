@@ -21,7 +21,7 @@ export default function Events() {
       <Navigation />
       <div className='event_head'>
         <h2 data-aos='zoom-in' data-aos-once='true'>
-          Upcoming Events
+          Completed Events
         </h2>
         <hr />
       </div>
@@ -32,11 +32,11 @@ export default function Events() {
             <div className='front_ext_event'>
               <div className='event_title'>
                 <h1>GSOC AMA</h1>
-                <a href='https://bit.ly/31CFJKp' target='_blank' rel='noreferrer'>
+                {/* <a href='https://bit.ly/31CFJKp' target='_blank' rel='noreferrer'>
                   <button className='btn btn-primary btn-apply' type='button'>
                     Register Now
                   </button>
-                </a>
+                </a> */}
               </div>
               <hr className='exp_hr' />
               <p>
@@ -55,11 +55,11 @@ export default function Events() {
             <div className='front_ext_event'>
               <div className='event_title'>
                 <h1>Renato Benkerdorf</h1>
-                <a href='https://bit.ly/3rKP9hR' target='_blank' rel='noreferrer'>
+                {/* <a href='https://bit.ly/3rKP9hR' target='_blank' rel='noreferrer'>
                   <button className='btn btn-primary btn-apply' type='button'>
                     Register Now
                   </button>
-                </a>
+                </a> */}
               </div>
               <hr className='exp_hr' />
               <p>
