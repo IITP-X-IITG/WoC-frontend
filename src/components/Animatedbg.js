@@ -3,8 +3,8 @@ import './Animatedbg.css'
 export default function Animatedbg() {
     return (
         <div>
-            <div class='stars'></div>
-            <div class='twinkling'></div>
+            <div className='stars'></div>
+            <div className='twinkling'></div>
         </div>
     )
 }
