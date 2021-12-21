@@ -177,7 +177,7 @@ td {
   border: none;
 }
 
-@media only screen and (max-width:400px){
+@media only screen and (max-width:450px){
   .pagination-left, .pagination-right{
     display: flex;
     flex-direction: column;
