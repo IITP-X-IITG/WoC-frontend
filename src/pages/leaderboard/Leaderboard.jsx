@@ -213,7 +213,7 @@ const Leaderboard = () => {
       <div class='leader-twinkling'></div>
       <div style={style} >
         <div className='space'></div>
-        <div className='title mb-5 p-3'>LEADERBOARD</div>
+        <div className='title mb-3 p-3'>LEADERBOARD</div>
         <Container>
           <input
               type="search"
