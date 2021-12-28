@@ -148,7 +148,7 @@ export default function Home() {
             <div className="spons_box spons_box1">    
             <a href="https://www.geeksforgeeks.org/" target="_blank" rel="noreferrer"><img src={gfgLogo} alt="" srcset="" data-aos="zoom-out" data-aos-once="true"/></a>
                 <a href="https://www.digitalocean.com/" target="_blank" rel="noreferrer"><img src={dig_ocean} alt="" srcset="" data-aos="zoom-out" data-aos-once="true"/></a>         
-                <a href="https://campusmemories.co.in/" rel="noreferrer" target="_blank"><img src={campusmemories} alt="" srcset="" data-aos="zoom-out" data-aos-once="true"/></a>
+                <a href="https://codepeakmemories.co.in/" rel="noreferrer" target="_blank"><img src={campusmemories} alt="" srcset="" data-aos="zoom-out" data-aos-once="true"/></a>
 
             </div>
             
