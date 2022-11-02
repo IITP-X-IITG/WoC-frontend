@@ -138,7 +138,7 @@ export default function Home() {
 
             {/* ----------SPONSORS------------- */}
             <div className="head_stats">
-                <p data-aos="zoom-in" data-aos-once="true">Sponsored by..</p>
+                <p data-aos="zoom-in" data-aos-once="true">Past Sponsors</p>
                 <hr/>
             </div>
             <div className="spons_box">
