@@ -33,12 +33,12 @@ function Card() {
                 </div>
                 <div className="d-grid gap-2 col-6 mx-auto register-button">
                   <a
-                    href="https://forms.gle/hrigmCDy6mL62H1q7"
-                    target="_blank"
+                    href="#"
+                    // target="_blank"
                     rel="noreferrer"
                   >
                     <button
-                      className="btn btn-primary btn-apply btn-phone btn-tab"
+                      className="btn btn-primary btn-apply btn-phone btn-tab disabled"
                       type="button"
                     >
                       Register
