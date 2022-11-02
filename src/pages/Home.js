@@ -37,6 +37,8 @@ export default function Home() {
             <Navigation/>
             <Animatedbg/>
 
+          <marquee id="marq"  behavior="scroll" direction="left" scrollamount="10" style={{color:"white",fontSize:"20px",fontWeight:"bold",marginTop:"70px"}}>Codepeak 2022 is here! <a href='/register' style={{textDecoration:"none",color:"#99c1e7"}}>Register now</a> as a mentor to be a part of the largest open source event in India.</marquee>
+
             {/* ---------LOGO----------- */}
             <div className="logo">
                <img src={logo_codepeak} alt="" srcset="" className="logo_img" data-aos="zoom-in" data-aos-once="true"/>
