@@ -71,7 +71,7 @@ export default function Home() {
                     <div className="col">
                     <div className="main-timeline">
                         <div className="timeline"  data-aos="fade-up" data-aos-once="true">
-                            <Timeline date='28 OCT' desc='Interested mentors sign up on the website and register their profile.' />
+                            <Timeline date='1 NOV' desc='Mentors Registration Starts' />
                         </div>
 
 
@@ -79,27 +79,27 @@ export default function Home() {
                     <Timeline date='15 NOV.' desc='Student Registration starts.'/>
                     </div>
                     <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                    <Timeline date='25 NOV' desc='Mentor Registration ends.'/>
+                    <Timeline date='20 NOV' desc='Mentor Registration ends.'/>
                     </div>
 
 
                         <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                        <Timeline date='26 NOV' desc='Organising team selects projects and announces them.'/>
+                        <Timeline date='24 NOV' desc='Project Announcement'/>
                         </div>
                         <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                            <Timeline date='28 NOV' desc='Orientation'/>
+                            <Timeline date='1 DEC' desc='Orientation'/>
                         </div>
                         <div className="timeline" data-aos="fade-up" data-aos-once="true">
                             <Timeline date='2 DEC' desc='Git and GitHub Workshop'/>
                         </div>
                         <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                            <Timeline date='3 DEC' desc='Coding Period Starts.'/>
+                            <Timeline date='4 DEC' desc='Coding Period Starts.'/>
                         </div>
                         <div className="timeline" data-aos="fade-up" data-aos-once="true">
                             <Timeline date='6 JAN' desc='Coding Period Ends.'/>
                         </div>
                         <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                            <Timeline date='9 JAN' desc='Results Announcement and Closing Ceremony.'/>
+                            <Timeline date='8 JAN' desc='Closing Ceremony.'/>
                         </div>
                     </div>
                     </div>
