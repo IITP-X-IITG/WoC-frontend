@@ -71,8 +71,8 @@ export default function Home() {
             data-aos="zoom-in"
             data-aos-once="true"
           />
-          <p>Powered By</p>
-          <div className="main_spons_box">
+          {/* <p>Powered By</p> */}
+          {/* <div className="main_spons_box">
             <a href="https://aviyel.com/" target="_blank" rel="noreferrer">
               <img
                 src={avl}
@@ -97,7 +97,7 @@ export default function Home() {
                 data-aos-once="true"
               />
             </a>
-          </div>
+          </div> */}
 
           <img src={hill} alt="" srcset="" className="hill_img" />
         </div>
@@ -132,7 +132,7 @@ export default function Home() {
                   data-aos="fade-up"
                   data-aos-once="true"
                 >
-                  <Timeline date="1 NOV" desc="Mentors Registration Starts" />
+                  <Timeline date="3 NOV" desc="Mentors Registration Starts" />
                 </div>
 
                 <div
