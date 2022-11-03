@@ -7,6 +7,7 @@ import Footer from "../../components/footer";
 import { usePagination, useTable } from "react-table";
 import { Dropdown } from "react-bootstrap";
 import Loading from "../../components/leaderboard/Loading";
+import { Link } from 'react-router-dom';
 
 const Leaderboard = () => {
 
@@ -19,7 +20,7 @@ const Leaderboard = () => {
     async function getCSV() {
       try{
         const tempfi = [];
-        const target = `https://docs.google.com/spreadsheets/d/e/2PACX-1vQbBtmoTx9NEqcob94XXoIMnorCXObHA7wb84DOhJ5-Qaoxq38Az5Gh8Uk_FHuB5J-uUgLb8RNBpwUO/pub?gid=0&single=true&output=csv`;
+        const target = `https://docs.google.com/spreadsheets/d/1dqrF2ixN21yvUjPs6ZL5btvNP0V8q1v9vX4RjFKFEX4/export?format=csv`;
         const result = await fetch(target);
         const data = await result.text();
         var rows = data.toString().split("\r");
@@ -277,7 +278,7 @@ const Leaderboard = () => {
                         else
                           return (
                             <td {...cell.getCellProps()}>
-                              {cell["value"]}
+                              <Link to={'/points/' + cell["value"]}>{cell["value"]}</Link>
                             </td>
                           );
                       })}
