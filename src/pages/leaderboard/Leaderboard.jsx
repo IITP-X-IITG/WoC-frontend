@@ -7,6 +7,7 @@ import Footer from "../../components/footer";
 import { usePagination, useTable } from "react-table";
 import { Dropdown } from "react-bootstrap";
 import Loading from "../../components/leaderboard/Loading";
+import { Link } from 'react-router-dom';
 
 const Leaderboard = () => {
 
@@ -277,7 +278,7 @@ const Leaderboard = () => {
                         else
                           return (
                             <td {...cell.getCellProps()}>
-                              {cell["value"]}
+                              <Link to={'/points/' + cell["value"]}>{cell["value"]}</Link>
                             </td>
                           );
                       })}
