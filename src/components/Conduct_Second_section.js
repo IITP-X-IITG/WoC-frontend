@@ -12,7 +12,7 @@ function Card() {
     <>
       <section className="second-section">
         <h1 className="heading2">Registration</h1>
-        <div className="d-flex flex-row justify-content-around">
+        <div className="d-flex row justify-content-around">
           <div
             className=" card-cover col-lg-4 col-md-6"
             data-aos="fade-up"
@@ -38,7 +38,7 @@ function Card() {
                     rel="noreferrer"
                   >
                     <button
-                      className="btn btn-primary btn-apply btn-phone btn-tab disabled"
+                      className="btn btn-primary btn-apply btn-phone btn-tab disabled my-2"
                       type="button"
                     >
                       Register
@@ -73,7 +73,7 @@ function Card() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <button className="btn btn-primary btn-apply" type="button">
+                    <button className="btn btn-primary btn-apply my-2" type="button">
                       Register
                     </button>
                   </a>
