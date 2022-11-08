@@ -28,13 +28,11 @@ import Artboardlogo from "../pages/Images/Artboard.svg";
 import CountUp from "../components/Counter_up";
 import Animatedbg from "../components/Animatedbg";
 import { Link } from "react-router-dom";
-
 export default function Home() {
   useEffect(() => {
     Aos.init({ duration: 800 });
   }, []);
-
-  return(
+  return (
     <>
       <div style={home_style}>
         <Navigation />
@@ -243,7 +241,99 @@ export default function Home() {
             <p>Universities</p>
           </div>
         </div>
-          </div>
-        </>
-    )
+
+        {/* ----------SPONSORS------------- */}
+        <div className="head_stats">
+          <p data-aos="zoom-in" data-aos-once="true">
+            Past Sponsors
+          </p>
+          <hr />
+        </div>
+        <div className="spons_box">
+          <a href="https://aviyel.com/" target="_blank" rel="noreferrer">
+            <img
+              src={avl}
+              alt=""
+              srcset=""
+              data-aos="zoom-out"
+              data-aos-once="true"
+            />
+          </a>
+          <a href="https://artboard.studio/" target="_blank" rel="noreferrer">
+            <img
+              src={Artboardlogo}
+              alt=""
+              srcset=""
+              data-aos="zoom-out"
+              data-aos-once="true"
+            />
+          </a>
+          <a href="https://cssbattle.dev/" target="_blank" rel="noreferrer">
+            <img
+              src={cssbattleLogo}
+              alt=""
+              srcset=""
+              data-aos="zoom-out"
+              data-aos-once="true"
+            />
+          </a>
+          <a
+            href="https://givemycertificate.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={gmcLogo}
+              alt=""
+              srcset=""
+              data-aos="zoom-out"
+              data-aos-once="true"
+            />
+          </a>
+        </div>
+        <div className="spons_box spons_box1">
+          <a
+            href="https://www.geeksforgeeks.org/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={gfgLogo}
+              alt=""
+              srcset=""
+              data-aos="zoom-out"
+              data-aos-once="true"
+            />
+          </a>
+          <a
+            href="https://www.digitalocean.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={dig_ocean}
+              alt=""
+              srcset=""
+              data-aos="zoom-out"
+              data-aos-once="true"
+            />
+          </a>
+          <a
+            href="https://codepeakmemories.co.in/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              src={campusmemories}
+              alt=""
+              srcset=""
+              data-aos="zoom-out"
+              data-aos-once="true"
+            />
+          </a>
+        </div>
+      </div>
+      <Footer />
+    </>
+  );
 }
