@@ -36,11 +36,11 @@ function Firstsection() {
                   </div>
                   <div className="d-grid gap-2 col-3 mx-auto">
                    
-                      <a href={STUDENTGUIDE} target="_blank" rel="noreferrer">
-                       <button className="btn btn-primary btn-apply" type="button">
+                      {/* <a href={STUDENTGUIDE} target="_blank" rel="noreferrer"> */}
+                       <button className="btn btn-primary btn-apply disabled" type="button">
                       StudentGuide
                       </button>
-                      </a>
+                      {/* </a> */}
                     
                   </div>
                 </div>
