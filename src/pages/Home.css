@@ -16,6 +16,7 @@ svg{
   align-items: center;
   height: 100vh;
   overflow: hidden;
+  margin-top: -70px;
 }
 
 .logo p{
@@ -38,7 +39,8 @@ svg{
   width: 100vw;
   height: auto;
   position: absolute;
-  bottom: -143px;
+  /* bottom: -143px; */
+  bottom: -190px;
   z-index: 1;
 }
 .main_spons_box{

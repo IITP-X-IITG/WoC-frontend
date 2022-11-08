@@ -5,7 +5,8 @@
 .reward_head hr{
     display: block;
     margin: auto;
-    width: 340px;
+    /* width: 340px; */
+    width: 420px;
     height: 2px;
 }
 .rewardBox{
@@ -49,7 +50,8 @@
 }
 @media only screen and (max-width: 800px) {
     .reward_head hr{
-        width: 250px;
+        /* width: 250px; */
+        width: 330px;
     }
     .rewardBox{
         flex-direction: column;

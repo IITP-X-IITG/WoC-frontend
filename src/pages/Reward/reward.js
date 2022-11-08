@@ -24,7 +24,7 @@ export default function Reward() {
             <Animatedbg/>
             <Navigation/>
             <div className="reward_head">
-            <h2 data-aos = "zoom-in" data-aos-once = "true">REWARDS AND PRIZES</h2>
+            <h2 data-aos = "zoom-in" data-aos-once = "true">PAST REWARDS AND PRIZES</h2>
             <hr />
             </div>
             <div className="rewardBox right" data-aos="fade-up" data-aos-once = "true">

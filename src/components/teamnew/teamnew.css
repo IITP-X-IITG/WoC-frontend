@@ -101,7 +101,8 @@
 
 .slider hr{
     background-color: white; 
-    width: 9%;
+    /* width: 9%; */
+    width: 15%;
     display: block; 
     margin: auto;
     margin-bottom:50px;
@@ -194,7 +195,8 @@
         height: 20px;
     }
     .slider hr{
-        width: 20%;
+        /* width: 20%; */
+        width: 30%;
         margin-bottom: 0px;
         padding-bottom: 0px;
     }

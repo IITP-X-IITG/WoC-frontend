@@ -7,9 +7,9 @@ import Slider3 from '../components/teamnew/slider3'
 import Footer from '../components/footer'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from "react";
+
 export default function Teamnew() {
-    useEffect(() => {
+    React.useEffect(() => {
         Aos.init({duration: 800});
     }, [])
     return (
@@ -17,7 +17,7 @@ export default function Teamnew() {
             <Animatedbg/>
             <Navigation/>
             <div className = "slider">
-            <h2 data-aos = "zoom-in" data-aos-once = "true">TEAM</h2>
+            <h2 data-aos = "zoom-in" data-aos-once = "true">TEAM 2021</h2>
             <hr/>
             </div>
             <div className = "combined">

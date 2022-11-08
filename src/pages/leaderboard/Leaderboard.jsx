@@ -217,7 +217,7 @@ const Leaderboard = () => {
       <div class='leader-twinkling'></div>
       <div style={style} >
         <div className='space'></div>
-        <div className='title mb-5 p-3'>LEADERBOARD</div>
+        <div className='title mb-5 p-3'>LEADERBOARD 2021</div>
         {loading ? <Loading/>: (
 
         <Container>
