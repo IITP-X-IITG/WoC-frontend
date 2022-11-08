@@ -1,0 +1,95 @@
+.inf {
+    display: flex;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.rank {
+    /* display: flex; */
+    width: 8%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.rank_text {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 30%;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: #dedede;
+}
+ 
+.rank_num {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70%;
+  justify-content: center;
+  align-items: center;
+}
+
+.rank_num p{
+  margin: auto;
+  line-height: 0;
+  font-size: 4rem;
+}
+
+.name {
+    display: flex;
+    width: 60%;
+    color: white;
+    justify-content: left;
+    align-items: left;
+}
+
+.score {
+    display: flex;
+    width: 23%;
+    color: white;
+    justify-content: right;
+    padding: 1rem;
+}
+
+.tablee {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+      rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+      rgba(107, 54, 54, 0.05) 0px 0px 0px 1px inset;
+    border-radius: 1em;
+    background-color: white;
+  }
+
+
+  thead {
+    display: flex;
+  }
+  
+  tr {
+    display: flex;
+  }
+  
+  .left {
+    display: flex;
+    width: 20%;
+    padding: 1rem 1.5rem;
+    justify-content: center;
+  }
+  
+  
+  .middle {
+    display: flex;
+    width: 20%;
+    padding: 1rem 1.5rem;
+    justify-content: center;
+  }
+  
+  .rig {
+    display: flex;
+    width: 60%;
+    padding: 1rem 1.5rem;
+    justify-content: center;
+  }
+  
+  

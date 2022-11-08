@@ -18,7 +18,7 @@ body {
 .tablee {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
     rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
-    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    rgba(107, 54, 54, 0.05) 0px 0px 0px 1px inset;
   border-radius: 1em;
   background-color: white;
 }
@@ -28,9 +28,10 @@ thead {
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   font-size: 1.2em;
 }
-thead th {
+/* thead th {
   padding: 0.7em !important;
-}
+  /* display: flex; */
+/* } */ */
 
 table {
   margin-bottom: 0 !important;
@@ -110,13 +111,7 @@ table {
   /* padding: 0.2em; */
   /* margin: 1em; */
 }
-p {
-  margin: 0;
-}
 
-td {
-  vertical-align: middle;
-}
 
 /* Pagination Nav */
 .pagination {
@@ -158,6 +153,8 @@ td {
   color: #2e63a5;
   background-color: rgb(204, 231, 255);
   padding: 0.35em;
+  border-radius: 0.25rem;
+  margin: auto 0.2rem;
 }
 
 .pagination-left button:disabled {
@@ -191,4 +188,34 @@ td {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+}
+
+
+thead {
+  display: flex;
+}
+
+tr {
+  display: flex;
+}
+
+.left-position {
+  display: flex;
+  width: 20%;
+  padding: 1rem 1.5rem;
+  justify-content: center;
+}
+
+
+.middle-id {
+  display: flex;
+  width: 50%;
+  padding: 1rem 1.5rem;
+}
+
+.right-score {
+  display: flex;
+  width: 30%;
+  padding: 1rem 1.5rem;
+  justify-content: center;
 }
