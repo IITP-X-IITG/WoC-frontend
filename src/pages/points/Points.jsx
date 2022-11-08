@@ -22,7 +22,7 @@ const Points = (props) => {
           return "Issue";
         }
         if (link[i] == "/" && link[i - 1] == "l") {
-          return "Pull";
+          return "Pull Request";
         }
       }
       return "#";
@@ -158,7 +158,7 @@ const Points = (props) => {
                 <thead>
                   <th className="left">Points</th>
                   <th className="middle">Type</th>
-                  <th className="rig">Repository</th>
+                  <th className="rig">Link</th>
                 </thead>
                 <tbody>
                   {prs.map((data) => {
@@ -190,9 +190,7 @@ const Image = styled(Avatar)`
   margin: auto;
   margin-left: 2rem;
   margin-right: 1.2rem;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 20px 50px rgba(0, 0, 0, 0.25);
   transform: scale(1.3);
-  border: solid #1e1e1e 4px; 
 `;
 
 const IdText = styled.div`
