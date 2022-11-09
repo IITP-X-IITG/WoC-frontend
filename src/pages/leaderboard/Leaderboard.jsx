@@ -7,6 +7,9 @@ import Footer from "../../components/footer";
 import { usePagination, useTable } from "react-table";
 import { Dropdown } from "react-bootstrap";
 import Loading from "../../components/leaderboard/Loading";
+import { NavLink } from 'react-router-dom';
+import Avatar from '@mui/material/Avatar';
+import styled from "styled-components";
 
 const Leaderboard = () => {
 
@@ -18,42 +21,87 @@ const Leaderboard = () => {
 
     async function getCSV() {
       try{
-        const tempfi = [];
         const target = `https://docs.google.com/spreadsheets/d/e/2PACX-1vQbBtmoTx9NEqcob94XXoIMnorCXObHA7wb84DOhJ5-Qaoxq38Az5Gh8Uk_FHuB5J-uUgLb8RNBpwUO/pub?gid=0&single=true&output=csv`;
         const result = await fetch(target);
         const data = await result.text();
         var rows = data.toString().split("\r");
-        for(let i = 0; i < rows.length ; i++){
-          let score = {};
-          let str = rows[i];
-          let s = "";
-          let flag = 0;
-          let arr = [];
-          for(let j = 0; j < str.length; j++){
-            let ch = str[j];
-            if(ch === ','){
-              arr.push(s);
-              s = "";
-              continue;
-            } 
-             s += ch;
-          }
 
-          arr.push(s);
-          score["col1"] = i+1;
-
-          score["col2"] = arr[0];
-          score["col3"] = arr[1];
-          tempfi.push(score);
+        let arr = [];
+        for (let i = 0; i < rows.length; i++) {  
+          let str = "";
+          let temp = [];
+          if(i == 0){
+              for(let j = 0; j < rows[i].length; j++){
+                str += rows[i][j];
+              }    
+              temp = str.split(",");
+            }
+            else{
+              let str = "";
+              for(let j = 1; j < rows[i].length; j++){
+                str += rows[i][j];
+              }   
+              temp = str.split(",");
+            }
+            let x = temp[1];
+            temp[1] = temp[0];
+            temp[0]  = Number(x);;
+            arr.push(temp);
         }
 
-        setFi(tempfi);
-        setSe(tempfi);
+        arr.sort(function(a, b) {
+          return a[0] - b[0];
+        });
+
+        let finalArr = [];
+        for(let i = arr.length - 1; i>=0; i--){
+          let score = {};
+          score["rank"] = arr.length - i;
+          score["gitid"] = arr[i][1];
+          score["points"] = arr[i][0];
+          finalArr.push(score);
+        }
+
+
+
+
+        // for(let i = 0; i < rows.length ; i++){
+        //     let str = rows[i];
+        //     if(i == rows.length - 1){
+        //     }
+        //     else{
+        //       let s = "";
+        //       for(let j = 0; j < str.length - 1; j++){
+        //         s += str[j];
+        //       }
+        //       str = s;
+        //     }
+
+        //     let score = {};
+            
+        //     let arr = [];
+        //     let temp = "";
+        //     for(let j = 0; j < str.length; j++){
+        //         if(str[j] == ","){
+        //           arr.push(temp);
+        //           temp = "";
+        //         }
+        //         else{
+        //           temp += str[j];
+        //         }
+        //     }
+        //     arr.push(temp);
+
+        //   score["rank"] = i+1;
+        //   score["gitid"] = arr[0];
+        //   score["points"] = arr[1];
+        //   tempfi.push(score);
+        // }
+        setFi(finalArr);
+        setSe(finalArr);
         setLoading(false);
       }catch(error){
-
         console.log(error);
-
       }
     }
 
@@ -65,15 +113,15 @@ const Leaderboard = () => {
     () => [
       {
         Header: "Position",
-        accessor: "col1",
+        accessor: "rank",
       },
       {
         Header: "GitHub Handle",
-        accessor: "col2",
+        accessor: "gitid",
       },
       {
         Header: "Score",
-        accessor: "col3",
+        accessor: "points",
       },
     ],
     []
@@ -86,7 +134,7 @@ const Leaderboard = () => {
       let query = e.target.value.toLowerCase();
       let temp = [];
       data_dup.forEach((user) => {
-          if(user.col2.toLowerCase().includes(query))
+          if(user.gitid.toLowerCase().includes(query))
             temp.push(user);
       })
       setFi(temp);
@@ -249,13 +297,15 @@ const Leaderboard = () => {
                 ))}
               </tbody>
             </BTable> */}
-            <BTable responsive borderless striped hover {...getTableProps()}>
-              <thead>
+            {/* <BTable responsive borderless hover {...getTableProps()}>
+              <thead >
                 {headerGroups.map((headerGroup) => (
                   <tr {...headerGroup.getHeaderGroupProps()}>
                     {headerGroup.headers.map((column) => (
                       <th {...column.getHeaderProps()}>
+                        <Heading>
                         {column.render("Header")}
+                        </Heading>
                       </th>
                     ))}
                   </tr>
@@ -267,17 +317,65 @@ const Leaderboard = () => {
                   return (
                     <tr {...row.getRowProps()}>
                       {row.cells.map((cell) => {
-                        if (cell["column"]["id"] !== "col2")
+                        if (cell["column"]["id"] !== "gitid")
                           return (
                             <td {...cell.getCellProps()}>
-                              {/* {cell.render("Cell")} */}
+                              <Name>
                               {cell["value"]}
+                              </Name>
                             </td>
                           );
                         else
                           return (
                             <td {...cell.getCellProps()}>
-                              {cell["value"]}
+                            <Name>
+                              <Image alt={cell["value"]} src={"https://github.com/"+cell["value"]+".png"} />
+                              <SLink to={'/points/' + cell["value"]}>{cell["value"]}</SLink>
+                            </Name>
+                            </td>
+                          );
+                      })}
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </BTable> */}
+
+
+            <BTable responsive borderless hover>
+              <thead>
+                <th className="left-position">Position</th>
+                <th className="middle-id">Github ID</th>
+                <th className="right-score">Score</th>
+              </thead>
+              <tbody {...getTableBodyProps()}>
+                {page.map((row, i) => {
+                  prepareRow(row);
+                  return (
+                    <tr {...row.getRowProps()}>
+                      {row.cells.map((cell) => {
+                        if (cell["column"]["id"] === "gitid")
+                          return (
+                            <td className="middle-id" {...cell.getCellProps()}>
+                                <Image alt={cell["value"]} src={"https://github.com/"+cell["value"]+".png"} />
+                                <SLink to={'/points/' + cell["value"]}>{cell["value"]}</SLink>
+                            </td>
+                          );
+                        else if(cell["column"]["id"] === "rank")
+                          return (
+                            <td className="left-position" {...cell.getCellProps()}>
+                              {cell["value"] === 1 && <Gold>1</Gold>}
+                              {cell["value"] === 2 && <Silver>2</Silver>}
+                              {cell["value"] === 3 && <Bronze>3</Bronze>}
+                              {(cell["value"] !== 1 && cell["value"] !== 2 && cell["value"] !==3 ) && <Text>{cell["value"]}</Text>}
+                            </td>
+                          );
+                        else
+                          return (
+                            <td className="right-score" {...cell.getCellProps()}>
+                                <Text>
+                                {cell["value"]}
+                                </Text>
                             </td>
                           );
                       })}
@@ -393,3 +491,68 @@ const Leaderboard = () => {
 };
 
 export default Leaderboard;
+
+const Image = styled(Avatar)`
+  margin: 2px 0px;
+  margin-left: 15px;
+  margin-right: 1rem;
+  
+`;
+
+const SLink = styled(NavLink)`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: None;
+  color: #1e1e1e;
+  &:hover{
+    color: #838383;
+  }
+`
+
+const Text = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const Gold = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #FFD700;
+  border-radius: 50%;
+  margin: auto;
+  width: 25px;
+  height: 25px;
+  padding: 0.7rem;
+`;
+
+const Silver = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #C0C0C0;
+  border-radius: 50%;
+  margin: auto;
+  width: 25px;
+  height: 25px;
+  padding: 0.7rem;
+`;
+
+const Bronze = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #CD7F32;
+  border-radius: 50%;
+  margin: auto;
+  width: 25px;
+  height: 25px;
+  padding: 0.7rem;
+`;

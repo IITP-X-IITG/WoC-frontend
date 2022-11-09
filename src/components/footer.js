@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import {AiOutlineMail, AiFillTwitterCircle} from 'react-icons/ai'
 // import {GoLocation} from 'react-icons/go'
-import {BsFacebook, BsInstagram} from 'react-icons/bs'
+import {BsFacebook, BsInstagram, BsDiscord} from 'react-icons/bs'
 // import { VscGithubInverted } from "react-icons/vsc";
 import footer_style from './footer.css'
 import nwocLogo from '../pages/Images/nwoc logo.svg'
@@ -43,6 +43,10 @@ export default function footer(props) {
                     <h1>Contact Us</h1>
                     <hr className="hiddenHr" />
                    
+                    <div className="ico">
+                    <BsDiscord/>
+                        <p><a href="https://discord.gg/xhQ9N9Z3jc" target="_blank"  rel="noreferrer">Code Peak 2022 Discord</a></p>
+                    </div>
                     <div className="ico">    
                         <AiOutlineMail/>
                         <p><a href="mailto:njack@iitp.ac.in" target="_blank"  rel="noreferrer">njack@iitp.ac.in</a></p>
