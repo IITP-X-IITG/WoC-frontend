@@ -132,7 +132,7 @@ export default function Home() {
                   data-aos="fade-up"
                   data-aos-once="true"
                 >
-                  <Timeline date="3 NOV" desc="Mentors Registration Starts" />
+                  <Timeline date="5 NOV" desc="Mentors Registration Starts" />
                 </div>
 
                 <div
