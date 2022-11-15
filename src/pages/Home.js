@@ -58,7 +58,7 @@ export default function Home() {
             {" "}
             Register Now{" "}
           </Link>
-          as a mentor to be a part of the largest open source event in India.
+          as a mentor and as a student to be a part of the largest open source event in India.
         </marquee>
 
         {/* ---------LOGO----------- */}
@@ -213,7 +213,7 @@ export default function Home() {
             style={{ background: "rgb(16, 31, 46)" }}
           >
             <VscGithubInverted />
-            <CountUp end="3000" />
+            <CountUp end="5200" />
             <p>Participants</p>
           </div>
           <div
@@ -221,7 +221,7 @@ export default function Home() {
             style={{ background: "rgb(18, 34, 51)" }}
           >
             <CgGitPull />
-            <CountUp end="1800" />
+            <CountUp end="3300" />
             <p>Pull Requests</p>
           </div>
           <div
@@ -229,7 +229,7 @@ export default function Home() {
             style={{ background: "rgb(21, 38, 56)" }}
           >
             <AiOutlineFundProjectionScreen />
-            <CountUp end="100" />
+            <CountUp end="140" />
             <p>Projects Done</p>
           </div>
           <div
@@ -237,7 +237,7 @@ export default function Home() {
             style={{ background: "rgb(23, 44, 66)" }}
           >
             <FaUniversity />
-            <CountUp end="320" />
+            <CountUp end="340" />
             <p>Universities</p>
           </div>
         </div>

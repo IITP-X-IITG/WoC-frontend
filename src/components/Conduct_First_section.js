@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "../pages/Images/logo_right.png";
 import CaGuide from "../Files/CampusAmbassadorInfo.pdf";
 import MentorGuide from "../Files/MENTORSGUIDE.pdf";
-import STUDENTGUIDE from "../Files/STUDENTGUIDE.pdf"
+import STUDENTGUIDE from "../Files/STUDENTGUIDE.pdf";
 
 function Firstsection() {
   return (
@@ -29,19 +29,23 @@ function Firstsection() {
                 <div className="btnBox">
                   <div className="d-grid gap-2 col-3 mx-auto">
                     <a href={MentorGuide} target="_blank" rel="noreferrer">
-                      <button className="btn btn-primary btn-apply" type="button" >
+                      <button
+                        className="btn btn-primary btn-apply"
+                        type="button"
+                      >
                         MentorGuide
                       </button>
                     </a>
                   </div>
                   <div className="d-grid gap-2 col-3 mx-auto">
-                   
-                      {/* <a href={STUDENTGUIDE} target="_blank" rel="noreferrer"> */}
-                       <button className="btn btn-primary btn-apply disabled" type="button">
-                      StudentGuide
+                    <a href={STUDENTGUIDE} target="_blank" rel="noreferrer">
+                      <button
+                        className="btn btn-primary btn-apply"
+                        type="button"
+                      >
+                        StudentGuide
                       </button>
-                      {/* </a> */}
-                    
+                    </a>
                   </div>
                 </div>
                 <br />

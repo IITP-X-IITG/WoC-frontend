@@ -4,10 +4,10 @@ import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 function Card() {
+  
   useEffect(() => {
     Aos.init({ duration: 800 });
   }, []);
-
   return (
     <>
       <section className="second-section">
@@ -15,7 +15,7 @@ function Card() {
         <div className="d-flex row justify-content-around">
           <div
             className=" card-cover col-lg-4 col-md-6"
-            data-aos="fade-up"
+            data-aos="fade-right"
             data-aos-once="true"
           >
             <div className="h-100 card to-apply-card">
@@ -33,12 +33,12 @@ function Card() {
                 </div>
                 <div className="d-grid gap-2 col-6 mx-auto register-button">
                   <a
-                    href="#"
+                    href="https://forms.gle/oe9Qoo2pySk1K1SCA"
                     // target="_blank"
                     rel="noreferrer"
                   >
                     <button
-                      className="btn btn-primary btn-apply btn-phone btn-tab disabled my-2"
+                      className="btn btn-primary btn-apply btn-phone btn-tab my-2"
                       type="button"
                     >
                       Register
