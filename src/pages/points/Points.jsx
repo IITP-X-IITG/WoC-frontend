@@ -15,30 +15,32 @@ const Points = (props) => {
   const [prs, setPrs] = useState([]);
 
   useEffect(() => {
-
-    function typeOfLink(link) {
+    const typeOfLink = (link) => {
       for (let i = link.length - 1; i >= 0; i--) {
-        if (link[i] == "/" && link[i - 1] == "s") {
+        if (link[i] === "/" && link[i - 1] === "s") {
           return "Issue";
         }
-        if (link[i] == "/" && link[i - 1] == "l") {
+        if (link[i] === "/" && link[i - 1] === "l") {
           return "Pull Request";
         }
       }
       return "#";
-    }
+    };
 
-    function nameOfLink(link) {
+    const nameOfLink = (link) => {
       let n = "";
       for (let i = link.length - 1; i >= 0; i--) {
-        if (link[i] == "/") break;
+        if (link[i] === "/") break;
         else {
           n = link[i] + n;
         }
       }
       let r;
       for (let i = link.length - 1; i >= 0; i--) {
-        if ((link[i] == "p" && link[i - 1] == "/") || (link[i] == "i" && link[i - 1] == "/")) {
+        if (
+          (link[i] === "p" && link[i - 1] === "/") ||
+          (link[i] === "i" && link[i - 1] === "/")
+        ) {
           r = i;
           break;
         }
@@ -49,9 +51,9 @@ const Points = (props) => {
       }
       str = str + "#" + n;
       return str;
-    }
+    };
 
-    async function getCSV() {
+    const getCSV = async () => {
       try {
         const target = `https://docs.google.com/spreadsheets/d/e/2PACX-1vQbBtmoTx9NEqcob94XXoIMnorCXObHA7wb84DOhJ5-Qaoxq38Az5Gh8Uk_FHuB5J-uUgLb8RNBpwUO/pub?gid=0&single=true&output=csv`;
         const result = await fetch(target);
@@ -61,13 +63,12 @@ const Points = (props) => {
         for (let i = 0; i < rows.length; i++) {
           let str = "";
           let temp = [];
-          if (i == 0) {
+          if (i === 0) {
             for (let j = 0; j < rows[i].length; j++) {
               str += rows[i][j];
             }
             temp = str.split(",");
-          }
-          else {
+          } else {
             let str = "";
             for (let j = 1; j < rows[i].length; j++) {
               str += rows[i][j];
@@ -79,23 +80,21 @@ const Points = (props) => {
           temp[0] = Number(x);
           arr.push(temp);
         }
-        
-        arr.sort(function(a, b) {
+
+        arr.sort(function (a, b) {
           return a[0] - b[0];
         });
-        
 
         let prList = [];
         for (let i = arr.length - 1; i >= 0; i--) {
-          if (arr[i][1] == props.id) {
+          if (arr[i][1] === props.id) {
             setTotal(arr[i][0]);
             setRank(arr.length - i);
             let datapr = {};
             for (let j = 2; j < arr[i].length; j++) {
-              if (j % 2 == 0) {
+              if (j % 2 === 0) {
                 datapr["points"] = arr[i][j];
-              }
-              else {
+              } else {
                 datapr["link"] = arr[i][j];
                 datapr["text"] = nameOfLink(arr[i][j]);
                 datapr["type"] = typeOfLink(arr[i][j]);
@@ -107,43 +106,32 @@ const Points = (props) => {
         }
         setPrs(prList);
         setLoading(false);
-
       } catch (error) {
-
         console.log(error);
-
       }
-    }
+    };
     getCSV();
-
-
   }, []);
-
 
   return (
     <>
       <Navigation />
-      <div class='leader-stars'></div>
-      <div class='leader-twinkling'></div>
-      <div className='space'></div>
+      <div class="leader-stars"></div>
+      <div class="leader-twinkling"></div>
+      <div className="space"></div>
       {loading ? (
         <>
-          <div className='space'></div>
+          <div className="space"></div>
           <Loading />
-          <div className='space'></div>
+          <div className="space"></div>
         </>
       ) : (
         <Container>
-
-          <div style={style} >
+          <div style={style}>
             <div className="inf">
               <div className="rank">
-                <div className="rank_text">
-                  RANK
-                </div>
-                <div className="rank_num">
-                  {<p>{rank}</p>}
-                </div>
+                <div className="rank_text">RANK</div>
+                <div className="rank_num">{<p>{rank}</p>}</div>
               </div>
               <Image src={"https://github.com/" + props.id + ".png"} />
               <div className="name">
@@ -166,7 +154,9 @@ const Points = (props) => {
                       <tr>
                         <td className="left">{data.points}</td>
                         <td className="middle">{data.type}</td>
-                        <td className="rig"><SLink href={data.link}>{data.text}</SLink></td>
+                        <td className="rig">
+                          <SLink href={data.link}>{data.text}</SLink>
+                        </td>
                       </tr>
                     );
                   })}
@@ -174,12 +164,10 @@ const Points = (props) => {
               </BTable>
             </div>
           </div>
-          <div className='space'></div>
+          <div className="space"></div>
         </Container>
-
       )}
-      <Footer bg='#12263F' />
-
+      <Footer bg="#12263F" />
     </>
   );
 };
@@ -220,7 +208,7 @@ const SLink = styled.a`
   align-items: center;
   text-decoration: None;
   color: #1e1e1e;
-  &:hover{
+  &:hover {
     color: #838383;
   }
-`
+`;

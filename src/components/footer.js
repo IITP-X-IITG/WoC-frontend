@@ -45,7 +45,7 @@ export default function footer(props) {
                    
                     <div className="ico">
                     <BsDiscord/>
-                        <p><a href="https://discord.gg/xhQ9N9Z3jc" target="_blank"  rel="noreferrer">Code Peak 2022 Discord</a></p>
+                        <p><a href="https://discord.gg/Xq7urDjq" target="_blank"  rel="noreferrer">Code Peak 2022 Discord</a></p>
                     </div>
                     <div className="ico">    
                         <AiOutlineMail/>
