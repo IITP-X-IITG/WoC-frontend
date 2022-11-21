@@ -58,7 +58,7 @@ export default function Home() {
             {" "}
             Register Now{" "}
           </Link>
-          as a mentor and as a student to be a part of the largest open source event in India.
+          as a student. Mentor's Registration has been closed. Shortlisted project will be announced on 24th November 2022.
         </marquee>
 
         {/* ---------LOGO----------- */}
