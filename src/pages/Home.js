@@ -165,21 +165,21 @@ export default function Home() {
                   data-aos="fade-up"
                   data-aos-once="true"
                 >
-                  <Timeline date="1 DEC" desc="Orientation" />
+                  <Timeline date="3 DEC" desc="Orientation" />
                 </div>
                 <div
                   className="timeline"
                   data-aos="fade-up"
                   data-aos-once="true"
                 >
-                  <Timeline date="2 DEC" desc="Git and GitHub Workshop" />
+                  <Timeline date="4 DEC" desc="Git and GitHub Workshop" />
                 </div>
                 <div
                   className="timeline"
                   data-aos="fade-up"
                   data-aos-once="true"
                 >
-                  <Timeline date="4 DEC" desc="Coding Period Starts." />
+                  <Timeline date="5 DEC" desc="Coding Period Starts." />
                 </div>
                 <div
                   className="timeline"
