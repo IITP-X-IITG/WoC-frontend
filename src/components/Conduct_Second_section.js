@@ -69,11 +69,10 @@ function Card() {
                 </div>
                 <div className="d-grid gap-2 col-6 mx-auto">
                   <a
-                    href="https://forms.gle/3sXp2AVFKFjHMgWA8"
-                    target="_blank"
+                    href="#"
                     rel="noreferrer"
                   >
-                    <button className="btn btn-primary btn-apply my-2" type="button">
+                    <button className="btn btn-primary btn-apply my-2 disabled" type="button">
                       Register
                     </button>
                   </a>
