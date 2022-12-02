@@ -4,7 +4,7 @@
     "title": "Clueless official website",
     "desc": "This is Clueless official website where you can make your developer profile as well as meet new people across the world.",
     "mentors": ["Clueless-Community"],
-    "lang": ["TypeScript"],
+    "lang": ["TypeScript", "Next.js", "React.js"],
     "tag": ["Web Dev"]
   },
   {
@@ -21,14 +21,14 @@
     "desc": "An API that helps you to deal with your financial calculations",
     "mentors": ["Clueless-Community"],
     "lang": ["Python"],
-    "tag": ["FastApi"]
+    "tag": ["FastAPI"]
   },
   {
     "repo-url": "https://github.com/Clueless-Community/seamless-ui",
     "title": "Seamless UI",
     "desc": "This is a Web UI Kit made with simple HTML and Tailwind CSS. You can use them in any of your projects, be it a simple HTML, CSS static website or a React, Vue, Angular or Next.js Complex app.",
     "mentors": ["Clueless-Community"],
-    "lang": ["HTML"],
+    "lang": ["HTML","CSS", "Tailwind-CSS"],
     "tag": ["Web Dev"]
   },
   {
@@ -53,7 +53,7 @@
     "desc": "Demonstration of different algorithms and operations on faces. Despite a variety of open-source face recognition frameworks available, there was no ready-made solution to implement.",
     "mentors": ["akshitagupta15june", "anamika-pal"],
     "lang": ["Python", "Jupyter Notebook"],
-    "tag": ["ML"]
+    "tag": ["Machine Learning","ML"]
   },
   {
     "repo-url": "https://github.com/BRAVO68WEB/url-minify",
@@ -148,15 +148,15 @@
     "title": "Scan To Healthify",
     "desc": "This webapp finds harmful ingredients in food products by extracting UPC from barcode. The ingredients dataset is stored in firestoredb",
     "mentors": ["Yaswanth820"],
-    "lang": ["HTML", "CSS", "JS", "Python"],
-    "tag": ["Web Dev"]
+    "lang": ["React.js", "Python"],
+    "tag": ["Web Dev", "Firebase", "EasyOCR", "FastAPI"]
   },
   {
     "repo-url": "https://github.com/infinity1729/EventListing",
     "title": "EventListing",
     "desc": "",
     "mentors": ["infinity1729"],
-    "lang": ["HTML", "JS", "Python"],
+    "lang": ["React.js", "Python","Django"],
     "tag": ["Web Dev"]
   },
   {
@@ -172,8 +172,8 @@
     "title": "E-Rickshaw",
     "desc": "",
     "mentors": ["Sparsh752"],
-    "lang": ["Java", "Dart", "Ruby", "Makefile", "Swift"],
-    "tag": ["Flutter"]
+    "lang": ["Flutter", "Dart", "Ruby", "Swift"],
+    "tag": ["App Dev"]
   },
   {
     "repo-url": "https://github.com/GeekyPS/Spotistats_flutter",

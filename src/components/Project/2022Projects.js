@@ -28,7 +28,7 @@ function Project2022_Search() {
         type="search"
         name="searchBar"
         id="searchBar"
-        placeholder="Search for Project using tags"
+        placeholder="Search for Project using tags and languages used"
         onChange={(e) => searchHandler(e)}
       />
 
