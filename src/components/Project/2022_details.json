@@ -81,6 +81,388 @@
         "tag": [
             "Python"
         ]
+    },
+    {
+        "repo-url": "https://github.com/shelcia/dynamic-portfolio",
+        "title": "dynamic-portfolio",
+        "desc": "Dynamic Portfolio helps you create simple websites by just filling out forms. As of now two templates are available with dark and light mode.",
+        "mentors": [
+            "Shelcia"
+        ],
+        "lang": [
+            "HTML", "CSS", "JavaScript"
+        ],
+        "tag": [
+            "Web Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/shelcia/noobcodes-docs",
+        "title": "noobcodes-docs",
+        "desc": "This website is built using Docusaurus 2, a modern static website generator. Simplified Data structure and Algorithm solutions for Beginner in Python",
+        "mentors": [
+            "Shelcia"
+        ],
+        "lang": [
+             "CSS", "JavaScript"
+        ],
+        "tag": [
+            "Web Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/shelcia/mockapi",
+        "title": "mockapi",
+        "desc": "A Web app which lets you generate data with API endpoints. Mocker can generate mock data with API endpoints, powered by faker.js",
+        "mentors": [
+            "Shelcia"
+        ],
+        "lang": [
+            "JavaScript"
+        ],
+        "tag": [
+            "Web Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/narayan954/dummygram",
+        "title": "dummygram",
+        "desc": "When you learn ReactJs it seems obvious to work on some projects and for the projects you might want to choose something that interests you. How about a clone of the app developed by the company that released ReactJs ? Yes, you might be getting the point, this application is basically a clone of the original Instagram and tends to add features like instagram or in fact the features that could not have been added in the instagram. So what are you waiting for? Use this opportunity to contribute and learn. ",
+        "mentors": [
+            "narayan954"
+        ],
+        "lang": [
+            "HTML","CSS","JavaScript"
+        ],
+        "tag": [
+            "Web Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/aritroCoder/MoreTrees",
+        "title": "MoreTrees",
+        "desc": "This website aims at encouraging people to become more concerned about the importance of our environment and promotes planting of trees among masses. It aims to provide a gamified challenge to keep people motivated at planting trees.",
+        "mentors": [
+            "aritroCoder"
+        ],
+        "lang": [
+            "JavaScript", "CSS"
+        ],
+        "tag": [
+            "Web Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/flyingsonu122/tarana",
+        "title": "tarana",
+        "desc": "Tarana - Best Music Player",
+        "mentors": [
+            "flyingsonu122"
+        ],
+        "lang": [
+            "HTML","JavaScript", "CSS", "Procfile"
+        ],
+        "tag": [
+            "Web Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/Udayraj123/OMRChecker",
+        "title": "OMRChecker",
+        "desc": "Read OMRs fast and accurately using a scanner on your phone.",
+        "mentors": [
+            "Udayraj123"
+        ],
+        "lang": [
+            "Python"
+        ],
+        "tag": [
+            "Software Development"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/Yaswanth820/Ambulance-tracker",
+        "title": "Ambulance-tracke",
+        "desc": "This webapp tracks location of an ambulance in real-time and it notifies hospital when an ambulance is within 3km range of a hospital which could potentially reduce treatment delay.",
+        "mentors": [
+            "Yaswanth820"
+        ],
+        "lang": [
+            "HTML", "CSS", "JavaScript", "Dockerfile", "Java"
+        ],
+        "tag": [
+            "Web Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/Yaswanth820/scan-to-healthify",
+        "title": "Ambulance-tracke",
+        "desc": "This webapp finds harmful ingredients in food products by extracting UPC from barcode. The ingredients dataset is stored in firestoredb",
+        "mentors": [
+            "Yaswanth820"
+        ],
+        "lang": [
+            "HTML", "CSS", "JavaScript", "Python"
+        ],
+        "tag": [
+            "Web Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/infinity1729/EventListing",
+        "title": "EventListing",
+        "desc": "",
+        "mentors": [
+            "infinity1729"
+        ],
+        "lang": [
+            "HTML", "JavaScript", "Python"
+        ],
+        "tag": [
+            "Web Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/reactplay/react-play",
+        "title": "react-play",
+        "desc": "react-play is an opensource platform that helps you learn ReactJS faster with hands-on practice model. It is a collection of projects that you can use to learn ReactJS.",
+        "mentors": [
+            "reactplay"
+        ],
+        "lang": [
+             "JavaScript", "CSS", "SCSS", "TypeScript"
+        ],
+        "tag": [
+            "Web Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/Sparsh752/E-Rickshaw",
+        "title": "E-Rickshaw",
+        "desc": "",
+        "mentors": [
+            "Sparsh752"
+        ],
+        "lang": [
+             "Java", "Dart", "Ruby", "Makefile", "Swift"
+        ],
+        "tag": [
+            "Flutter"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/GeekyPS/Spotistats_flutter",
+        "title": "Spotistats_flutter",
+        "desc": "An elegant looking app which fetches data from spotify api and shows it on the front-end , like users top songs , world top songs etc.",
+        "mentors": [
+            "GeekyPS"
+        ],
+        "lang": [
+             "Cmake", "Dart", "Ruby", "C++", "Swift"
+        ],
+        "tag": [
+            "App Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/World-of-ML/Play-With-Python",
+        "title": "Play-With-Python",
+        "desc": "Play With Python is an open source repository, which contains various types of games built in Python. Contributors are open to contribute in this repository with their contributions!",
+        "mentors": [
+            "World-of-ML"
+        ],
+        "lang": [
+             "Python"
+        ],
+        "tag": [
+            "Game Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/mohit200008/medi-Care",
+        "title": "medi-Care",
+        "desc": "With the rise of people getting affected with Covid-19, we were looking into the data on the level of healthcare people all around India was receiving, one of the things we found that people in rural areas are clueless about the symptoms of the disease. They also lack proper medical supervision/care.",
+        "mentors": [
+            "mohit200008"
+        ],
+        "lang": [
+             "Python", "CSS", "JavaScript", "Jupyter Notebook", "HTML"
+        ],
+        "tag": [
+            "Web Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/mohit200008/NFT-MARKETPLACE",
+        "title": "NFT-MARKETPLACE",
+        "desc": "",
+        "mentors": [
+            "mohit200008"
+        ],
+        "lang": [
+             "CSS", "JavaScript", "HTML"
+        ],
+        "tag": [
+            "Web Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/mohit200008/FoodSaver20008",
+        "title": "FoodSaver20008",
+        "desc": "About 6% of global greenhouse gas emissions is produced due to wastage of food. This cause global warming, harm environment, wastage of food (which can be feed to poor), wastage of resources, and wastage of money. FoodSaver is a web application that keep track of the food in your house, or restaurant and keep warning you to use the product before it got expire and got waste.",
+        "mentors": [
+            "mohit200008"
+        ],
+        "lang": [
+             "CSS", "JavaScript", "HTML"
+        ],
+        "tag": [
+            "Web Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/kaustav202/RealTime-TwitterDataAnalysis",
+        "title": "RealTime-TwitterDataAnalysis",
+        "desc": "Collect and process real time twitter data to analyse popularity of tweets with specific keywords or hashtags , visualize important metrics, generate twitter networks and map tweets and trends geographically.",
+        "mentors": [
+            "kaustav202"
+        ],
+        "lang": [
+             "Python"
+        ],
+        "tag": [
+            "Data Analytics"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/kaustav202/organica",
+        "title": "organica",
+        "desc": "Portal for organic product and lifestyle enthusiasts. Simple Parallax effects and clean UI has been used to make the landing page of the site. It aims to evolve as a platform that can bring more people into adopting organic lifestyle.",
+        "mentors": [
+            "kaustav202"
+        ],
+        "lang": [
+            "CSS", "JavaScript", "HTML"
+        ],
+        "tag": [
+            "Web Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/prathimacode-hub/Dev-Mint",
+        "title": "Dev-Mint",
+        "desc": "Dev Mint has an exclusive collection of layouts, animations, effects, code snippets, extensions, projects, resources etc. to fulfill and satiate your developer needs",
+        "mentors": [
+            "prathimacode-hub"
+        ],
+        "lang": [
+            "Github-Pages"
+        ],
+        "tag": [
+            "Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/prathimacode-hub/Dev-Mint",
+        "title": "Dev-Mint",
+        "desc": "Dev Mint has an exclusive collection of layouts, animations, effects, code snippets, extensions, projects, resources etc. to fulfill and satiate your developer needs",
+        "mentors": [
+            "prathimacode-hub"
+        ],
+        "lang": [
+            "Github-Pages"
+        ],
+        "tag": [
+            "Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/Clueless-Community/seamless-ui",
+        "title": "seamless-ui",
+        "desc": "This is a Web UI Kit made with simple HTML and Tailwind CSS. You can use them in any of your projects, be it a simple HTML, CSS static website or a React, Vue, Angular or Next.js Complex app.",
+        "mentors": [
+            "Clueless-Community"
+        ],
+        "lang": [
+            "HTML"
+        ],
+        "tag": [
+            "Web Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/Clueless-Community/clueless-official-website",
+        "title": "clueless-official-website",
+        "desc": "This is Clueless official website where you can make your developer profile as well as meet new people across the world.",
+        "mentors": [
+            "Clueless-Community"
+        ],
+        "lang": [
+            "TypeScript"
+        ],
+        "tag": [
+            "Web Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/Clueless-Community/flutter-ui-components",
+        "title": "clueless-official-website",
+        "desc": "This is Clueless official website where you can make your developer profile as well as meet new people across the world.",
+        "mentors": [
+            "Clueless-Community"
+        ],
+        "lang": [
+            "Cmake", "Dart", "Ruby", "C++", "C", "HTML"
+        ],
+        "tag": [
+            "Flutter", "Dart"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/Clueless-Community/fintech-api",
+        "title": "fintech-api",
+        "desc": "An API that helps you to deal with your financial calculations",
+        "mentors": [
+            "Clueless-Community"
+        ],
+        "lang": [
+            "Python"
+        ],
+        "tag": [
+            "FastApi"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/Clueless-Community/fintech-api",
+        "title": "fintech-api",
+        "desc": "An API that helps you to deal with your financial calculations",
+        "mentors": [
+            "Clueless-Community"
+        ],
+        "lang": [
+            "Python"
+        ],
+        "tag": [
+            "FastApi"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/vaibhav899050/Shopping-Application",
+        "title": "Shopping-Application",
+        "desc": "The idea is to make an app for shopping close to Amazon. We will have both the sections one for the buyers and one for the sellers.",
+        "mentors": [
+            "vaibhav899050"
+        ],
+        "lang": [
+            "Kotlin"
+        ],
+        "tag": [
+            "App Dev"
+        ]
     }
+
+
+
+
         
 ]
