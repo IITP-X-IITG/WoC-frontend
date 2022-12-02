@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import data from './2020_details.json';
 
-function Project2020_Search() {
+function Project2020() {
     let [projects, setProjects] = useState(data);
 
     const searchHandler = (e) => {
@@ -59,4 +59,4 @@ function Project2020_Search() {
             })}
         </div></>
 }
-export default Project2020_Search;
+export default Project2020;

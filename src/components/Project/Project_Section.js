@@ -1,13 +1,11 @@
-import React from "react";
-import { useState } from "react";
-import Project2018 from "./2018_Projects";
-import Project2019_Search from "./2019_Projects";
-import Project2020_Search from "./2020_Projects";
-import Project2021_Search from "./2021_Projects";
-import Project2022_Search from "./2022_Projects";
+import React, { useState } from "react";
+import Project2019 from "./2019Projects";
+import Project2020 from "./2020Projects";
+import Project2021 from "./2021Projects";
+import Project2022 from "./2022Projects";
 
-function Projectsection() {
-  const [toggleState, setToggleState] = useState(2);
+function ProjectSection() {
+  const [toggleState, setToggleState] = useState(1);
 
   const toggleTab = (index) => {
     setToggleState(index);
@@ -17,12 +15,12 @@ function Projectsection() {
     <section>
       <div className="container-project">
         <div className="bloc-tabs">
-          {/* <button
+          <button
             className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
             onClick={() => toggleTab(1)}
           >
             2022
-          </button> */}
+          </button>
           <button
             className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
             onClick={() => toggleTab(2)}
@@ -50,20 +48,20 @@ function Projectsection() {
         </div>
 
         <div className="content-tabs">
-          {/* <div
+          <div
             className={
               toggleState === 1 ? "content  active-content" : "content"
             }
           >
-            <Project2022_Search />
-          </div> */}
+            <Project2022 />
+          </div>
 
           <div
             className={
               toggleState === 2 ? "content  active-content" : "content"
             }
           >
-            <Project2021_Search />
+            <Project2021 />
           </div>
 
           <div
@@ -71,18 +69,18 @@ function Projectsection() {
               toggleState === 3 ? "content  active-content" : "content"
             }
           >
-            <Project2020_Search />
+            <Project2020 />
           </div>
           <div
             className={
               toggleState === 4 ? "content  active-content" : "content"
             }
           >
-            <Project2019_Search />
+            <Project2019 />
           </div>
         </div>
       </div>
     </section>
   );
 }
-export default Projectsection;
+export default ProjectSection;
