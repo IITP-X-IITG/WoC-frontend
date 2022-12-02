@@ -326,7 +326,7 @@
     "desc": "This webapp is a simple community social app to talk with community and enjoy together.",
     "mentors": ["asmit203"],
     "lang": ["HTML", "CSS", "Django", "Python"],
-    "tag": ["App Dev", "Machine Learning"]
+    "tag": ["Web Dev", "Machine Learning"]
   },
     {
         "repo-url": "https://github.com/padmaja2305/face_recognition-application",
