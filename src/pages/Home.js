@@ -3,7 +3,8 @@ import Navigation from "../components/Navigation";
 import home_style from "./Home.css";
 import logo_codepeak from "./Images/logo.png";
 import hill from "./Images/mtpnggg.png";
-import avl from "./Images/avl.svg";
+import clueless from "./Images/clueless.png";
+import avl from "./Images/avl.png";
 import campusmemories from "./Images/Campusmemories.png";
 //import mount from './Images/svgviewer-react-output'
 import Aos from "aos";
@@ -72,16 +73,17 @@ export default function Home() {
             data-aos="zoom-in"
             data-aos-once="true"
           />
-          {/* <p>Powered By</p> */}
-          {/* <div className="main_spons_box">
-            <a href="https://aviyel.com/" target="_blank" rel="noreferrer">
+          <p>Sponsored By</p>
+          <div className="main_spons_box">
+            <a href="https://www.clueless.tech/" target="_blank" rel="noreferrer">
               <img
-                src={avl}
+                src={clueless}
                 alt=""
                 srcset=""
                 className="main_spons_img1"
                 data-aos="zoom-in"
                 data-aos-once="true"
+                style={{ height: "80px", width: "auto" }}
               />
             </a>
             <a
@@ -98,7 +100,7 @@ export default function Home() {
                 data-aos-once="true"
               />
             </a>
-          </div> */}
+          </div>
 
           <img src={hill} alt="" srcset="" className="hill_img" />
         </div>
@@ -304,6 +306,7 @@ export default function Home() {
               srcset=""
               data-aos="zoom-out"
               data-aos-once="true"
+              style={{ height: "40px", width: "auto" }}
             />
           </a>
           <a
