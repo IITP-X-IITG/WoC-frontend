@@ -331,9 +331,9 @@
   {
     "repo-url": "https://github.com/asmit203/TalkitOut",
     "title": "TalkitOut",
-    "desc": "A platform for people to share their thoughts and feelings with others.",
+    "desc": "This webapp is a simple community social app to talk with community and enjoy together.",
     "mentors": ["asmit203"],
-    "lang": ["HTML", "CSS", "Django"],
+    "lang": ["HTML", "CSS", "Django", "Python"],
     "tag": ["App Dev"]
   },
     {
