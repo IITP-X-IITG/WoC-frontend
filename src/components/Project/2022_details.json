@@ -1,4 +1,5 @@
 [
+
     {
 
         "repo-url": "https://github.com/2002Bishwajeet/awesome-appwrite-snippets",  
@@ -459,10 +460,55 @@
         "tag": [
             "App Dev"
         ]
-    }
+    },
 
+  {
+    "repo-url": "https://github.com/2002Bishwajeet/awesome-appwrite-snippets",
+    "title": "Awesome Appwrite Snippets",
+    "desc": "Awesome Appwrite Snippets is a collection of commonly used Appwrite APIs. It increases your speed of development by eliminating most of the boilerplate code associated with making using Appwrite in your Project.",
+    "mentors": ["2002Bishwajeet"],
+    "lang": ["Kotlin", "Flutter", "Node.js", "Web SDK", "Dart", "PHP"],
+    "tag": ["AppDev", "FLutter", "nodeJS"]
+  },
+  {
+    "repo-url": "https://github.com/madris112/parivartan",
+    "title": "Parivartan",
+    "desc": "A course offering website for students to find the best course for them.",
+    "mentors": ["madris112"],
+    "lang": ["JavaScript", "CSS", "HTML"],
+    "tag": ["Web Dev"]
+  },
+  {
+    "repo-url": "https://github.com/akshitagupta15june/Face-X",
+    "title": "Face-X",
+    "desc": "Demonstration of different algorithms and operations on faces. Despite a variety of open-source face recognition frameworks available, there was no ready-made solution to implement.",
+    "mentors": ["akshitagupta15june", "anamika-pal"],
+    "lang": ["Python", "Jupyter Notebook"],
+    "tag": ["ML"]
+  },
+  {
+    "repo-url": "https://github.com/BRAVO68WEB/url-minify",
+    "title": "Url Minify",
+    "desc": "A elegant url shortner",
+    "mentors": ["BRAVO68WEB"],
+    "lang": ["JavaScript", "CSS", "HTML"],
+    "tag": ["Web Dev"]
+  },
+  {
+    "repo-url": "https://github.com/neelshah2409/Bot-Collection",
+    "title": "Bot Collection",
+    "desc": "A collection of bots which will help to automate everything",
+    "mentors": ["neelshah2409"],
+    "lang": ["Python", "Shell"],
+    "tag": ["Python"]
+  },
+  {
+    "repo-url": "https://github.com/neelshah2409/Cartoonist",
+    "title": "Cartoonist",
+    "desc": "It is a collection of different types of cartoons, designs, logos, and characters available on the same platform that will be helpful for programmers in their projects.",
+    "mentors": ["neelshah2409"],
+    "lang": ["Python"],
+    "tag": ["Python"]
+  }
 
-
-
-        
 ]
