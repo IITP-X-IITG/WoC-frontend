@@ -365,7 +365,7 @@
         "title": "Codeless-Builder",
         "desc": "We are building a platform that helps users to build a website without writing a single line of code.",
         "mentors": ["aryasoni98"],
-        "lang": ["Python", "HTML", "CSS", "JS"],
+        "lang": ["TypeScript", "CSS", "JS"],
         "tag": ["Web Dev"]
     }
 ]
