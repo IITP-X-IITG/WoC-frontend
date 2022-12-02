@@ -289,14 +289,6 @@
     "tag": ["Web Dev"]
   },
   {
-    "repo-url": "https://github.com/boradesanket13/free-web-development-resources",
-    "title": "Free-web-development-resources",
-    "desc": "A list of free web development resources",
-    "mentors": ["boradesanket13"],
-    "lang": ["HTML", "CSS", "JS"],
-    "tag": ["Web Dev"]
-  },
-  {
     "repo-url": "https://github.com/prvn2004/InsuranceSurveyorExam",
     "title": "InsuranceSurveyorExam",
     "desc": "This is an Study app based on firebase. It Includes notes, syllabus and live test features.",
