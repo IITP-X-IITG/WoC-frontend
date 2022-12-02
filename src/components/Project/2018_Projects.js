@@ -29,7 +29,7 @@ function Project2018() {
             type="search"
             name="searchBar"
             id="searchBar"
-            placeholder="Search for Project using tags and languages used"
+            placeholder="Search for Project using tags and stack used"
             onChange = {(e) => searchHandler(e)}
         />
         <div className="row">
