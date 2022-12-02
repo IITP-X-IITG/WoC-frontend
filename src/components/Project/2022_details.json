@@ -327,5 +327,21 @@
     "mentors": ["Sandeep03edu"],
     "lang": ["Java"],
     "tag": ["Firebase", "App Dev"]
-  }
+  },
+  {
+    "repo-url": "https://github.com/asmit203/TalkitOut",
+    "title": "TalkitOut",
+    "desc": "A platform for people to share their thoughts and feelings with others.",
+    "mentors": ["asmit203"],
+    "lang": ["HTML", "CSS", "Django"],
+    "tag": ["App Dev"]
+  },
+    {
+        "repo-url": "https://github.com/padmaja2305/face_recognition-application",
+        "title": "Face Recognition Application",
+        "desc": "This is a face recognition application which can detect faces in an image and can also detect faces in real time.",
+        "mentors": ["padmaja2305"],
+        "lang": ["Python"],
+        "tag": ["Machine Learning"]
+}
 ]
