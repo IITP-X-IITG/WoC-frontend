@@ -343,5 +343,29 @@
         "mentors": ["padmaja2305"],
         "lang": ["Python"],
         "tag": ["Machine Learning"]
-}
+    },
+    {
+        "repo-url": "https://github.com/KartuzGupta/Chat-App",
+        "title": "Chat-App",
+        "desc": "A simple chat application",
+        "mentors": ["KartuzGupta", "PrateekUp"],
+        "lang": ["HTML", "CSS", "JS"],
+        "tag": ["Web Dev"]
+    },
+    {
+        "repo-url": "https://github.com/aryasoni98/AI-Interview",
+        "title": "AI-Interview",
+        "desc": "We are building an interface that helps users with a situation by the use of an AI that asks questions on the basis of a code which the aspirant has written, asked from a diverse pack of frequently asked coding questions.",
+        "mentors": ["aryasoni98"],
+        "lang": ["Python", "HTML", "CSS", "JS"],
+        "tag": ["Machine Learning", "Deep Learning"]
+    },
+    {
+        "repo-url": "https://github.com/aryasoni98/Codeless-Builder",
+        "title": "Codeless-Builder",
+        "desc": "We are building a platform that helps users to build a website without writing a single line of code.",
+        "mentors": ["aryasoni98"],
+        "lang": ["Python", "HTML", "CSS", "JS"],
+        "tag": ["Web Dev"]
+    }
 ]
