@@ -59,7 +59,7 @@ export default function Home() {
             Register Now{" "}
           </Link>
           as a student. Mentor registration has been closed and shortlisted
-          project will be announced on 1st December 2022
+          projects will be announced on 2nd December 2022.
         </marquee>
 
         {/* ---------LOGO----------- */}
@@ -159,7 +159,7 @@ export default function Home() {
                   data-aos="fade-up"
                   data-aos-once="true"
                 >
-                  <Timeline date="29 NOV" desc="Project Announcement" />
+                  <Timeline date="2 DEC" desc="Project Announcement" />
                 </div>
                 <div
                   className="timeline"
