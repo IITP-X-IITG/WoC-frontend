@@ -173,21 +173,26 @@ button {
     margin-left: auto;
     margin-right: auto;
   }
+  .repo-heading{
+    font-size: 18px;
+  }
   .repo-desc {
-    font-size: 14px;
+    font-size: 12.5px;
   }
   .repo-title-aviyel {
     margin-left: -3px;
   }
   .repo-mentors {
-    font-size: 13px;
+    font-size: 12.5px;
     text-align:left;
-    bottom: 48px;
+    bottom: 58px;
   }
   .repo-stats {
-    font-size: 3px;
     bottom: 9px;
     text-align: left;
+  }
+  .repo-stats li {
+    font-size: 11px;
   }
   .container-project{
     margin:0;
@@ -199,6 +204,7 @@ button {
   }
   #searchBar{
     width: 75vw;
+    font-size: 10px;
   }
 }
 @media only screen and (min-width: 767px) and (max-width: 1155px) {

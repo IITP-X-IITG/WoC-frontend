@@ -53,7 +53,7 @@
     "desc": "Demonstration of different algorithms and operations on faces. Despite a variety of open-source face recognition frameworks available, there was no ready-made solution to implement.",
     "mentors": ["akshitagupta15june", "anamika-pal"],
     "lang": ["Python", "Jupyter Notebook"],
-    "tag": ["Machine Learning","ML"]
+    "tag": ["ML"]
   },
   {
     "repo-url": "https://github.com/BRAVO68WEB/url-minify",
@@ -196,7 +196,7 @@
     "title": "Medicare",
     "desc": "With the rise of people getting affected with Covid-19, we came up with a web app that will not only connect the those in need with the correct medical care/supervision but also enable them to understand the implications of different diseases in a very intuitive way.",
     "mentors": ["mohit200008"],
-    "lang": ["Python", "CSS", "JS", "Jupyter Notebook", "HTML"],
+    "lang": ["Python", "HTML", "CSS", "JS", "Jupyter Notebook"],
     "tag": ["Web Dev"]
   },
   {
@@ -289,14 +289,6 @@
     "tag": ["Web Dev"]
   },
   {
-    "repo-url": "https://github.com/boradesanket13/free-web-development-resources",
-    "title": "Free-web-development-resources",
-    "desc": "A list of free web development resources",
-    "mentors": ["boradesanket13"],
-    "lang": ["HTML", "CSS", "JS"],
-    "tag": ["Web Dev"]
-  },
-  {
     "repo-url": "https://github.com/prvn2004/InsuranceSurveyorExam",
     "title": "InsuranceSurveyorExam",
     "desc": "This is an Study app based on firebase. It Includes notes, syllabus and live test features.",
@@ -334,23 +326,23 @@
     "desc": "This webapp is a simple community social app to talk with community and enjoy together.",
     "mentors": ["asmit203"],
     "lang": ["HTML", "CSS", "Django", "Python"],
-    "tag": ["App Dev", "Machine Learning"]
+    "tag": ["Web Dev", "Machine Learning"]
   },
     {
         "repo-url": "https://github.com/padmaja2305/face_recognition-application",
         "title": "Face Recognition Application",
         "desc": "This is a face recognition application which can detect faces in an image and can also detect faces in real time.",
         "mentors": ["padmaja2305"],
-        "lang": ["Python"],
-        "tag": ["Machine Learning"]
+        "lang": ["Python","SQLite","Django","HTML","CSS","JS","Open CV"],
+        "tag": ["ML","Web Dev"]
     },
     {
         "repo-url": "https://github.com/KartuzGupta/Chat-App",
         "title": "Chat-App",
         "desc": "A simple chat application",
         "mentors": ["KartuzGupta", "PrateekUp"],
-        "lang": ["HTML", "CSS", "JS"],
-        "tag": ["Web Dev"]
+        "lang": ["HTML", "CSS", "JS", "React.js","Node.js","MongoDB"],
+        "tag": ["Web Dev","MERN"]
     },
     {
         "repo-url": "https://github.com/aryasoni98/AI-Interview",
@@ -358,7 +350,7 @@
         "desc": "We are building an interface that helps users with a situation by the use of an AI that asks questions on the basis of a code which the aspirant has written, asked from a diverse pack of frequently asked coding questions.",
         "mentors": ["aryasoni98"],
         "lang": ["Python", "HTML", "CSS", "JS"],
-        "tag": ["Machine Learning", "Deep Learning"]
+        "tag": ["ML", "Deep Learning"]
     },
     {
         "repo-url": "https://github.com/aryasoni98/Codeless-Builder",
