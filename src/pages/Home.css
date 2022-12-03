@@ -40,7 +40,7 @@ svg{
   height: auto;
   position: absolute;
   /* bottom: -143px; */
-  bottom: -310px;
+  bottom: -280px;
   z-index: 1;
 }
 .main_spons_box{
@@ -49,7 +49,6 @@ svg{
   justify-content: center;
   width: 100%;
   grid-column-gap: 25px;
-  
 }
 .main_spons_img2{
   height: 80px;
@@ -64,7 +63,7 @@ svg{
   /* margin-bottom: 100px; */
 }
 .main_spons_img{
-  height: 60px;
+  height: 50px;
   width: auto;
   z-index: 2;
   margin-bottom: 100px;
@@ -72,7 +71,6 @@ svg{
 .logo a{
   z-index: 2;
 }
-
 /*-------- ABOUT US --------------*/
 .abt {
   position: relative;
