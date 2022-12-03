@@ -1,5 +1,127 @@
 [
   {
+    "special":true,
+    "avl":true,
+    "repo-url": "https://dagshub.com/kingabzpro/Yoga-Pose-Classification",
+    "title": "Yoga-Pose-Classification",
+    "desc": "In this project, we will be finetuning Resnet34 model for Yoga Pose classification using DagsHub streaming.",
+    "mentors": [
+    ],
+    "lang": [
+      "python"
+    ],
+    "tag": [
+      "Data Science"
+    ]
+  },
+  {
+    "special":true,
+    "avl":true,
+    "repo-url": "https://dagshub.com/AiswaryaSrinivas/Mayo_Stroke_Blood_Clot_Origin",
+    "title": "Mayo_Stroke_Blood_Clot_Origin",
+    "desc": "The goal of this project is to classify the blood clot origins in ischemic stroke. Using whole slide digital pathology images, you'll build a model that differentiates between the two major acute ischemic stroke (AIS) etiology subtypes: cardiac and large artery atherosclerosis.",
+    "mentors": [
+    ],
+    "lang": [
+        "python"
+    ],
+    "tag": [
+        "Data Science"
+    ]
+},
+{
+  "special":true,
+  "avl":true,
+  "repo-url": "https://dagshub.com/nirbarazida/CheXNet",
+    "title": "CheXNet",
+    "desc": "A Python3 (TensorFlow) reimplementation of CheXNet paper - Classification and Localization of Thoracic Diseases",
+    "mentors": [
+    ],
+    "lang": [
+      "python"
+    ],
+    "tag": [
+      "Data Science"
+    ]
+  },
+  {
+    "special":true,
+    "avl":true,
+    "repo-url": "https://dagshub.com/DeanLa/SavtaDepth",
+    "title": "SavtaDepth",
+    "desc": "Savta Depth is a collaborative Open Source Data Science project for monocular depth estimation. Here you will find the code for the project, but also the data, models, pipelines and experiments. This means that the project is easily reproducible on any machine, but also that you can contribute to it as a data scientist.",
+    "mentors": [
+    ],
+    "lang": [
+      "python"
+    ],
+    "tag": [
+      "Data Science"
+    ]
+  },
+  {
+    "special":true,
+    "avl":true,
+    "repo-url": "https://dagshub.com/nirbarazida/mario_vs_wario",
+    "title": "Mario_vs_wario",
+    "desc": "",
+    "mentors": [
+    ],
+    "lang": [
+        "python"
+    ],
+    "tag": [
+        "Data Science"
+    ]
+  },
+  {
+    "special":true,
+    "avl":true,
+    "repo-url": "https://github.com/DagsHub/audio-datasets",
+    "title": "Audio-datasets",
+    "desc": "For that, we added audio data catalog capabilities to DagsHub! You can now upload audio files to DagsHub and see its spectrogram, wave, and even listen to it! You can see a vivid example of this (extremely cool) feature in our Librispeech-ASR-corpus project.",
+    "mentors": [
+    ],
+    "lang": [
+        "python"
+    ],
+    "tag": [
+        "Data Science"
+    ]
+},
+  {
+    "special":true,
+    "avl":true,
+    "repo-url": "https://github.com/DagsHub/3D-model-datasets",
+    "title": "3D-model-datasets",
+    "desc": "For that, we added 3D data catalog capabilities to DagsHub! You can now upload 3D Models or motion clips to DagsHub and see, move and diff it! You can see a vivid example of this (extremely cool) feature in our HUMAN4D project.",
+    "mentors": [
+    ],
+    "lang": [
+        "python"
+    ],
+    "tag": [
+        "Data Science"
+    ]
+},
+  {
+    "special":true,
+    "avl":true,
+    "repo-url": "https://github.com/DagsHub/papers-with-everything",
+    "title": "Papers-with-everything",
+    "desc": "Machine Learning papers with code, data and models",
+    "mentors": [
+    ],
+    "lang": [
+        "python"
+    ],
+    "tag": [
+        "Data Science","ML"
+    ]
+},
+  {
+    "special":true,
+    "avl":false,
     "repo-url": "https://github.com/Clueless-Community/clueless-official-website",
     "title": "Clueless official website",
     "desc": "This is Clueless official website where you can make your developer profile as well as meet new people across the world.",
@@ -8,6 +130,8 @@
     "tag": ["Web Dev"]
   },
   {
+    "special":true,
+    "avl":false,
     "repo-url": "https://github.com/Clueless-Community/flutter-ui-components",
     "title": "Flutter UI Components",
     "desc": "Amazing UI Designs for you to choose from. Simply pick up a template UI from our collection list which you love and then plug in your app.",
@@ -16,6 +140,8 @@
     "tag": ["App Dev"]
   },
   {
+    "special":true,
+    "avl":false,
     "repo-url": "https://github.com/Clueless-Community/fintech-api",
     "title": "Fintech API",
     "desc": "An API that helps you to deal with your financial calculations",
@@ -24,6 +150,8 @@
     "tag": ["FastAPI"]
   },
   {
+    "special":true,
+    "avl":false,
     "repo-url": "https://github.com/Clueless-Community/seamless-ui",
     "title": "Seamless UI",
     "desc": "This is a Web UI Kit made with simple HTML and Tailwind CSS. You can use them in any of your projects, be it a simple HTML, CSS static website or a React, Vue, Angular or Next.js Complex app.",
