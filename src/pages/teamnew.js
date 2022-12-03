@@ -1,9 +1,9 @@
 import React from 'react'
 import Navigation from '../components/Navigation'
 import Animatedbg from '../components/Animatedbg'
-import Slider1 from '../components/teamnew/slider1'
-import Slider2 from '../components/teamnew/slider2'
-import Slider3 from '../components/teamnew/slider3'
+import Coordinators from '../components/teamnew/Coordinators'
+import Tech from '../components/teamnew/Tech'
+import Sponsorship from '../components/teamnew/Sponsorship'
 import Footer from '../components/footer'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -21,9 +21,9 @@ export default function Teamnew() {
             <hr/>
             </div>
             <div className = "combined">
-            <Slider1/>
-            <Slider2/>
-            <Slider3/>
+            <Coordinators/>
+            <Tech/>
+            <Sponsorship/>
             </div>
             <Footer/>
         </div>

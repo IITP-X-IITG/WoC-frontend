@@ -1,5 +1,6 @@
-import React from "react";
-import pratyush from "../resources/pratyush.jpg";
+import React, { useEffect } from "react";
+
+// image import
 import amresh from "../resources/amresh_sinha.jpeg";
 import sarthak from "../resources/sarthak_diwan.jpeg";
 import Rajan from "../resources/rajan_kumar.jpg";
@@ -17,14 +18,15 @@ import Gaurav from "../resources/gaurav_rajput.jpeg";
 import Ashutosh from "../resources/ashutosh_kumar.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+
 // Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Namecard from "./namecard";
 import "./teamnew.css";
-export default function Slider3() {
+
+export default function Sponsorship() {
     useEffect(() => {
         Aos.init({ duration: 800 });
     }, []);
@@ -45,7 +47,7 @@ export default function Slider3() {
             <div>
               <div className="coord">
                 <div className="icon">
-                  <img src={amresh} />
+                  <img src={amresh} alt="Amresh"/>
                   <Namecard
                     name="Amresh"
                     link1="https://www.linkedin.com/in/aps-amresh/"
@@ -53,7 +55,7 @@ export default function Slider3() {
                   />
                 </div>
                 <div className="icon">
-                  <img src={Athul} />
+                  <img src={Athul} alt="Athul"/>
                   <Namecard
                     name="Athul Krishna K"
                     link1="https://www.linkedin.com/in/athul-krishna-k-688262223"
@@ -61,7 +63,7 @@ export default function Slider3() {
                   />
                 </div>
                 <div className="icon">
-                  <img src={Harsha} />
+                  <img src={Harsha} alt="Harsha"/>
                   <Namecard
                     name="Harsh Agrawal"
                     link1="www.linkedin.com/in/harshagrawal523/"
@@ -74,7 +76,7 @@ export default function Slider3() {
             <div>
               <div className="coord">
                 <div className="icon">
-                  <img src={Gunjan} />
+                  <img src={Gunjan} alt="Gunjan"/>
                   <Namecard
                     name="Gunjan Dhanuka"
                     link1="https://www.linkedin.com/in/gunjan-dhanuka/"
@@ -82,7 +84,7 @@ export default function Slider3() {
                   />
                 </div>
                 <div className="icon">
-                  <img src={Priyanshi} />
+                  <img src={Priyanshi} alt="Priyanshi"/>
                   <Namecard
                     name="Priyanshi Singh"
                     link1="https://www.linkedin.com/in/priyanshi-singh-7362a4219/"
@@ -90,7 +92,7 @@ export default function Slider3() {
                   />
                 </div>
                 <div className="icon">
-                  <img src={Harsh} />
+                  <img src={Harsh} alt="Harsh"/>
                   <Namecard
                     name="Harshwardhan Bhakkad"
                     link1="https://www.linkedin.com/in/harsh-bhakkad-12734a202"
@@ -103,7 +105,7 @@ export default function Slider3() {
             <div>
               <div className="coord">
                 <div className="icon">
-                  <img src={Soumadip} />
+                  <img src={Soumadip} alt="Soumadip"/>
                   <Namecard
                     name="Soumadip Das"
                     link1="https://www.linkedin.com/in/soumadip-das-6031631b9/"
@@ -111,7 +113,7 @@ export default function Slider3() {
                   />
                 </div>
                 <div className="icon">
-                  <img src={Vani} />
+                  <img src={Vani} alt="Vani"/>
                   <Namecard
                     name="Vani Krishna Barla"
                     link1="https://www.linkedin.com/in/vani-k-barla"
@@ -119,7 +121,7 @@ export default function Slider3() {
                   />
                 </div>
                 <div className="icon">
-                  <img src={Rajan} />
+                  <img src={Rajan} alt="Rajan"/>
                   <Namecard
                     name="Rajan Kumar"
                     link1="https://www.linkedin.com/in/rajan-kumar-1296b9212"
@@ -132,7 +134,7 @@ export default function Slider3() {
             <div>
               <div className="coord">
                 <div className="icon">
-                  <img src={Pratham} />
+                  <img src={Pratham} alt="Pratham"/>
                   <Namecard
                     name="Pratham Kulkarni"
                     link1="https://www.linkedin.com/in/pratham-kulkarni-81b24b223/"
@@ -140,7 +142,7 @@ export default function Slider3() {
                   />
                 </div>
                 <div className="icon">
-                  <img src={Hardik} />
+                  <img src={Hardik} alt="Hardik"/>
                   <Namecard
                     name="Hardik Tiwari"
                     link1="https://www.linkedin.com/in/hardik-tiwari-153350218"
@@ -148,7 +150,7 @@ export default function Slider3() {
                   />
                 </div>
                 <div className="icon">
-                  <img src={sarthak} />
+                  <img src={sarthak} alt="Sarthak"/>
                   <Namecard
                     name="Sarthak Diwan"
                     link1="https://www.linkedin.com/in/sarthak-diwan/"
@@ -160,7 +162,7 @@ export default function Slider3() {
             <div>
               <div className="coord">
                 <div className="icon">
-                  <img src={Ashutosh} />
+                  <img src={Ashutosh} alt="Ashutosh"/>
                   <Namecard
                     name="Ashutosh Kumar"
                     link1="https://www.linkedin.com/in/ashutosh-kumar-53b886211"
@@ -168,7 +170,7 @@ export default function Slider3() {
                   />
                 </div>
                 <div className="icon">
-                  <img src={Khushi} />
+                  <img src={Khushi} alt="Khushi"/>
                   <Namecard
                     name="Khushi Prasad"
                     link1="linkedin/khushi-prasad-7375a4217"
@@ -176,7 +178,7 @@ export default function Slider3() {
                   />
                 </div>
                 <div className="icon">
-                  <img src={Gaurav} />
+                  <img src={Gaurav} alt="Gaurav"/>
                   <Namecard
                     name="Gaurav"
                     link1="https://www.linkedin.com/in/gaurav-rajput-00125a218"
@@ -193,7 +195,7 @@ export default function Slider3() {
             <div>
               <div className="coord">
                 <div className="icon">
-                  <img src={amresh} />
+                  <img src={amresh} alt="Amresh"/>
                   <Namecard
                     name="Amresh"
                     link1="https://www.linkedin.com/in/aps-amresh/"
@@ -201,7 +203,7 @@ export default function Slider3() {
                   />
                 </div>
                 <div className="icon">
-                  <img src={Athul} />
+                  <img src={Athul} alt="Athul"/>
                   <Namecard
                     name="Athul Krishna K"
                     link1="https://www.linkedin.com/in/athul-krishna-k-688262223"
@@ -214,7 +216,7 @@ export default function Slider3() {
             <div>
               <div className="coord">
                 <div className="icon">
-                  <img src={Harsha} />
+                  <img src={Harsha} alt="Harsha"/>
                   <Namecard
                     name="Harsh Agrawal"
                     link1="www.linkedin.com/in/harshagrawal523/"
@@ -222,7 +224,7 @@ export default function Slider3() {
                   />
                 </div>
                 <div className="icon">
-                  <img src={Gunjan} />
+                  <img src={Gunjan} alt="Gunjan"/>
                   <Namecard
                     name="Gunjan Dhanuka"
                     link1="https://www.linkedin.com/in/gunjan-dhanuka/"
@@ -234,7 +236,7 @@ export default function Slider3() {
             <div>
               <div className="coord">
                 <div className="icon">
-                  <img src={Priyanshi} />
+                  <img src={Priyanshi} alt="Priyanshi"/>
                   <Namecard
                     name="Priyanshi Singh"
                     link1="https://www.linkedin.com/in/priyanshi-singh-7362a4219/"
@@ -242,7 +244,7 @@ export default function Slider3() {
                   />
                 </div>
                 <div className="icon">
-                  <img src={Harsh} />
+                  <img src={Harsh} alt='Harsh' />
                   <Namecard
                     name="Harshwardhan Bhakkad"
                     link1="https://www.linkedin.com/in/harsh-bhakkad-12734a202"
@@ -255,7 +257,7 @@ export default function Slider3() {
             <div>
               <div className="coord">
                 <div className="icon">
-                  <img src={Soumadip} />
+                  <img src={Soumadip} alt="Soumadip" />
                   <Namecard
                     name="Soumadip Das"
                     link1="https://www.linkedin.com/in/soumadip-das-6031631b9/"
@@ -263,7 +265,7 @@ export default function Slider3() {
                   />
                 </div>
                 <div className="icon">
-                  <img src={Vani} />
+                  <img src={Vani} alt="Vani" />
                   <Namecard
                     name="Vani Krishna Barla"
                     link1="https://www.linkedin.com/in/vani-k-barla"
@@ -276,7 +278,7 @@ export default function Slider3() {
             <div>
               <div className="coord">
                 <div className="icon">
-                  <img src={Rajan} />
+                  <img src={Rajan} alt="Rajan" />
                   <Namecard
                     name="Rajan Kumar"
                     link1="https://www.linkedin.com/in/rajan-kumar-1296b9212"
@@ -284,7 +286,7 @@ export default function Slider3() {
                   />
                 </div>
                 <div className="icon">
-                  <img src={Pratham} />
+                  <img src={Pratham} alt="Pratham" />
                   <Namecard
                     name="Pratham Kulkarni"
                     link1="https://www.linkedin.com/in/pratham-kulkarni-81b24b223/"
@@ -296,7 +298,7 @@ export default function Slider3() {
             <div>
               <div className="coord">
                 <div className="icon">
-                  <img src={Hardik} />
+                  <img src={Hardik} alt="Hardik" />
                   <Namecard
                     name="Hardik Tiwari"
                     link1="https://www.linkedin.com/in/hardik-tiwari-153350218"
@@ -304,7 +306,7 @@ export default function Slider3() {
                   />
                 </div>
                 <div className="icon">
-                  <img src={sarthak} />
+                  <img src={sarthak} alt="Sarthak" />
                   <Namecard
                     name="Sarthak Diwan"
                     link1="https://www.linkedin.com/in/sarthak-diwan/"
@@ -316,7 +318,7 @@ export default function Slider3() {
             <div>
               <div className="coord">
                 <div className="icon">
-                  <img src={Ashutosh} />
+                  <img src={Ashutosh} alt="Ashutosh" />
                   <Namecard
                     name="Ashutosh Kumar"
                     link1="https://www.linkedin.com/in/ashutosh-kumar-53b886211"
@@ -324,7 +326,7 @@ export default function Slider3() {
                   />
                 </div>
                 <div className="icon">
-                  <img src={Khushi} />
+                  <img src={Khushi} alt="Khushi" />
                   <Namecard
                     name="Khushi Prasad"
                     link1="linkedin/khushi-prasad-7375a4217"
@@ -336,7 +338,7 @@ export default function Slider3() {
             <div>
               <div className="coord">
                 <div className="icon">
-                  <img src={Gaurav} />
+                  <img src={Gaurav} alt="Gaurav"/>
                   <Namecard
                     name="Gaurav"
                     link1="https://www.linkedin.com/in/gaurav-rajput-00125a218"

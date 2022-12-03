@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+
+// import images
 import Madhur from "../resources/madhur_malpani.jpeg";
 import Atishay from "../resources/atishay_jain.jpeg";
 import Arpita from "../resources/arpita_mohapatra.jpg";
@@ -6,14 +8,14 @@ import Swapnil from "../resources/swapnil.jpg";
 import Vaishak from "../resources/vaishak_menon.jpeg";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
 // Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Namecard from "./namecard";
 import "./teamnew.css";
-export default function Slider1() {
+
+export default function Coordinators() {
   useEffect(() => {
     Aos.init({ duration: 800 });
   }, []);
@@ -34,7 +36,7 @@ export default function Slider1() {
           <div>
             <div className="coord">
               <div className="icon">
-                <img src={Madhur} />
+                <img src={Madhur} alt="Madhur" />
                 <Namecard
                   name="Madhur Malpani"
                   link1="https://www.linkedin.com/in/madhur-malpani-818646196/"
@@ -42,7 +44,7 @@ export default function Slider1() {
                 />
               </div>
               <div className="icon">
-                <img src={Atishay} />
+                <img src={Atishay} alt="Atishay" />
                 <Namecard
                   name="Atishay Jain"
                   link1="www.linkedin.com/in/atishay1743/"
@@ -50,7 +52,7 @@ export default function Slider1() {
                 />
               </div>
               <div className="icon">
-                <img src={Arpita} />
+                <img src={Arpita} alt="Arpita" />
                 <Namecard
                   name="Arpita Mahapatra"
                   link1="https://www.linkedin.com/in/arpita-mohapatra-65b6a5196"
@@ -62,7 +64,7 @@ export default function Slider1() {
           <div>
             <div className="coord">
               <div className="icon">
-                <img src={Swapnil} />
+                <img src={Swapnil} alt="Swapnil" />
                 <Namecard
                   name="Swapnil Srivastava"
                   link1="https://www.linkedin.com/in/s-swapnil"
@@ -70,7 +72,7 @@ export default function Slider1() {
                 />
               </div>
               <div className="icon">
-                <img src={Vaishak} />
+                <img src={Vaishak} alt="Vaishakh" />
                 <Namecard
                   name="Vaishakh"
                   link1="https://www.linkedin.com/in/vaishakhsmn/"
@@ -87,7 +89,7 @@ export default function Slider1() {
           <div>
             <div className="coord">
               <div className="icon">
-                <img src={Madhur} />
+                <img src={Madhur} alt="Madhur" />
                 <Namecard
                   name="Madhur Malpani"
                   link1="https://www.linkedin.com/in/madhur-malpani-818646196/"
@@ -95,7 +97,7 @@ export default function Slider1() {
                 />
               </div>
               <div className="icon">
-                <img src={Atishay} />
+                <img src={Atishay} alt="Atishay" />
                 <Namecard
                   name="Atishay Jain"
                   link1="www.linkedin.com/in/atishay1743/"
@@ -107,7 +109,7 @@ export default function Slider1() {
           <div>
             <div className="coord">
               <div className="icon">
-                <img src={Arpita} />
+                <img src={Arpita} alt="Arpita" />
                 <Namecard
                   name="Arpita Mahapatra"
                   link1="https://www.linkedin.com/in/arpita-mohapatra-65b6a5196"
@@ -115,7 +117,7 @@ export default function Slider1() {
                 />
               </div>
               <div className="icon">
-                <img src={Swapnil} />
+                <img src={Swapnil} alt="Swapnil" />
                 <Namecard
                   name="Swapnil Srivastava"
                   link1="https://www.linkedin.com/in/s-swapnil"
@@ -127,7 +129,7 @@ export default function Slider1() {
           <div>
             <div className="coord">
               <div className="icon">
-                <img src={Vaishak} />
+                <img src={Vaishak} alt="Vaishakh" />
                 <Namecard
                   name="Vaishakh"
                   link1="https://www.linkedin.com/in/vaishakhsmn/"

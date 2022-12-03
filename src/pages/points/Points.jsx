@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Navigation from "../../components/Navigation";
 import style from "./Points.css";
 import Container from "react-bootstrap/Container";
@@ -111,13 +111,13 @@ const Points = (props) => {
       }
     };
     getCSV();
-  }, []);
+  }, [props.id]);
 
   return (
     <>
       <Navigation />
-      <div class="leader-stars"></div>
-      <div class="leader-twinkling"></div>
+      <div className="leader-stars"></div>
+      <div className="leader-twinkling"></div>
       <div className="space"></div>
       {loading ? (
         <>
@@ -135,7 +135,16 @@ const Points = (props) => {
               </div>
               <Image src={"https://github.com/" + props.id + ".png"} />
               <div className="name">
-                <IdText><a href={"https://github.com/"+ props.id } style={{textDecoration:'none', color:'white'}} target="_blank" rel="noreferrer">{props.id}</a></IdText>
+                <IdText>
+                  <a
+                    href={"https://github.com/" + props.id}
+                    style={{ textDecoration: "none", color: "white" }}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {props.id}
+                  </a>
+                </IdText>
               </div>
               <div className="score">
                 <TotalPoints>{"Points : " + totalPoints}</TotalPoints>
