@@ -4,6 +4,7 @@ import home_style from "./Home.css";
 import logo_codepeak from "./Images/logo.png";
 import hill from "./Images/mtpnggg.png";
 import clueless from "./Images/clueless.png";
+import dagshub from "./Images/dagshub.png";
 import avl from "./Images/avl.png";
 import campusmemories from "./Images/Campusmemories.png";
 //import mount from './Images/svgviewer-react-output'
@@ -90,17 +91,27 @@ export default function Home() {
               />
             </a>
           
-            <a href="https://www.clueless.tech/" target="_blank" rel="noreferrer">
+            <a href="https://dagshub.com/" target="_blank" rel="noreferrer">
               <img
-                src={clueless}
+                src={dagshub}
                 alt=""
                 srcset=""
                 className="main_spons_img1"
                 data-aos="zoom-in"
                 data-aos-once="true"
-                style={{ height: "80px", width: "auto" }}
               />
             </a>
+            <a href="https://www.clueless.tech/" target="_blank" rel="noreferrer">
+              <img
+                src={clueless}
+                alt=""
+                srcset=""
+                className="main_spons_img2"
+                data-aos="zoom-in"
+                data-aos-once="true"
+              />
+            </a>
+
             </div>
           <img src={hill} alt="" srcset="" className="hill_img" />
         </div>
