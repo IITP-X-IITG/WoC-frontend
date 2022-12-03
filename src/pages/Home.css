@@ -612,7 +612,9 @@ svg{
   flex-direction: column;
   grid-row-gap: 0px;
 }
-.main_spons_img1{
+.main_spons_img{
   margin-bottom: 30px;
+  width: 300px;
+  height: auto;
 }
 }

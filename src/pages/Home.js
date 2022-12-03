@@ -75,17 +75,6 @@ export default function Home() {
           />
           <p>Sponsored By</p>
           <div className="main_spons_box">
-            <a href="https://www.clueless.tech/" target="_blank" rel="noreferrer">
-              <img
-                src={clueless}
-                alt=""
-                srcset=""
-                className="main_spons_img1"
-                data-aos="zoom-in"
-                data-aos-once="true"
-                style={{ height: "80px", width: "auto" }}
-              />
-            </a>
             <a
               href="https://www.geeksforgeeks.org/"
               rel="noreferrer"
@@ -100,8 +89,19 @@ export default function Home() {
                 data-aos-once="true"
               />
             </a>
-          </div>
-
+          
+            <a href="https://www.clueless.tech/" target="_blank" rel="noreferrer">
+              <img
+                src={clueless}
+                alt=""
+                srcset=""
+                className="main_spons_img1"
+                data-aos="zoom-in"
+                data-aos-once="true"
+                style={{ height: "80px", width: "auto" }}
+              />
+            </a>
+            </div>
           <img src={hill} alt="" srcset="" className="hill_img" />
         </div>
 
