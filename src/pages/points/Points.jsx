@@ -135,7 +135,7 @@ const Points = (props) => {
               </div>
               <Image src={"https://github.com/" + props.id + ".png"} />
               <div className="name">
-                <IdText>{props.id}</IdText>
+                <IdText><a href={"https://github.com/"+ props.id } style={{textDecoration:'none', color:'white'}} target="_blank" rel="noreferrer">{props.id}</a></IdText>
               </div>
               <div className="score">
                 <TotalPoints>{"Points : " + totalPoints}</TotalPoints>
