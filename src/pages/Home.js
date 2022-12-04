@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navigation from "../components/Navigation";
 import home_style from "./Home.css";
 import logo_codepeak from "./Images/logo.png";
@@ -7,10 +7,8 @@ import clueless from "./Images/clueless.png";
 import dagshub from "./Images/dagshub.png";
 import avl from "./Images/avl.png";
 import campusmemories from "./Images/Campusmemories.png";
-//import mount from './Images/svgviewer-react-output'
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
 import Timeline from "../components/timeline_block";
 //import ScrollButton from '../components/ScrollButton'
 import Footer from "../components/footer";
@@ -30,7 +28,9 @@ import Artboardlogo from "../pages/Images/Artboard.svg";
 import CountUp from "../components/Counter_up";
 import Animatedbg from "../components/Animatedbg";
 import { Link } from "react-router-dom";
+
 export default function Home() {
+
   useEffect(() => {
     Aos.init({ duration: 800 });
   }, []);
@@ -60,8 +60,7 @@ export default function Home() {
             {" "}
             Register Now{" "}
           </Link>
-          as a student. Mentor registration has been closed and shortlisted
-          projects will be announced on 2nd December 2022.
+          as a student. Coding period will start on 5th December.
         </marquee>
 
         {/* ---------LOGO----------- */}
