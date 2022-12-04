@@ -44,17 +44,17 @@ svg{
   z-index: 1;
 }
 .main_spons_box{
-  display: grid;
-  grid-template-columns: repeat(3, 0.1fr);
-  justify-content: center;
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
   width: 100%;
-  grid-column-gap: 25px;
 }
 .main_spons_img2{
   height: 80px;
   width: auto;
   z-index: 2;
-  margin-bottom: 100px;
 }
 .main_spons_img1{
   height: 60px;
@@ -66,7 +66,6 @@ svg{
   height: 50px;
   width: auto;
   z-index: 2;
-  margin-bottom: 100px;
 }
 .logo a{
   z-index: 2;

@@ -61,7 +61,7 @@ export default function Home() {
             Register Now{" "}
           </Link>
           as a student. Mentor registration has been closed and shortlisted
-          projects will be announced on 2nd December 2022.
+          projects has been announced on 2nd December 2022.
         </marquee>
 
         {/* ---------LOGO----------- */}
