@@ -425,11 +425,11 @@
     "tag": ["App Dev","Firebase"]
   },
   {
-    "repo-url": "https://github.com/letsintegreat/BMVSchool",
-    "title": "BMVSchool",
-    "desc": "An android app for a school. Students are notified about day wise homework and holidays. Discussions can be held with teachers and among peers.",
+    "repo-url": "https://github.com/letsintegreat/Tagify",
+    "title": "Tagify",
+    "desc": "Tagify enables the user to create and manage groups with ease. It lets the user find the right set of people and communicate relevant information with them.",
     "mentors": ["letsintegreat"],
-    "lang": ["Java", "Android Studio", "Kotlin"],
+    "lang": ["Flutter", "Dart", "Firebase"],
     "tag": ["App Dev"]
   },
   {
