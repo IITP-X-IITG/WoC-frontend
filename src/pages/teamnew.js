@@ -7,6 +7,7 @@ import Sponsorship from '../components/teamnew/Sponsorship'
 import Footer from '../components/footer'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import Advisory from '../components/teamnew/Advisory'
 
 export default function Teamnew() {
     React.useEffect(() => {
@@ -17,10 +18,11 @@ export default function Teamnew() {
             <Animatedbg/>
             <Navigation/>
             <div className = "slider">
-            <h2 data-aos = "zoom-in" data-aos-once = "true">TEAM 2021</h2>
+            <h2 data-aos = "zoom-in" data-aos-once = "true">TEAM 2022</h2>
             <hr/>
             </div>
             <div className = "combined">
+            <Advisory/>
             <Coordinators/>
             <Tech/>
             <Sponsorship/>
