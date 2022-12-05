@@ -19,7 +19,7 @@ const Leaderboard = () => {
   useEffect(() => {
     async function getCSV() {
       try {
-        const target = `https://docs.google.com/spreadsheets/d/e/2PACX-1vQbBtmoTx9NEqcob94XXoIMnorCXObHA7wb84DOhJ5-Qaoxq38Az5Gh8Uk_FHuB5J-uUgLb8RNBpwUO/pub?gid=0&single=true&output=csv`;
+        const target = `https://docs.google.com/spreadsheets/d/1j7mCwOWP3hSlKPfHKy0BvNZljSgJoqnUqTgjILqYFgU/export?format=csv`;
         const result = await fetch(target);
         const data = await result.text();
         var rows = data.toString().split("\r");
@@ -157,7 +157,7 @@ const Leaderboard = () => {
       <div className="leader-twinkling"></div>
       <div style={style}>
         <div className="space"></div>
-        <div className="title mb-5 p-3">LEADERBOARD 2021</div>
+        <div className="title mb-5 p-3">LEADERBOARD 2022</div>
         {loading ? (
           <Loading />
         ) : (
