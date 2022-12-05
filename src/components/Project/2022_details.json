@@ -482,7 +482,7 @@
   {
     "repo-url":"https://github.com/aakriti7x7/Tinkerers-Lab-Website",
     "title":"Tinkerers Lab Website",
-    "desc":"",
+    "desc":"We will create a fully responsive and dynamic website for Tinkerer's Lab from scratch, using HTML, CSS, and JS. This will include a Landing page, Projects page, Inventory Page, FAQ page, contact page, Admin/Maintainers page, and Booking Portal.",
     "mentors":["aakriti7x7","prathamiitp"],
     "lang":["HTML", "CSS", "JS"],
     "tag":["Web Dev","Frontend"]
