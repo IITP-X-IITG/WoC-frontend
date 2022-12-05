@@ -1,21 +1,17 @@
 import React from 'react';
-//import logo from './logo.svg';
 import './App.css';
-//import Navigation from './components/Navigation';
-import Home from './pages/Home'
-import ScrollButton from './components/ScrollButton'
+import Home from './pages/Home';
+import ScrollButton from './components/ScrollButton';
 import { Route, Switch, BrowserRouter} from 'react-router-dom';
-//import Footer from './components/footer'
-import Conduct from './pages/Conduct.js';
-// import Leaderboard from './pages/leaderboard/Leaderboard';
-import Leaderboard from './pages/leaderboard_temp';
-import Points from './pages/points';
-import Project from './pages/Project';
-import Team from './pages/teamnew'
+import Conduct from './pages/Conduct/Conduct.js';
+import Leaderboard from './pages/Leaderboard';
+import Points from './pages/Points';
+import Project from './pages/Projects/Project';
+import Team from './pages/Team';
 import Reward from './pages/Reward/reward';
-//import TeamTemp from './pages/leaderboard_temp'
 import ScrollToTop from './components/ScrollToTop';
 import Events from './pages/events/events';
+
 function App() {
   return (
     <div className="App">
@@ -36,5 +32,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

@@ -1,6 +1,6 @@
 import React from 'react'
 import {AiFillLinkedin, AiFillMail} from 'react-icons/ai'
-import './teamnew.css'
+import './Team.css'
 export default function namecard(props) {
     return (
         <div className = "namecard">

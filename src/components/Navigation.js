@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import style_nav from './Navigation.css'
 import { NavLink } from 'react-router-dom';
 import { NavbarBrand } from 'react-bootstrap';
+
 export default function Navigation(props) {
     return (
         <div style={style_nav}>
@@ -22,7 +23,6 @@ export default function Navigation(props) {
                             <NavLink to="/reward" activeStyle={{ color: 'rgb(103 212 223)', borderBottom: '2px solid #589ba2', fontWeight: 500 }} >Rewards</NavLink>
                             <NavLink to="/team" activeStyle={{ color: 'rgb(103 212 223)', borderBottom: '2px solid #589ba2', fontWeight: 500 }}>Team</NavLink>
                             <NavLink to="/events" activeStyle={{ color: 'rgb(103 212 223)', borderBottom: '2px solid #589ba2', fontWeight: 500 }}>Events</NavLink>
-                            {/* <NavLink to="/" >Contact</NavLink> */}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

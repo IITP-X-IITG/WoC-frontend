@@ -1,11 +1,10 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Logo from "../pages/Images/logo_right.png";
-import CaGuide from "../Files/CampusAmbassadorInfo.pdf";
-import MentorGuide from "../Files/MENTORSGUIDE.pdf";
-import STUDENTGUIDE from "../Files/STUDENTGUIDE.pdf";
+import Logo from "../../pages/Images/logo_right.png";
+import MentorGuide from "../../Files/MENTORSGUIDE.pdf";
+import StudentGuide from "../../Files/STUDENTGUIDE.pdf";
 
-function Firstsection() {
+function FirstSection() {
   return (
     <>
       <section className="first-section">
@@ -38,7 +37,7 @@ function Firstsection() {
                     </a>
                   </div>
                   <div className="d-grid gap-2 col-3 mx-auto">
-                    <a href={STUDENTGUIDE} target="_blank" rel="noreferrer">
+                    <a href={StudentGuide} target="_blank" rel="noreferrer">
                       <button
                         className="btn btn-primary btn-apply"
                         type="button"
@@ -59,4 +58,4 @@ function Firstsection() {
     </>
   );
 }
-export default Firstsection;
+export default FirstSection;

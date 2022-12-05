@@ -1,26 +1,29 @@
 import React, { useEffect } from "react";
 
-// import images
-import Sandeep from "../resources/sandeep_mishra.jpg";
-import Aditya from "../resources/aditya_kumar.jpg";
-import Vighnesh from "../resources/vighnesh_deshpande.jpg";
-import Amresh from "../resources/amresh_prasad.jpeg";
+// image import
+import Raunak from "../resources/raunak_kumar_gupta.jpg";
+import Avinash from "../resources/avinash_tyagi.jpeg";
+import Aruj from "../resources/aruj_gautam.jpg";
+import Utkarsh from "../resources/utkarsh_giri.jpg";
+import Raj from "../resources/raj_borogaon.jpg";
+import Harshit from "../resources/harshit_seksaria.jpg";
 import Shreya from "../resources/shreya_anand.jpg";
-import Anay from "../resources/anay_karnik.jpg";
 import Sanya from "../resources/sanya.jpg";
 import Sparsh from "../resources/sparsh_mittal.jpg";
 import Adittya from "../resources/adittya_gupta.jpg";
 import Priyanshu from "../resources/priyanshu_srivastava.jpg";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
+
 // Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Namecard from "./namecard";
-import "./teamnew.css";
+import "./Team.css";
 
-export default function Coordinators() {
+export default function Sponsorship() {
   useEffect(() => {
     Aos.init({ duration: 800 });
   }, []);
@@ -32,69 +35,70 @@ export default function Coordinators() {
     slidesToScroll: 1,
   };
   return (
-    <div className="slider1">
+    <div className="slider3">
       <h2 data-aos="zoom-in" data-aos-once="true">
-        Overall Coordinators
+        Sponsorship and Marketing Team
       </h2>
       <div className="fullscreen">
         <Slider {...settings}>
           <div>
             <div className="coord">
               <div className="icon">
-                <img src={Sandeep} alt="Sandeep Mishra" />
+                <img src={Raunak} alt="Raunak" />
                 <Namecard
-                  name="Sandeep Mishra"
-                  link1="https://www.linkedin.com/in/sandeep03edu/"
-                  link2="mailto:sandeep_2001ee61@iitp.ac.in"
+                  name="Raunak Kumar Gupta "
+                  link1="https://www.linkedin.com/in/raunak-kumar-gupta-075121226"
+                  link2="mailto:raunakmodanwal321@gmail.com"
                 />
               </div>
               <div className="icon">
-                <img src={Priyanshu} alt="Priyanshu" />
+                <img src={Avinash} alt="Avinash" />
                 <Namecard
-                  name="Priyanshu"
-                  link1="https://www.linkedin.com/in/priyanshu-71604b227/"
-                  link2="mailto:priyanshu.eee21@iitg.ac.in"
+                  name="Avinash Tyagi "
+                  link1="https://www.linkedin.com/in/avinash-t-956342226/"
+                  link2="mailto:avinash91715@gmail.com"
                 />
               </div>
               <div className="icon">
-                <img src={Aditya} alt="Aditya Kumar" />
+                <img src={Aruj} alt="Aruj" />
                 <Namecard
-                  name="Aditya Kumar"
-                  link1="https://www.linkedin.com/in/aditya-kumar-337a08218/"
-                  link2="mailto:adityakumarsanni.2001@gmail.com"
+                  name="Aruj Gautam"
+                  link1="https://www.linkedin.com/in/arujgautam/"
+                  link2="mailto:arujgautam1@gmail.com"
                 />
               </div>
             </div>
           </div>
+
           <div>
             <div className="coord">
               <div className="icon">
-                <img src={Vighnesh} alt="Vighnesh" />
+                <img src={Harshit} alt="Harshit" />
                 <Namecard
-                  name="Vighnesh Deshpande"
-                  link1="https://www.linkedin.com/in/vighnesh3802"
-                  link2="mailto:vadeshpande2002@gmail.com"
-                />
-              </div>
-              
-              <div className="icon">
-                <img src={Anay} alt="Anay" />
-                <Namecard
-                  name="Anay Karnik"
-                  link1="https://www.linkedin.com/in/anayvk"
-                  link2="mailto:anay_2001cs05@iitp.ac.in"
+                  name="Harshit Seksaria"
+                  link1="https://www.linkedin.com/in/letsintegreat/"
+                  link2="mailto:harshitseksaria9@gmail.com"
                 />
               </div>
               <div className="icon">
-                <img src={Amresh} alt="Amresh" />
+                <img src={Utkarsh} alt="Utkarsh" />
                 <Namecard
-                  name="Amresh Prasad Sinha"
-                  link1="https://www.linkedin.com/in/amresh-sinha"
-                  link2="mailto:theamresh.sinha@gmail.com"
+                  name="Utkarsh Kumar Giri"
+                  link1="https://www.linkedin.com/in/utkarsh-kumar-giri-b31b461b9/"
+                  link2="mailto:utkarshkumarbro@gmail.com"
+                />
+              </div>
+              <div className="icon">
+                <img src={Raj} alt="Raj" />
+                <Namecard
+                  name="Raj Borogaon"
+                  link1="https://www.linkedin.com/in/iks1r/"
+                  link2="mailto:b.raj@iitg.ac.in"
                 />
               </div>
             </div>
           </div>
+
           <div>
             <div className="coord">
               <div className="icon">
@@ -125,6 +129,14 @@ export default function Coordinators() {
           </div>
           <div>
             <div className="coord">
+              <div className="icon">
+                <img src={Priyanshu} alt="Priyanshu" />
+                <Namecard
+                  name="Priyanshu"
+                  link1="https://www.linkedin.com/in/priyanshu-71604b227/"
+                  link2="mailto:priyanshu.eee21@iitg.ac.in"
+                />
+              </div>
               <div className="icon">
                 <img src={Adittya} alt="Adittya Gupta" />
                 <Namecard
@@ -142,12 +154,73 @@ export default function Coordinators() {
         <Slider {...settings}>
           <div>
             <div className="coord">
-            <div className="icon">
-                <img src={Sandeep} alt="Sandeep Mishra" />
+              <div className="icon">
+                <img src={Raunak} alt="Raunak" />
                 <Namecard
-                  name="Sandeep Mishra"
-                  link1="https://www.linkedin.com/in/sandeep03edu/"
-                  link2="mailto:sandeep_2001ee61@iitp.ac.in"
+                  name="Raunak Kumar Gupta "
+                  link1="https://www.linkedin.com/in/raunak-kumar-gupta-075121226"
+                  link2="mailto:raunakmodanwal321@gmail.com"
+                />
+              </div>
+              <div className="icon">
+                <img src={Avinash} alt="Avinash" />
+                <Namecard
+                  name="Avinash Tyagi "
+                  link1="https://www.linkedin.com/in/avinash-t-956342226/"
+                  link2="mailto:avinash91715@gmail.com"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div className="coord">
+              <div className="icon">
+                <img src={Aruj} alt="Aruj" />
+                <Namecard
+                  name="Aruj Gautam"
+                  link1="https://www.linkedin.com/in/arujgautam/"
+                  link2="mailto:arujgautam1@gmail.com"
+                />
+              </div>
+              <div className="icon">
+                <img src={Utkarsh} alt="Utkarsh" />
+                <Namecard
+                  name="Utkarsh Kumar Giri"
+                  link1="https://www.linkedin.com/in/utkarsh-kumar-giri-b31b461b9/"
+                  link2="mailto:utkarshkumarbro@gmail.com"
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className="coord">
+              <div className="icon">
+                <img src={Harshit} alt="Harshit" />
+                <Namecard
+                  name="Harshit Seksaria"
+                  link1="https://www.linkedin.com/in/letsintegreat/"
+                  link2="mailto:harshitseksaria9@gmail.com"
+                />
+              </div>
+              <div className="icon">
+                <img src={Shreya} alt="Shreya Anand " />
+                <Namecard
+                  name="Shreya Anand "
+                  link1="https://www.linkedin.com/in/shreya-anand-815699229"
+                  link2="mailto:shreyaanand1501@gmail.com"
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className="coord">
+              <div className="icon">
+                <img src={Sanya} alt="Sanya" />
+                <Namecard
+                  name="Sanya"
+                  link1="https://www.linkedin.com/in/sanya-singh-1a72441b3/"
+                  link2="mailto:s.sanya@iitg.ac.in"
                 />
               </div>
               <div className="icon">
@@ -162,76 +235,6 @@ export default function Coordinators() {
           </div>
           <div>
             <div className="coord">
-            <div className="icon">
-                <img src={Aditya} alt="Aditya Kumar" />
-                <Namecard
-                  name="Aditya Kumar"
-                  link1="https://www.linkedin.com/in/aditya-kumar-337a08218/"
-                  link2="mailto:adityakumarsanni.2001@gmail.com"
-                />
-              </div>
-              <div className="icon">
-                <img src={Vighnesh} alt="Vighnesh" />
-                <Namecard
-                  name="Vighnesh Deshpande"
-                  link1="https://www.linkedin.com/in/vighnesh3802"
-                  link2="mailto:vadeshpande2002@gmail.com"
-                />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="coord">
-            <div className="icon">
-                <img src={Anay} alt="Anay" />
-                <Namecard
-                  name="Anay Karnik"
-                  link1="https://www.linkedin.com/in/anayvk"
-                  link2="mailto:anay_2001cs05@iitp.ac.in"
-                />
-              </div>
-              <div className="icon">
-                <img src={Amresh} alt="Amresh" />
-                <Namecard
-                  name="Amresh Prasad Sinha"
-                  link1="https://www.linkedin.com/in/amresh-sinha"
-                  link2="mailto:theamresh.sinha@gmail.com"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div className="coord">
-            <div className="icon">
-                <img src={Shreya} alt="Shreya Anand " />
-                <Namecard
-                  name="Shreya Anand "
-                  link1="https://www.linkedin.com/in/shreya-anand-815699229"
-                  link2="mailto:shreyaanand1501@gmail.com"
-                />
-              </div>
-              <div className="icon">
-                <img src={Sanya} alt="Sanya" />
-                <Namecard
-                  name="Sanya"
-                  link1="https://www.linkedin.com/in/sanya-singh-1a72441b3/"
-                  link2="mailto:s.sanya@iitg.ac.in"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div className="coord">
-             <div className="icon">
-                <img src={Sparsh} alt="Sparsh Mittal" />
-                <Namecard
-                  name="Sparsh Mittal"
-                  link1="https://www.linkedin.com/in/sparsh-m-400846119"
-                  link2="mailto:sparshmittal2311@gmail.com"
-                />
-              </div>
               <div className="icon">
                 <img src={Adittya} alt="Adittya Gupta" />
                 <Namecard

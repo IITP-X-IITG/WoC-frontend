@@ -69,7 +69,7 @@ function Card() {
                 </div>
                 <div className="d-grid gap-2 col-6 mx-auto">
                   <a
-                    href="#"
+                    href="/"
                     rel="noreferrer"
                   >
                     <button className="btn btn-primary btn-apply my-2 disabled" type="button">

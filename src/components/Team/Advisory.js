@@ -1,16 +1,16 @@
 import React, { useEffect } from "react";
-
 // import images
 import Madhur from "../resources/madhur_malpani.jpeg";
 import Atishay from "../resources/atishay_jain.jpeg";
 import Aos from "aos";
 import "aos/dist/aos.css";
+
 // Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Namecard from "./namecard";
-import "./teamnew.css";
+import "./Team.css";
 
 export default function Advisory() {
   useEffect(() => {
