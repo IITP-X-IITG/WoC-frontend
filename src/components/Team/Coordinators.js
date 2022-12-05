@@ -1,6 +1,4 @@
 import React, { useEffect } from "react";
-
-
 // import images
 import Sandeep from "../resources/sandeep_mishra.jpg";
 import Aditya from "../resources/aditya_kumar.jpg";
@@ -8,6 +6,9 @@ import Vighnesh from "../resources/vighnesh_deshpande.jpg";
 import Amresh from "../resources/amresh_prasad.jpeg";
 import Anay from "../resources/anay_karnik.jpg";
 import Omkar from "../resources/omkar_chaudhari.jpeg";
+import Gunjan from "../resources/GunjanDhanuka.JPG";
+import Harsh from "../resources/HARSHAGRAWAL.jpeg";
+import Krunjal from "../resources/KrunalPrajapati.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 // Import css files
@@ -93,9 +94,35 @@ export default function Coordinators() {
             </div>
           </div>
 
-          {/* <div>
-            <div className="coord"></div>
-          </div> */}
+          <div>
+            <div className="coord">
+              <div className="icon">
+                <img src={Harsh} alt="Harsh" />
+                <Namecard
+                  name="Harsh Agrawal"
+                  link1="https://www.linkedin.com/in/harshagrawal523/"
+                  link2="mailto:harshagrawal523@gmail.com"
+                />
+              </div>
+
+              <div className="icon">
+                <img src={Gunjan} alt="Gunjan" />
+                <Namecard
+                  name="Gunjan Dhanuka"
+                  link1="https://www.linkedin.com/in/gunjan-dhanuka/"
+                  link2="mailto:gdhanuka192@gmail.com"
+                />
+              </div>
+              <div className="icon">
+                <img src={Krunjal} alt="Krunjal" />
+                <Namecard
+                  name="Krunjal Prajapati"
+                  link1="https://www.linkedin.com/in/krunalprajapati26"
+                  link2="mailto:26.krunal@gmail.com"
+                />
+              </div>
+            </div>
+          </div>
         </Slider>
       </div>
 
@@ -157,6 +184,39 @@ export default function Coordinators() {
                   name="Amresh Prasad Sinha"
                   link1="https://www.linkedin.com/in/amresh-sinha"
                   link2="mailto:theamresh.sinha@gmail.com"
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className="coord">
+              <div className="icon">
+                <img src={Harsh} alt="Harsh" />
+                <Namecard
+                  name="Harsh Agrawal"
+                  link1="https://www.linkedin.com/in/harshagrawal523/"
+                  link2="mailto:harshagrawal523@gmail.com"
+                />
+              </div>
+
+              <div className="icon">
+                <img src={Gunjan} alt="Gunjan" />
+                <Namecard
+                  name="Gunjan Dhanuka"
+                  link1="https://www.linkedin.com/in/gunjan-dhanuka/"
+                  link2="mailto:gdhanuka192@gmail.com"
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className="coord">
+              <div className="icon">
+                <img src={Krunjal} alt="Krunjal" />
+                <Namecard
+                  name="Krunjal Prajapati"
+                  link1="https://www.linkedin.com/in/krunalprajapati26"
+                  link2="mailto:26.krunal@gmail.com"
                 />
               </div>
             </div>
