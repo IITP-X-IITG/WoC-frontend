@@ -60,7 +60,7 @@ export default function Home() {
             {" "}
             Register Now{" "}
           </Link>
-          as a student. Coding period will start on 5th December.
+          as a student. Coding period has started!!
         </marquee>
 
         {/* ---------LOGO----------- */}

@@ -11,7 +11,6 @@ export default function timeline_block(props) {
                 <i className="fa fa-apple" aria-hidden="true"></i>
                 </div>
                 <div className="content">
-                {/* <h3 className="title">{props.title}</h3> */}
                 <p className="description" style={{fontWeight:'bolder'}}>
                 <strong>{props.desc}</strong>
                 </p>
