@@ -99,7 +99,9 @@ const Points = (props) => {
                 datapr["text"] = nameOfLink(arr[i][j]);
                 datapr["type"] = typeOfLink(arr[i][j]);
                 prList.push(datapr);
-                datapr = {};
+                if(datapr["type"] != "#" && datapr["text"] != "#"){
+                  prList.push(datapr);
+                }
               }
             }
           }
