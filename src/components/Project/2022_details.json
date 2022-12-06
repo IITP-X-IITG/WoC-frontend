@@ -496,14 +496,6 @@
     "tag":["Web Dev","Frontend"]
   },
   {
-    "repo-url":"https://github.com/dsciitpatna/sahaayak.git",
-    "title":"Sahaayak",
-    "desc":"Sahaayak is a platform for the talented vendors and people who all are willing to work but not getting a right platform or chance to convert their passion and talent into their scalable profession.",
-    "mentors":["aritroCoder"],
-    "lang":["React","HTML","CSS","JS"],
-    "tag":["Web Dev","Frontend"]
-  },
-  {
     "repo-url":"https://github.com/dsciitpatna/Shabd.git",
     "title":"Shabd",
     "desc": "An educational app for autism patients.",
