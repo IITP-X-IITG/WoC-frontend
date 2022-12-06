@@ -328,6 +328,14 @@
     "tag": ["App Dev"]
   },
   {
+    "repo-url": "https://github.com/boradesanket13/Diabetes-prediction-webapp",
+    "title": "Diabetes Predictor",
+    "desc": "This is a diabetes predictor web app. It uses a Kaggle database to let the user determine whether someone has diabetes by just inputting certain information such as BMI, glucose level, blood pressure, and so on.",
+    "mentors": ["boradesanket13"],
+    "lang": ["HTML", "CSS", "Python","Flask"],
+    "tag": ["Frontend","Backend","Web Dev","ML"]
+  },
+  {
     "repo-url": "https://github.com/boradesanket13/Blaze",
     "title": "Blaze",
     "desc": "Weather application with geolocation using OpenWeatherAPI",
@@ -458,7 +466,7 @@
   {
     "repo-url":"https://github.com/Anwesha-2k23/frontend",
     "title":"Anwesha - Frontend",
-    "desc":"IIT Patna’s own cultural-management fest - Anwesha is back on track this year - a saga of art, culture and celebration. Bigger, better and grander than ever before, join in and contribute to the frontend of Anwesha’s revamped website!",
+    "desc":"IIT Patna's own cultural-management fest. Anwesha is back on track this year - a saga of art, culture and celebration. Bigger, better and grander than ever before, join in and contribute to the frontend of Anwesha's revamped website!",
     "mentors":["komachian"],
     "lang":["Next.js", "React.js", "CSS", "JS"],
     "tag":["Frontend", "Web Dev"]
@@ -466,7 +474,7 @@
   {
     "repo-url":"https://github.com/Anwesha-2k23/frontend",
     "title":"Anwesha - Backend",
-    "desc":"IIT Patna’s own cultural-management fest - Anwesha is back on track this year - a saga of art, culture and celebration. Bigger, better and grander than ever before, join in and contribute to the backend of Anwesha’s revamped website!",
+    "desc":"IIT Patna's own cultural-management fest. Anwesha is back on track this year - a saga of art, culture and celebration. Bigger, better and grander than ever before, join in and contribute to the backend of Anwesha's revamped website!",
     "mentors":["RupakBiswas-2304"],
     "lang":["Python", "Django","RDS"],
     "tag":["Backend", "Web Dev"]
@@ -482,9 +490,9 @@
   {
     "repo-url":"https://github.com/aakriti7x7/Tinkerers-Lab-Website",
     "title":"Tinkerers Lab Website",
-    "desc":"Create a website for Tinkerer's Lab from scratch using MERN Stack. This will include a Landing page, Projects page, Inventory Page, FAQ page, contact page, Admin/Maintainers page, and Booking Portal.",
+    "desc":"Create a website for Tinkerer's Lab from scratch using Next.js. This will include a Landing page, Projects page, Inventory Page, FAQ page, contact page, Admin/Maintainers page, and Booking Portal.",
     "mentors":["aakriti7x7","prathamiitp"],
-    "lang":["React.js","Node.js","Express.js","MongoDB","CSS"],
-    "tag":["Web Dev","MERN"]
+    "lang":["Next.js","CSS"],
+    "tag":["Web Dev","Frontend"]
   }
 ]

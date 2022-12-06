@@ -16,9 +16,9 @@ export default function footer(props) {
                 <div className="together">
                     <h1>This time we are together...</h1>
                     <div className="togetherLogo">
-                        <img src={nwocLogo} alt="" srcset="" />
+                        <img src={nwocLogo} alt=""  />
                         <p>+</p>
-                        <img src={guwLogo} alt="" srcset="" />
+                        <img src={guwLogo} alt=""  />
                     </div>
                 </div>
 

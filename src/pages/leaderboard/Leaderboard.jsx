@@ -3,7 +3,7 @@ import Navigation from "../../components/Navigation";
 import style from "./Leaderboard.css";
 import BTable from "react-bootstrap/Table";
 import Container from "react-bootstrap/Container";
-import Footer from "../../components/footer";
+// import Footer from "../../components/footer";
 import { usePagination, useTable } from "react-table";
 import { Dropdown } from "react-bootstrap";
 import Loading from "../../components/leaderboard/Loading";
@@ -374,28 +374,13 @@ const Leaderboard = () => {
                       ))}
                     </Dropdown.Menu>
                   </Dropdown>
-
-                  {/* <div className='dropdown'>
-                  <select
-                    value={pageSize}
-                    onChange={(e) => {
-                      setPageSize(Number(e.target.value));
-                    }}
-                  >
-                    {[5, 10, 15, 20, 25].map((pageSize) => (
-                      <option key={pageSize} value={pageSize}>
-                        Show {pageSize}
-                      </option>
-                    ))}
-                  </select>
-                </div> */}
                 </div>
               </div>
             </div>
           </Container>
         )}
         <div className="space"></div>
-        <Footer bg="#12263F" />
+        {/* <Footer bg="#12263F" /> */}
       </div>
       {/* <ScrollButton /> */}
     </>

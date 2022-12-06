@@ -1,15 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/footer";
 import Animatedbg from "../../components/Animatedbg";
 import "./events.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
 import Dec12 from "../Images/12 dec.png";
 import GSOCTALK from "../Images/gsoc talk.png"
-
-// Events page - designed by modifying the existing rewards page
 
 export default function Events() {
   useEffect(() => {
@@ -51,7 +48,7 @@ export default function Events() {
         </div>
         <div className='event_box' data-aos='fade-up' data-aos-once='true'>
           <div className="event___">
-            <img src={Dec12} alt='' srcset='' className='eventImg' />
+            <img src={Dec12} alt='' className='eventImg' />
             <div className='front_ext_event'>
               <div className='event_title'>
                 <h1>Renato Benkerdorf</h1>

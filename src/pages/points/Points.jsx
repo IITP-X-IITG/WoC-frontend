@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Navigation from "../../components/Navigation";
 import style from "./Points.css";
 import Container from "react-bootstrap/Container";
-import Footer from "../../components/footer";
+// import Footer from "../../components/footer";
 import BTable from "react-bootstrap/Table";
 import Loading from "../../components/leaderboard/Loading";
 import styled from "styled-components";
@@ -80,7 +80,6 @@ const Points = (props) => {
           temp[0] = Number(x);
           arr.push(temp);
         }
-
         arr.sort(function (a, b) {
           return a[0] - b[0];
         });
@@ -176,7 +175,7 @@ const Points = (props) => {
           <div className="space"></div>
         </Container>
       )}
-      <Footer bg="#12263F" />
+      {/* <Footer bg="#12263F" /> */}
     </>
   );
 };
