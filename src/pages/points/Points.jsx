@@ -154,14 +154,16 @@ const Points = (props) => {
             <div className="tablee">
               <BTable responsive borderless hover>
                 <thead>
-                  <th className="left">Points</th>
-                  <th className="middle">Type</th>
-                  <th className="rig">Link</th>
+                  {/* <tr> */}
+                    <th className="left">Points</th>
+                    <th className="middle">Type</th>
+                    <th className="rig">Link</th>
+                  {/* </tr> */}
                 </thead>
                 <tbody>
-                  {prs.map((data) => {
+                  {prs.map((data, index) => {
                     return (
-                      <tr>
+                      <tr key={index}>
                         <td className="left">{data.points}</td>
                         <td className="middle">{data.type}</td>
                         <td className="rig">

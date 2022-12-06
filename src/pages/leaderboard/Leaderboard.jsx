@@ -245,12 +245,13 @@ const Leaderboard = () => {
                     prepareRow(row);
                     return (
                       <tr {...row.getRowProps()}>
-                        {row.cells.map((cell) => {
+                        {row.cells.map((cell, index) => {
                           if (cell["column"]["id"] === "gitid")
                             return (
                               <td
                                 className="middle-id"
                                 {...cell.getCellProps()}
+                                key={index}
                               >
                                 <Image
                                   alt={cell["value"]}
@@ -270,6 +271,7 @@ const Leaderboard = () => {
                               <td
                                 className="left-position"
                                 {...cell.getCellProps()}
+                                key={index}
                               >
                                 {cell["value"] === 1 && <Gold>1</Gold>}
                                 {cell["value"] === 2 && <Silver>2</Silver>}
