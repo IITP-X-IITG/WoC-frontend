@@ -9,6 +9,7 @@ import Kartikay from "../resources/kartikay_gupta.png";
 import Aditya from "../resources/aditya_kumar.jpg";
 import Padmaja from "../resources/padmaja_joshi.jpeg";
 import Aman from "../resources/aman_kumar.jpeg";
+import AdityaMandal from "../resources/Aditya_Mandal.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -117,6 +118,18 @@ export default function Tech() {
                   name="Pratyush Kumar"
                   link1="https://www.linkedin.com/in/pratyushkumar1032"
                   link2="mailto:pk1234pratyushk@gmail.com"
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className="coord">
+              <div className="icon">
+                <img src={AdityaMandal} alt="Aditya Mandal" />
+                <Namecard
+                  name="Aditya Mandal"
+                  link1="https://www.linkedin.com/in/aditya1406/"
+                  link2="mailto:aditya.mandal@iitg.ac.in"
                 />
               </div>
             </div>
