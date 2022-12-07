@@ -248,6 +248,7 @@
     "tag": ["Web Dev","Frontend","Backend"]
   },
   {
+    "repo-url": "https://github.com/reactplay/react-play",
     "title": "React Play",
     "desc": "React Play is an open-source platform that helps you learn ReactJS faster with hands-on practice model. It is a collection of projects that you can use to learn ReactJS.",
     "mentors": ["reactplay"],
