@@ -519,5 +519,13 @@
     "mentors": ["SafalRaj10"],
     "lang": ["Python", "Tensorflow", "Keras"],
     "tag": ["ML", "Deep Learning"]
+  },
+  {
+    "repo-url": "https://github.com/aritroCoder/IITP-Gymkhana",
+    "title": "IITP Gymkhana",
+    "desc": "Official website for IIT Patna Gymkhana",
+    "mentors": ["aritroCoder", "Anurag-Deo", "rdev12"],
+    "lang": ["HTML", "CSS", "Javascript"],
+    "tag": ["Web Dev", "Frontend"]
   }
 ]
