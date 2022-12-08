@@ -41,6 +41,28 @@
   },
   {
     "special": true,
+    "dagshub": false,
+    "flutterK": true,
+    "repo-url": "https://github.com/tanmoy27112000/flutterkolkata",
+    "title": "Flutter Kolkata",
+    "desc": "",
+    "mentors": ["tanmoy27112000"],
+    "lang": ["Dart", "Flutter"],
+    "tag": ["Mobile Dev","Flutter"]
+  },
+  {
+    "special": true,
+    "dagshub": false,
+    "flutterK": true,
+    "repo-url": "https://github.com/tanmoy27112000/flutter_web_base",
+    "title": "Flutter Web Base",
+    "desc": "Flutter base is a library consisting of Flutter web compatible components. Easy to use and responsive.",
+    "mentors": ["tanmoy27112000"],
+    "lang": ["Dart", "Flutter"],
+    "tag": ["Mobile Dev","Flutter"]
+  },
+  {
+    "special": true,
     "dagshub": true,
     "repo-url": "https://dagshub.com/nirbarazida/CheXNet",
     "title": "CheXNet",
