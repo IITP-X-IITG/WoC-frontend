@@ -27,7 +27,7 @@
     "desc": "This is Clueless official website where you can make your developer profile as well as meet new people across the world.",
     "mentors": ["Clueless-Community"],
     "lang": ["TypeScript", "Next.js", "React.js"],
-    "tag": ["Web Dev","Frontend"]
+    "tag": ["Web Dev", "Frontend"]
   },
   {
     "special": true,
@@ -37,7 +37,7 @@
     "desc": "This is a Web UI Kit made with simple HTML and Tailwind CSS. You can use them in any of your projects, be it a simple HTML, CSS static website or a React, Vue, Angular or Next.js Complex app.",
     "mentors": ["Clueless-Community"],
     "lang": ["HTML", "CSS", "Tailwind-CSS"],
-    "tag": ["Web Dev","Frontend"]
+    "tag": ["Web Dev", "Frontend"]
   },
   {
     "special": true,
@@ -48,7 +48,7 @@
     "desc": "",
     "mentors": ["tanmoy27112000"],
     "lang": ["Dart", "Flutter"],
-    "tag": ["Mobile Dev","Flutter"]
+    "tag": ["Mobile Dev", "Flutter"]
   },
   {
     "special": true,
@@ -59,7 +59,7 @@
     "desc": "Flutter base is a library consisting of Flutter web compatible components. Easy to use and responsive.",
     "mentors": ["tanmoy27112000"],
     "lang": ["Dart", "Flutter"],
-    "tag": ["Mobile Dev","Flutter"]
+    "tag": ["Mobile Dev", "Flutter"]
   },
   {
     "special": true,
@@ -74,7 +74,7 @@
   {
     "special": true,
     "dagshub": true,
-    "repo-url": "https://dagshub.com/DeanLa/SavtaDepth",
+    "repo-url": "https://dagshub.com/OperationSavta/SavtaDepth",
     "title": "SavtaDepth",
     "desc": "Savta Depth is a collaborative Open Source Data Science project for monocular depth estimation. Here you will find the code for the project, but also the data, models, pipelines and experiments. This means that the project is easily reproducible on any machine, but also that you can contribute to it as a data scientist.",
     "mentors": [],
@@ -155,7 +155,7 @@
     "desc": "A course offering website for students to find the best course for them.",
     "mentors": ["madris112"],
     "lang": ["React.js", "JS", "CSS", "HTML"],
-    "tag": ["Web Dev","Frontend"]
+    "tag": ["Web Dev", "Frontend"]
   },
   {
     "repo-url": "https://github.com/akshitagupta15june/Face-X",
@@ -195,7 +195,7 @@
     "desc": "Dynamic Portfolio helps you create simple websites by just filling out forms. As of now two templates are available with dark and light mode.",
     "mentors": ["Shelcia"],
     "lang": ["React.js", "CSS", "JS"],
-    "tag": ["Web Dev","Frontend"]
+    "tag": ["Web Dev", "Frontend"]
   },
   {
     "repo-url": "https://github.com/shelcia/noobcodes-docs",
@@ -203,7 +203,7 @@
     "desc": "This website is built using Docusaurus 2, a modern static website generator. Simplified Data structure and Algorithm solutions for Beginner in Python",
     "mentors": ["Shelcia"],
     "lang": ["React.js", "CSS", "JS"],
-    "tag": ["Web Dev","Frontend"]
+    "tag": ["Web Dev", "Frontend"]
   },
   {
     "repo-url": "https://github.com/shelcia/mockapi",
@@ -211,7 +211,7 @@
     "desc": "A Web app which lets you generate data with API endpoints. Mocker can generate mock data with API endpoints, powered by faker.js",
     "mentors": ["Shelcia"],
     "lang": ["React.js", "JS", "CSS", "Faker.js"],
-    "tag": ["Web Dev","Frontend"]
+    "tag": ["Web Dev", "Frontend"]
   },
   {
     "repo-url": "https://github.com/narayan954/dummygram",
@@ -219,7 +219,7 @@
     "desc": "This application is basically a clone of the original Instagram and tends to add features like instagram or in fact the features that could not have been added in the instagram. So what are you waiting for? Use this opportunity to contribute and learn.",
     "mentors": ["narayan954"],
     "lang": ["React.js", "CSS", "JS", "Firebase"],
-    "tag": ["Web Dev","Frontend"]
+    "tag": ["Web Dev", "Frontend"]
   },
   {
     "repo-url": "https://github.com/aritroCoder/MoreTrees",
@@ -227,7 +227,7 @@
     "desc": "This website aims at encouraging people to become more concerned about the importance of our environment and promotes planting of trees among masses. It aims to provide a gamified challenge to keep people motivated at planting trees.",
     "mentors": ["aritroCoder"],
     "lang": ["Next.js", "React.js", "JS", "CSS"],
-    "tag": ["Web Dev","Frontend"]
+    "tag": ["Web Dev", "Frontend"]
   },
   {
     "repo-url": "https://github.com/flyingsonu122/tarana",
@@ -235,7 +235,7 @@
     "desc": "A Music Player made using nodejs and firebase.",
     "mentors": ["flyingsonu122"],
     "lang": ["HTML", "JS", "CSS", "Node.js"],
-    "tag": ["Web Dev", "Firebase","Frontend", "Backend"]
+    "tag": ["Web Dev", "Firebase", "Frontend", "Backend"]
   },
   {
     "repo-url": "https://github.com/Udayraj123/OMRChecker",
@@ -251,14 +251,14 @@
     "desc": "This webapp tracks location of an ambulance in real-time and it notifies hospital when an ambulance is within 3km range of a hospital which could potentially reduce treatment delay.",
     "mentors": ["Yaswanth820"],
     "lang": ["HTML", "CSS", "JS", "Dockerfile", "Java"],
-    "tag": ["Web Dev","Frontend"]
+    "tag": ["Web Dev", "Frontend"]
   },
   {
     "repo-url": "https://github.com/Yaswanth820/scan-to-healthify",
     "title": "Scan To Healthify",
     "desc": "This webapp finds harmful ingredients in food products by extracting UPC from barcode. The ingredients dataset is stored in firestoredb",
     "mentors": ["Yaswanth820"],
-    "lang": ["React.js","CSS", "Python"],
+    "lang": ["React.js", "CSS", "Python"],
     "tag": ["Web Dev", "Firebase", "EasyOCR", "FastAPI"]
   },
   {
@@ -267,7 +267,7 @@
     "desc": "Create, Share and Join events with comfort through our EventListener. This project aims to increase the reach of events and showing all the upcoming events in our campus, along with their timeline at one place.",
     "mentors": ["infinity1729", "addy-1406"],
     "lang": ["React.js", "Python", "Django"],
-    "tag": ["Web Dev","Frontend","Backend"]
+    "tag": ["Web Dev", "Frontend", "Backend"]
   },
   {
     "repo-url": "https://github.com/reactplay/react-play",
@@ -275,7 +275,7 @@
     "desc": "React Play is an open-source platform that helps you learn ReactJS faster with hands-on practice model. It is a collection of projects that you can use to learn ReactJS.",
     "mentors": ["reactplay"],
     "lang": ["React.js", "CSS", "SCSS", "TypeScript"],
-    "tag": ["Web Dev","Frontend"]
+    "tag": ["Web Dev", "Frontend"]
   },
   {
     "repo-url": "https://github.com/Sparsh752/E-Rickshaw",
@@ -315,7 +315,7 @@
     "desc": "FoodSaver is a web application that keep track of the food in your house, or restaurant and keep warning you to use the product before it got expire and got waste.",
     "mentors": ["mohit200008"],
     "lang": ["HTML", "CSS", "JS"],
-    "tag": ["Web Dev","Frontend"]
+    "tag": ["Web Dev", "Frontend"]
   },
   {
     "repo-url": "https://github.com/kaustav202/RealTime-TwitterDataAnalysis",
@@ -331,7 +331,7 @@
     "desc": "Portal for organic product and lifestyle enthusiasts. Simple Parallax effects and clean UI has been used to make the landing page of the site. It aims to evolve as a platform that can bring more people into adopting organic lifestyle.",
     "mentors": ["kaustav202"],
     "lang": ["HTML", "CSS", "JS"],
-    "tag": ["Web Dev","Frontend"]
+    "tag": ["Web Dev", "Frontend"]
   },
   {
     "repo-url": "https://github.com/prathimacode-hub/Dev-Mint",
@@ -339,7 +339,7 @@
     "desc": "Dev Mint has an exclusive collection of layouts, animations, effects, code snippets, extensions, projects, resources etc. to fulfill and satiate your developer needs",
     "mentors": ["prathimacode-hub"],
     "lang": ["HTML", "CSS", "JS"],
-    "tag": ["Web Dev", "Chrome Extension","Frontend"]
+    "tag": ["Web Dev", "Chrome Extension", "Frontend"]
   },
 
   {
@@ -355,8 +355,8 @@
     "title": "Diabetes Predictor",
     "desc": "This is a diabetes predictor web app. It uses a Kaggle database to let the user determine whether someone has diabetes by just inputting certain information such as BMI, glucose level, blood pressure, and so on.",
     "mentors": ["boradesanket13"],
-    "lang": ["HTML", "CSS", "Python","Flask"],
-    "tag": ["Frontend","Backend","Web Dev","ML"]
+    "lang": ["HTML", "CSS", "Python", "Flask"],
+    "tag": ["Frontend", "Backend", "Web Dev", "ML"]
   },
   {
     "repo-url": "https://github.com/boradesanket13/Blaze",
@@ -364,7 +364,7 @@
     "desc": "Weather application with geolocation using OpenWeatherAPI",
     "mentors": ["boradesanket13"],
     "lang": ["HTML", "CSS", "JS"],
-    "tag": ["Frontend","Web Dev"]
+    "tag": ["Frontend", "Web Dev"]
   },
   {
     "repo-url": "https://github.com/boradesanket13/QuoteBuzz",
@@ -372,7 +372,7 @@
     "desc": "This application generates a random quote at every click event of the button 'New Quote'. This is designed and developed with HTML, CSS and JavaScript.",
     "mentors": ["boradesanket13"],
     "lang": ["HTML", "CSS", "JS"],
-    "tag": ["Frontend","Web Dev"]
+    "tag": ["Frontend", "Web Dev"]
   },
   {
     "repo-url": "https://github.com/boradesanket13/Calculator",
@@ -427,8 +427,8 @@
     "title": "DocumentScanner",
     "desc": "This is a Document Scanner App which can scan documents and save them in your phone.",
     "mentors": ["Sandeep03edu"],
-    "lang": ["Java","Firebase"],
-    "tag": [ "App Dev"]
+    "lang": ["Java", "Firebase"],
+    "tag": ["App Dev"]
   },
   {
     "repo-url": "https://github.com/asmit203/TalkitOut",
@@ -471,72 +471,72 @@
     "tag": ["Frontend", "Web Dev"]
   },
   {
-    "repo-url":"https://github.com/rohan9024/donation-box",
-    "title":"Donation Box",
-    "desc":"This is a Next.js-App which allows people to donate to various organizations.",
-    "mentors":["rohan9024"],
-    "lang":["Next.js","Tailwind-CSS", "CSS","Post-CSS", "JS"],
-    "tag":["Web Dev","Frontend"]
+    "repo-url": "https://github.com/rohan9024/donation-box",
+    "title": "Donation Box",
+    "desc": "This is a Next.js-App which allows people to donate to various organizations.",
+    "mentors": ["rohan9024"],
+    "lang": ["Next.js", "Tailwind-CSS", "CSS", "Post-CSS", "JS"],
+    "tag": ["Web Dev", "Frontend"]
   },
   {
-    "repo-url":"https://github.com/rohan9024/ecommerce",
-    "title":"E - commerce",
-    "desc":"E commerce website based on React.js.",
-    "mentors":["rohan9024"],
-    "lang":["React.js","Tailwind-CSS", "CSS", "Post-CSS", "JS"],
-    "tag":["Web Dev","Frontend"]
+    "repo-url": "https://github.com/rohan9024/ecommerce",
+    "title": "E - commerce",
+    "desc": "E commerce website based on React.js.",
+    "mentors": ["rohan9024"],
+    "lang": ["React.js", "Tailwind-CSS", "CSS", "Post-CSS", "JS"],
+    "tag": ["Web Dev", "Frontend"]
   },
   {
-    "repo-url":"https://github.com/Anwesha-2k23/frontend",
-    "title":"Anwesha - Frontend",
-    "desc":"IIT Patna's own cultural-management fest. Anwesha is back on track this year - a saga of art, culture and celebration. Bigger, better and grander than ever before, join in and contribute to the frontend of Anwesha's revamped website!",
-    "mentors":["komachian"],
-    "lang":["Next.js", "React.js", "CSS", "JS"],
-    "tag":["Frontend", "Web Dev"]
+    "repo-url": "https://github.com/Anwesha-2k23/frontend",
+    "title": "Anwesha - Frontend",
+    "desc": "IIT Patna's own cultural-management fest. Anwesha is back on track this year - a saga of art, culture and celebration. Bigger, better and grander than ever before, join in and contribute to the frontend of Anwesha's revamped website!",
+    "mentors": ["komachian"],
+    "lang": ["Next.js", "React.js", "CSS", "JS"],
+    "tag": ["Frontend", "Web Dev"]
   },
   {
-    "repo-url":"https://github.com/Anwesha-2k23/frontend",
-    "title":"Anwesha - Backend",
-    "desc":"IIT Patna's own cultural-management fest. Anwesha is back on track this year - a saga of art, culture and celebration. Bigger, better and grander than ever before, join in and contribute to the backend of Anwesha's revamped website!",
-    "mentors":["RupakBiswas-2304"],
-    "lang":["Python", "Django","RDS"],
-    "tag":["Backend", "Web Dev"]
+    "repo-url": "https://github.com/Anwesha-2k23/frontend",
+    "title": "Anwesha - Backend",
+    "desc": "IIT Patna's own cultural-management fest. Anwesha is back on track this year - a saga of art, culture and celebration. Bigger, better and grander than ever before, join in and contribute to the backend of Anwesha's revamped website!",
+    "mentors": ["RupakBiswas-2304"],
+    "lang": ["Python", "Django", "RDS"],
+    "tag": ["Backend", "Web Dev"]
   },
   {
-    "repo-url":"https://github.com/UjjwalAnand364/Self-Intelligent-Chatbot",
-    "title":"Self Intelligent Chatbot",
-    "desc":"This repository contains Python files for a chat software, the client and server. We need to build code that allows users to talk to a intelligent bot (without connecting over).",
-    "mentors":["UjjwalAnand364"],
-    "lang":["Python"],
-    "tag":["Python"]
+    "repo-url": "https://github.com/UjjwalAnand364/Self-Intelligent-Chatbot",
+    "title": "Self Intelligent Chatbot",
+    "desc": "This repository contains Python files for a chat software, the client and server. We need to build code that allows users to talk to a intelligent bot (without connecting over).",
+    "mentors": ["UjjwalAnand364"],
+    "lang": ["Python"],
+    "tag": ["Python"]
   },
   {
-    "repo-url":"https://github.com/aakriti7x7/Tinkerers-Lab-Website",
-    "title":"Tinkerers Lab Website",
-    "desc":"Create a website for Tinkerer's Lab from scratch using Next.js. This will include a Landing page, Projects page, Inventory Page, FAQ page, contact page, Admin/Maintainers page, and Booking Portal.",
-    "mentors":["aakriti7x7","prathamiitp"],
-    "lang":["Next.js","CSS"],
-    "tag":["Web Dev","Frontend"]
+    "repo-url": "https://github.com/aakriti7x7/Tinkerers-Lab-Website",
+    "title": "Tinkerers Lab Website",
+    "desc": "Create a website for Tinkerer's Lab from scratch using Next.js. This will include a Landing page, Projects page, Inventory Page, FAQ page, contact page, Admin/Maintainers page, and Booking Portal.",
+    "mentors": ["aakriti7x7", "prathamiitp"],
+    "lang": ["Next.js", "CSS"],
+    "tag": ["Web Dev", "Frontend"]
   },
   {
-    "repo-url":"https://github.com/dsciitpatna/Shabd.git",
-    "title":"Shabd",
+    "repo-url": "https://github.com/dsciitpatna/Shabd.git",
+    "title": "Shabd",
     "desc": "An educational app for autism patients.",
     "mentors": ["Diptadip", "prvn2004"],
     "lang": ["Java", "Django", "Firebase"],
     "tag": ["Android", "App Dev"]
   },
   {
-    "repo-url":"https://github.com/dsciitpatna/Foodified",
-    "title":"Foodified",
+    "repo-url": "https://github.com/dsciitpatna/Foodified",
+    "title": "Foodified",
     "desc": "Menu suggestion and health tracking app",
     "mentors": ["Diptadip", "prvn2004"],
     "lang": ["Java", "Django", "Firebase"],
     "tag": ["Android", "App Dev"]
   },
   {
-    "repo-url":"https://github.com/dsciitpatna/Interview-Assistant",
-    "title":"Interview Assistant",
+    "repo-url": "https://github.com/dsciitpatna/Interview-Assistant",
+    "title": "Interview Assistant",
     "desc": "A Facial Emotion Detection Project",
     "mentors": ["SafalRaj10"],
     "lang": ["Python", "Tensorflow", "Keras"],
