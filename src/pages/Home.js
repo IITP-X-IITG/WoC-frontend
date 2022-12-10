@@ -27,6 +27,7 @@ import Artboardlogo from "../pages/Images/Artboard.svg";
 //import logo_codepeak from './Images/LOGOCODEPEAK.png'
 import CountUp from "../components/Counter_up";
 import Animatedbg from "../components/Animatedbg";
+import Counter from "../components/PRcounter/Counter";
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -39,7 +40,6 @@ export default function Home() {
       <div style={home_style}>
         <Navigation />
         <Animatedbg />
-
         <marquee
           id="marq"
           behavior="scroll"
@@ -89,7 +89,7 @@ export default function Home() {
                 data-aos-once="true"
               />
             </a>
-          
+
             <a href="https://dagshub.com/" target="_blank" rel="noreferrer">
               <img
                 src={dagshub}
@@ -100,7 +100,11 @@ export default function Home() {
                 data-aos-once="true"
               />
             </a>
-            <a href="https://www.clueless.tech/" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.clueless.tech/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img
                 src={clueless}
                 alt=""
@@ -110,8 +114,7 @@ export default function Home() {
                 data-aos-once="true"
               />
             </a>
-
-            </div>
+          </div>
           <img src={hill} alt="" srcset="" className="hill_img" />
         </div>
 
@@ -213,6 +216,7 @@ export default function Home() {
           </div>
         </div>
 
+        <Counter />
         {/* ---------------PAST STATISTICS---------------- */}
         <div className="head_stats">
           <p data-aos="zoom-in" data-aos-once="true">
