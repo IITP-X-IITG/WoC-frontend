@@ -5,17 +5,17 @@
 .event_head hr{
     display: block;
     margin: auto;
-    width: 340px;
+    width: 120px;
     height: 2px;
 }
 
 .event_wrapper{
     padding-top: 50px;
     padding-bottom: 50px;
-    display: grid;
-    grid-template-columns: auto auto;
-    /* justify-content: center; */
-    gap: 0;
+    display: flex;
+    /* grid-template-columns: auto auto; */
+    justify-content: center;
+    /* gap: 0; */
 }
 
 .event_box{
@@ -23,7 +23,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 70%;
+    width: 40%;
     margin: 30px auto;
     border: 1px solid #a4c3e0;
     border-radius: 10px;
@@ -35,7 +35,8 @@
     width: 100%;
     margin-top: 0px;
     height: auto;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .event_title{
