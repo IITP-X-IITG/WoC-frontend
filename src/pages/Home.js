@@ -32,7 +32,6 @@ import Counter from "../components/PRcounter/Counter";
 import { Link } from "react-router-dom";
 
 export default function Home() {
-
   useEffect(() => {
     Aos.init({ duration: 800 });
   }, []);
@@ -91,9 +90,13 @@ export default function Home() {
               />
             </a>
 
-            <a href="https://dagshub.com/" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.clueless.tech/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img
-                src={dagshub}
+                src={clueless}
                 alt=""
                 srcset=""
                 className="main_spons_img1"
@@ -101,7 +104,6 @@ export default function Home() {
                 data-aos-once="true"
               />
             </a>
-            
           </div>
           <img src={hill} alt="" srcset="" className="hill_img" />
         </div>
@@ -255,52 +257,43 @@ export default function Home() {
           <hr />
         </div>
         <div className="spons_box">
-
           <a
-              href="https://www.geeksforgeeks.org/"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <img
-                src={gfgLogo}
-                alt=""
-                srcset=""
-                className="main_spons_img"
-                data-aos="zoom-in"
-                data-aos-once="true"
-              />
-            </a>
-
-            <a href="https://dagshub.com/" target="_blank" rel="noreferrer">
-              <img
-                src={dagshub}
-                alt=""
-                srcset=""
-                className="main_spons_img1"
-                data-aos="zoom-in"
-                data-aos-once="true"
-              />
-            </a>
-            <a
-              href="https://www.clueless.tech/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src={clueless}
-                alt=""
-                srcset=""
-                className="main_spons_img2"
-                data-aos="zoom-in"
-                data-aos-once="true"
-                style={{ height: "80px", width: "auto" }}
-              />
-            </a>
-            <a
             href="https://www.geeksforgeeks.org/"
-            target="_blank"
             rel="noreferrer"
+            target="_blank"
           >
+            <img
+              src={gfgLogo}
+              alt=""
+              srcset=""
+              className="main_spons_img"
+              data-aos="zoom-in"
+              data-aos-once="true"
+            />
+          </a>
+          <a href="https://www.clueless.tech/" target="_blank" rel="noreferrer">
+            <img
+              src={clueless}
+              alt=""
+              srcset=""
+              className="main_spons_img1"
+              data-aos="zoom-in"
+              data-aos-once="true"
+              style={{ height: "100px", width: "auto" }}
+            />
+          </a>
+          <a href="https://dagshub.com/" target="_blank" rel="noreferrer">
+            <img
+              src={dagshub}
+              alt=""
+              srcset=""
+              className="main_spons_img1"
+              data-aos="zoom-in"
+              data-aos-once="true"
+            />
+          </a>
+
+          <a href="https://www.taskade.com/" target="_blank" rel="noreferrer">
             <img
               src={taskadeLogo}
               alt=""
@@ -311,7 +304,6 @@ export default function Home() {
             />
           </a>
         </div>
-        
       </div>
       <Footer />
     </>
