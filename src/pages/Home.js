@@ -21,6 +21,7 @@ import { FaUniversity } from "react-icons/fa";
 import dig_ocean from "../pages/Images/DO_Logo_Vertical_Blue.png";
 //import jetbrain from '../pages/Images/jetbrains-variant-1.png'
 import gfgLogo from "../pages/Images/gfgLogo.png";
+import taskadeLogo from "../pages/Images/taskadeLogo.png";
 import cssbattleLogo from "../pages/Images/cssbattleLogo.png";
 import gmcLogo from "../pages/Images/gmcLogo.png";
 import Artboardlogo from "../pages/Images/Artboard.svg";
@@ -73,7 +74,7 @@ export default function Home() {
             data-aos="zoom-in"
             data-aos-once="true"
           />
-          <p>Sponsored By</p>
+          <p>Powered By</p>
           <div className="main_spons_box">
             <a
               href="https://www.geeksforgeeks.org/"
@@ -100,20 +101,7 @@ export default function Home() {
                 data-aos-once="true"
               />
             </a>
-            <a
-              href="https://www.clueless.tech/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src={clueless}
-                alt=""
-                srcset=""
-                className="main_spons_img2"
-                data-aos="zoom-in"
-                data-aos-once="true"
-              />
-            </a>
+            
           </div>
           <img src={hill} alt="" srcset="" className="hill_img" />
         </div>
@@ -262,94 +250,68 @@ export default function Home() {
         {/* ----------SPONSORS------------- */}
         <div className="head_stats">
           <p data-aos="zoom-in" data-aos-once="true">
-            Past Sponsors
+            Sponsors
           </p>
           <hr />
         </div>
         <div className="spons_box">
-          <a href="https://aviyel.com/" target="_blank" rel="noreferrer">
-            <img
-              src={avl}
-              alt=""
-              srcset=""
-              data-aos="zoom-out"
-              data-aos-once="true"
-            />
-          </a>
-          <a href="https://artboard.studio/" target="_blank" rel="noreferrer">
-            <img
-              src={Artboardlogo}
-              alt=""
-              srcset=""
-              data-aos="zoom-out"
-              data-aos-once="true"
-            />
-          </a>
-          <a href="https://cssbattle.dev/" target="_blank" rel="noreferrer">
-            <img
-              src={cssbattleLogo}
-              alt=""
-              srcset=""
-              data-aos="zoom-out"
-              data-aos-once="true"
-            />
-          </a>
+
           <a
-            href="https://givemycertificate.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src={gmcLogo}
-              alt=""
-              srcset=""
-              data-aos="zoom-out"
-              data-aos-once="true"
-            />
-          </a>
-        </div>
-        <div className="spons_box spons_box1">
-          <a
+              href="https://www.geeksforgeeks.org/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                src={gfgLogo}
+                alt=""
+                srcset=""
+                className="main_spons_img"
+                data-aos="zoom-in"
+                data-aos-once="true"
+              />
+            </a>
+
+            <a href="https://dagshub.com/" target="_blank" rel="noreferrer">
+              <img
+                src={dagshub}
+                alt=""
+                srcset=""
+                className="main_spons_img1"
+                data-aos="zoom-in"
+                data-aos-once="true"
+              />
+            </a>
+            <a
+              href="https://www.clueless.tech/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src={clueless}
+                alt=""
+                srcset=""
+                className="main_spons_img2"
+                data-aos="zoom-in"
+                data-aos-once="true"
+                style={{ height: "80px", width: "auto" }}
+              />
+            </a>
+            <a
             href="https://www.geeksforgeeks.org/"
             target="_blank"
             rel="noreferrer"
           >
             <img
-              src={gfgLogo}
+              src={taskadeLogo}
               alt=""
               srcset=""
               data-aos="zoom-out"
               data-aos-once="true"
-              style={{ height: "40px", width: "auto" }}
-            />
-          </a>
-          <a
-            href="https://www.digitalocean.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src={dig_ocean}
-              alt=""
-              srcset=""
-              data-aos="zoom-out"
-              data-aos-once="true"
-            />
-          </a>
-          <a
-            href="https://codepeakmemories.co.in/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <img
-              src={campusmemories}
-              alt=""
-              srcset=""
-              data-aos="zoom-out"
-              data-aos-once="true"
+              style={{ height: "60px", width: "auto" }}
             />
           </a>
         </div>
+        
       </div>
       <Footer />
     </>

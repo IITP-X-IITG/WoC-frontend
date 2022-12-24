@@ -12,5 +12,13 @@ export const EventsArray = [
         "eventImage":require("../Images/GFG Session.png"),
         "eventLink":"https://bit.ly/3W8bqlJ",
         "eventButton":"Register Now!"
+    },
+    {
+        "eventName":"AMA With GSOC Experts!",
+        "eventDetails":"CodePeak is not just to make you a better developer, but also to make you aware of the vast opportunities that exist in Open Source. In our series of talks, we begin with an AMA Session with GSoC Exprerts The panel of participants will be open to any and all questions regarding their Open Source journey and how they made it to arguably the most prestigious Open Source programme.So, whether you are an asker or more of a listener, there is something for you in the AMA session. For the love of Open Source!",
+        "eventImage":require("../Images/GSOC_Session.png"),
+        "eventLink":"https://youtube.com/live/ocxSm-Q2HqU?feature=share",
+        "eventButton":"Our Youtube Channel"
     }
+
 ]

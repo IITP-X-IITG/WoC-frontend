@@ -13,6 +13,7 @@
     padding-top: 50px;
     padding-bottom: 50px;
     display: flex;
+    flex-wrap: wrap;
     /* grid-template-columns: auto auto; */
     justify-content: center;
     /* gap: 0; */
