@@ -192,7 +192,7 @@ export default function Home() {
                   data-aos="fade-up"
                   data-aos-once="true"
                 >
-                  <Timeline date="6 JAN" desc="Coding Period Ends." />
+                  <Timeline date="5 JAN" desc="Coding Period Ends." />
                 </div>
                 <div
                   className="timeline"
