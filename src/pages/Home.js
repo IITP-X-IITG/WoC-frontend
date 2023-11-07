@@ -68,7 +68,7 @@ export default function Home() {
           <img
             src={logo_codepeak}
             alt=""
-            srcset=""
+            srcSet=""
             className="logo_img"
             data-aos="zoom-in"
             data-aos-once="true"
@@ -83,7 +83,7 @@ export default function Home() {
               <img
                 src={gfgLogo}
                 alt=""
-                srcset=""
+                srcSet=""
                 className="main_spons_img"
                 data-aos="zoom-in"
                 data-aos-once="true"
@@ -98,14 +98,14 @@ export default function Home() {
               <img
                 src={clueless}
                 alt=""
-                srcset=""
+                srcSet=""
                 className="main_spons_img1"
                 data-aos="zoom-in"
                 data-aos-once="true"
               />
             </a>
           </div>
-          <img src={hill} alt="" srcset="" className="hill_img" />
+          <img src={hill} alt="" srcSet="" className="hill_img" />
         </div>
 
         {/* -------------ABOUT US------------------- */}
@@ -265,7 +265,7 @@ export default function Home() {
             <img
               src={gfgLogo}
               alt=""
-              srcset=""
+              srcSet=""
               className="main_spons_img"
               data-aos="zoom-in"
               data-aos-once="true"
@@ -275,7 +275,7 @@ export default function Home() {
             <img
               src={clueless}
               alt=""
-              srcset=""
+              srcSet=""
               className="main_spons_img1"
               data-aos="zoom-in"
               data-aos-once="true"
@@ -286,7 +286,7 @@ export default function Home() {
             <img
               src={dagshub}
               alt=""
-              srcset=""
+              srcSet=""
               className="main_spons_img1"
               data-aos="zoom-in"
               data-aos-once="true"
@@ -297,7 +297,7 @@ export default function Home() {
             <img
               src={taskadeLogo}
               alt=""
-              srcset=""
+              srcSet=""
               data-aos="zoom-out"
               data-aos-once="true"
               style={{ height: "60px", width: "auto" }}
