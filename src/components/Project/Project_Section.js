@@ -16,6 +16,12 @@ function ProjectSection() {
       <div className="container-project">
         <div className="bloc-tabs">
           <button
+            className={toggleState === 0 ? "tabs active-tabs" : "tabs"}
+            onClick={() => toggleTab(0)}
+          >
+            2023
+          </button>
+          <button
             className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
             onClick={() => toggleTab(1)}
           >
