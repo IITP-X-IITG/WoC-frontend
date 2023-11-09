@@ -52,15 +52,16 @@ export default function Home() {
             marginTop: "70px",
           }}
         >
-          CODEPEAK 2022 is here!
-          <Link
+          CODEPEAK 2023 is here!
+          {/* <Link
             to="/register"
             style={{ textDecoration: "none", color: "#99c1e7" }}
           >
             {" "}
             Register Now{" "}
-          </Link>
-          as a student. Coding period has started!!
+          </Link> */}
+          {" "}
+          Mentor registration will start soon.
         </marquee>
 
         {/* ---------LOGO----------- */}
@@ -156,7 +157,7 @@ export default function Home() {
                   data-aos="fade-up"
                   data-aos-once="true"
                 >
-                  <Timeline date="28 NOV" desc="Mentor Registration ends." />
+                  <Timeline date="30 NOV" desc="Mentor Registration ends" />
                 </div>
 
                 <div
@@ -164,42 +165,57 @@ export default function Home() {
                   data-aos="fade-up"
                   data-aos-once="true"
                 >
-                  <Timeline date="2 DEC" desc="Project Announcement" />
+                  <Timeline date="5 DEC" desc="Orientation Session" />
                 </div>
                 <div
                   className="timeline"
                   data-aos="fade-up"
                   data-aos-once="true"
                 >
-                  <Timeline date="3 DEC" desc="Orientation" />
+                  <Timeline date="6 DEC" desc="Git & Github Workshop" />
                 </div>
                 <div
                   className="timeline"
                   data-aos="fade-up"
                   data-aos-once="true"
                 >
-                  <Timeline date="4 DEC" desc="Git and GitHub Workshop" />
+
+                  <Timeline date="7 DEC" desc="Coding Period Starts" />
                 </div>
                 <div
                   className="timeline"
                   data-aos="fade-up"
                   data-aos-once="true"
                 >
-                  <Timeline date="5 DEC" desc="Coding Period Starts." />
+                  <Timeline date="14 DEC" desc="First Week Leaderboard" />
                 </div>
                 <div
                   className="timeline"
                   data-aos="fade-up"
                   data-aos-once="true"
                 >
-                  <Timeline date="5 JAN" desc="Coding Period Ends." />
+                  <Timeline date="21 DEC" desc="Second Week Leaderboard" />
                 </div>
                 <div
                   className="timeline"
                   data-aos="fade-up"
                   data-aos-once="true"
                 >
-                  <Timeline date="8 JAN" desc="Closing Ceremony." />
+                  <Timeline date="28 DEC" desc="Third Week Leaderboard" />
+                </div>
+                <div
+                  className="timeline"
+                  data-aos="fade-up"
+                  data-aos-once="true"
+                >
+                  <Timeline date="28 DEC" desc="Coding Period Ends" />
+                </div>
+                <div
+                  className="timeline"
+                  data-aos="fade-up"
+                  data-aos-once="true"
+                >
+                  <Timeline date="1 JAN" desc="Closing Ceremony" />
                 </div>
               </div>
             </div>
@@ -252,7 +268,7 @@ export default function Home() {
         {/* ----------SPONSORS------------- */}
         <div className="head_stats">
           <p data-aos="zoom-in" data-aos-once="true">
-            Sponsors
+            Past Sponsors
           </p>
           <hr />
         </div>

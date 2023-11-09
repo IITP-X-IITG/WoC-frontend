@@ -17,7 +17,7 @@ const Events = () => {
       <Navigation />
       <div className="event_head">
         <h2 data-aos="zoom-in" data-aos-once="true">
-          Events
+          Past Events
         </h2>
         <hr />
       </div>

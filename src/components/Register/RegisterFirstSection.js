@@ -28,7 +28,7 @@ function FirstSection() {
                 <div className="btnBox">
                   <div className="d-grid gap-2 col-3 mx-auto">
                     <a href={MentorGuide} target="_blank" rel="noreferrer">
-                      <button
+                      <button disabled
                         className="btn btn-primary btn-apply"
                         type="button"
                       >
@@ -38,7 +38,7 @@ function FirstSection() {
                   </div>
                   <div className="d-grid gap-2 col-3 mx-auto">
                     <a href={StudentGuide} target="_blank" rel="noreferrer">
-                      <button
+                      <button disabled
                         className="btn btn-primary btn-apply"
                         type="button"
                       >
