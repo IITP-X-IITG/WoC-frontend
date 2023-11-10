@@ -222,7 +222,9 @@ export default function Home() {
           </div>
         </div>
 
+        {/* Counter of Pull requests */}
         <Counter />
+
         {/* ---------------PAST STATISTICS---------------- */}
         <div className="head_stats">
           <p data-aos="zoom-in" data-aos-once="true">

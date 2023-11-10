@@ -32,7 +32,7 @@ function FirstSection() {
                         className="btn btn-primary btn-apply"
                         type="button"
                       >
-                        MentorGuide
+                        Mentor Guide
                       </button>
                     </a>
                   </div>
@@ -42,7 +42,7 @@ function FirstSection() {
                         className="btn btn-primary btn-apply"
                         type="button"
                       >
-                        StudentGuide
+                        Student Guide
                       </button>
                     </a>
                   </div>
