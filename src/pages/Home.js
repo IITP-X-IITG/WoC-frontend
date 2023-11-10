@@ -4,6 +4,8 @@ import home_style from "./Home.css";
 import logo_codepeak from "./Images/logo.png";
 import hill from "./Images/mtpnggg.png";
 import clueless from "./Images/clueless.png";
+import antigranular from "./Images/sp_logo1.png"
+import threeWay_studio from "./Images/sp_logo2.png"
 import dagshub from "./Images/dagshub.png";
 import avl from "./Images/avl.png";
 import campusmemories from "./Images/Campusmemories.png";
@@ -77,12 +79,12 @@ export default function Home() {
           <p>Powered By</p>
           <div className="main_spons_box">
             <a
-              href="https://www.geeksforgeeks.org/"
+              href="https://www.antigranular.com/"
               rel="noreferrer"
               target="_blank"
             >
               <img
-                src={gfgLogo}
+                src={antigranular}
                 alt=""
                 srcSet=""
                 className="main_spons_img"
@@ -92,12 +94,12 @@ export default function Home() {
             </a>
 
             <a
-              href="https://www.clueless.tech/"
+              href="https://www.threewaystudio.world/"
               target="_blank"
               rel="noreferrer"
             >
               <img
-                src={clueless}
+                src={threeWay_studio}
                 alt=""
                 srcSet=""
                 className="main_spons_img1"
