@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 function Card() {
-  
+
   useEffect(() => {
     Aos.init({ duration: 800 });
   }, []);
@@ -37,7 +37,7 @@ function Card() {
                     // target="_blank"
                     rel="noreferrer"
                   >
-                    <button
+                    <button disabled
                       className="btn btn-primary btn-apply btn-phone btn-tab my-2"
                       type="button"
                     >
