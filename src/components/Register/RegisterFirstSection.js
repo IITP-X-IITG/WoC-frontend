@@ -27,8 +27,8 @@ function FirstSection() {
                 <br />
                 <div className="btnBox">
                   <div className="d-grid gap-2 col-3 mx-auto">
-                    <a href={MentorGuide} target="_blank" rel="noreferrer">
-                      <button disabled
+                    <a href="https://drive.google.com/file/d/1zgjsiAMsqqExznSTFi1k3lloNOi7LY4O/view" target="_blank" rel="noreferrer">
+                      <button
                         className="btn btn-primary btn-apply"
                         type="button"
                       >
