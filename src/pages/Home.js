@@ -248,7 +248,7 @@ export default function Home() {
             style={{ background: "rgb(18, 34, 51)" }}
           >
             <CgGitPull />
-            <CountUp end="3300" />
+            <CountUp end="4200" />
             <p>Pull Requests</p>
           </div>
           <div
