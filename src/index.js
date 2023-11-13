@@ -5,6 +5,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './Fonts/Gilroy-Medium.ttf';
 
+navigator.serviceWorker.getRegistrations().then(function(registrations) {
+ for(let registration of registrations) {
+  registration.unregister()
+} })
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
