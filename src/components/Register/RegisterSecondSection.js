@@ -69,7 +69,7 @@ function Card() {
                 </div>
                 <div className="d-grid gap-2 col-6 mx-auto">
                   <a
-                    href="https://forms.gle/6qDeUDr6AVypRixB"
+                    href="https://forms.gle/6qDeUDr6AVypRixB6"
                     rel="noreferrer"
                     target="blank"
                   >
