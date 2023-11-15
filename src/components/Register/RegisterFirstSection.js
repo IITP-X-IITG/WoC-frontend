@@ -35,10 +35,9 @@ function FirstSection() {
                                         </a>
                                     </div>
                                     <div className="d-grid gap-2 col-3 mx-auto">
-                                        <a href="#" rel="noreferrer">
+                                        <a href={StudentGuide} target="_blank" rel="noreferrer">
                                             {' '}
-                                            {/*replace href with {StudentGuide} later and add target="_blank"*/}
-                                            <button disabled className="btn btn-primary btn-apply" type="button">
+                                            <button className="btn btn-primary btn-apply" type="button">
                                                 Student Guide
                                             </button>
                                         </a>
