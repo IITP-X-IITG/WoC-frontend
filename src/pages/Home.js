@@ -240,7 +240,7 @@ export default function Home() {
             style={{ background: "rgb(16, 31, 46)" }}
           >
             <VscGithubInverted />
-            <CountUp end="5200" />
+            <CountUp end="6000" />
             <p>Participants</p>
           </div>
           <div
@@ -248,7 +248,7 @@ export default function Home() {
             style={{ background: "rgb(18, 34, 51)" }}
           >
             <CgGitPull />
-            <CountUp end="4200" />
+            <CountUp end="3800" />
             <p>Pull Requests</p>
           </div>
           <div
@@ -256,7 +256,7 @@ export default function Home() {
             style={{ background: "rgb(21, 38, 56)" }}
           >
             <AiOutlineFundProjectionScreen />
-            <CountUp end="140" />
+            <CountUp end="150" />
             <p>Projects Done</p>
           </div>
           <div
@@ -264,7 +264,7 @@ export default function Home() {
             style={{ background: "rgb(23, 44, 66)" }}
           >
             <FaUniversity />
-            <CountUp end="340" />
+            <CountUp end="350" />
             <p>Universities</p>
           </div>
         </div>
