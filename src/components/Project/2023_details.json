@@ -1,0 +1,20 @@
+[
+    {
+        "repo-url": "https://github.com/2002Bishwajeet/awesome-appwrite-snippets",
+        "title": "Awesome Appwrite Snippets",
+        "desc": "Awesome Appwrite Snippets is a collection of commonly used Appwrite APIs. It increases your speed of development by eliminating most of the boilerplate code associated with making using Appwrite in your Project.",
+        "mentors": [
+            "2002Bishwajeet"
+        ],
+        "lang": [
+            "Kotlin",
+            "Flutter",
+            "Node.js",
+            "Dart",
+            "PHP"
+        ],
+        "tag": [
+            "App Dev"
+        ]
+    }
+]
