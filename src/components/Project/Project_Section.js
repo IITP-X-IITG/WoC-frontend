@@ -18,31 +18,31 @@ function ProjectSection() {
         <div className="bloc-tabs">
           <button
             className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
-            onClick={() => toggleTab(0)}
+            onClick={() => toggleTab(1)}
           >
             2023
           </button>
           <button
             className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
-            onClick={() => toggleTab(1)}
+            onClick={() => toggleTab(2)}
           >
             2022
           </button>
           <button
             className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
-            onClick={() => toggleTab(2)}
+            onClick={() => toggleTab(3)}
           >
             2021
           </button>
           <button
             className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
-            onClick={() => toggleTab(3)}
+            onClick={() => toggleTab(4)}
           >
             2020
           </button>
           <button
             className={toggleState === 5 ? "tabs active-tabs" : "tabs"}
-            onClick={() => toggleTab(4)}
+            onClick={() => toggleTab(5)}
           >
             2019
           </button>

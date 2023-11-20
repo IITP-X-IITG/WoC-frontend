@@ -46,5 +46,321 @@
         "tag": [
             "Web Dev"
         ]
+    },
+    {
+        "repo-url": "https://github.com/prathimacode-hub/Dev-Mint",
+        "title": "Dev Mint",
+        "desc": "Dev Mint has an exclusive collection of layouts, animations, effects, code snippets, extensions, projects, resources etc. to fulfill and satiate your developer needs.",
+        "mentors": [
+            "prathimacode-hub"
+        ],
+        "lang": [
+            "Mern",
+            "JavaScript",
+            "HTML",
+            "CSS"
+        ],
+        "tag": [
+            "Web Dev",
+            "Frontend"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/Kritika30032002/To-Do-List-Application",
+        "title": "To-Do-List-Application",
+        "desc": "This is a simple yet effective To-Do List Application built with HTML, CSS, and JavaScript. It allows you to manage your tasks and stay organized. You can add, edit, mark as completed, and delete tasks effortlessly.",
+        "mentors": [
+            "Kritika30032002"
+        ],
+        "lang": [
+            "Bootstrap",
+            "JavaScript",
+            "HTML",
+            "CSS"
+        ],
+        "tag": [
+            "Web Dev",
+            "Frontend"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/Kritika30032002/Blog_Website",
+        "title": "Blog_Website",
+        "desc": "Blog Website, a platform that empowers users to create, share, and engage with blogs. The blogs are saved in database.",
+        "mentors": [
+            "Kritika30032002"
+        ],
+        "lang": [
+            "Node.js",
+            "React.js",
+            "JavaScript",
+            "CSS"
+        ],
+        "tag": [
+            "Web Dev",
+            "Database"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/Kritika30032002/Top_Secrets",
+        "title": "Top_Secrets",
+        "desc": "This is a website that allows user to add their secrets anonymously to the website. Thus makes its interesting. One can add their secrets that they don't want to share with anyone.",
+        "mentors": [
+            "Kritika30032002"
+        ],
+        "lang": [
+            "Node.js",
+            "React.js",
+            "JavaScript",
+            "CSS"
+        ],
+        "tag": [
+            "Web Dev",
+            "Frontend"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/Kritika30032002/Top_Secrets",
+        "title": "ReactCreations",
+        "desc": "Collection of different Open-Source Projects.",
+        "mentors": [
+            "Kritika30032002"
+        ],
+        "lang": [
+            "React.js",
+            "JavaScript",
+            "CSS"
+        ],
+        "tag": [
+            "Web Dev",
+            "Frontend"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/Pranjal360Agarwal/ApnaBharat-Bus-Booking-Reservation-System",
+        "title": "Bus Booking Reservation System",
+        "desc": "Bus Reservation System is a pretty fully functional system which is designed to automate online ticket purchasing through an easy online bus booking system.",
+        "mentors": [
+            "Pranjal360Agarwal"
+        ],
+        "lang": [
+            "Python",
+            "Tkinter",
+            "SQLite"
+        ],
+        "tag": [
+            "Data Science",
+            "ML"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/maityamit/Sleepometer-Android-App",
+        "title": "Sleepometer",
+        "desc": "This will basically measure your sleep, and represent the overall day-wise sleep hours and the last 7 days' average sleep also can measure.",
+        "mentors": [
+            "maityamit"
+        ],
+        "lang": [
+            "Java"
+        ],
+        "tag": [
+            "Mobile Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/bhattabhi013/Vritant",
+        "title": "Vritaant",
+        "desc": "Vritaant is a cross-platform application to help the naughty and carefree young ones learn and understand nursery rhymes in a fun and interactive way.",
+        "mentors": [
+            "Vritant"
+        ],
+        "lang": [
+            "Dart",
+            "C++",
+            "CMake"
+        ],
+        "tag": [
+            "Mobile Dev",
+            "Flutter"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/bhattabhi013/project-frontend",
+        "title": "project-frontend",
+        "desc": ".",
+        "mentors": [
+            "Vritant"
+        ],
+        "lang": [
+            "TypeScript",
+            "HTML",
+            "SCSS"
+        ],
+        "tag": [
+            "Web Dev",
+            "Frontend"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/abhisheks008/DL-Simplified",
+        "title": "DL Simplified",
+        "desc": "This repository consists of various machine learning projects, and all of the projects must follow a certain template. I wish the contributors will take care of this while contributing in this repository.",
+        "mentors": [
+            "abhisheks008"
+        ],
+        "lang": [
+            "Jupyter Notebook"
+        ],
+        "tag": [
+            "ML"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/kailashchoudhary11/leetconnect",
+        "title": "LeetConnect",
+        "desc": "LeetConnect a powerful browser extension tailored for LeetCode enthusiasts. LeetConnect empowers you to effortlessly follow other LeetCode users, explore their profiles, and unlock valuable insights into their coding strategies.",
+        "mentors": [
+            "kailashchoudhary11"
+        ],
+        "lang": [
+            "Python",
+            "JavaScript",
+            "CSS",
+            "HTML"
+        ],
+        "tag": [
+            "Web Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/kailashchoudhary11/steganohide",
+        "title": "SteganoHide",
+        "desc": "SteganoHide is a web application that enables users to perform steganography by hiding encrypted text within images. Users can upload an image, a password, and a secret text, which will be encrypted using the provided password.",
+        "mentors": [
+            "kailashchoudhary11"
+        ],
+        "lang": [
+            "Python",
+            "JavaScript",
+            "CSS",
+            "HTML"
+        ],
+        "tag": [
+            "Web Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/AOSSIE-Org/Resonate",
+        "title": "Resonate",
+        "desc": "An engagement platform that is Open Source has the potential to drive significant traction and help establish a strong presence.",
+        "mentors": [
+            "AOSSIE-Org"
+        ],
+        "lang": [
+            "Dart",
+            "Flutter"
+        ],
+        "tag": [
+            "App Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/narayan954/dummygram",
+        "title": "Dummygram",
+        "desc": "DummyGram is a social media application where we have posts, stories, chat, friends, authentication, comment, delete, share and like feature. It uses ReactJs in the frontend for the UI and Firebase for the backend storing the users, posts, stories and comments.",
+        "mentors": [
+            "narayan954"
+        ],
+        "lang": [
+            "React.js",
+            "JavaScript",
+            "CSS",
+            "Firebase"
+        ],
+        "tag": [
+            "Web Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/anmode/grabtern-frontend",
+        "title": "Grabtern Frontend",
+        "desc": ".",
+        "mentors": [
+            "anmode"
+        ],
+        "lang": [
+            "Next.Js",
+            "Node.js",
+            "MongoDB"
+        ],
+        "tag": [
+            "Web Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/PradyumnaKrishna/enigma-protocol",
+        "title": "Enigma Protocol",
+        "desc": "An end to end encrypted messenger using Flask, SocketIO, and Vue.js",
+        "mentors": [
+            "PradyumnaKrishna"
+        ],
+        "lang": [
+            "Vue.Js",
+            "Python",
+            "JavaScript"
+        ],
+        "tag": [
+            "Web Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/akshitagupta15june/Moksh",
+        "title": "MOKSH",
+        "desc": "Moksh is a spiritual productivity tool designed for individuals who want to unlock their potential and achieve true balance in life.",
+        "mentors": [
+            "akshitagupta15june"
+        ],
+        "lang": [
+            "HTML",
+            "CSS",
+            "Javascript",
+            "Bootstrap"
+        ],
+        "tag": [
+            "Web Dev",
+            "Frontend"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/akshitagupta15june/PetMe",
+        "title": "PetMe",
+        "desc": "PetMe is made for adopting a pet , Donating a pet, Emergency care for stray Animals",
+        "mentors": [
+            "akshitagupta15june"
+        ],
+        "lang": [
+            "HTML",
+            "CSS",
+            "Javascript",
+            "Bootstrap"
+        ],
+        "tag": [
+            "Web Dev",
+            "Frontend"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/akshitagupta15june/Face-X",
+        "title": "Face-X",
+        "desc": "Demonstration of different algorithms and operations on faces.",
+        "mentors": [
+            "akshitagupta15june"
+        ],
+        "lang": [
+            ""
+        ],
+        "tag": [
+            ""
+        ]
     }
 ]
