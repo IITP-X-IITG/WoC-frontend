@@ -35,7 +35,7 @@ export default function Advisory() {
               <div className="icon">
                 <img src={Madhur} alt="Madhur" />
                 <Namecard
-                  name="Madhur Malpani"
+                  name="kushal Agarwal"
                   link1="https://www.linkedin.com/in/madhur-malpani-818646196/"
                   link2="mailto:madhur.nilu@gmail.com"
                 />
