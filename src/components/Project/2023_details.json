@@ -1,20 +1,50 @@
 [
     {
-        "repo-url": "https://github.com/2002Bishwajeet/awesome-appwrite-snippets",
-        "title": "Awesome Appwrite Snippets",
-        "desc": "Awesome Appwrite Snippets is a collection of commonly used Appwrite APIs. It increases your speed of development by eliminating most of the boilerplate code associated with making using Appwrite in your Project.",
+        "repo-url": "https://github.com/Anupkjha2601/foodie-blog",
+        "title": "Foodie",
+        "desc": "food store website named Foodie Blog that helps the customer to find good recipe in cheap rate and genuine products.",
         "mentors": [
-            "2002Bishwajeet"
+            "Anupkjha2601"
         ],
         "lang": [
-            "Kotlin",
-            "Flutter",
-            "Node.js",
-            "Dart",
-            "PHP"
+            "HTML",
+            "CSS",
+            "JavaScript"
         ],
         "tag": [
-            "App Dev"
+            "Web Dev",
+            "Frontend"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/sahil-sagwekar2652/semantic-search-demo",
+        "title": "Semantic Search Demo",
+        "desc": ".",
+        "mentors": [
+            "sahil-sagwekar2652"
+        ],
+        "lang": [
+            "Python"
+        ],
+        "tag": [
+            "Data Science"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/sahil-sagwekar2652/GitHub-Automation-scripts",
+        "title": "GitHub Automation Scripts",
+        "desc": "To connect a local repository to GitHub one has to go to the GitHub website, create a new respository and then add the new GitHub repo as a remote for your local repository.",
+        "mentors": [
+            "sahil-sagwekar2652"
+        ],
+        "lang": [
+            "Python",
+            "JavaScript",
+            "HTML",
+            "CSS"
+        ],
+        "tag": [
+            "Web Dev"
         ]
     }
 ]
