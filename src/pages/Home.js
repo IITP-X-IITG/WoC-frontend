@@ -55,7 +55,7 @@ export default function Home() {
           }}
         >
           CODEPEAK 2023 is here!
-          Mentor registration has started.
+          Student registration has started.
           <Link
             to="/register"
             style={{ textDecoration: "none", color: "#99c1e7" }}

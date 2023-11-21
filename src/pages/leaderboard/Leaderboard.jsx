@@ -19,23 +19,23 @@ const Leaderboard = () => {
   useEffect(() => {
     async function getCSV() {
       try {
-        const target = `https://docs.google.com/spreadsheets/d/1j7mCwOWP3hSlKPfHKy0BvNZljSgJoqnUqTgjILqYFgU/export?format=csv`;
+        // const target = `https://docs.google.com/spreadsheets/d/1j7mCwOWP3hSlKPfHKy0BvNZljSgJoqnUqTgjILqYFgU/export?format=csv`;
         const result = await fetch(target);
         const data = await result.text();
         var rows = data.toString().split("\r");
 
         let arr = [];
-        for (let i = 0; i < rows.length; i++) {
+        for (let i = 0;i < rows.length;i++) {
           let str = "";
           let temp = [];
           if (i === 0) {
-            for (let j = 0; j < rows[i].length; j++) {
+            for (let j = 0;j < rows[i].length;j++) {
               str += rows[i][j];
             }
             temp = str.split(",");
           } else {
             let str = "";
-            for (let j = 1; j < rows[i].length; j++) {
+            for (let j = 1;j < rows[i].length;j++) {
               str += rows[i][j];
             }
             temp = str.split(",");
@@ -50,7 +50,7 @@ const Leaderboard = () => {
         });
 
         let finalArr = [];
-        for (let i = arr.length - 1; i >= 0; i--) {
+        for (let i = arr.length - 1;i >= 0;i--) {
           let score = {};
           score["rank"] = arr.length - i;
           score["gitid"] = arr[i][1];
@@ -84,7 +84,7 @@ const Leaderboard = () => {
         //         }
         //     }
         //     arr.push(temp);
-// Hi
+        // Hi
         //   score["rank"] = i+1;
         //   score["gitid"] = arr[0];
         //   score["points"] = arr[1];
@@ -157,7 +157,7 @@ const Leaderboard = () => {
       <div className="leader-twinkling"></div>
       <div style={style}>
         <div className="space"></div>
-        <div className="title mb-5 p-3">LEADERBOARD 2022</div>
+        <div className="title mb-5 p-3">LEADERBOARD 2023</div>
         {loading ? (
           <Loading />
         ) : (
