@@ -1,15 +1,8 @@
 import React, { useEffect } from "react";
 // image import
-import Aritra from "../resources/aritra_bhaduri.jpg";
-import Achhada from "../resources/achhada_hiren_rajkumar.jpg";
-import Harshit from "../resources/harshit_seksaria.jpg";
-import Anurag from "../resources/anurag_deo.jpg";
-import Pratyush from "../resources/pratyush.jpg";
-import Kartikay from "../resources/kartikay_gupta.png";
-import Aditya from "../resources/aditya_kumar.jpg";
-import Padmaja from "../resources/padmaja_joshi.jpeg";
-import Aman from "../resources/aman_kumar.jpeg";
-import AdityaMandal from "../resources/Aditya_Mandal.png";
+import Kushal from "../resources/image_kushal.jpg";
+import Priyanshi from "../resources/pryanshi.jpg";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -41,60 +34,32 @@ export default function Tech() {
           <div>
             <div className="coord">
               <div className="icon">
-                <img src={Anurag} alt="Anurag" />
+                <img src={Kushal} alt="Kushal Agarwal " />
                 <Namecard
-                  name="Anurag Deo"
-                  link1="https://www.linkedin.com/in/anurag-deo-8b30b422b/"
-                  link2="mailto:anurag_2101ai04@iitp.ac.in"
+                  name="Kushal Agarwal "
+                  link1="https://www.linkedin.com/in/kushal-agarwal-03868225a/"
+                  link2="mailto:kushalag02@gmail.com"
                 />
               </div>
               <div className="icon">
-                <img src={Harshit} alt="Harshit" />
+                <img src={Priyanshi} alt="Priyanshi Sharma " />
                 <Namecard
-                  name="Harshit Seksaria"
-                  link1="https://www.linkedin.com/in/letsintegreat/"
-                  link2="mailto:harshitseksaria9@gmail.com"
+                  name="Priyanshi Sharma "
+                  link1="https://www.linkedin.com/in/priyanshi-sharma-bb936625a/"
+                  link2="mailto:Sharmapriyanshi178@gmail.com"
                 />
               </div>
-              <div className="icon">
+              {/* <div className="icon">
                 <img src={Aritra} alt="Aritra" />
                 <Namecard
                   name="Aritra Bhaduri"
                   link1="https://www.linkedin.com/in/aritrabhaduri/"
                   link2="mailto:abhaduriperso@gmail.com"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
-          <div>
-            <div className="coord">
-              <div className="icon">
-                <img src={Achhada} alt="Achhada" />
-                <Namecard
-                  name="Achhada Hiren Rajkumar"
-                  link1="https://www.linkedin.com/in/hiren-achhada-5aa214210/"
-                  link2="mailto:achhada_2101cs03@iitp.ac.in"
-                />
-              </div>
-              <div className="icon">
-                <img src={Aditya} alt="Aditya" />
-                <Namecard
-                  name="Aditya Kumar"
-                  link1="https://www.linkedin.com/in/aditya-kumar-337a08218/"
-                  link2="mailto:adityakumarsanni.2001@gmail.com"
-                />
-              </div>
-              <div className="icon">
-                <img src={Kartikay} alt="Kartikay" />
-                <Namecard
-                  name="Kartikay Gupta"
-                  link1="https://www.linkedin.com/in/kartikay-gupta/"
-                  link2="mailto:kartikay.gupta2002@gmail.com"
-                />
-              </div>
-            </div>
-          </div>
-          <div>
+          {/* <>
             <div className="coord">
               <div className="icon">
                 <img src={Aman} alt="Aman" />
@@ -121,19 +86,7 @@ export default function Tech() {
                 />
               </div>
             </div>
-          </div>
-          <div>
-            <div className="coord">
-              <div className="icon">
-                <img src={AdityaMandal} alt="Aditya Mandal" />
-                <Namecard
-                  name="Aditya Mandal"
-                  link1="https://www.linkedin.com/in/aditya1406/"
-                  link2="mailto:aditya.mandal@iitg.ac.in"
-                />
-              </div>
-            </div>
-          </div>
+          </div> */}
         </Slider>
       </div>
 
@@ -142,24 +95,24 @@ export default function Tech() {
           <div>
             <div className="coord">
               <div className="icon">
-                <img src={Anurag} alt="Anurag" />
+                <img src={Kushal} alt="Kushal Agarwal " />
                 <Namecard
-                  name="Anurag Deo"
-                  link1="https://www.linkedin.com/in/anurag-deo-8b30b422b/"
-                  link2="mailto:anurag_2101ai04@iitp.ac.in"
+                  name="Kushal Agarwal "
+                  link1="https://www.linkedin.com/in/kushal-agarwal-03868225a/"
+                  link2="mailto:kushalag02@gmail.com"
                 />
               </div>
               <div className="icon">
-                <img src={Harshit} alt="Harshit" />
+                <img src={Priyanshi} alt="Priyanshi Sharma " />
                 <Namecard
-                  name="Harshit Seksaria"
-                  link1="https://www.linkedin.com/in/letsintegreat/"
-                  link2="mailto:harshitseksaria9@gmail.com"
+                  name="Priyanshi Sharma "
+                  link1="https://www.linkedin.com/in/priyanshi-sharma-bb936625a/"
+                  link2="mailto:Sharmapriyanshi178@gmail.com"
                 />
               </div>
             </div>
           </div>
-          <div>
+          {/* <div>
             <div className="coord">
               <div className="icon">
                 <img src={Aritra} alt="Aritra" />
@@ -230,7 +183,7 @@ export default function Tech() {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
         </Slider>
       </div>
     </div>

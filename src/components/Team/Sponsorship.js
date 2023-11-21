@@ -1,17 +1,12 @@
 import React, { useEffect } from "react";
 
 // image import
-import Raunak from "../resources/raunak_kumar_gupta.jpg";
-import Avinash from "../resources/avinash_tyagi.jpeg";
-import Aruj from "../resources/aruj_gautam.jpg";
-import Utkarsh from "../resources/utkarsh_giri.jpg";
-import Raj from "../resources/raj_borogaon.jpg";
-import Harshit from "../resources/harshit_seksaria.jpg";
-import Shreya from "../resources/shreya_anand.jpg";
-import Sanya from "../resources/sanya.jpg";
-import Sparsh from "../resources/sparsh_mittal.jpg";
-import Adittya from "../resources/adittya_gupta.jpg";
-import Priyanshu from "../resources/priyanshu_srivastava.jpg";
+import Hemant from "../resources/hemant.jpg";
+import Satyam from "../resources/satyam.jpg";
+import Vinayak from "../resources/vinayak.jpg";
+import Kanhaia from "../resources/kanhaia.jpg";
+import Atri from "../resources/image_profile.jpg";
+
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -44,27 +39,27 @@ export default function Sponsorship() {
           <div>
             <div className="coord">
               <div className="icon">
-                <img src={Raunak} alt="Raunak" />
+                <img src={Hemant} alt="Hemant" />
                 <Namecard
-                  name="Raunak Kumar Gupta "
-                  link1="https://www.linkedin.com/in/raunak-kumar-gupta-075121226"
-                  link2="mailto:raunakmodanwal321@gmail.com"
+                  name="Hemant Chaurasia"
+                  link1="https://www.linkedin.com/in/hemantchaurasia2004/"
+                  link2="mailto:hemantchaurasia2004@gmail.com"
                 />
               </div>
               <div className="icon">
-                <img src={Avinash} alt="Avinash" />
+                <img src={Satyam} alt="Satyam Raj" />
                 <Namecard
-                  name="Avinash Tyagi "
-                  link1="https://www.linkedin.com/in/avinash-t-956342226/"
-                  link2="mailto:avinash91715@gmail.com"
+                  name="Satyam Raj"
+                  link1="https://www.linkedin.com/in/satyam-raj-8191b1284/"
+                  link2="mailto:satyam12102004@gmail.com"
                 />
               </div>
               <div className="icon">
-                <img src={Aruj} alt="Aruj" />
+                <img src={Vinayak} alt="Vinayak Goyal" />
                 <Namecard
-                  name="Aruj Gautam"
-                  link1="https://www.linkedin.com/in/arujgautam/"
-                  link2="mailto:arujgautam1@gmail.com"
+                  name="Vinayak Goyal"
+                  link1="https://www.linkedin.com/in/vinayak-goyal-b769b5251/"
+                  link2="mailto:vinayakgoyal2410@gmail.com"
                 />
               </div>
             </div>
@@ -73,61 +68,32 @@ export default function Sponsorship() {
           <div>
             <div className="coord">
               <div className="icon">
-                <img src={Harshit} alt="Harshit" />
+                <img src={Kanhaia} alt="Kanhaia" />
                 <Namecard
-                  name="Harshit Seksaria"
-                  link1="https://www.linkedin.com/in/letsintegreat/"
-                  link2="mailto:harshitseksaria9@gmail.com"
+                  name="Kanahia"
+                  link1="https://www.linkedin.com/in/kanahia-kaushal-9850bb253/"
+                  link2="mailto:kaushalkanahia@gmail.com"
                 />
               </div>
               <div className="icon">
-                <img src={Utkarsh} alt="Utkarsh" />
+                <img src={Atri} alt="Atri Chattopadhyay" />
                 <Namecard
-                  name="Utkarsh Kumar Giri"
-                  link1="https://www.linkedin.com/in/utkarsh-kumar-giri-b31b461b9/"
-                  link2="mailto:utkarshkumarbro@gmail.com"
+                  name="Atri Chattopadhyay"
+                  link1="https://www.linkedin.com/in/atri-chattopadhyay-777b5725a/"
+                  link2="mailto:print.atri@gmail.com"
                 />
               </div>
-              <div className="icon">
+              {/* <div className="icon">
                 <img src={Raj} alt="Raj" />
                 <Namecard
                   name="Raj Borogaon"
                   link1="https://www.linkedin.com/in/iks1r/"
                   link2="mailto:b.raj@iitg.ac.in"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
-
-          <div>
-            <div className="coord">
-              <div className="icon">
-                <img src={Shreya} alt="Shreya Anand " />
-                <Namecard
-                  name="Shreya Anand "
-                  link1="https://www.linkedin.com/in/shreya-anand-815699229"
-                  link2="mailto:shreyaanand1501@gmail.com"
-                />
-              </div>
-              <div className="icon">
-                <img src={Sanya} alt="Sanya" />
-                <Namecard
-                  name="Sanya"
-                  link1="https://www.linkedin.com/in/sanya-singh-1a72441b3/"
-                  link2="mailto:s.sanya@iitg.ac.in"
-                />
-              </div>
-              <div className="icon">
-                <img src={Sparsh} alt="Sparsh Mittal" />
-                <Namecard
-                  name="Sparsh Mittal"
-                  link1="https://www.linkedin.com/in/sparsh-m-400846119"
-                  link2="mailto:sparshmittal2311@gmail.com"
-                />
-              </div>
-            </div>
-          </div>
-          <div>
+          {/* <div>
             <div className="coord">
               <div className="icon">
                 <img src={Priyanshu} alt="Priyanshu" />
@@ -146,7 +112,7 @@ export default function Sponsorship() {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
         </Slider>
       </div>
 
@@ -155,19 +121,19 @@ export default function Sponsorship() {
           <div>
             <div className="coord">
               <div className="icon">
-                <img src={Raunak} alt="Raunak" />
+                <img src={Hemant} alt="Hemant" />
                 <Namecard
-                  name="Raunak Kumar Gupta "
-                  link1="https://www.linkedin.com/in/raunak-kumar-gupta-075121226"
-                  link2="mailto:raunakmodanwal321@gmail.com"
+                  name="Hemant Chaurasia"
+                  link1="https://www.linkedin.com/in/hemantchaurasia2004/"
+                  link2="mailto:hemantchaurasia2004@gmail.com"
                 />
               </div>
               <div className="icon">
-                <img src={Avinash} alt="Avinash" />
+                <img src={Satyam} alt="Satyam Raj" />
                 <Namecard
-                  name="Avinash Tyagi "
-                  link1="https://www.linkedin.com/in/avinash-t-956342226/"
-                  link2="mailto:avinash91715@gmail.com"
+                  name="Satyam Raj"
+                  link1="https://www.linkedin.com/in/satyam-raj-8191b1284/"
+                  link2="mailto:satyam12102004@gmail.com"
                 />
               </div>
             </div>
@@ -176,19 +142,19 @@ export default function Sponsorship() {
           <div>
             <div className="coord">
               <div className="icon">
-                <img src={Aruj} alt="Aruj" />
+                <img src={Vinayak} alt="Vinayak Goyal" />
                 <Namecard
-                  name="Aruj Gautam"
-                  link1="https://www.linkedin.com/in/arujgautam/"
-                  link2="mailto:arujgautam1@gmail.com"
+                  name="Vinayak Goyal"
+                  link1="https://www.linkedin.com/in/vinayak-goyal-b769b5251/"
+                  link2="mailto:vinayakgoyal2410@gmail.com"
                 />
               </div>
               <div className="icon">
-                <img src={Utkarsh} alt="Utkarsh" />
+                <img src={Kanhaia} alt="Kanhaia" />
                 <Namecard
-                  name="Utkarsh Kumar Giri"
-                  link1="https://www.linkedin.com/in/utkarsh-kumar-giri-b31b461b9/"
-                  link2="mailto:utkarshkumarbro@gmail.com"
+                  name="Kanahia"
+                  link1="https://www.linkedin.com/in/kanahia-kaushal-9850bb253/"
+                  link2="mailto:kaushalkanahia@gmail.com"
                 />
               </div>
             </div>
@@ -196,24 +162,24 @@ export default function Sponsorship() {
           <div>
             <div className="coord">
               <div className="icon">
-                <img src={Harshit} alt="Harshit" />
+                <img src={Atri} alt="Atri Chattopadhyay" />
                 <Namecard
-                  name="Harshit Seksaria"
-                  link1="https://www.linkedin.com/in/letsintegreat/"
-                  link2="mailto:harshitseksaria9@gmail.com"
+                  name="Atri Chattopadhyay"
+                  link1="https://www.linkedin.com/in/atri-chattopadhyay-777b5725a/"
+                  link2="mailto:print.atri@gmail.com"
                 />
               </div>
-              <div className="icon">
+              {/* <div className="icon">
                 <img src={Shreya} alt="Shreya Anand " />
                 <Namecard
                   name="Shreya Anand "
                   link1="https://www.linkedin.com/in/shreya-anand-815699229"
                   link2="mailto:shreyaanand1501@gmail.com"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
-          <div>
+          {/* <div>
             <div className="coord">
               <div className="icon">
                 <img src={Sanya} alt="Sanya" />
@@ -244,7 +210,7 @@ export default function Sponsorship() {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
         </Slider>
       </div>
     </div>

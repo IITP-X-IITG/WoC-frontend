@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 // import images
-import Madhur from "../resources/madhur_malpani.jpeg";
-import Atishay from "../resources/atishay_jain.jpeg";
+import Sandeep from "../resources/Sandeep Mishra.jpg";
+import Aditya from "../resources/Aditya_NJACK.jpg";
+import Vighnesh from "../resources/image_profile.jpg"
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -33,19 +34,27 @@ export default function Advisory() {
           <div>
             <div className="coord">
               <div className="icon">
-                <img src={Madhur} alt="Madhur" />
+                <img src={Sandeep} alt="Sandeep" />
                 <Namecard
-                  name="Madhur Malpani"
-                  link1="https://www.linkedin.com/in/madhur-malpani-818646196/"
-                  link2="mailto:madhur.nilu@gmail.com"
+                  name="Sandeep Mishra"
+                  link1="https://www.linkedin.com/in/sandeep03edu/"
+                  link2="mailto:sandeep03edu@gmail.com"
                 />
               </div>
               <div className="icon">
-                <img src={Atishay} alt="Atishay" />
+                <img src={Aditya} alt="Aditya" />
                 <Namecard
-                  name="Atishay Jain"
-                  link1="www.linkedin.com/in/atishay1743/"
-                  link2="mailto:atishayjain@iitg.ac.in"
+                  name="Aditya Kumar"
+                  link1="https://www.linkedin.com/in/aditya-kumar-337a08218"
+                  link2="mailto:adityakumarsanni.2001@gmail.com"
+                />
+              </div>
+              <div className="icon">
+                <img src={Vighnesh} alt="Vignesh" />
+                <Namecard
+                  name="Vighnesh Deshpande"
+                  link1="https://www.linkedin.com/in/vighnesh3802/"
+                  link2="mailto:"
                 />
               </div>
             </div>
@@ -58,24 +67,36 @@ export default function Advisory() {
           <div>
             <div className="coord">
               <div className="icon">
-                <img src={Madhur} alt="Madhur" />
+                <img src={Sandeep} alt="Sandeep" />
                 <Namecard
-                  name="Madhur Malpani"
-                  link1="https://www.linkedin.com/in/madhur-malpani-818646196/"
-                  link2="mailto:madhur.nilu@gmail.com"
+                  name="Sandeep Mishra"
+                  link1="https://www.linkedin.com/in/sandeep03edu/"
+                  link2="mailto:sandeep03edu@gmail.com"
                 />
               </div>
               <div className="icon">
-                <img src={Atishay} alt="Atishay" />
+                <img src={Aditya} alt="Aditya" />
                 <Namecard
-                  name="Atishay Jain"
-                  link1="www.linkedin.com/in/atishay1743/"
-                  link2="mailto:atishayjain@iitg.ac.in"
+                  name="Aditya Kumar"
+                  link1="https://www.linkedin.com/in/aditya-kumar-337a08218"
+                  link2="mailto:adityakumarsanni.2001@gmail.com"
+                />
+              </div>
+
+            </div>
+          </div>
+          <div>
+            <div className="coord">
+              <div className="icon">
+                <img src={Vighnesh} alt="Vignesh" />
+                <Namecard
+                  name="Vighnesh Deshpande"
+                  link1="https://www.linkedin.com/in/vighnesh3802/"
+                  link2="mailto:"
                 />
               </div>
             </div>
           </div>
-
         </Slider>
       </div>
     </div>
