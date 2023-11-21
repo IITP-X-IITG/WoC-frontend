@@ -27,13 +27,13 @@ function Project2021_Search() {
 
     return (
         <>
-            // <input
-            //     type="search"
-            //     name="searchBar"
-            //     id="searchBar"
-            //     placeholder="Search for Project using tags and stack used"
-            //     onChange={(e) => searchHandler(e)}
-            // />
+            <input
+                type="search"
+                name="searchBar"
+                id="searchBar"
+                placeholder="Search for Project using tags and stack used"
+                onChange={(e) => searchHandler(e)}
+            />
 
             // <div className="row">
             //     {projects.map((el) => {
