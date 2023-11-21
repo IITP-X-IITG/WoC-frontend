@@ -84,7 +84,7 @@ const Leaderboard = () => {
         //         }
         //     }
         //     arr.push(temp);
-
+// Hi
         //   score["rank"] = i+1;
         //   score["gitid"] = arr[0];
         //   score["points"] = arr[1];

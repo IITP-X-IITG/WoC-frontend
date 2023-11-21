@@ -150,7 +150,7 @@ export default function Home() {
                   data-aos-once="true"
                 >
                   <Timeline
-                    date="15 NOV."
+                    date="15 NOV"
                     desc="Student Registration starts."
                   />
                 </div>

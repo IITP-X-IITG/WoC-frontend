@@ -6,13 +6,13 @@ import Leaderboard from "./leaderboard/Leaderboard.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function LeaderboardMain() {
-  return (
-    <>
-      <Animatedbg />
-      <Navigation />
-      <Leaderboard />
-      <Footer />
-    </>
-  );
+    return (
+        <>
+            <Animatedbg />
+            <Navigation />
+            <Leaderboard />
+            <Footer />
+        </>
+    );
 }
 export default LeaderboardMain;
