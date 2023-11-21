@@ -82,6 +82,11 @@ export default function Advisory() {
                   link2="mailto:adityakumarsanni.2001@gmail.com"
                 />
               </div>
+
+            </div>
+          </div>
+          <div>
+            <div className="coord">
               <div className="icon">
                 <img src={Vighnesh} alt="Vignesh" />
                 <Namecard
