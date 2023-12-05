@@ -4,7 +4,9 @@ import home_style from "./Home.css";
 import logo_codepeak from "./Images/logo.png";
 import hill from "./Images/mtpnggg.png";
 import clueless from "./Images/clueless.png";
-import antigranular from "./Images/sp_logo1.png"
+import antigranular from "./Images/Antigranularlogo.png"
+import gfg from "./Images/gfgLogo.png"
+import quine from "./Images/QuineLogo.svg"
 import threeWay_studio from "./Images/sp_logo2.png"
 import dagshub from "./Images/dagshub.png";
 import avl from "./Images/avl.png";
@@ -92,6 +94,36 @@ export default function Home() {
                 data-aos-once="true"
               />
             </a>
+            <a
+              href="https://www.geeksforgeeks.org/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                src={gfg}
+                alt=""
+                srcSet=""
+                className="main_spons_img"
+                data-aos="zoom-in"
+                data-aos-once="true"
+              />
+            </a>
+            <a
+              href="https://quine.sh/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                src={quine}
+                alt=""
+                srcSet=""
+                className="main_spons_img"
+                data-aos="zoom-in"
+                data-aos-once="true"
+              />
+            </a>
+          
+
 
             <a
               href="https://www.threewaystudio.world/"
@@ -329,3 +361,4 @@ export default function Home() {
     </>
   );
 }
+
