@@ -8,13 +8,13 @@ import "aos/dist/aos.css";
 //import {BsStarFill} from 'react-icons/bs';
 import { useEffect } from "react";
 import RewardComp from "../../components/Reward/RewardComp";
-import AviyelLogo from "../Images/avl.svg";
+import Quine from "../Images/Quine1.svg";
 import GfgLogo from "../Images/gfgLogo.png";
-import CSSBattleLogo from "../Images/cssbattleLogo.png";
 import NWocLogo from "../Images/nwoc logo.svg";
 import CodingClubLogo from "../Images/iitglogo.svg";
-import VoiceflowLogo from "../Images/Artboard.svg";
 import CodepeakLogo from "../Images/logo.png";
+import antigranular from "../Images/sp_logo1.png"
+import threeWay_studio from "../Images/sp_logo2.png"
 export default function Reward() {
   useEffect(() => {
     Aos.init({ duration: 800 });
@@ -25,17 +25,18 @@ export default function Reward() {
       <Navigation />
       <div className="reward_head">
         <h2 data-aos="zoom-in" data-aos-once="true">
-          PAST REWARDS AND PRIZES
+          REWARDS AND PRIZES
         </h2>
         <hr />
       </div>
       <div className="rewardBox right" data-aos="fade-up" data-aos-once="true">
-        <img src={AviyelLogo} alt="" className="rewardLogo" />
+        <img src={antigranular} alt="" className="rewardLogo" />
         <RewardComp
           className="rewardComp"
-          title="Aviyel"
-          abt1="- Top 5 Contributors will get a Swag kit from Aviyel !"
-          abt2="- Top Contributors of Aviyel projects may get an internship opportunity !!"
+          title="Antigranular"
+          abt1="- 10 Swag Kits to Top participants in CodePeak, student mentors."
+          abt2="- Fast Track to Internship for top performers of the Antigranular track."
+          abt3="- Trip to Oxford for at least one participant."
         />
       </div>
       <div className="rewardBox left" data-aos="fade-up" data-aos-once="true">
@@ -43,24 +44,24 @@ export default function Reward() {
         <RewardComp
           className="rewardComp"
           title="Geeks For Geeks"
-          abt1="- Top 3 Contributors will get GFG Coupon worth Rs 1200, 1000, 800."
-          abt2="- Geeks for Geeks Coupon worth Rs. 300 to all participants."
+          abt1="- Top 3 Contributors will get Swag kits from GFG."
+          abt2="- GFG coupons worth ₹300 to all participants who attend GFG session."
         />
       </div>
       <div className="rewardBox right" data-aos="fade-up" data-aos-once="true">
-        <img src={CSSBattleLogo} alt="" className="rewardLogo" />
+        <img src={threeWay_studio} alt="" className="rewardLogo" />
         <RewardComp
           className="rewardComp"
-          title="CSS Battles"
-          abt1="- Top 3 Contributors will get CSS Battles credits worth $200."
+          title="Threeway Studio"
+          abt1="- Top Contributors of the projects will get Swag kits."
         />
       </div>
       <div className="rewardBox left" data-aos="fade-up" data-aos-once="true">
-        <img src={VoiceflowLogo} alt="" className="rewardLogo" />
+        <img src={Quine} alt="" className="rewardLogo" />
         <RewardComp
           className="rewardComp"
-          title="Voiceflow"
-          abt1="- Six months Voiceflow Subscription worth $240 to all participants."
+          title="Quine"
+          abt1="- 100$ to top 3 participants with quine account."
         />
       </div>
       <div className="rewardBox left" data-aos="fade-up" data-aos-once="true">
@@ -82,8 +83,8 @@ export default function Reward() {
         <RewardComp
           className="rewardComp"
           title="CODEPEAK"
-          abt1="- Top 15 Contributors will get Codepeak Merchandise."
-          abt2="- Certificate of Merit to top 40 contributorts."
+          abt1="- Top 30 Contributors will get Codepeak Merchandise."
+          abt2="- Mentors Will get exclusive Codepeak Merchandise."
           abt3="- Certificate of participation to all participants."
         />
       </div>

@@ -530,7 +530,7 @@
     {
         "repo-url": "https://github.com/Hirenachhaada/Mern-Chat-Application",
         "title": "Mern-Chat-Application",
-        "desc": "",
+        "desc": "Create a secure chat app with email/username connection, real-time messaging, group chats, contact management, cross-platform support, and voice/video calls.",
         "mentors": [
             "Hirenachhaada"
         ],
@@ -548,7 +548,7 @@
     {
         "repo-url": "https://github.com/Hirenachhaada/MyBlog",
         "title": "My-Blog",
-        "desc": "Blog-Application",
+        "desc": "Develop a user-friendly blogging platform with customizable templates, collaboration, public visibility, content sharing, search, and analytics features.",
         "mentors": [
             "Hirenachhaada"
         ],
@@ -561,6 +561,475 @@
         "tag": [
             "Web Dev",
             "Mern"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/MonalikaPatnaik/SheEARNS",
+        "title": "SheEarns",
+        "desc": "SheEarns is a web application dedicated to giving exposure to small local businesses run by individuals, such as housewives or entrepreneurs working from their homes",
+        "mentors": [
+            "MonalikaPatnaik"
+        ],
+        "lang": [
+            "React.js",
+            "node.js",
+            "express.js",
+            "CSS"
+        ],
+        "tag": [
+            "Web Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/mohit200008/medi-Care",
+        "title": "MediCare",
+        "desc": "MediCare offers medical milestones, AI disease prediction, hospital locating, language translation, bridging global healthcare gaps for recovery journeys.",
+        "mentors": [
+            "mohit200008"
+        ],
+        "lang": [
+            "React.js",
+            "node.js",
+            "Javascript",
+            "CSS"
+        ],
+        "tag": [
+            "Web Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/Aditya61101/Group-Study",
+        "title": "Group-Study",
+        "desc": "Next.js v13.1 app lets students join or create study groups, sort ongoing/upcoming sessions by date or time.",
+        "mentors": [
+            "Aditya61101"
+        ],
+        "lang": [
+            "Next.Js",
+            "Javascript",
+            "CSS"
+        ],
+        "tag": [
+            "Web Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/Aditya61101/Group-Study",
+        "title": "Scrape Up",
+        "desc": "Scrape Up, a Python package, extracts data from various platforms (GitHub, Twitter, Instagram) for valuable information without APIs.",
+        "mentors": [
+            "nikhil25803"
+        ],
+        "lang": [
+            "Python"
+        ],
+        "tag": [
+            "Web Dev",
+            "Machine Learning",
+            "Web Scrapping"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/vikhyatsingh123/Movies-Collection",
+        "title": "Movies-Collection",
+        "desc": "A diverse repository with movies and series spanning Bollywood, Hollywood, Tollywood, and other genres for varied entertainment choices.",
+        "mentors": [
+            "vikhyatsingh123"
+        ],
+        "lang": [
+            "React.js",
+            "Javascript",
+            "CSS",
+            "HTML"
+        ],
+        "tag": [
+            "Web Dev",
+            "Frontend"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/vikhyatsingh123/Naruto-Shippuden",
+        "title": "Naruto-Shippuden",
+        "desc": "A basic web-page that let the user view and add their favourite characters.",
+        "mentors": [
+            "vikhyatsingh123"
+        ],
+        "lang": [
+            "Javascript",
+            "CSS",
+            "HTML"
+        ],
+        "tag": [
+            "Web Dev",
+            "Frontend"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/rohan9024/ecommerce",
+        "title": "E-Commerce",
+        "desc": "This is an ecommerce platform for medium scale businesses to large scale businesses to list their products.",
+        "mentors": [
+            "rohan9024"
+        ],
+        "lang": [
+            "React.js",
+            "Javascript",
+            "CSS",
+            "HTML"
+        ],
+        "tag": [
+            "Web Dev",
+            "Frontend"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/arpitghura/typing-test",
+        "title": "Typing Test - Practice Your Typing Skills",
+        "desc": "The Typing Test app refines typing skills via practice sessions with diverse words, tracking speed/accuracy. It records session details, resettable by users.",
+        "mentors": [
+            "arpitghura4"
+        ],
+        "lang": [
+            "Javascript",
+            "CSS",
+            "HTML"
+        ],
+        "tag": [
+            "Web Dev",
+            "Frontend"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/arpitghura/NotesJar",
+        "title": "NotesJar",
+        "desc": "NotesJar: versatile note platform for students, pros, and organization. Create notes, to-do lists, reminders, categorize with tags/folders, share securely. Flexible editing.",
+        "mentors": [
+            "arpitghura4"
+        ],
+        "lang": [
+            "Javascript",
+            "CSS",
+            "HTML"
+        ],
+        "tag": [
+            "Web Dev",
+            "Frontend"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/nik132-eng/chrome-extensions",
+        "title": "Chrome Extensions Project",
+        "desc": "This repository hosts a collection of Chrome extensions designed for diverse purposes. Each extension has its own folder within this repository, with some already developed and others awaiting creation.",
+        "mentors": [
+            "nik132-eng"
+        ],
+        "lang": [
+            "Javascript",
+            "CSS",
+            "HTML"
+        ],
+        "tag": [
+            "Web Dev",
+            "Frontend"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/SrijanShovit/CrySense",
+        "title": "CrySense",
+        "desc": "An ML project aimed at helping parents detect the reason of their cute babies' cry!!",
+        "mentors": [
+            "SrijanShovit"
+        ],
+        "lang": [
+            "Python",
+            "CSS",
+            "Javascript"
+        ],
+        "tag": [
+            "Machine Learning",
+            "Data Science"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/shelcia/dynamic-portfolio",
+        "title": "dynamic-portfolio",
+        "desc": "Dynamic Portfolio: Easily create websites. Many users. CodePeak: Fix bugs, add templates for enhanced functionality and options.",
+        "mentors": [
+            "shelcia"
+        ],
+        "lang": [
+            "CSS",
+            "SCSS",
+            "Javascript",
+            "HTML"
+        ],
+        "tag": [
+            "Web Dev",
+            "Frontend"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/shelcia/Bloggram",
+        "title": "Bloggram",
+        "desc": "Bloggram is about modern blogging. Icompletely revamped with new look but lack some features which I plan to implement during codepeak.",
+        "mentors": [
+            "shelcia"
+        ],
+        "lang": [
+            "React.js",
+            "Javascript",
+            "CSS",
+            "SCSS"
+        ],
+        "tag": [
+            "Web Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/shelcia/api-docucraft",
+        "title": "DocuCraft - API Documentation Publishing Tool",
+        "desc": "Docucraft aims to implement seamless api documentation tool especially with ones built with Nodejs. It is new project which I aim to partially implement the MVP during codepeak.",
+        "mentors": [
+            "shelcia"
+        ],
+        "lang": [
+            "Node.js",
+            "React.js",
+            "Javascript"
+        ],
+        "tag": [
+            "Web Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/Gaurav-Verma07/synd_dev",
+        "title": "SynD - Synthetic Data Generation Tool",
+        "desc": "SynD, a synthetic data generation tool enables users to generate large clusters of data based tabular and time-series format using the robust CTGAN library.",
+        "mentors": [
+            "Gaurav-Verma07"
+        ],
+        "lang": [
+            "TypeScript",
+            "CSS",
+            "Javascript"
+        ],
+        "tag": [
+            "Web Dev",
+            "Frontend"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/Gaurav-Verma07/backend",
+        "title": "SynD - Synthetic Data Generation Tool",
+        "desc": "SynD, a synthetic data generation tool enables users to generate large clusters of data based tabular and time-series format using the robust CTGAN library.",
+        "mentors": [
+            "Gaurav-Verma07"
+        ],
+        "lang": [
+            "Python",
+            "Django"
+        ],
+        "tag": [
+            "Web Dev",
+            "Backend"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/WebSorcery/testcase-generator",
+        "title": "Testcase Generator",
+        "desc": "Auto-generates test cases for CP. Takes input data, constraints, conditions, and produces varied, effective test cases.",
+        "mentors": [
+            "ank1traj"
+        ],
+        "lang": [
+            "Next.Js",
+            "Javascript",
+            "CSS"
+        ],
+        "tag": [
+            "Web Dev",
+            "Frontend"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/WebSorcery/cucoders",
+        "title": "CodeChef CU Chapter",
+        "desc": "College club website",
+        "mentors": [
+            "ank1traj"
+        ],
+        "lang": [
+            "React.js",
+            "Javascript",
+            "CSS"
+        ],
+        "tag": [
+            "Web Dev",
+            "Frontend"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/WebSorcery/backend",
+        "title": "backend cucoders",
+        "desc": "",
+        "mentors": [
+            "ank1traj"
+        ],
+        "lang": [
+            "Javascript",
+            "CSS",
+            "Handlebars"
+        ],
+        "tag": [
+            "Web Dev",
+            "Backend"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/WebSorcery/jira-wizard",
+        "title": "Jira Wizard - Frontend",
+        "desc": "Jira issue bulk creator",
+        "mentors": [
+            "ank1traj"
+        ],
+        "lang": [
+            "Javascript",
+            "CSS",
+            "gatsby"
+        ],
+        "tag": [
+            "Web Dev",
+            "Frontend"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/WebSorcery/jira-backend",
+        "title": "Jira Wizard - Backend",
+        "desc": "Jira issue bulk creator",
+        "mentors": [
+            "ank1traj"
+        ],
+        "lang": [
+            "TypeScript"
+        ],
+        "tag": [
+            "Web Dev",
+            "Backend"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/apu52/METAVERSE",
+        "title": "METAVERSE",
+        "desc": "Metaverse Front-End Playground is an open-source repository created to empower developers to explore, innovate, and collaborate in the metaverse space.",
+        "mentors": [
+            "apu52"
+        ],
+        "lang": [
+            "HTML",
+            "Javascript",
+            "CSS"
+        ],
+        "tag": [
+            "Web Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/neokd/NeoGPT",
+        "title": "NeoGPT",
+        "desc": "NeoGPT: Open-source project for enhanced local document and YouTube interactions. Versatile tool for professionals, developers, researchers, and enthusiasts.",
+        "mentors": [
+            "neokd"
+        ],
+        "lang": [
+            "Python"
+        ],
+        "tag": [
+            "Machine Learning",
+            "chat-Bot",
+            "LLM"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/Adittya-Gupta/Ethos",
+        "title": "Ethos",
+        "desc": "This is a website which can convert Videos to Audio format with having a very smooth UI",
+        "mentors": [
+            "Adittya-Gupta"
+        ],
+        "lang": [
+            "React.js",
+            "Javascript",
+            "Tailwind CSS",
+            "Python"
+        ],
+        "tag": [
+            "Web Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/codervivek5/vigyBag/",
+        "title": "vigyBag",
+        "desc": "Location-based platform using GPS for product and service searches. Displays nearby stores, enables price comparison, and facilitates direct purchases for convenient local shopping.",
+        "mentors": [
+            "codervivek5"
+        ],
+        "lang": [
+            "HTML",
+            "CSS",
+            "Javascript",
+            "Django",
+            "Kotlin",
+            "SCSS"
+        ],
+        "tag": [
+            "Web Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/sktime",
+        "title": "sktime",
+        "desc": "sktime: sklearn-like library for time series modeling. Community maintains interoperable open source packages (scikit-base, skpro), welcoming contributors.",
+        "mentors": [
+            "fkiraly"
+        ],
+        "lang": [
+            "Python",
+            "Jupyter Notebook"
+        ],
+        "tag": [
+            "Machine Learning",
+            "Data Science"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/i-am-SnehaChauhan/book_lab",
+        "title": "BookLab - A Book Search Application",
+        "desc": "BookLab is a web application built using React that leverages the power of the Google Books API to provide users with a seamless and intuitive book search experience.",
+        "mentors": [
+            "i-am-SnehaChauhan"
+        ],
+        "lang": [
+            "CSS",
+            "Javascript",
+            "HTML"
+        ],
+        "tag": [
+            "Web Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/ai-economy-simulator/ecosim-client",
+        "title": "ecosim-client",
+        "desc": "Simulate macroeconomic factors via microeconomy in a project shifting from AI-generated pseudo code to database-executable queries. Implemented with React and FastAPI for game development relevance.",
+        "mentors": [
+            "ai-economy-simulator"
+        ],
+        "lang": [
+            "Typescript"
+        ],
+        "tag": [
+            "Web Dev",
+            "Backend"
         ]
     }
 ]
