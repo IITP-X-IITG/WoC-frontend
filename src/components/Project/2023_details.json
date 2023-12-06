@@ -357,10 +357,210 @@
             "akshitagupta15june"
         ],
         "lang": [
-            ""
+            "Python",
+            "OpenCV"
         ],
         "tag": [
-            ""
+            "Computer Vision",
+            "Face Detection"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/Suryansh1720001/Taaveez",
+        "title": "Taaveez",
+        "desc": "This app will essentially provide functions for saving your poetry, stories, and other creative content.",
+        "mentors": [
+            "Suryansh1720001"
+        ],
+        "lang": [
+            "Kotlin"
+        ],
+        "tag": [
+            "App Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/web-contribution-DWOC/Team-Builder",
+        "title": "Team-Builder",
+        "desc": "A platform where members of hackathons have free will and options to choose from, they could even contact the original idea owner.",
+        "mentors": [
+            "web-contribution-DWOC"
+        ],
+        "lang": [
+            "JavaScript",
+            "node.js",
+            "express.js",
+            "Firebase"
+        ],
+        "tag": [
+            "Web Dev",
+            "Backend"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/AyushAgnihotri2025/Akashic",
+        "title": "Akashic",
+        "desc": "The Smart Resource Management System",
+        "mentors": [
+            "AyushAgnihotri2025"
+        ],
+        "lang": [
+            "Python",
+            "OpenCV",
+            "express.js",
+            "Tailwind CSS"
+        ],
+        "tag": [
+            "Web Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/AyushAgnihotri2025/Calculator",
+        "title": "Calculator",
+        "desc": "This will basically provide simple and advanced mathematical functions in a beautifully designed app.",
+        "mentors": [
+            "AyushAgnihotri2025"
+        ],
+        "lang": [
+            "Kotlin"
+        ],
+        "tag": [
+            "App Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/asmit203/AIX",
+        "title": "AIX",
+        "desc": "",
+        "mentors": [
+            "asmit203"
+        ],
+        "lang": [
+            "Python",
+            "JavaScript"
+        ],
+        "tag": [
+            "Machine Learning"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/asmit203/TalkitOut",
+        "title": "TalkitOut",
+        "desc": "",
+        "mentors": [
+            "asmit203"
+        ],
+        "lang": [
+            "Python",
+            "CSS",
+            "HTML"
+        ],
+        "tag": [
+            "Machine Learning"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/AyushTripathiIITP/ToDoList-v1.0/tree/version2.0",
+        "title": "To-Do-List-1.0",
+        "desc": "",
+        "mentors": [
+            "AyushTripathiIITP"
+        ],
+        "lang": [
+            "CSS",
+            "express.js",
+            "HTML"
+        ],
+        "tag": [
+            "Web Dev"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/AyushTripathiIITP/Fake_news_detection",
+        "title": "Fake News Detection",
+        "desc": "In this project, we have used various natural language processing techniques and machine learning algorithms to classify fake news articles using sci-kit libraries from python.",
+        "mentors": [
+            "AyushTripathiIITP"
+        ],
+        "lang": [
+            "Jupyter Notebook",
+            "CSS",
+            "Python"
+        ],
+        "tag": [
+            "Machine Learning"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/AyushTripathiIITP/WebBlog.com",
+        "title": "WebBlog.com",
+        "desc": "In this project, we have used various natural language processing techniques and machine learning algorithms to classify fake news articles using sci-kit libraries from python.",
+        "mentors": [
+            "AyushTripathiIITP"
+        ],
+        "lang": [
+            "JavaScript",
+            "express.js",
+            "CSS"
+        ],
+        "tag": [
+            "Web Dev",
+            "Frontend"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/oscfcommunity/OSWeekend-Web",
+        "title": "Open Source Weekend (OSW)",
+        "desc": "OSW is a community-driven initiative aimed at promoting and celebrating open-source technologies on a regular basis.",
+        "mentors": [
+            "oscfcommunity"
+        ],
+        "lang": [
+            "React.js",
+            "node.js",
+            "MongoDB",
+            "CSS"
+        ],
+        "tag": [
+            "Web Dev",
+            "Frontend",
+            "Backend"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/Hirenachhaada/Mern-Chat-Application",
+        "title": "Mern-Chat-Application",
+        "desc": "",
+        "mentors": [
+            "Hirenachhaada"
+        ],
+        "lang": [
+            "express.js",
+            "MongoDB",
+            "React.js",
+            "node.js"
+        ],
+        "tag": [
+            "Web Dev",
+            "Mern"
+        ]
+    },
+    {
+        "repo-url": "https://github.com/Hirenachhaada/MyBlog",
+        "title": "My-Blog",
+        "desc": "Blog-Application",
+        "mentors": [
+            "Hirenachhaada"
+        ],
+        "lang": [
+            "express.js",
+            "MongoDB",
+            "React.js",
+            "node.js"
+        ],
+        "tag": [
+            "Web Dev",
+            "Mern"
         ]
     }
 ]
