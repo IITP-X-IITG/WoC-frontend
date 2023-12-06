@@ -53,7 +53,8 @@ export default function Reward() {
         <RewardComp
           className="rewardComp"
           title="Threeway Studio"
-          abt1="- Top Contributors of the projects will get Swag kits."
+          abt1="- Swags and Merchandise to the top 5 winners and 5 mentors of the event."
+          abt2="- NFT based Certificates, to all the winners and mentors."
         />
       </div>
       <div className="rewardBox left" data-aos="fade-up" data-aos-once="true">
@@ -61,7 +62,7 @@ export default function Reward() {
         <RewardComp
           className="rewardComp"
           title="Quine"
-          abt1="- 100$ to top 3 participants with quine account."
+          abt1="- Prize pool of $200 for top participants."
         />
       </div>
       <div className="rewardBox left" data-aos="fade-up" data-aos-once="true">
