@@ -2,10 +2,10 @@
     {
         "repo-url": "https://oblv.notion.site/63e8e000a65446218e1667b23b723c0d?v=65cd1ed83d05491ea6bd910dbd1cc4e2&pvs=4",
         "title": "Antigranular",
-        "desc": "Antigranular is a plaform to learn, explore and sharpen your data privacy skills.",
+        "desc": "We have multiple challenges for you to compete for €5,500 and a trip to Oxford! You’ll contribute to developing Differentially Private SKLearn, create suggestions with a CLI tool, and do privacy-conscious data science. Head to our Wiki for more details and repositories.",
         "mentors": ["Susan_Oblivious"],
         "lang": ["Python"],
-        "tag": ["Data Science", "Data Privacy"]
+        "tag": ["Data Science", "Python", "Data Privacy", "Data Visualisation", "Machine Learning", "CLI"]
     },
     {
         "repo-url": "https://jderobot.github.io/activities/gsoc/2023#project-10-robotics-academy-improvement-of-gazebo-scenarios-of-existing-exercises",
@@ -336,7 +336,7 @@
         "tag": ["Web Dev"]
     },
     {
-        "repo-url": "https://github.com/Aditya61101/Group-Study",
+        "repo-url": "https://github.com/Clueless-Community/scrape-up",
         "title": "Scrape Up",
         "desc": "Scrape Up, a Python package, extracts data from various platforms (GitHub, Twitter, Instagram) for valuable information without APIs.",
         "mentors": ["nikhil25803"],
