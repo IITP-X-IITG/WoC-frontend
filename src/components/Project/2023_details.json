@@ -371,7 +371,7 @@
         "repo-url": "https://github.com/arpitghura/typing-test",
         "title": "Typing Test - Practice Your Typing Skills",
         "desc": "The Typing Test app refines typing skills via practice sessions with diverse words, tracking speed/accuracy. It records session details, resettable by users.",
-        "mentors": ["arpitghura4"],
+        "mentors": ["arpitghura"],
         "lang": ["Javascript", "CSS", "HTML"],
         "tag": ["Web Dev", "Frontend"]
     },
@@ -379,7 +379,7 @@
         "repo-url": "https://github.com/arpitghura/NotesJar",
         "title": "NotesJar",
         "desc": "NotesJar: versatile note platform for students, pros, and organization. Create notes, to-do lists, reminders, categorize with tags/folders, share securely. Flexible editing.",
-        "mentors": ["arpitghura4"],
+        "mentors": ["arpitghura"],
         "lang": ["Javascript", "CSS", "HTML"],
         "tag": ["Web Dev", "Frontend"]
     },
