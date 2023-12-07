@@ -615,5 +615,13 @@
         "mentors": ["PratyushSingh07"],
         "lang": ["Kotlin"],
         "tag": ["App Dev"]
+    },
+    {
+        "repo-url": "https://github.com/Tentacall/NNViz",
+        "title": "NNViz",
+        "desc": "The Neural Network Visualizer is an open-source project designed to provide an intuitive and interactive 3D visualization of neural networks. Whether you're a beginner looking to understand the structure of a neural network or an experienced practitioner seeking insights into model behavior, this tool aims to make the exploration of neural networks more accessible.",
+        "mentors": ["RupakBiswas-2304"],
+        "lang": ["Python"],
+        "tag": ["Machine Learning", "Data Science"]
     }
 ]
