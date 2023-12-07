@@ -18,7 +18,7 @@ const Leaderboard = () => {
   useEffect(() => {
     async function getCSV() {
       try {
-        const target = `https://docs.google.com/spreadsheets/d/e/2PACX-1vQC_9f9i4PUessCsLoqJniy7dpNTWrHC1DU8br7dWvbkxIIfl151mGqQ3G4wEstorh7wY4cHHHvbXiU/pub?output=csv`;
+        const target = `https://docs.google.com/spreadsheets/d/1N1a2Gm0c0TDck3lF-dtgZglsxWAQDMKv21vcaeJuLSw/export?gid=0&format=csv`;
         const result = await fetch(target);
         const data = await result.text();
         var rows = data.toString().split("\r");
