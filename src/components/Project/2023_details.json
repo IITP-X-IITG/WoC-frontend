@@ -599,5 +599,21 @@
         "mentors": ["KartuzGupta"],
         "lang": ["React.js", "Javascript", "CSS", "HTML"],
         "tag": ["Web Dev", "Frontend"]
+    },
+    {
+        "repo-url": "https://github.com/PratyushSingh07/cyclofit",
+        "title": "Cyclofit",
+        "desc": "Cyclofit tracks the heart rate,calories burnt, distance coverered and much more using the sensors integrated in a single device.Our device has a proximity sensor that can track any incoming vehicle by monitoring it's rate of change of speed. Heart rate is shown through API",
+        "mentors": ["PratyushSingh07"],
+        "lang": ["Kotlin"],
+        "tag": ["App Dev"]
+    },
+    {
+        "repo-url": "https://github.com/PratyushSingh07/BumbleCardSwipe",
+        "title": "BumbleCardSwipe",
+        "desc": "Jetpack Compose Modifier that allows you to achieve bumble like swipe gesture",
+        "mentors": ["PratyushSingh07"],
+        "lang": ["Kotlin"],
+        "tag": ["App Dev"]
     }
 ]
