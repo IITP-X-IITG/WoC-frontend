@@ -55,7 +55,7 @@ const Points = (props) => {
 
     const getCSV = async () => {
       try {
-        const target = `https://docs.google.com/spreadsheets/d/1j7mCwOWP3hSlKPfHKy0BvNZljSgJoqnUqTgjILqYFgU/export?format=csv`;
+        const target = `https://docs.google.com/spreadsheets/d/1N1a2Gm0c0TDck3lF-dtgZglsxWAQDMKv21vcaeJuLSw/export?gid=0&format=csv`;
         const result = await fetch(target);
         const data = await result.text();
         var rows = data.toString().split("\r");
@@ -167,7 +167,7 @@ const Points = (props) => {
                         <td className="left">{data.points}</td>
                         <td className="middle">{data.type}</td>
                         <td className="rig">
-                          <SLink href={data.link}>{data.text}</SLink>
+                          <SLink href={data.link} target="_blank">{data.text}</SLink>
                         </td>
                       </tr>
                     );
