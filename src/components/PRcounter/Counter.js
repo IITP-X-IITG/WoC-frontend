@@ -10,7 +10,7 @@ const Counter = () => {
   }, []);
 
   const getPRdata = async () => {
-    const target = `https://docs.google.com/spreadsheets/d/1j7mCwOWP3hSlKPfHKy0BvNZljSgJoqnUqTgjILqYFgU/export?format=csv`;
+    const target = `https://docs.google.com/spreadsheets/d/1N1a2Gm0c0TDck3lF-dtgZglsxWAQDMKv21vcaeJuLSw/export?gid=0&format=csv`;
     const result = await fetch(target);
     const data = await result.text();
     var rows = data.toString().split("\r");
