@@ -8,22 +8,6 @@
         "tag": ["Data Science", "Python", "Data Privacy", "Data Visualisation", "Machine Learning", "CLI"]
     },
     {
-        "repo-url": "https://jderobot.github.io/activities/gsoc/2023#project-10-robotics-academy-improvement-of-gazebo-scenarios-of-existing-exercises",
-        "title": "JdeRobot Project 1",
-        "desc": "Currently JdeRobot's Robotics Academy offers the student up to 26 exercises, and another 11 prototype exercises. Most of them are based on ROS1 Noetic and Gazebo 11, there are also several prototypes based on ROS2 Humble. The main goal of this project is to improve the current Gazebo scenarios and robot models for many the exercises making them more appealing and realistic without increasing too much the required computing power for rendering.",
-        "mentors": ["jmplaza"],
-        "lang": ["C++", "Python"],
-        "tag": ["Computer vision", "Deep Learning", "Robotics"]
-    },
-    {
-        "repo-url": "https://jderobot.github.io/activities/gsoc/2023#project-3-robotics-academy-migration-to-gazebo-fortress",
-        "title": "JdeRobot Project 2",
-        "desc": "It is a framework for learning robotics and computer vision. It consists of a collection of robot programming exercises. The students have to code in Python the behavior of a given (either simulated or real) robot to fit some task related to robotics or computer vision. It uses standard middleware and libraries such as ROS or openCV.",
-        "mentors": ["jmplaza"],
-        "lang": ["C++", "Python"],
-        "tag": ["Computer vision", "Deep Learning", "Robotics"]
-    },
-    {
         "repo-url": "https://postgresql.org/",
         "title": "PostgreSQL",
         "desc": "PostgreSQL is a powerful, open source object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.",
@@ -40,20 +24,28 @@
         "lang": ["Python"]
     },
     {
+        "repo-url": "https://jderobot.github.io/activities/gsoc/2023#project-10-robotics-academy-improvement-of-gazebo-scenarios-of-existing-exercises",
+        "title": "JdeRobot Project 1",
+        "desc": "Currently JdeRobot's Robotics Academy offers the student up to 26 exercises, and another 11 prototype exercises. Most of them are based on ROS1 Noetic and Gazebo 11, there are also several prototypes based on ROS2 Humble. The main goal of this project is to improve the current Gazebo scenarios and robot models for many the exercises making them more appealing and realistic without increasing too much the required computing power for rendering.",
+        "mentors": ["jmplaza"],
+        "lang": ["C++", "Python"],
+        "tag": ["Computer vision", "Deep Learning", "Robotics"]
+    },
+    {
+        "repo-url": "https://jderobot.github.io/activities/gsoc/2023#project-3-robotics-academy-migration-to-gazebo-fortress",
+        "title": "JdeRobot Project 2",
+        "desc": "It is a framework for learning robotics and computer vision. It consists of a collection of robot programming exercises. The students have to code in Python the behavior of a given (either simulated or real) robot to fit some task related to robotics or computer vision. It uses standard middleware and libraries such as ROS or openCV.",
+        "mentors": ["jmplaza"],
+        "lang": ["C++", "Python"],
+        "tag": ["Computer vision", "Deep Learning", "Robotics"]
+    },
+    {
         "repo-url": "https://github.com/Anupkjha2601/foodie-blog",
         "title": "Foodie",
         "desc": "food store website named Foodie Blog that helps the customer to find good recipe in cheap rate and genuine products.",
         "mentors": ["Anupkjha2601"],
         "lang": ["HTML", "CSS", "JavaScript"],
         "tag": ["Web Dev", "Frontend"]
-    },
-    {
-        "repo-url": "https://github.com/sahil-sagwekar2652/semantic-search-demo",
-        "title": "Semantic Search Demo",
-        "desc": ".",
-        "mentors": ["sahil-sagwekar2652"],
-        "lang": ["Python"],
-        "tag": ["Data Science"]
     },
     {
         "repo-url": "https://github.com/sahil-sagwekar2652/GitHub-Automation-scripts",
@@ -118,6 +110,14 @@
         "mentors": ["maityamit"],
         "lang": ["Java"],
         "tag": ["Mobile Dev"]
+    },
+    {
+        "repo-url": "https://github.com/sahil-sagwekar2652/semantic-search-demo",
+        "title": "Semantic Search Demo",
+        "desc": ".",
+        "mentors": ["sahil-sagwekar2652"],
+        "lang": ["Python"],
+        "tag": ["Data Science"]
     },
     {
         "repo-url": "https://github.com/bhattabhi013/Vritant",
@@ -545,16 +545,16 @@
         "tag": ["Web Dev"]
     },
     {
-        "repo-url":"https://github.com/b-init/clipette/",
-        "title":"Clipette",
+        "repo-url": "https://github.com/b-init/clipette/",
+        "title": "Clipette",
         "desc": "python clipboard utility that works natively on python with its inbuilt modules to exchange text and images with the windows clipboard",
         "mentors": ["b-init"],
         "lang": ["Python"],
         "tag": ["Python", "CLI"]
     },
     {
-        "repo-url":"https://github.com/Prince-9-9/Warzone-Fps_Game",
-        "title":"Warzone-Fps_Game",
+        "repo-url": "https://github.com/Prince-9-9/Warzone-Fps_Game",
+        "title": "Warzone-Fps_Game",
         "desc": "A 3D FPS game made using Unity Game Engine",
         "mentors": ["Prince-9-9"],
         "lang": ["C#"],
