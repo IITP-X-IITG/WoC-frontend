@@ -62,7 +62,7 @@ export default function Reward() {
         <RewardComp
           className="rewardComp"
           title="Quine"
-          abt1="- Prize pool of $200 for top participants."
+          abt1="- Prize pool of $100 for top participants registered with Quine."
         />
       </div>
       <div className="rewardBox left" data-aos="fade-up" data-aos-once="true">
