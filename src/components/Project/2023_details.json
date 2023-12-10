@@ -623,5 +623,21 @@
         "mentors": ["RupakBiswas-2304"],
         "lang": ["Python"],
         "tag": ["Machine Learning", "Data Science"]
+    },
+    {
+        "repo-url": "https://github.com/jaibhedia/WEB3_NFT",
+        "title": "NPB Web3 NFT",
+        "desc": "The NFT Marketplace project is a digital platform designed for the trading and collecting of non-fungible tokens, unique digital assets verified using blockchain technology. This marketplace caters to artists, collectors, and digital enthusiasts, offering a space for the creation, sale, and purchase of NFTs. ",
+        "mentors": ["jaibhedia"],
+        "lang": ["React.js", "Javascript", "CSS", "HTML", "Solidity"],
+        "tag": ["NFT Marketplace", "Blockchain", "Virtual Assets"]
+    },
+    {
+        "repo-url": "https://github.com/jaibhedia/NPB_VOTE_WEB3",
+        "title": "NPB Web3 Voting",
+        "desc": "This project is an innovative solution for secure and transparent voting processes, leveraging the power of blockchain technology. Designed to revolutionize the way votes are cast and counted, this system ensures the integrity and anonymity of each vote, making the electoral process tamper-proof and highly reliable. The platform facilitates remote voting, increasing accessibility and participation rates. ",
+        "mentors": ["jaibhedia"],
+        "lang": ["React.js", "Javascript", "CSS", "HTML", "Solidity"],
+        "tag": ["Voting", "Blockchain", "Dapp", "Governance"]
     }
 ]
