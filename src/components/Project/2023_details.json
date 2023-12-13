@@ -123,9 +123,9 @@
         "repo-url": "https://github.com/bhattabhi013/Vritant",
         "title": "Vritaant",
         "desc": "Vritaant is a cross-platform application to help the naughty and carefree young ones learn and understand nursery rhymes in a fun and interactive way.",
-        "mentors": ["Vritant"],
+        "mentors": ["bhattabhi013"],
         "lang": ["Dart", "C++", "CMake"],
-        "tag": ["Mobile Dev", "Flutter"]
+        "tag": ["Mobile Dev", "Flutter", "AR", "Unity"]
     },
     {
         "repo-url": "https://github.com/bhattabhi013/project-frontend",
