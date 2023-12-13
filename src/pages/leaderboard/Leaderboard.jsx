@@ -9,14 +9,11 @@ import Loading from "../../components/leaderboard/Loading";
 import { NavLink } from "react-router-dom";
 import Avatar from "@mui/material/Avatar";
 import styled from "styled-components";
-import Button from '@mui/material/Button';
-import { Link ,useHistory } from 'react-router-dom';
-import { NavLink } from 'react-router-dom';
+
 const Leaderboard = () => {
   const [fi, setFi] = useState([]);
   const [se, setSe] = useState([]);
   const [loading, setLoading] = useState(true);
-
 
   useEffect(() => {
     async function getCSV() {
@@ -27,17 +24,17 @@ const Leaderboard = () => {
         var rows = data.toString().split("\r");
 
         let arr = [];
-        for (let i = 0; i < rows.length; i++) {
+        for (let i = 0;i < rows.length;i++) {
           let str = "";
           let temp = [];
           if (i === 0) {
-            for (let j = 0; j < rows[i].length; j++) {
+            for (let j = 0;j < rows[i].length;j++) {
               str += rows[i][j];
             }
             temp = str.split(",");
           } else {
             let str = "";
-            for (let j = 1; j < rows[i].length; j++) {
+            for (let j = 1;j < rows[i].length;j++) {
               str += rows[i][j];
             }
             temp = str.split(",");
@@ -52,7 +49,7 @@ const Leaderboard = () => {
         });
 
         let finalArr = [];
-        for (let i = arr.length - 1; i >= 0; i--) {
+        for (let i = arr.length - 1;i >= 0;i--) {
           let score = {};
           score["rank"] = arr.length - i;
           score["gitid"] = arr[i][1];
@@ -151,13 +148,6 @@ const Leaderboard = () => {
     gotoPage,
     state: { pageIndex },
   } = tableInstance;
-  const history = useHistory();
-const handleClick = () => {
-  history.push('/leaderboard/weekly');
-};
-
-
-
 
   return (
     <>
@@ -167,13 +157,6 @@ const handleClick = () => {
       <div style={style}>
         <div className="space"></div>
         <div className="title mb-5 p-3">LEADERBOARD 2023</div>
-
-        <NavLink to="/leaderboard/weekly">
-        <Button variant="outlined" style={{
-          backgroundColor: "#0d233b",
-          boxShadow: "0 0 11px #45889b", color: "#a6d2ff", border: "2px solid #a6d2ff", borderradius: "6px", marginTop: "-3%",
-        }} >VIEW WEEKLY LEADERBOARD</Button></NavLink>
-
         {loading ? (
           <Loading />
         ) : (
