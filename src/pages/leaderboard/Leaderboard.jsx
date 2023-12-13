@@ -11,7 +11,6 @@ import Avatar from "@mui/material/Avatar";
 import styled from "styled-components";
 import Button from '@mui/material/Button';
 import { Link ,useHistory } from 'react-router-dom';
-import { NavLink } from 'react-router-dom';
 const Leaderboard = () => {
   const [fi, setFi] = useState([]);
   const [se, setSe] = useState([]);
@@ -151,13 +150,6 @@ const Leaderboard = () => {
     gotoPage,
     state: { pageIndex },
   } = tableInstance;
-  const history = useHistory();
-const handleClick = () => {
-  history.push('/leaderboard/weekly');
-};
-
-
-
 
   return (
     <>
@@ -169,10 +161,11 @@ const handleClick = () => {
         <div className="title mb-5 p-3">LEADERBOARD 2023</div>
 
         <NavLink to="/leaderboard/weekly">
-        <Button variant="outlined" style={{
-          backgroundColor: "#0d233b",
-          boxShadow: "0 0 11px #45889b", color: "#a6d2ff", border: "2px solid #a6d2ff", borderradius: "6px", marginTop: "-3%",
-        }} >VIEW WEEKLY LEADERBOARD</Button></NavLink>
+          <Button variant="outlined" style={{
+            backgroundColor: "#0d233b",
+            boxShadow: "0 0 11px #45889b", color: "#a6d2ff", border: "2px solid #a6d2ff", borderradius: "6px", marginTop: "-3%",
+          }} >VIEW WEEKLY LEADERBOARD</Button>
+        </NavLink>
 
         {loading ? (
           <Loading />
