@@ -163,7 +163,14 @@ const Leaderboard = () => {
       <div className="leader-twinkling"></div>
       <div style={style}>
         <div className="space"></div>
-        <div className="title mb-5 p-3">LEADERBOARD 2023</div>
+        <div className="title mb-5 p-3">WEEKLY LEADERBOARD 2023</div>
+        <NavLink to="/leaderboard/Leaderboard">
+          <Button variant="outlined" style={{
+            backgroundColor: "#0d233b",
+            boxShadow: "0 0 11px #45889b", color: "#a6d2ff", border: "2px solid #a6d2ff", borderradius: "6px", marginTop: "-3%",
+          }} >OVERALL LEADERBOARD</Button>
+        </NavLink>
+
         
         {loading ? (
           <Loading />
@@ -268,9 +275,9 @@ const Leaderboard = () => {
                                     ".png"
                                   }
                                 />
-                                <SLink to={"/points/" + cell["value"]}>
+                               
                                   {cell["value"]}
-                                </SLink>
+                              
                               </td>
                             );
                           else if (cell["column"]["id"] === "rank")
