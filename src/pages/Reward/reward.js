@@ -9,6 +9,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import RewardComp from "../../components/Reward/RewardComp";
 import Quine from "../Images/Quine1.svg";
+import grabtern from "../Images/Grabtern.png";
 import GfgLogo from "../Images/gfgLogo.png";
 import NWocLogo from "../Images/nwoc logo.svg";
 import CodingClubLogo from "../Images/iitglogo.svg";
@@ -63,6 +64,15 @@ export default function Reward() {
           className="rewardComp"
           title="Quine"
           abt1="- Prize pool of $100 for top participants registered with Quine."
+        />
+      </div>
+      <div className="rewardBox right" data-aos="fade-up" data-aos-once="true">
+        <img src={grabtern} alt="" className="rewardLogo" />
+        <RewardComp
+          className="rewardComp"
+          title="GrabTern"
+          abt1="- swag kits to top 3 performers in Code Peak."
+          abt2="- internship opportunities in case exceptionally good candidates."
         />
       </div>
       <div className="rewardBox left" data-aos="fade-up" data-aos-once="true">
