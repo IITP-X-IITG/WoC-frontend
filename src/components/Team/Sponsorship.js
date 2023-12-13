@@ -6,6 +6,7 @@ import Satyam from "../resources/satyam.jpg";
 import Vinayak from "../resources/vinayak.jpg";
 import Kanhaia from "../resources/kanhaia.jpg";
 import Atri from "../resources/image_profile.jpg";
+import krishna from "../resources/krishna_Rathore.jpg";
 
 
 import Aos from "aos";
@@ -76,6 +77,14 @@ export default function Sponsorship() {
                 />
               </div>
               <div className="icon">
+                <img src={krishna} alt="Krishna" />
+                <Namecard
+                  name="Krishna Rathore  "
+                  link1="https://www.linkedin.com/in/kr005"
+                  link2="mailto:krishnarathore393@gmail.com"
+                />
+              </div>
+              <div className="icon">
                 <img src={Atri} alt="Atri Chattopadhyay" />
                 <Namecard
                   name="Atri Chattopadhyay"
@@ -83,36 +92,8 @@ export default function Sponsorship() {
                   link2="mailto:print.atri@gmail.com"
                 />
               </div>
-              {/* <div className="icon">
-                <img src={Raj} alt="Raj" />
-                <Namecard
-                  name="Raj Borogaon"
-                  link1="https://www.linkedin.com/in/iks1r/"
-                  link2="mailto:b.raj@iitg.ac.in"
-                />
-              </div> */}
             </div>
           </div>
-          {/* <div>
-            <div className="coord">
-              <div className="icon">
-                <img src={Priyanshu} alt="Priyanshu" />
-                <Namecard
-                  name="Priyanshu"
-                  link1="https://www.linkedin.com/in/priyanshu-71604b227/"
-                  link2="mailto:priyanshu.eee21@iitg.ac.in"
-                />
-              </div>
-              <div className="icon">
-                <img src={Adittya} alt="Adittya Gupta" />
-                <Namecard
-                  name="Adittya Gupta"
-                  link1="https://www.linkedin.com/in/adittya-gupta-b64356224/"
-                  link2="mailto:g.adittya@iitg.ac.in"
-                />
-              </div>
-            </div>
-          </div> */}
         </Slider>
       </div>
 
@@ -162,6 +143,14 @@ export default function Sponsorship() {
           <div>
             <div className="coord">
               <div className="icon">
+                <img src={krishna} alt="Krishna" />
+                <Namecard
+                  name="Krishna Rathore  "
+                  link1="https://www.linkedin.com/in/kr005"
+                  link2="mailto:krishnarathore393@gmail.com"
+                />
+              </div>
+              <div className="icon">
                 <img src={Atri} alt="Atri Chattopadhyay" />
                 <Namecard
                   name="Atri Chattopadhyay"
@@ -169,48 +158,8 @@ export default function Sponsorship() {
                   link2="mailto:print.atri@gmail.com"
                 />
               </div>
-              {/* <div className="icon">
-                <img src={Shreya} alt="Shreya Anand " />
-                <Namecard
-                  name="Shreya Anand "
-                  link1="https://www.linkedin.com/in/shreya-anand-815699229"
-                  link2="mailto:shreyaanand1501@gmail.com"
-                />
-              </div> */}
             </div>
           </div>
-          {/* <div>
-            <div className="coord">
-              <div className="icon">
-                <img src={Sanya} alt="Sanya" />
-                <Namecard
-                  name="Sanya"
-                  link1="https://www.linkedin.com/in/sanya-singh-1a72441b3/"
-                  link2="mailto:s.sanya@iitg.ac.in"
-                />
-              </div>
-              <div className="icon">
-                <img src={Priyanshu} alt="Priyanshu" />
-                <Namecard
-                  name="Priyanshu"
-                  link1="https://www.linkedin.com/in/priyanshu-71604b227/"
-                  link2="mailto:priyanshu.eee21@iitg.ac.in"
-                />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="coord">
-              <div className="icon">
-                <img src={Adittya} alt="Adittya Gupta" />
-                <Namecard
-                  name="Adittya Gupta"
-                  link1="https://www.linkedin.com/in/adittya-gupta-b64356224/"
-                  link2="mailto:g.adittya@iitg.ac.in"
-                />
-              </div>
-            </div>
-          </div> */}
         </Slider>
       </div>
     </div>

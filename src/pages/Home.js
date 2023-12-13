@@ -8,6 +8,7 @@ import antigranular from './Images/sp_logo1.png';
 import threeWay_studio from './Images/sp_logo2.png';
 import dagshub from './Images/dagshub.png';
 import avl from './Images/avl.png';
+import grabtern from './Images/Grabtern.png';
 import campusmemories from './Images/Campusmemories.png';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -35,250 +36,260 @@ import Counter from '../components/PRcounter/Counter';
 import { Link } from 'react-router-dom';
 
 export default function Home() {
-    useEffect(() => {
-        Aos.init({ duration: 800 });
-    }, []);
-    return (
-        <>
-            <div style={home_style}>
-                <Navigation />
-                <Animatedbg />
-                <marquee
-                    id="marq"
-                    behavior="scroll"
-                    direction="left"
-                    scrollamount="10"
-                    style={{
-                        color: 'white',
-                        fontSize: '20px',
-                        fontWeight: 'bold',
-                        marginTop: '70px',
-                    }}
-                >
-                    CODEPEAK 2023 is here! Student registration has started.
-                    <Link to="/register" style={{ textDecoration: 'none', color: '#99c1e7' }}>
-                        {' '}
-                        Register Now{' '}
-                    </Link>{' '}
-                </marquee>
+  useEffect(() => {
+    Aos.init({ duration: 800 });
+  }, []);
+  return (
+    <>
+      <div style={home_style}>
+        <Navigation />
+        <Animatedbg />
+        <marquee
+          id="marq"
+          behavior="scroll"
+          direction="left"
+          scrollamount="10"
+          style={{
+            color: 'white',
+            fontSize: '20px',
+            fontWeight: 'bold',
+            marginTop: '70px',
+          }}
+        >
+          CODEPEAK 2023 is here! Student registration has started.
+          <Link to="/register" style={{ textDecoration: 'none', color: '#99c1e7' }}>
+            {' '}
+            Register Now{' '}
+          </Link>{' '}
+        </marquee>
 
-                {/* ---------LOGO----------- */}
-                <div className="logo">
-                    <img
-                        src={logo_codepeak}
-                        alt=""
-                        srcSet=""
-                        className="logo_img"
-                        data-aos="zoom-in"
-                        data-aos-once="true"
-                    />
-                    <p>Powered By</p>
-                    <div className="main_spons_box">
-                        <a href="https://www.geeksforgeeks.org/" target="_blank" rel="noreferrer">
-                            <img
-                                src={gfgLogo}
-                                alt=""
-                                srcSet=""
-                                className="main_spons_img"
-                                data-aos="zoom-in"
-                                data-aos-once="true"
-                            />
-                        </a>
-                        <a href="https://www.antigranular.com/" rel="noreferrer" target="_blank">
-                            <img
-                                src={antigranular}
-                                alt=""
-                                srcSet=""
-                                className="main_spons_img"
-                                data-aos="zoom-in"
-                                data-aos-once="true"
-                            />
-                        </a>
+        {/* ---------LOGO----------- */}
+        <div className="logo">
+          <img
+            src={logo_codepeak}
+            alt=""
+            srcSet=""
+            className="logo_img"
+            data-aos="zoom-in"
+            data-aos-once="true"
+          />
+          <p>Powered By</p>
+          <div className="main_spons_box">
+            <a href="https://www.geeksforgeeks.org/" target="_blank" rel="noreferrer">
+              <img
+                src={gfgLogo}
+                alt=""
+                srcSet=""
+                className="main_spons_img"
+                data-aos="zoom-in"
+                data-aos-once="true"
+              />
+            </a>
+            <a href="https://www.antigranular.com/" rel="noreferrer" target="_blank">
+              <img
+                src={antigranular}
+                alt=""
+                srcSet=""
+                className="main_spons_img"
+                data-aos="zoom-in"
+                data-aos-once="true"
+              />
+            </a>
 
-                        <a href="https://www.threewaystudio.world/" target="_blank" rel="noreferrer">
-                            <img
-                                src={threeWay_studio}
-                                alt=""
-                                srcSet=""
-                                className="main_spons_img1"
-                                data-aos="zoom-in"
-                                data-aos-once="true"
-                            />
-                        </a>
-                        <a href="https://quine.sh/" target="_blank" rel="noreferrer">
-                            <img
-                                src={quineLogo}
-                                alt=""
-                                srcSet=""
-                                className="main_spons_img1"
-                                data-aos="zoom-in"
-                                data-aos-once="true"
-                                style={{ height: '40px', width: 'auto' }}
-                            />
-                        </a>
-                        <a href="https://www.linkedin.com/company/os-community/" target="_blank" rel="noreferrer">
-                            <img
-                                src={osLogo}
-                                alt=""
-                                srcSet=""
-                                className="main_spons_img1"
-                                data-aos="zoom-in"
-                                data-aos-once="true"
-                            />
-                        </a>
-                    </div>
-                    <img src={hill} alt="" srcSet="" className="hill_img" />
+            <a href="https://www.threewaystudio.world/" target="_blank" rel="noreferrer">
+              <img
+                src={threeWay_studio}
+                alt=""
+                srcSet=""
+                className="main_spons_img1"
+                data-aos="zoom-in"
+                data-aos-once="true"
+              />
+            </a>
+            <a href="https://quine.sh/" target="_blank" rel="noreferrer">
+              <img
+                src={quineLogo}
+                alt=""
+                srcSet=""
+                className="main_spons_img1"
+                data-aos="zoom-in"
+                data-aos-once="true"
+                style={{ height: '40px', width: 'auto' }}
+              />
+            </a>
+            <a href="https://www.linkedin.com/company/os-community/" target="_blank" rel="noreferrer">
+              <img
+                src={osLogo}
+                alt=""
+                srcSet=""
+                className="main_spons_img1"
+                data-aos="zoom-in"
+                data-aos-once="true"
+              />
+            </a>
+            <a href="https://www.grabtern.com/" target="_blank" rel="noreferrer">
+              <img
+                src={grabtern}
+                alt=""
+                srcSet=""
+                className="main_spons_img1"
+                data-aos="zoom-in"
+                data-aos-once="true"
+              />
+            </a>
+          </div>
+          <img src={hill} alt="" srcSet="" className="hill_img" />
+        </div>
+
+        {/* -------------ABOUT US------------------- */}
+        <div className="abt">
+          <h1 data-aos="fade-up" data-aos-once="true">
+            About Us
+          </h1>
+          <hr />
+          <p data-aos="fade-up" data-aos-once="true">
+            CODE PEAK is a month-long program that helps students understand the paradigm of Open Source
+            contribution and gives them real-world software development experience. The event targets
+            first-timers who wish to participate in Free and Open Source(FOSS) Contributions and the
+            experienced developers who want to show their skills by contributing to real-world projects.
+          </p>
+        </div>
+
+        {/* ----------TIMELINE-------------- */}
+        <div className="container nwoc_time">
+          <div className="head_time">
+            <p>Timeline</p>
+            <hr />
+          </div>
+          <div className="row">
+            <div className="col">
+              <div className="main-timeline">
+                <div className="timeline" data-aos="fade-up" data-aos-once="true">
+                  <Timeline date="5 NOV" desc="Mentors Registration Starts" />
                 </div>
 
-                {/* -------------ABOUT US------------------- */}
-                <div className="abt">
-                    <h1 data-aos="fade-up" data-aos-once="true">
-                        About Us
-                    </h1>
-                    <hr />
-                    <p data-aos="fade-up" data-aos-once="true">
-                        CODE PEAK is a month-long program that helps students understand the paradigm of Open Source
-                        contribution and gives them real-world software development experience. The event targets
-                        first-timers who wish to participate in Free and Open Source(FOSS) Contributions and the
-                        experienced developers who want to show their skills by contributing to real-world projects.
-                    </p>
+                <div className="timeline" data-aos="fade-up" data-aos-once="true">
+                  <Timeline date="15 NOV" desc="Student Registration starts." />
+                </div>
+                <div className="timeline" data-aos="fade-up" data-aos-once="true">
+                  <Timeline date="30 NOV" desc="Mentor Registration ends" />
                 </div>
 
-                {/* ----------TIMELINE-------------- */}
-                <div className="container nwoc_time">
-                    <div className="head_time">
-                        <p>Timeline</p>
-                        <hr />
-                    </div>
-                    <div className="row">
-                        <div className="col">
-                            <div className="main-timeline">
-                                <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                                    <Timeline date="5 NOV" desc="Mentors Registration Starts" />
-                                </div>
-
-                                <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                                    <Timeline date="15 NOV" desc="Student Registration starts." />
-                                </div>
-                                <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                                    <Timeline date="30 NOV" desc="Mentor Registration ends" />
-                                </div>
-
-                                <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                                    <Timeline date="5 DEC" desc="Orientation Session" />
-                                </div>
-                                <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                                    <Timeline date="6 DEC" desc="Git & Github Workshop" />
-                                </div>
-                                <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                                    <Timeline date="7 DEC" desc="Coding Period Starts" />
-                                </div>
-                                <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                                    <Timeline date="14 DEC" desc="First Week Leaderboard" />
-                                </div>
-                                <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                                    <Timeline date="21 DEC" desc="Second Week Leaderboard" />
-                                </div>
-                                <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                                    <Timeline date="28 DEC" desc="Third Week Leaderboard" />
-                                </div>
-                                <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                                    <Timeline date="28 DEC" desc="Coding Period Ends" />
-                                </div>
-                                <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                                    <Timeline date="1 JAN" desc="Closing Ceremony" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div className="timeline" data-aos="fade-up" data-aos-once="true">
+                  <Timeline date="5 DEC" desc="Orientation Session" />
                 </div>
-
-                {/* Counter of Pull requests */}
-                <Counter />
-
-                {/* ---------------PAST STATISTICS---------------- */}
-                <div className="head_stats">
-                    <p data-aos="zoom-in" data-aos-once="true">
-                        Past Statistics
-                    </p>
-                    <hr />
+                <div className="timeline" data-aos="fade-up" data-aos-once="true">
+                  <Timeline date="6 DEC" desc="Git & Github Workshop" />
                 </div>
-                <div className="counter">
-                    <div className="count_block c1" style={{ background: 'rgb(16, 31, 46)' }}>
-                        <VscGithubInverted />
-                        <CountUp end="6000" />
-                        <p>Participants</p>
-                    </div>
-                    <div className="count_block c2" style={{ background: 'rgb(18, 34, 51)' }}>
-                        <CgGitPull />
-                        <CountUp end="3800" />
-                        <p>Pull Requests</p>
-                    </div>
-                    <div className="count_block c3" style={{ background: 'rgb(21, 38, 56)' }}>
-                        <AiOutlineFundProjectionScreen />
-                        <CountUp end="150" />
-                        <p>Projects Done</p>
-                    </div>
-                    <div className="count_block c4" style={{ background: 'rgb(23, 44, 66)' }}>
-                        <FaUniversity />
-                        <CountUp end="350" />
-                        <p>Universities</p>
-                    </div>
+                <div className="timeline" data-aos="fade-up" data-aos-once="true">
+                  <Timeline date="7 DEC" desc="Coding Period Starts" />
                 </div>
-
-                {/* ----------SPONSORS------------- */}
-                <div className="head_stats">
-                    <p data-aos="zoom-in" data-aos-once="true">
-                        Past Sponsors
-                    </p>
-                    <hr />
+                <div className="timeline" data-aos="fade-up" data-aos-once="true">
+                  <Timeline date="14 DEC" desc="First Week Leaderboard" />
                 </div>
-                <div className="spons_box">
-                    <a href="https://www.geeksforgeeks.org/" rel="noreferrer" target="_blank">
-                        <img
-                            src={gfgLogo}
-                            alt=""
-                            srcSet=""
-                            className="main_spons_img"
-                            data-aos="zoom-in"
-                            data-aos-once="true"
-                        />
-                    </a>
-                    <a href="https://www.clueless.tech/" target="_blank" rel="noreferrer">
-                        <img
-                            src={clueless}
-                            alt=""
-                            srcSet=""
-                            className="main_spons_img1"
-                            data-aos="zoom-in"
-                            data-aos-once="true"
-                            style={{ height: '100px', width: 'auto' }}
-                        />
-                    </a>
-                    <a href="https://dagshub.com/" target="_blank" rel="noreferrer">
-                        <img
-                            src={dagshub}
-                            alt=""
-                            srcSet=""
-                            className="main_spons_img1"
-                            data-aos="zoom-in"
-                            data-aos-once="true"
-                        />
-                    </a>
-
-                    <a href="https://www.taskade.com/" target="_blank" rel="noreferrer">
-                        <img
-                            src={taskadeLogo}
-                            alt=""
-                            srcSet=""
-                            data-aos="zoom-out"
-                            data-aos-once="true"
-                            style={{ height: '60px', width: 'auto' }}
-                        />
-                    </a>
+                <div className="timeline" data-aos="fade-up" data-aos-once="true">
+                  <Timeline date="21 DEC" desc="Second Week Leaderboard" />
                 </div>
+                <div className="timeline" data-aos="fade-up" data-aos-once="true">
+                  <Timeline date="28 DEC" desc="Third Week Leaderboard" />
+                </div>
+                <div className="timeline" data-aos="fade-up" data-aos-once="true">
+                  <Timeline date="28 DEC" desc="Coding Period Ends" />
+                </div>
+                <div className="timeline" data-aos="fade-up" data-aos-once="true">
+                  <Timeline date="1 JAN" desc="Closing Ceremony" />
+                </div>
+              </div>
             </div>
-            <Footer />
-        </>
-    );
+          </div>
+        </div>
+
+        {/* Counter of Pull requests */}
+        <Counter />
+
+        {/* ---------------PAST STATISTICS---------------- */}
+        <div className="head_stats">
+          <p data-aos="zoom-in" data-aos-once="true">
+            Past Statistics
+          </p>
+          <hr />
+        </div>
+        <div className="counter">
+          <div className="count_block c1" style={{ background: 'rgb(16, 31, 46)' }}>
+            <VscGithubInverted />
+            <CountUp end="6000" />
+            <p>Participants</p>
+          </div>
+          <div className="count_block c2" style={{ background: 'rgb(18, 34, 51)' }}>
+            <CgGitPull />
+            <CountUp end="3800" />
+            <p>Pull Requests</p>
+          </div>
+          <div className="count_block c3" style={{ background: 'rgb(21, 38, 56)' }}>
+            <AiOutlineFundProjectionScreen />
+            <CountUp end="150" />
+            <p>Projects Done</p>
+          </div>
+          <div className="count_block c4" style={{ background: 'rgb(23, 44, 66)' }}>
+            <FaUniversity />
+            <CountUp end="350" />
+            <p>Universities</p>
+          </div>
+        </div>
+
+        {/* ----------SPONSORS------------- */}
+        <div className="head_stats">
+          <p data-aos="zoom-in" data-aos-once="true">
+            Past Sponsors
+          </p>
+          <hr />
+        </div>
+        <div className="spons_box">
+          <a href="https://www.geeksforgeeks.org/" rel="noreferrer" target="_blank">
+            <img
+              src={gfgLogo}
+              alt=""
+              srcSet=""
+              className="main_spons_img"
+              data-aos="zoom-in"
+              data-aos-once="true"
+            />
+          </a>
+          <a href="https://www.clueless.tech/" target="_blank" rel="noreferrer">
+            <img
+              src={clueless}
+              alt=""
+              srcSet=""
+              className="main_spons_img1"
+              data-aos="zoom-in"
+              data-aos-once="true"
+              style={{ height: '100px', width: 'auto' }}
+            />
+          </a>
+          <a href="https://dagshub.com/" target="_blank" rel="noreferrer">
+            <img
+              src={dagshub}
+              alt=""
+              srcSet=""
+              className="main_spons_img1"
+              data-aos="zoom-in"
+              data-aos-once="true"
+            />
+          </a>
+
+          <a href="https://www.taskade.com/" target="_blank" rel="noreferrer">
+            <img
+              src={taskadeLogo}
+              alt=""
+              srcSet=""
+              data-aos="zoom-out"
+              data-aos-once="true"
+              style={{ height: '60px', width: 'auto' }}
+            />
+          </a>
+        </div>
+      </div>
+      <Footer />
+    </>
+  );
 }
