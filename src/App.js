@@ -5,7 +5,7 @@ import ScrollButton from './components/ScrollButton';
 import { Route, Switch, BrowserRouter} from 'react-router-dom';
 import Conduct from './pages/Conduct/Conduct.js';
 import LeaderboardMain from './pages/Leaderboard.js';
-import WeeklyBoard from './pages/leaderboard/weekly.jsx';
+import WeeklyBoard from './pages/Leaderboard_weekly.jsx';
 import PointsMain from './pages/points.js';
 import Project from './pages/Projects/Project';
 import Team from './pages/Team';
