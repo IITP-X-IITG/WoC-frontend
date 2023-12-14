@@ -21,7 +21,8 @@ const Leaderboard = () => {
   useEffect(() => {
     async function getCSV() {
       try {
-        const target = `https://docs.google.com/spreadsheets/d/1N1a2Gm0c0TDck3lF-dtgZglsxWAQDMKv21vcaeJuLSw/export?gid=0&format=csv`;
+        // download link of google sheet. For generation, view: https://stackoverflow.com/questions/6058146/force-download-link-on-a-google-docs-spreadsheet
+        const target = `https://docs.google.com/spreadsheets/d/14XtggRxila9e9xwM7W2orMF8azf5viMPd6xX4e3G-bI/export?gid=0&format=csv`;
         const result = await fetch(target);
         const data = await result.text();
         var rows = data.toString().split("\r");
@@ -59,39 +60,6 @@ const Leaderboard = () => {
           score["points"] = arr[i][0];
           finalArr.push(score);
         }
-
-        // for(let i = 0; i < rows.length ; i++){
-        //     let str = rows[i];
-        //     if(i == rows.length - 1){
-        //     }
-        //     else{
-        //       let s = "";
-        //       for(let j = 0; j < str.length - 1; j++){
-        //         s += str[j];
-        //       }
-        //       str = s;
-        //     }
-
-        //     let score = {};
-
-        //     let arr = [];
-        //     let temp = "";
-        //     for(let j = 0; j < str.length; j++){
-        //         if(str[j] == ","){
-        //           arr.push(temp);
-        //           temp = "";
-        //         }
-        //         else{
-        //           temp += str[j];
-        //         }
-        //     }
-        //     arr.push(temp);
-        // Hi
-        //   score["rank"] = i+1;
-        //   score["gitid"] = arr[0];
-        //   score["points"] = arr[1];
-        //   tempfi.push(score);
-        // }
         setFi(finalArr);
         setSe(finalArr);
         setLoading(false);
@@ -185,69 +153,6 @@ const Leaderboard = () => {
             />
 
             <div className="tablee">
-              {/* <BTable responsive borderless striped hover>
-              <thead>
-                <tr className='mt-5'>
-                  <th>Position</th>
-                  <th>GitHub Handle</th>
-                  <th>Score</th>
-                </tr>
-              </thead>
-              <tbody>
-                {Array.from({ length: 5 }).map((_, index) => (
-                  <TableRow
-                    key={index}
-                    position={index + 1}
-                    handle={"akr-25"}
-                    dp={"https://avatars.githubusercontent.com/u/79211216?v=4"}
-                  />
-                ))}
-              </tbody>
-            </BTable> */}
-              {/* <BTable responsive borderless hover {...getTableProps()}>
-              <thead >
-                {headerGroups.map((headerGroup) => (
-                  <tr {...headerGroup.getHeaderGroupProps()}>
-                    {headerGroup.headers.map((column) => (
-                      <th {...column.getHeaderProps()}>
-                        <Heading>
-                        {column.render("Header")}
-                        </Heading>
-                      </th>
-                    ))}
-                  </tr>
-                ))}
-              </thead>
-              <tbody {...getTableBodyProps()}>
-                {page.map((row, i) => {
-                  prepareRow(row);
-                  return (
-                    <tr {...row.getRowProps()}>
-                      {row.cells.map((cell) => {
-                        if (cell["column"]["id"] !== "gitid")
-                          return (
-                            <td {...cell.getCellProps()}>
-                              <Name>
-                              {cell["value"]}
-                              </Name>
-                            </td>
-                          );
-                        else
-                          return (
-                            <td {...cell.getCellProps()}>
-                            <Name>
-                              <Image alt={cell["value"]} src={"https://github.com/"+cell["value"]+".png"} />
-                              <SLink to={'/points/' + cell["value"]}>{cell["value"]}</SLink>
-                            </Name>
-                            </td>
-                          );
-                      })}
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </BTable> */}
-
               <BTable responsive borderless hover>
                 <thead>
                   <th className="left-position">Position</th>
