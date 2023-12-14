@@ -10,11 +10,13 @@ import { NavLink } from "react-router-dom";
 import Avatar from "@mui/material/Avatar";
 import styled from "styled-components";
 import Button from '@mui/material/Button';
-import { Link ,useHistory } from 'react-router-dom';
+
+
 const Leaderboard = () => {
   const [fi, setFi] = useState([]);
   const [se, setSe] = useState([]);
   const [loading, setLoading] = useState(true);
+
 
   useEffect(() => {
     async function getCSV() {
@@ -25,17 +27,17 @@ const Leaderboard = () => {
         var rows = data.toString().split("\r");
 
         let arr = [];
-        for (let i = 0;i < rows.length;i++) {
+        for (let i = 0; i < rows.length; i++) {
           let str = "";
           let temp = [];
           if (i === 0) {
-            for (let j = 0;j < rows[i].length;j++) {
+            for (let j = 0; j < rows[i].length; j++) {
               str += rows[i][j];
             }
             temp = str.split(",");
           } else {
             let str = "";
-            for (let j = 1;j < rows[i].length;j++) {
+            for (let j = 1; j < rows[i].length; j++) {
               str += rows[i][j];
             }
             temp = str.split(",");
@@ -50,7 +52,7 @@ const Leaderboard = () => {
         });
 
         let finalArr = [];
-        for (let i = arr.length - 1;i >= 0;i--) {
+        for (let i = arr.length - 1; i >= 0; i--) {
           let score = {};
           score["rank"] = arr.length - i;
           score["gitid"] = arr[i][1];
@@ -150,6 +152,10 @@ const Leaderboard = () => {
     state: { pageIndex },
   } = tableInstance;
 
+
+
+
+
   return (
     <>
       <Navigation />
@@ -157,15 +163,15 @@ const Leaderboard = () => {
       <div className="leader-twinkling"></div>
       <div style={style}>
         <div className="space"></div>
-        <div className="title mb-5 p-3">LEADERBOARD 2023</div>
-
-        <NavLink to="/leaderboard/weekly">
+        <div className="title mb-5 p-3">WEEKLY LEADERBOARD 2023</div>
+        <NavLink to="/leaderboard/Leaderboard">
           <Button variant="outlined" style={{
             backgroundColor: "#0d233b",
             boxShadow: "0 0 11px #45889b", color: "#a6d2ff", border: "2px solid #a6d2ff", borderradius: "6px", marginTop: "-3%",
-          }} >VIEW WEEKLY LEADERBOARD</Button>
+          }} >OVERALL LEADERBOARD</Button>
         </NavLink>
 
+        
         {loading ? (
           <Loading />
         ) : (
@@ -269,9 +275,9 @@ const Leaderboard = () => {
                                     ".png"
                                   }
                                 />
-                                <SLink to={"/points/" + cell["value"]}>
+                               
                                   {cell["value"]}
-                                </SLink>
+                              
                               </td>
                             );
                           else if (cell["column"]["id"] === "rank")
