@@ -132,7 +132,7 @@ const Leaderboard = () => {
       <div style={style}>
         <div className="space"></div>
         <div className="title mb-5 p-3">WEEK 1 LEADERBOARD</div>
-        <NavLink to="/leaderboard/Leaderboard">
+        <NavLink to="/leaderboard">
           <Button variant="outlined" style={{
             backgroundColor: "#0d233b",
             boxShadow: "0 0 11px #45889b", color: "#a6d2ff", border: "2px solid #a6d2ff", borderradius: "6px", marginTop: "-3%",
