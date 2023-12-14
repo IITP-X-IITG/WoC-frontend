@@ -10,32 +10,35 @@ import { NavLink } from "react-router-dom";
 import Avatar from "@mui/material/Avatar";
 import styled from "styled-components";
 import Button from '@mui/material/Button';
-import { Link ,useHistory } from 'react-router-dom';
+
+
 const Leaderboard = () => {
   const [fi, setFi] = useState([]);
   const [se, setSe] = useState([]);
   const [loading, setLoading] = useState(true);
 
+
   useEffect(() => {
     async function getCSV() {
       try {
-        const target = `https://docs.google.com/spreadsheets/d/1N1a2Gm0c0TDck3lF-dtgZglsxWAQDMKv21vcaeJuLSw/export?gid=0&format=csv`;
+        // download link of google sheet. For generation, view: https://stackoverflow.com/questions/6058146/force-download-link-on-a-google-docs-spreadsheet
+        const target = `https://docs.google.com/spreadsheets/d/14XtggRxila9e9xwM7W2orMF8azf5viMPd6xX4e3G-bI/export?gid=0&format=csv`;
         const result = await fetch(target);
         const data = await result.text();
         var rows = data.toString().split("\r");
 
         let arr = [];
-        for (let i = 0;i < rows.length;i++) {
+        for (let i = 0; i < rows.length; i++) {
           let str = "";
           let temp = [];
           if (i === 0) {
-            for (let j = 0;j < rows[i].length;j++) {
+            for (let j = 0; j < rows[i].length; j++) {
               str += rows[i][j];
             }
             temp = str.split(",");
           } else {
             let str = "";
-            for (let j = 1;j < rows[i].length;j++) {
+            for (let j = 1; j < rows[i].length; j++) {
               str += rows[i][j];
             }
             temp = str.split(",");
@@ -50,46 +53,13 @@ const Leaderboard = () => {
         });
 
         let finalArr = [];
-        for (let i = arr.length - 1;i >= 0;i--) {
+        for (let i = arr.length - 1; i >= 0; i--) {
           let score = {};
           score["rank"] = arr.length - i;
           score["gitid"] = arr[i][1];
           score["points"] = arr[i][0];
           finalArr.push(score);
         }
-
-        // for(let i = 0; i < rows.length ; i++){
-        //     let str = rows[i];
-        //     if(i == rows.length - 1){
-        //     }
-        //     else{
-        //       let s = "";
-        //       for(let j = 0; j < str.length - 1; j++){
-        //         s += str[j];
-        //       }
-        //       str = s;
-        //     }
-
-        //     let score = {};
-
-        //     let arr = [];
-        //     let temp = "";
-        //     for(let j = 0; j < str.length; j++){
-        //         if(str[j] == ","){
-        //           arr.push(temp);
-        //           temp = "";
-        //         }
-        //         else{
-        //           temp += str[j];
-        //         }
-        //     }
-        //     arr.push(temp);
-        // Hi
-        //   score["rank"] = i+1;
-        //   score["gitid"] = arr[0];
-        //   score["points"] = arr[1];
-        //   tempfi.push(score);
-        // }
         setFi(finalArr);
         setSe(finalArr);
         setLoading(false);
@@ -150,6 +120,10 @@ const Leaderboard = () => {
     state: { pageIndex },
   } = tableInstance;
 
+
+
+
+
   return (
     <>
       <Navigation />
@@ -157,15 +131,15 @@ const Leaderboard = () => {
       <div className="leader-twinkling"></div>
       <div style={style}>
         <div className="space"></div>
-        <div className="title mb-5 p-3">LEADERBOARD 2023</div>
-
-        <NavLink to="/leaderboard/weekly">
+        <div className="title mb-5 p-3">WEEK 1 LEADERBOARD</div>
+        <NavLink to="/leaderboard/Leaderboard">
           <Button variant="outlined" style={{
             backgroundColor: "#0d233b",
             boxShadow: "0 0 11px #45889b", color: "#a6d2ff", border: "2px solid #a6d2ff", borderradius: "6px", marginTop: "-3%",
-          }} >VIEW WEEKLY LEADERBOARD</Button>
+          }} >OVERALL LEADERBOARD</Button>
         </NavLink>
 
+        
         {loading ? (
           <Loading />
         ) : (
@@ -179,69 +153,6 @@ const Leaderboard = () => {
             />
 
             <div className="tablee">
-              {/* <BTable responsive borderless striped hover>
-              <thead>
-                <tr className='mt-5'>
-                  <th>Position</th>
-                  <th>GitHub Handle</th>
-                  <th>Score</th>
-                </tr>
-              </thead>
-              <tbody>
-                {Array.from({ length: 5 }).map((_, index) => (
-                  <TableRow
-                    key={index}
-                    position={index + 1}
-                    handle={"akr-25"}
-                    dp={"https://avatars.githubusercontent.com/u/79211216?v=4"}
-                  />
-                ))}
-              </tbody>
-            </BTable> */}
-              {/* <BTable responsive borderless hover {...getTableProps()}>
-              <thead >
-                {headerGroups.map((headerGroup) => (
-                  <tr {...headerGroup.getHeaderGroupProps()}>
-                    {headerGroup.headers.map((column) => (
-                      <th {...column.getHeaderProps()}>
-                        <Heading>
-                        {column.render("Header")}
-                        </Heading>
-                      </th>
-                    ))}
-                  </tr>
-                ))}
-              </thead>
-              <tbody {...getTableBodyProps()}>
-                {page.map((row, i) => {
-                  prepareRow(row);
-                  return (
-                    <tr {...row.getRowProps()}>
-                      {row.cells.map((cell) => {
-                        if (cell["column"]["id"] !== "gitid")
-                          return (
-                            <td {...cell.getCellProps()}>
-                              <Name>
-                              {cell["value"]}
-                              </Name>
-                            </td>
-                          );
-                        else
-                          return (
-                            <td {...cell.getCellProps()}>
-                            <Name>
-                              <Image alt={cell["value"]} src={"https://github.com/"+cell["value"]+".png"} />
-                              <SLink to={'/points/' + cell["value"]}>{cell["value"]}</SLink>
-                            </Name>
-                            </td>
-                          );
-                      })}
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </BTable> */}
-
               <BTable responsive borderless hover>
                 <thead>
                   <th className="left-position">Position</th>
@@ -269,9 +180,9 @@ const Leaderboard = () => {
                                     ".png"
                                   }
                                 />
-                                <SLink to={"/points/" + cell["value"]}>
+                               
                                   {cell["value"]}
-                                </SLink>
+                              
                               </td>
                             );
                           else if (cell["column"]["id"] === "rank")
