@@ -131,7 +131,7 @@ const Leaderboard = () => {
       <div className="leader-twinkling"></div>
       <div style={style}>
         <div className="space"></div>
-        <div className="title mb-5 p-3">WEEKLY LEADERBOARD 2023</div>
+        <div className="title mb-5 p-3">WEEK 1 LEADERBOARD</div>
         <NavLink to="/leaderboard/Leaderboard">
           <Button variant="outlined" style={{
             backgroundColor: "#0d233b",
