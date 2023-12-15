@@ -59,9 +59,10 @@ function Card() {
                                     </p>
                                 </div>
                                 <div className="d-grid gap-2 col-6 mx-auto">
-                                    <a href="https://forms.gle/6qDeUDr6AVypRixB6" rel="noreferrer" target="blank">
+                                    {/* <a href="https://forms.gle/6qDeUDr6AVypRixB6" rel="noreferrer" target="blank"> */}
+                                    <a href='#'>
                                         <button className="btn btn-primary btn-apply my-2" type="button">
-                                            Register
+                                            Registrations Closed
                                         </button>
                                     </a>
                                 </div>
