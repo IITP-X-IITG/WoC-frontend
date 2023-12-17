@@ -28,17 +28,17 @@ const Leaderboard = () => {
         var rows = data.toString().split("\r");
 
         let arr = [];
-        for (let i = 0; i < rows.length; i++) {
+        for (let i = 0;i < rows.length;i++) {
           let str = "";
           let temp = [];
           if (i === 0) {
-            for (let j = 0; j < rows[i].length; j++) {
+            for (let j = 0;j < rows[i].length;j++) {
               str += rows[i][j];
             }
             temp = str.split(",");
           } else {
             let str = "";
-            for (let j = 1; j < rows[i].length; j++) {
+            for (let j = 1;j < rows[i].length;j++) {
               str += rows[i][j];
             }
             temp = str.split(",");
@@ -53,7 +53,7 @@ const Leaderboard = () => {
         });
 
         let finalArr = [];
-        for (let i = arr.length - 1; i >= 0; i--) {
+        for (let i = arr.length - 1;i >= 0;i--) {
           let score = {};
           score["rank"] = arr.length - i;
           score["gitid"] = arr[i][1];
@@ -121,9 +121,6 @@ const Leaderboard = () => {
   } = tableInstance;
 
 
-
-
-
   return (
     <>
       <Navigation />
@@ -139,7 +136,6 @@ const Leaderboard = () => {
           }} >OVERALL LEADERBOARD</Button>
         </NavLink>
 
-        
         {loading ? (
           <Loading />
         ) : (
@@ -180,9 +176,9 @@ const Leaderboard = () => {
                                     ".png"
                                   }
                                 />
-                               
-                                  {cell["value"]}
-                              
+
+                                {cell["value"]}
+
                               </td>
                             );
                           else if (cell["column"]["id"] === "rank")

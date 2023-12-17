@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Home from './pages/Home';
 import ScrollButton from './components/ScrollButton';
-import { Route, Switch, BrowserRouter} from 'react-router-dom';
+import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import Conduct from './pages/Conduct/Conduct.js';
 import LeaderboardMain from './pages/Leaderboard.js';
 import WeeklyBoard from './pages/Leaderboard_weekly';
@@ -17,20 +17,21 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter basename={process.env.PUBLIC_URL}>
-        <ScrollToTop/>
+        <ScrollToTop />
         <Switch>
-          <Route exact path="/" component={Home}/>
-          <Route path="/register" component={Conduct}/>
+          <Route exact path="/" component={Home} />
+          <Route path="/register" component={Conduct} />
           <Route path="/leaderboard/weekly" component={WeeklyBoard} />
+          <Route path="/leaderboard/weekly2" component={WeeklyBoard} />
           <Route path="/leaderboard" component={LeaderboardMain} />
           <Route path="/points/:id" component={PointsMain} />
           <Route path="/project" component={Project} />
           <Route path="/team" component={Team} />
           <Route path="/reward" component={Reward} />
-          <Route path='/events' component={Events}/>
+          <Route path='/events' component={Events} />
         </Switch>
       </BrowserRouter>
-      <ScrollButton/>
+      <ScrollButton />
     </div>
   );
 }
