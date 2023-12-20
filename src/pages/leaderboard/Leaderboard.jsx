@@ -167,7 +167,7 @@ const Leaderboard = () => {
         </NavLink>
 
         <NavLink to="/leaderboard/weekly2">
-          <Button disabled variant="outlined" style={{
+          <Button variant="outlined" style={{
             backgroundColor: "#0d233b",
             boxShadow: "0 0 11px #45889b", color: "#a6d2ff", marginLeft: "10px", border: "2px solid #a6d2ff", borderradius: "6px", marginTop: "-3%",
           }} >VIEW WEEK-2 LEADERBOARD</Button>
