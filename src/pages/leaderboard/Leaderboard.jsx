@@ -10,7 +10,7 @@ import { NavLink } from "react-router-dom";
 import Avatar from "@mui/material/Avatar";
 import styled from "styled-components";
 import Button from '@mui/material/Button';
-import { Link ,useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 const Leaderboard = () => {
   const [fi, setFi] = useState([]);
   const [se, setSe] = useState([]);
@@ -160,10 +160,11 @@ const Leaderboard = () => {
         <div className="title mb-5 p-3">LEADERBOARD 2023</div>
 
         <NavLink to="/leaderboard/weekly">
-          <Button variant="outlined" style={{
-            backgroundColor: "#0d233b",
-            boxShadow: "0 0 11px #45889b", color: "#a6d2ff", border: "2px solid #a6d2ff", borderradius: "6px", marginTop: "-3%",
-          }} >VIEW WEEKLY LEADERBOARD</Button>
+          <StyledButton1 variant="outlined">VIEW WEEK-1 LEADERBOARD</StyledButton1>
+        </NavLink>
+
+        <NavLink to="/leaderboard/weekly2">
+          <StyledButton variant="outlined">VIEW WEEK-2 LEADERBOARD</StyledButton>
         </NavLink>
 
         {loading ? (
@@ -461,4 +462,29 @@ const Bronze = styled.div`
   width: 25px;
   height: 25px;
   padding: 0.7rem;
+`;
+
+const StyledButton = styled.button`
+  background-color: #0d233b;
+  box-shadow: 0 0 11px #45889b;
+  color: #a6d2ff;
+  margin-left: 10px;
+  border: 2px solid #a6d2ff;
+  border-radius: 6px;
+  margin-top: -3%;
+  padding: 6px 12px 6px 12px;
+  
+  @media (max-width: 500px) {
+    margin-top: 3%;
+  }
+`;
+const StyledButton1 = styled.button`
+  background-color: #0d233b;
+  box-shadow: 0 0 11px #45889b;
+  color: #a6d2ff;
+  margin-left: 10px;
+  border: 2px solid #a6d2ff;
+  border-radius: 6px;
+  padding: 6px 12px 6px 12px;
+  margin-top: -3%;
 `;

@@ -22,7 +22,7 @@ export default function Navigation(props) {
                             <NavLink to="/project" activeStyle={{ color: 'rgb(103 212 223)', borderBottom: '2px solid #589ba2', fontWeight: 500 }} >Projects</NavLink>
                             <NavLink to="/reward" activeStyle={{ color: 'rgb(103 212 223)', borderBottom: '2px solid #589ba2', fontWeight: 500 }} >Rewards</NavLink>
                             <NavLink to="/team" activeStyle={{ color: 'rgb(103 212 223)', borderBottom: '2px solid #589ba2', fontWeight: 500 }}>Team</NavLink>
-                            <NavLink to="/events" activeStyle={{ color: 'rgb(103 212 223)', borderBottom: '2px solid #589ba2', fontWeight: 500 }}>Events</NavLink>
+                            {/* <NavLink to="/events" activeStyle={{ color: 'rgb(103 212 223)', borderBottom: '2px solid #589ba2', fontWeight: 500 }}>Events</NavLink> */}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

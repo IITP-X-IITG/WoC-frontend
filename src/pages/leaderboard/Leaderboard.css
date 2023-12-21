@@ -5,6 +5,7 @@ body {
 .space {
   padding-top: 13vh;
 }
+
 .bg-custom {
   background-color: #12263f;
 }
@@ -28,12 +29,12 @@ thead {
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   font-size: 1.2em;
 }
+
 /* thead th {
   padding: 0.7em !important;
   /* display: flex; */
-/* } */ */
-
-table {
+/* } */
+*/ table {
   margin-bottom: 0 !important;
   padding: 0;
   background-color: #fff;
@@ -61,8 +62,7 @@ table {
 
 .leader-stars {
   z-index: -2;
-  background: #12263f url("../Images/stars.svg") repeat top
-    center;
+  background: #12263f url("../Images/stars.svg") repeat top center;
 }
 
 .leader-twinkling {
@@ -73,8 +73,7 @@ table {
 
 .leader-clouds {
   z-index: 2;
-  background: transparent url("https://image.ibb.co/bT4N7T/clouds.png") repeat
-    top center;
+  background: transparent url("https://image.ibb.co/bT4N7T/clouds.png") repeat top center;
   animation: move-clouds-back 200s linear infinite;
 }
 
@@ -82,6 +81,7 @@ table {
   from {
     background-position: 0 0;
   }
+
   to {
     background-position: -10000px 5000px;
   }
@@ -91,11 +91,13 @@ table {
   from {
     background-position: 0 0;
   }
+
   to {
     background-position: 10000px 0;
   }
 }
-.bg-relative{
+
+.bg-relative {
   position: absolute;
   top: 40vh;
   background-color: #12263f;
@@ -125,9 +127,11 @@ table {
     flex-direction: column;
     padding-bottom: 1em;
   }
+
   .pagination-left {
     justify-content: space-between;
   }
+
   .pagination-right input {
     max-width: 5em;
   }
@@ -140,9 +144,11 @@ table {
   display: flex;
   align-items: center;
 }
+
 .pagination-right input {
   max-width: 5em;
 }
+
 #pageof {
   vertical-align: middle;
   padding: 1em;
@@ -174,19 +180,28 @@ table {
   border: none;
 }
 
-@media only screen and (max-width:450px){
-  .pagination-left, .pagination-right{
+@media only screen and (max-width:450px) {
+
+  .pagination-left,
+  .pagination-right {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .pagination{
+
+  .pagination {
     align-items: center;
   }
-  .input-group{
+
+  .input-group {
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+
+  .btn_weekly {
+    margin-left: 0px;
+    top: 5%;
   }
 }
 
