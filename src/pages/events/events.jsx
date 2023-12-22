@@ -6,6 +6,7 @@ import "./events.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { EventsArray } from "./eventsArray";
+import { EventsArrayNew } from "./eventsArray";
 
 const Events = () => {
   useEffect(() => {
@@ -15,6 +16,42 @@ const Events = () => {
     <div>
       <AnimatedBG />
       <Navigation />
+      <div className="event_head">
+        <h2 data-aos="zoom-in" data-aos-once="true">
+          Events
+        </h2>
+        <hr />
+      </div>
+      <div className="event_wrapper">
+        {EventsArrayNew.map((event) => {
+          return (
+            <div
+              key={event.eventName}
+              className="event_box"
+              data-aos="fade-up"
+              data-aos-once="true"
+            >
+              <img
+                src={event.eventImage.default}
+                alt={event.eventName}
+                className="eventImg"
+              />
+              <div className="front_ext_event">
+                <div className="event_title">
+                  <h1>{event.eventName}</h1>
+                  <a href={event.eventLink} target="_blank" rel="noreferrer">
+                    <button className="btn btn-primary btn-apply" type="button">
+                      {event.eventButton}
+                    </button>
+                  </a>
+                </div>
+                <hr className="exp_hr" />
+                <p>{event.eventDetails}</p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
       <div className="event_head">
         <h2 data-aos="zoom-in" data-aos-once="true">
           Past Events
