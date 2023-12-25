@@ -9,7 +9,6 @@ import threeWay_studio from './Images/sp_logo2.png';
 import dagshub from './Images/dagshub.png';
 import avl from './Images/avl.png';
 import grabtern from './Images/Grabtern.png';
-import campusmemories from './Images/Campusmemories.png';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Timeline from '../components/Timeline';
@@ -20,11 +19,8 @@ import { VscGithubInverted } from 'react-icons/vsc';
 import { AiOutlineFundProjectionScreen } from 'react-icons/ai';
 import { CgGitPull } from 'react-icons/cg';
 import { FaUniversity } from 'react-icons/fa';
-//import git_spons from '../pages/Images/githublogoweb.svg'
-import dig_ocean from '../pages/Images/DO_Logo_Vertical_Blue.png';
-//import jetbrain from '../pages/Images/jetbrains-variant-1.png'
 import gfgLogo from '../pages/Images/gfgLogo.png';
-import quineLogo from '../pages/Images/Quine.svg';
+import quineLogo from '../pages/Images/quine_blue.svg';
 import osLogo from '../pages/Images/OS_logo.png';
 import taskadeLogo from '../pages/Images/taskadeLogo.png';
 import gmcLogo from '../pages/Images/gmcLogo.png';
