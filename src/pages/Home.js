@@ -9,7 +9,6 @@ import threeWay_studio from './Images/sp_logo2.png';
 import dagshub from './Images/dagshub.png';
 import avl from './Images/avl.png';
 import grabtern from './Images/Grabtern.png';
-import campusmemories from './Images/Campusmemories.png';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Timeline from '../components/Timeline';
@@ -20,14 +19,12 @@ import { VscGithubInverted } from 'react-icons/vsc';
 import { AiOutlineFundProjectionScreen } from 'react-icons/ai';
 import { CgGitPull } from 'react-icons/cg';
 import { FaUniversity } from 'react-icons/fa';
-//import git_spons from '../pages/Images/githublogoweb.svg'
-import dig_ocean from '../pages/Images/DO_Logo_Vertical_Blue.png';
-//import jetbrain from '../pages/Images/jetbrains-variant-1.png'
 import gfgLogo from '../pages/Images/gfgLogo.png';
-import quineLogo from '../pages/Images/Quine.svg';
+import quineLogo from '../pages/Images/quine_blue.svg';
 import osLogo from '../pages/Images/OS_logo.png';
 import taskadeLogo from '../pages/Images/taskadeLogo.png';
 import gmcLogo from '../pages/Images/gmcLogo.png';
+import foss from '../pages/Images/logo-for-hackathon-organisers.svg';
 import Artboardlogo from '../pages/Images/Artboard.svg';
 //import logo_codepeak from './Images/LOGOCODEPEAK.png'
 import CountUp from '../components/Counter_up';
@@ -75,68 +72,84 @@ export default function Home() {
           />
           <p>Powered By</p>
           <div className="main_spons_box">
-            <a href="https://www.geeksforgeeks.org/" target="_blank" rel="noreferrer">
-              <img
-                src={gfgLogo}
-                alt=""
-                srcSet=""
-                className="main_spons_img"
-                data-aos="zoom-in"
-                data-aos-once="true"
-              />
-            </a>
-            <a href="https://www.antigranular.com/" rel="noreferrer" target="_blank">
-              <img
-                src={antigranular}
-                alt=""
-                srcSet=""
-                className="main_spons_img"
-                data-aos="zoom-in"
-                data-aos-once="true"
-              />
-            </a>
+            <div className="spons_box_1">
+              <a href="https://www.geeksforgeeks.org/" target="_blank" rel="noreferrer">
+                <img
+                  src={gfgLogo}
+                  alt=""
+                  srcSet=""
+                  className="main_spons_img"
+                  data-aos="zoom-in"
+                  data-aos-once="true"
+                />
+              </a>
+              <a href="https://www.antigranular.com/" rel="noreferrer" target="_blank">
+                <img
+                  src={antigranular}
+                  alt=""
+                  srcSet=""
+                  className="main_spons_img"
+                  data-aos="zoom-in"
+                  data-aos-once="true"
+                />
+              </a>
 
-            <a href="https://www.threewaystudio.world/" target="_blank" rel="noreferrer">
-              <img
-                src={threeWay_studio}
-                alt=""
-                srcSet=""
-                className="main_spons_img1"
-                data-aos="zoom-in"
-                data-aos-once="true"
-              />
-            </a>
-            <a href="https://quine.sh/" target="_blank" rel="noreferrer">
-              <img
-                src={quineLogo}
-                alt=""
-                srcSet=""
-                className="main_spons_img1"
-                data-aos="zoom-in"
-                data-aos-once="true"
-                style={{ height: '40px', width: 'auto' }}
-              />
-            </a>
-            <a href="https://www.linkedin.com/company/os-community/" target="_blank" rel="noreferrer">
-              <img
-                src={osLogo}
-                alt=""
-                srcSet=""
-                className="main_spons_img1"
-                data-aos="zoom-in"
-                data-aos-once="true"
-              />
-            </a>
-            <a href="https://www.grabtern.com/" target="_blank" rel="noreferrer">
-              <img
-                src={grabtern}
-                alt=""
-                srcSet=""
-                className="main_spons_img1"
-                data-aos="zoom-in"
-                data-aos-once="true"
-              />
-            </a>
+              <a href="https://www.threewaystudio.world/" target="_blank" rel="noreferrer">
+                <img
+                  src={threeWay_studio}
+                  alt=""
+                  srcSet=""
+                  className="main_spons_img1"
+                  data-aos="zoom-in"
+                  data-aos-once="true"
+                />
+              </a>
+            </div>
+            <div className="spons_box_2">
+
+              <a href="https://quine.sh/" target="_blank" rel="noreferrer">
+                <img
+                  src={quineLogo}
+                  alt=""
+                  srcSet=""
+                  className="main_spons_img1"
+                  data-aos="zoom-in"
+                  data-aos-once="true"
+                  style={{ height: '40px', width: 'auto' }}
+                />
+              </a>
+              <a href="https://www.linkedin.com/company/os-community/" target="_blank" rel="noreferrer">
+                <img
+                  src={osLogo}
+                  alt=""
+                  srcSet=""
+                  className="main_spons_img1"
+                  data-aos="zoom-in"
+                  data-aos-once="true"
+                />
+              </a>
+              <a href="https://www.grabtern.com/" target="_blank" rel="noreferrer">
+                <img
+                  src={grabtern}
+                  alt=""
+                  srcSet=""
+                  className="main_spons_img1"
+                  data-aos="zoom-in"
+                  data-aos-once="true"
+                />
+              </a>
+              <a href="https://fossunited.org/" target="_blank" rel="noreferrer">
+                <img
+                  src={foss}
+                  alt=""
+                  srcSet=""
+                  className="main_spons_img1"
+                  data-aos="zoom-in"
+                  data-aos-once="true"
+                  style={{ height: '76px', width: 'auto', opacity: '85%' }}
+                />
+              </a>
+            </div>
           </div>
           <img src={hill} alt="" srcSet="" className="hill_img" />
         </div>
