@@ -7,6 +7,7 @@ import Conduct from './pages/Conduct/Conduct.js';
 import LeaderboardMain from './pages/Leaderboard.js';
 import WeeklyBoard from './pages/Leaderboard_weekly';
 import WeeklySecond from './pages/Leaderboard_Weekly2';
+import WeeklyThird from './pages/Leaderboard_weekly3';
 import PointsMain from './pages/points.js';
 import Project from './pages/Projects/Project';
 import Team from './pages/Team';
@@ -24,6 +25,7 @@ function App() {
           <Route path="/register" component={Conduct} />
           <Route path="/leaderboard/weekly" component={WeeklyBoard} />
           <Route path="/leaderboard/weekly2" component={WeeklySecond} />
+          <Route path="/leaderboard/weekly3" component={WeeklyThird} />
           <Route path="/leaderboard" component={LeaderboardMain} />
           <Route path="/points/:id" component={PointsMain} />
           <Route path="/project" component={Project} />

@@ -167,6 +167,10 @@ const Leaderboard = () => {
           <StyledButton variant="outlined">VIEW WEEK-2 LEADERBOARD</StyledButton>
         </NavLink>
 
+        <NavLink to="/leaderboard/weekly3">
+          <StyledButton disabled variant="outlined">VIEW WEEK-3 LEADERBOARD</StyledButton>
+        </NavLink>
+
         {loading ? (
           <Loading />
         ) : (
