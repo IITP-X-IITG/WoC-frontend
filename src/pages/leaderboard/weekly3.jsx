@@ -22,7 +22,7 @@ const Leaderboard = () => {
         async function getCSV() {
             try {
                 // download link of google sheet. For generation, view: https://stackoverflow.com/questions/6058146/force-download-link-on-a-google-docs-spreadsheet
-                const target = `https://docs.google.com/spreadsheets/d/1-pPaTmj471DIDtammENd0rLBXw_67eDndq5aebxu_eQ/export?gid=0&format=csv`;
+                const target = `https://docs.google.com/spreadsheets/d/1uPDnZPGqEakQt1gjVPmsucDSluOdZ6ZIqoSAoIOCkBc/export?gid=0&format=csv`;
                 const result = await fetch(target);
                 const data = await result.text();
                 var rows = data.toString().split("\r");

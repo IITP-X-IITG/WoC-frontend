@@ -19,7 +19,7 @@ const Leaderboard = () => {
   useEffect(() => {
     async function getCSV() {
       try {
-        const target = `https://docs.google.com/spreadsheets/d/1N1a2Gm0c0TDck3lF-dtgZglsxWAQDMKv21vcaeJuLSw/export?gid=0&format=csv`;
+        const target = `https://docs.google.com/spreadsheets/d/1YAfYi9bDKHytKKAeJMyubdo4XyethwSsezIRr2TP-CY/export?gid=0&format=csv`;
         const result = await fetch(target);
         const data = await result.text();
         var rows = data.toString().split("\r");
@@ -168,7 +168,7 @@ const Leaderboard = () => {
         </NavLink>
 
         <NavLink to="/leaderboard/weekly3">
-          <StyledButton disabled variant="outlined">VIEW WEEK-3 LEADERBOARD</StyledButton>
+          <StyledButton variant="outlined">VIEW WEEK-3 LEADERBOARD</StyledButton>
         </NavLink>
 
         {loading ? (
