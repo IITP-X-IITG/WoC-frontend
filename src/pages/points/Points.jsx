@@ -16,7 +16,7 @@ const Points = (props) => {
 
   useEffect(() => {
     const typeOfLink = (link) => {
-      for (let i = link.length - 1; i >= 0; i--) {
+      for (let i = link.length - 1;i >= 0;i--) {
         if (link[i] === "/" && link[i - 1] === "s") {
           return "Issue";
         }
@@ -29,14 +29,14 @@ const Points = (props) => {
 
     const nameOfLink = (link) => {
       let n = "";
-      for (let i = link.length - 1; i >= 0; i--) {
+      for (let i = link.length - 1;i >= 0;i--) {
         if (link[i] === "/") break;
         else {
           n = link[i] + n;
         }
       }
       let r;
-      for (let i = link.length - 1; i >= 0; i--) {
+      for (let i = link.length - 1;i >= 0;i--) {
         if (
           (link[i] === "p" && link[i - 1] === "/") ||
           (link[i] === "i" && link[i - 1] === "/")
@@ -46,7 +46,7 @@ const Points = (props) => {
         }
       }
       let str = "";
-      for (let i = 19; i < r - 1; i++) {
+      for (let i = 19;i < r - 1;i++) {
         str += link[i];
       }
       str = str + "#" + n;
@@ -55,22 +55,22 @@ const Points = (props) => {
 
     const getCSV = async () => {
       try {
-        const target = `https://docs.google.com/spreadsheets/d/1N1a2Gm0c0TDck3lF-dtgZglsxWAQDMKv21vcaeJuLSw/export?gid=0&format=csv`;
+        const target = `https://docs.google.com/spreadsheets/d/1YAfYi9bDKHytKKAeJMyubdo4XyethwSsezIRr2TP-CY/export?gid=0&format=csv`;
         const result = await fetch(target);
         const data = await result.text();
         var rows = data.toString().split("\r");
         let arr = [];
-        for (let i = 0; i < rows.length; i++) {
+        for (let i = 0;i < rows.length;i++) {
           let str = "";
           let temp = [];
           if (i === 0) {
-            for (let j = 0; j < rows[i].length; j++) {
+            for (let j = 0;j < rows[i].length;j++) {
               str += rows[i][j];
             }
             temp = str.split(",");
           } else {
             let str = "";
-            for (let j = 1; j < rows[i].length; j++) {
+            for (let j = 1;j < rows[i].length;j++) {
               str += rows[i][j];
             }
             temp = str.split(",");
@@ -85,19 +85,19 @@ const Points = (props) => {
         });
 
         let prList = [];
-        for (let i = arr.length - 1; i >= 0; i--) {
+        for (let i = arr.length - 1;i >= 0;i--) {
           if (arr[i][1] === props.id) {
             setTotal(arr[i][0]);
             setRank(arr.length - i);
             let datapr = {};
-            for (let j = 2; j < arr[i].length; j++) {
+            for (let j = 2;j < arr[i].length;j++) {
               if (j % 2 === 0) {
                 datapr["points"] = arr[i][j];
               } else {
                 datapr["link"] = arr[i][j];
                 datapr["text"] = nameOfLink(arr[i][j]);
                 datapr["type"] = typeOfLink(arr[i][j]);
-                if(datapr["type"] !== "#" && datapr["text"] !== "#"){
+                if (datapr["type"] !== "#" && datapr["text"] !== "#") {
                   prList.push(datapr);
                 }
                 datapr = {};
@@ -155,9 +155,9 @@ const Points = (props) => {
               <BTable responsive borderless hover>
                 <thead>
                   {/* <tr> */}
-                    <th className="left">Points</th>
-                    <th className="middle">Type</th>
-                    <th className="rig">Link</th>
+                  <th className="left">Points</th>
+                  <th className="middle">Type</th>
+                  <th className="rig">Link</th>
                   {/* </tr> */}
                 </thead>
                 <tbody>
