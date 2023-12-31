@@ -7,7 +7,6 @@ import clueless from './Images/clueless.png';
 import antigranular from './Images/sp_logo1.png';
 import threeWay_studio from './Images/sp_logo2.png';
 import dagshub from './Images/dagshub.png';
-import avl from './Images/avl.png';
 import grabtern from './Images/Grabtern.png';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -23,9 +22,7 @@ import gfgLogo from '../pages/Images/gfgLogo.png';
 import quineLogo from '../pages/Images/quine_blue.svg';
 import osLogo from '../pages/Images/OS_logo.png';
 import taskadeLogo from '../pages/Images/taskadeLogo.png';
-import gmcLogo from '../pages/Images/gmcLogo.png';
 import foss from '../pages/Images/logo-for-hackathon-organisers.svg';
-import Artboardlogo from '../pages/Images/Artboard.svg';
 //import logo_codepeak from './Images/LOGOCODEPEAK.png'
 import CountUp from '../components/Counter_up';
 import Animatedbg from '../components/Animatedbg';
@@ -53,10 +50,10 @@ export default function Home() {
             marginTop: '70px',
           }}
         >
-          CODEPEAK 2023 is here! Student registration has started.
-          <Link to="/register" style={{ textDecoration: 'none', color: '#99c1e7' }}>
+          CODEPEAK 2023 has ended! The final leaderboard have been released.
+          <Link to="/Leaderboard" style={{ textDecoration: 'none', color: '#99c1e7' }}>
             {' '}
-            Register Now{' '}
+            Check Here{' '}
           </Link>{' '}
         </marquee>
 
