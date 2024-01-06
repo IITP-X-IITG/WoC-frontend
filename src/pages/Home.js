@@ -125,16 +125,6 @@ export default function Home() {
                   data-aos-once="true"
                 />
               </a>
-              <a href="https://www.grabtern.com/" target="_blank" rel="noreferrer">
-                <img
-                  src={grabtern}
-                  alt=""
-                  srcSet=""
-                  className="main_spons_img1"
-                  data-aos="zoom-in"
-                  data-aos-once="true"
-                />
-              </a>
               <a href="https://fossunited.org/" target="_blank" rel="noreferrer">
                 <img
                   src={foss}
