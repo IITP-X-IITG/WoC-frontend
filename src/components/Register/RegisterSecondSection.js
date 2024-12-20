@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import { NavLink } from "react-router-dom";
 function Card() {
     useEffect(() => {
         Aos.init({ duration: 800 });
@@ -27,16 +28,16 @@ function Card() {
                                     </p>
                                 </div>
                                 <div className="d-grid gap-2 col-6 mx-auto register-button">
-                                    <a
-                                        href="#"
-                                    >
+                                    <NavLink to = "/register/studentRegistration">
+
                                         <button
                                             className="btn btn-primary btn-apply btn-phone btn-tab my-2"
                                             type="button"
-                                        >
-                                            Registrations Closed
+                                            >
+                                            Register Here
                                         </button>
-                                    </a>
+                                    
+                                    </NavLink>
                                 </div>
                             </div>
                         </div>
@@ -58,11 +59,12 @@ function Card() {
                                 </div>
                                 <div className="d-grid gap-2 col-6 mx-auto">
                                     {/* <a href="https://forms.gle/6qDeUDr6AVypRixB6" rel="noreferrer" target="blank"> */}
-                                    <a href='#'>
+                                    <NavLink to = "/register/mentorRegistration">
                                         <button className="btn btn-primary btn-apply my-2" type="button">
-                                            Registrations Closed
+                                            Register Here
                                         </button>
-                                    </a>
+                                    </NavLink>
+                                    
                                 </div>
                             </div>
                         </div>
