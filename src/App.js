@@ -4,6 +4,8 @@ import Home from './pages/Home';
 import ScrollButton from './components/ScrollButton';
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import Conduct from './pages/Conduct/Conduct.js';
+import StudentRegistration from './pages/StudentRegistration.js'
+import MentorRegistration from './pages/MentorRegistration.js'
 import LeaderboardMain from './pages/Leaderboard.js';
 import WeeklyBoard from './pages/Leaderboard_weekly';
 import WeeklySecond from './pages/Leaderboard_Weekly2';
@@ -22,6 +24,8 @@ function App() {
         <ScrollToTop />
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route path="/register/studentRegistration" component={StudentRegistration} />
+          <Route path="/register/mentorRegistration" component={MentorRegistration} />
           <Route path="/register" component={Conduct} />
           <Route path="/leaderboard/weekly" component={WeeklyBoard} />
           <Route path="/leaderboard/weekly2" component={WeeklySecond} />
