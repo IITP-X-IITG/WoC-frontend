@@ -244,18 +244,44 @@ export default function Home() {
           </p>
           <hr />
         </div>
-        <div className="spons_box">
-          <a href="https://www.geeksforgeeks.org/" rel="noreferrer" target="_blank">
-            <img
-              src={gfgLogo}
-              alt=""
-              srcSet=""
-              className="main_spons_img"
-              data-aos="zoom-in"
-              data-aos-once="true"
-            />
-          </a>
-          <a href="https://www.clueless.tech/" target="_blank" rel="noreferrer">
+
+        <div className="past_spons_box">
+            <div className="past_spons_box_1">
+              <a href="https://www.geeksforgeeks.org/" target="_blank" rel="noreferrer">
+                <img
+                  src={gfgLogo}
+                  alt=""
+                  srcSet=""
+                  className="main_spons_img"
+                  data-aos="zoom-in"
+                  data-aos-once="true"
+                />
+              </a>
+              <a href="https://www.antigranular.com/" rel="noreferrer" target="_blank">
+                <img
+                  src={antigranular}
+                  alt=""
+                  srcSet=""
+                  className="main_spons_img"
+                  data-aos="zoom-in"
+                  data-aos-once="true"
+                />
+              </a>
+
+              <a href="https://www.threewaystudio.world/" target="_blank" rel="noreferrer">
+                <img
+                  src={threeWay_studio}
+                  alt=""
+                  srcSet=""
+                  className="main_spons_img1"
+                  data-aos="zoom-in"
+                  data-aos-once="true"
+                />
+              </a>
+            </div>
+            <div className="past_spons_box_2">
+
+            <a href="https://www.clueless.tech/" target="_blank" rel="noreferrer">
             <img
               src={clueless}
               alt=""
@@ -266,6 +292,45 @@ export default function Home() {
               style={{ height: '100px', width: 'auto' }}
             />
           </a>
+
+              
+              <a href="https://www.linkedin.com/company/os-community/" target="_blank" rel="noreferrer">
+                <img
+                  src={osLogo}
+                  alt=""
+                  srcSet=""
+                  className="main_spons_img1"
+                  data-aos="zoom-in"
+                  data-aos-once="true"
+                />
+              </a>
+              <a href="https://fossunited.org/" target="_blank" rel="noreferrer">
+                <img
+                  src={foss}
+                  alt=""
+                  srcSet=""
+                  className="main_spons_img1"
+                  data-aos="zoom-in"
+                  data-aos-once="true"
+                  style={{ height: '76px', width: 'auto', opacity: '85%' }}
+                />
+              </a>
+            </div>
+          
+        <div className="past_spons_box_3">
+
+        <a href="https://quine.sh/" target="_blank" rel="noreferrer">
+                <img
+                  src={quineLogo}
+                  alt=""
+                  srcSet=""
+                  className="main_spons_img1"
+                  data-aos="zoom-in"
+                  data-aos-once="true"
+                  style={{ height: '40px', width: 'auto' }}
+                />
+              </a>
+          
           <a href="https://dagshub.com/" target="_blank" rel="noreferrer">
             <img
               src={dagshub}
@@ -287,6 +352,7 @@ export default function Home() {
               style={{ height: '60px', width: 'auto' }}
             />
           </a>
+        </div>
         </div>
       </div>
       <Footer />
