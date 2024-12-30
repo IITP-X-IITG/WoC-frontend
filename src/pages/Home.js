@@ -50,7 +50,7 @@ export default function Home() {
             marginTop: '70px',
           }}
         >
-          CODEPEAK 2023 has ended! The final leaderboard have been released.
+          CODEPEAK 2024 has ended! The final leaderboard have been released.
           <Link to="/Leaderboard" style={{ textDecoration: 'none', color: '#99c1e7' }}>
             {' '}
             Check Here{' '}
