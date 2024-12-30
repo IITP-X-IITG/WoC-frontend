@@ -157,7 +157,7 @@ const Leaderboard = () => {
       <div className="leader-twinkling"></div>
       <div style={style}>
         <div className="space"></div>
-        <div className="title mb-5 p-3">LEADERBOARD 2023</div>
+        <div className="title mb-5 p-3">LEADERBOARD 2024</div>
 
         <NavLink to="/leaderboard/weekly">
           <StyledButton1 variant="outlined">VIEW WEEK-1 LEADERBOARD</StyledButton1>
