@@ -50,8 +50,8 @@ export default function Home() {
             marginTop: '70px',
           }}
         >
-          CODEPEAK 2024 has ended! The final leaderboard have been released.
-          <Link to="/Leaderboard" style={{ textDecoration: 'none', color: '#99c1e7' }}>
+          CODEPEAK 2024-25 COMING SOON! The mentor registrations has been started.
+          <Link to="/register/mentorRegistration" style={{ textDecoration: 'none', color: '#99c1e7' }}>
             {' '}
             Check Here{' '}
           </Link>{' '}
@@ -165,39 +165,40 @@ export default function Home() {
             <div className="col">
               <div className="main-timeline">
                 <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                  <Timeline date="5 NOV" desc="Mentors Registration Starts" />
+                  <Timeline date="8 JAN" desc="Mentors Registration Starts" />
                 </div>
 
                 <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                  <Timeline date="15 NOV" desc="Student Registration starts." />
-                </div>
-                <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                  <Timeline date="30 NOV" desc="Mentor Registration ends" />
+                  <Timeline date="22 JAN" desc="Student Registration starts." />
                 </div>
 
                 <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                  <Timeline date="5 DEC" desc="Orientation Session" />
+                  <Timeline date="8 FEB" desc="Mentor Registration ends" />
+                </div>
+
+                <div className="timeline" data-aos="fade-up" data-aos-once="true">
+                  <Timeline date="6 MAR" desc="Orientation Session" />
                 </div>
                 <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                  <Timeline date="6 DEC" desc="Git & Github Workshop" />
+                  <Timeline date="7 MAR" desc="Git & Github Workshop" />
                 </div>
                 <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                  <Timeline date="7 DEC" desc="Coding Period Starts" />
+                  <Timeline date="8 MAR" desc="Coding Period Starts" />
                 </div>
                 <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                  <Timeline date="14 DEC" desc="First Week Leaderboard" />
+                  <Timeline date="15 MAR" desc="First Week Leaderboard" />
                 </div>
                 <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                  <Timeline date="21 DEC" desc="Second Week Leaderboard" />
+                  <Timeline date="22 MAR" desc="Second Week Leaderboard" />
                 </div>
                 <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                  <Timeline date="28 DEC" desc="Third Week Leaderboard" />
+                  <Timeline date="29 MAR" desc="Third Week Leaderboard" />
                 </div>
                 <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                  <Timeline date="28 DEC" desc="Coding Period Ends" />
+                  <Timeline date="29 MAR" desc="Coding Period Ends" />
                 </div>
                 <div className="timeline" data-aos="fade-up" data-aos-once="true">
-                  <Timeline date="1 JAN" desc="Closing Ceremony" />
+                  <Timeline date="1 APR" desc="Closing Ceremony" />
                 </div>
               </div>
             </div>
@@ -222,12 +223,12 @@ export default function Home() {
           </div>
           <div className="count_block c2" style={{ background: 'rgb(18, 34, 51)' }}>
             <CgGitPull />
-            <CountUp end="3800" />
+            <CountUp end="4200" />
             <p>Pull Requests</p>
           </div>
           <div className="count_block c3" style={{ background: 'rgb(21, 38, 56)' }}>
             <AiOutlineFundProjectionScreen />
-            <CountUp end="150" />
+            <CountUp end="180" />
             <p>Projects Done</p>
           </div>
           <div className="count_block c4" style={{ background: 'rgb(23, 44, 66)' }}>
@@ -246,113 +247,113 @@ export default function Home() {
         </div>
 
         <div className="past_spons_box">
-            <div className="past_spons_box_1">
-              <a href="https://www.geeksforgeeks.org/" target="_blank" rel="noreferrer">
-                <img
-                  src={gfgLogo}
-                  alt=""
-                  srcSet=""
-                  className="main_spons_img"
-                  data-aos="zoom-in"
-                  data-aos-once="true"
-                />
-              </a>
-              <a href="https://www.antigranular.com/" rel="noreferrer" target="_blank">
-                <img
-                  src={antigranular}
-                  alt=""
-                  srcSet=""
-                  className="main_spons_img"
-                  data-aos="zoom-in"
-                  data-aos-once="true"
-                />
-              </a>
+          <div className="past_spons_box_1">
+            <a href="https://www.geeksforgeeks.org/" target="_blank" rel="noreferrer">
+              <img
+                src={gfgLogo}
+                alt=""
+                srcSet=""
+                className="main_spons_img"
+                data-aos="zoom-in"
+                data-aos-once="true"
+              />
+            </a>
+            <a href="https://www.antigranular.com/" rel="noreferrer" target="_blank">
+              <img
+                src={antigranular}
+                alt=""
+                srcSet=""
+                className="main_spons_img"
+                data-aos="zoom-in"
+                data-aos-once="true"
+              />
+            </a>
 
-              <a href="https://www.threewaystudio.world/" target="_blank" rel="noreferrer">
-                <img
-                  src={threeWay_studio}
-                  alt=""
-                  srcSet=""
-                  className="main_spons_img1"
-                  data-aos="zoom-in"
-                  data-aos-once="true"
-                />
-              </a>
-            </div>
-            <div className="past_spons_box_2">
+            <a href="https://www.threewaystudio.world/" target="_blank" rel="noreferrer">
+              <img
+                src={threeWay_studio}
+                alt=""
+                srcSet=""
+                className="main_spons_img1"
+                data-aos="zoom-in"
+                data-aos-once="true"
+              />
+            </a>
+          </div>
+          <div className="past_spons_box_2">
 
             <a href="https://www.clueless.tech/" target="_blank" rel="noreferrer">
-            <img
-              src={clueless}
-              alt=""
-              srcSet=""
-              className="main_spons_img1"
-              data-aos="zoom-in"
-              data-aos-once="true"
-              style={{ height: '100px', width: 'auto' }}
-            />
-          </a>
+              <img
+                src={clueless}
+                alt=""
+                srcSet=""
+                className="main_spons_img1"
+                data-aos="zoom-in"
+                data-aos-once="true"
+                style={{ height: '100px', width: 'auto' }}
+              />
+            </a>
 
-              
-              <a href="https://www.linkedin.com/company/os-community/" target="_blank" rel="noreferrer">
-                <img
-                  src={osLogo}
-                  alt=""
-                  srcSet=""
-                  className="main_spons_img1"
-                  data-aos="zoom-in"
-                  data-aos-once="true"
-                />
-              </a>
-              <a href="https://fossunited.org/" target="_blank" rel="noreferrer">
-                <img
-                  src={foss}
-                  alt=""
-                  srcSet=""
-                  className="main_spons_img1"
-                  data-aos="zoom-in"
-                  data-aos-once="true"
-                  style={{ height: '76px', width: 'auto', opacity: '85%' }}
-                />
-              </a>
-            </div>
-          
-        <div className="past_spons_box_3">
 
-        <a href="https://quine.sh/" target="_blank" rel="noreferrer">
-                <img
-                  src={quineLogo}
-                  alt=""
-                  srcSet=""
-                  className="main_spons_img1"
-                  data-aos="zoom-in"
-                  data-aos-once="true"
-                  style={{ height: '40px', width: 'auto' }}
-                />
-              </a>
-          
-          <a href="https://dagshub.com/" target="_blank" rel="noreferrer">
-            <img
-              src={dagshub}
-              alt=""
-              srcSet=""
-              className="main_spons_img1"
-              data-aos="zoom-in"
-              data-aos-once="true"
-            />
-          </a>
+            <a href="https://www.linkedin.com/company/os-community/" target="_blank" rel="noreferrer">
+              <img
+                src={osLogo}
+                alt=""
+                srcSet=""
+                className="main_spons_img1"
+                data-aos="zoom-in"
+                data-aos-once="true"
+              />
+            </a>
+            <a href="https://fossunited.org/" target="_blank" rel="noreferrer">
+              <img
+                src={foss}
+                alt=""
+                srcSet=""
+                className="main_spons_img1"
+                data-aos="zoom-in"
+                data-aos-once="true"
+                style={{ height: '76px', width: 'auto', opacity: '85%' }}
+              />
+            </a>
+          </div>
 
-          <a href="https://www.taskade.com/" target="_blank" rel="noreferrer">
-            <img
-              src={taskadeLogo}
-              alt=""
-              srcSet=""
-              data-aos="zoom-out"
-              data-aos-once="true"
-              style={{ height: '60px', width: 'auto' }}
-            />
-          </a>
-        </div>
+          <div className="past_spons_box_3">
+
+            <a href="https://quine.sh/" target="_blank" rel="noreferrer">
+              <img
+                src={quineLogo}
+                alt=""
+                srcSet=""
+                className="main_spons_img1"
+                data-aos="zoom-in"
+                data-aos-once="true"
+                style={{ height: '40px', width: 'auto' }}
+              />
+            </a>
+
+            <a href="https://dagshub.com/" target="_blank" rel="noreferrer">
+              <img
+                src={dagshub}
+                alt=""
+                srcSet=""
+                className="main_spons_img1"
+                data-aos="zoom-in"
+                data-aos-once="true"
+              />
+            </a>
+
+            <a href="https://www.taskade.com/" target="_blank" rel="noreferrer">
+              <img
+                src={taskadeLogo}
+                alt=""
+                srcSet=""
+                data-aos="zoom-out"
+                data-aos-once="true"
+                style={{ height: '60px', width: 'auto' }}
+              />
+            </a>
+          </div>
         </div>
       </div>
       <Footer />
