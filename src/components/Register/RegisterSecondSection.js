@@ -28,16 +28,16 @@ function Card() {
                                     </p>
                                 </div>
                                 <div className="d-grid gap-2 col-6 mx-auto register-button">
-                                    <NavLink to = "/register/studentRegistration">
+	    {/*<NavLink to="/register/studentRegistration">*/}
 
                                         <button
                                             className="btn btn-primary btn-apply btn-phone btn-tab my-2"
-                                            type="button"
+                                            type="button" disabled
                                             >
                                             Register Here
                                         </button>
                                     
-                                    </NavLink>
+	    {/*</NavLink>*/}
                                 </div>
                             </div>
                         </div>

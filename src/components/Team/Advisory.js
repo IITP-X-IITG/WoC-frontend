@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
-// import images
-import Sandeep from "../resources/Sandeep Mishra.jpg";
-import Aditya from "../resources/Aditya_NJACK.jpg";
-import Vighnesh from "../resources/image_profile.jpg"
+import Aritra from "../resources/aritra_bhaduri.jpg";
+import Anurag from "../resources/Anyrag_Deo_Image.png";
+import Aryan from "../resources/Aryan_img.png"
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -34,27 +33,27 @@ export default function Advisory() {
           <div>
             <div className="coord">
               <div className="icon">
-                <img src={Sandeep} alt="Sandeep" />
+                <img src={Aritra} alt="Aritra" />
                 <Namecard
-                  name="Sandeep Mishra"
-                  link1="https://www.linkedin.com/in/sandeep03edu/"
-                  link2="mailto:sandeep03edu@gmail.com"
+                  name="Aritra Bhaduri"
+                  link1="https://www.linkedin.com/in/aritrabhaduri/"
+                  link2="mailto:abhaduriperso@gmail.com"
                 />
               </div>
               <div className="icon">
-                <img src={Aditya} alt="Aditya" />
+                <img src={Anurag} alt="Anurag Deo" />
                 <Namecard
-                  name="Aditya Kumar"
-                  link1="https://www.linkedin.com/in/aditya-kumar-337a08218"
-                  link2="mailto:adityakumarsanni.2001@gmail.com"
+                  name="Anurag Deo"
+                  link1="https://www.linkedin.com/in/anurag-deo-8b30b422b"
+                  link2="mailto:anuragdeo03@gmail.com"
                 />
               </div>
               <div className="icon">
-                <img src={Vighnesh} alt="Vignesh" />
+                <img src={Aryan} alt="Aryan Lath" />
                 <Namecard
-                  name="Vighnesh Deshpande"
-                  link1="https://www.linkedin.com/in/vighnesh3802/"
-                  link2="mailto:"
+                  name="Aryan Lath"
+                  link1="https://www.linkedin.com/in/aryan-lath-9b397b152/"
+                  link2="mailto:aryanlath@gmail.com"
                 />
               </div>
             </div>
@@ -67,19 +66,19 @@ export default function Advisory() {
           <div>
             <div className="coord">
               <div className="icon">
-                <img src={Sandeep} alt="Sandeep" />
+                <img src={Aritra} alt="Aritra" />
                 <Namecard
-                  name="Sandeep Mishra"
-                  link1="https://www.linkedin.com/in/sandeep03edu/"
-                  link2="mailto:sandeep03edu@gmail.com"
+                  name="Aritra Bhaduri"
+                  link1="https://www.linkedin.com/in/aritrabhaduri/"
+                  link2="mailto:abhaduriperso@gmail.com"
                 />
               </div>
               <div className="icon">
-                <img src={Aditya} alt="Aditya" />
+                <img src={Anurag} alt="Anurag Deo" />
                 <Namecard
-                  name="Aditya Kumar"
-                  link1="https://www.linkedin.com/in/aditya-kumar-337a08218"
-                  link2="mailto:adityakumarsanni.2001@gmail.com"
+                  name="Anurag Deo"
+                  link1="https://www.linkedin.com/in/anurag-deo-8b30b422b"
+                  link2="mailto:anuragdeo03@gmail.com"
                 />
               </div>
 
@@ -88,11 +87,11 @@ export default function Advisory() {
           <div>
             <div className="coord">
               <div className="icon">
-                <img src={Vighnesh} alt="Vignesh" />
+                <img src={Aryan} alt="Aryan Lath" />
                 <Namecard
-                  name="Vighnesh Deshpande"
-                  link1="https://www.linkedin.com/in/vighnesh3802/"
-                  link2="mailto:"
+                  name="Aryan Lath"
+                  link1="https://www.linkedin.com/in/aryan-lath-9b397b152/"
+                  link2="mailto:aryanlath@gmail.com"
                 />
               </div>
             </div>

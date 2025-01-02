@@ -19,8 +19,8 @@ export default function Navigation(props) {
                             <NavLink exact={true} to="/" activeStyle={{ color: 'rgb(103 212 223)', borderBottom: '2px solid #589ba2', fontWeight: 500 }}>Home</NavLink>
                             <NavLink to="/leaderboard" activeStyle={{ color: 'rgb(103 212 223)', borderBottom: '2px solid #589ba2', fontWeight: 500 }}>Leaderboard</NavLink>
                             <NavLink to="/register" activeStyle={{ color: 'rgb(103 212 223)', borderBottom: '2px solid #589ba2', fontWeight: 500 }}>Register</NavLink>
-                            <NavLink to="/project" activeStyle={{ color: 'rgb(103 212 223)', borderBottom: '2px solid #589ba2', fontWeight: 500 }} >Projects</NavLink>
-                            <NavLink to="/reward" activeStyle={{ color: 'rgb(103 212 223)', borderBottom: '2px solid #589ba2', fontWeight: 500 }} >Rewards</NavLink>
+                            <NavLink to="/project" style={{display:"none"}} activeStyle={{ color: 'rgb(103 212 223)', borderBottom: '2px solid #589ba2', fontWeight: 500}} >Projects</NavLink>
+                            <NavLink to="/reward" style={{display:"none"}} activeStyle={{ color: 'rgb(103 212 223)', borderBottom: '2px solid #589ba2', fontWeight: 500 }} >Rewards</NavLink>
                             <NavLink to="/team" activeStyle={{ color: 'rgb(103 212 223)', borderBottom: '2px solid #589ba2', fontWeight: 500 }}>Team</NavLink>
                             <NavLink to="/events" activeStyle={{ color: 'rgb(103 212 223)', borderBottom: '2px solid #589ba2', fontWeight: 500 }}>Events</NavLink>
                         </Nav>

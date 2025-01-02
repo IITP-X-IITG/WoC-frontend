@@ -49,14 +49,6 @@ export default function Tech() {
                   link2="mailto:Sharmapriyanshi178@gmail.com"
                 />
               </div>
-              {/* <div className="icon">
-                <img src={Aritra} alt="Aritra" />
-                <Namecard
-                  name="Aritra Bhaduri"
-                  link1="https://www.linkedin.com/in/aritrabhaduri/"
-                  link2="mailto:abhaduriperso@gmail.com"
-                />
-              </div> */}
             </div>
           </div>
           {/* <>

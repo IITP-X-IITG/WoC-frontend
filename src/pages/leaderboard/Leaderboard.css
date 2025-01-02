@@ -15,6 +15,12 @@ body {
   background-color: #12263f;
   font-size: 2em;
 }
+.subtitle {
+  color: #fff;
+  background-color: #12263f;
+  font-size: 5em;
+  
+}
 
 .tablee {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,

@@ -1,6 +1,8 @@
 version: '3.8'
 services:
   app:
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     image: app-dev-i
     build:
       dockerfile: Dockerfile.dev

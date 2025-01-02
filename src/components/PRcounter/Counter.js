@@ -31,7 +31,8 @@ const Counter = () => {
   return (
     <div className="PRcounter">
       <div className="counter-head">Total Pull Requests done</div>
-      <div className="count">{count}</div>
+      {/* <div className="count">{count}</div> */}
+      <div className="count">0</div>
     </div>
   );
 };
