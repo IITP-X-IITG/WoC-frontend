@@ -158,23 +158,25 @@ const Leaderboard = () => {
       <div style={style}>
         <div className="space"></div>
         <div className="title mb-5 p-3">LEADERBOARD 2024</div>
+        <div className="subtitle mb-5 p-3">Coming soon...</div>
 
-        <NavLink to="/leaderboard/weekly">
+        <NavLink style={{display:"none"}} to="/leaderboard/weekly">
           <StyledButton1 variant="outlined">VIEW WEEK-1 LEADERBOARD</StyledButton1>
         </NavLink>
 
-        <NavLink to="/leaderboard/weekly2">
+        <NavLink style={{display:"none"}} to="/leaderboard/weekly2">
           <StyledButton variant="outlined">VIEW WEEK-2 LEADERBOARD</StyledButton>
         </NavLink>
 
-        <NavLink to="/leaderboard/weekly3">
+        <NavLink style={{display:"none"}} to="/leaderboard/weekly3">
           <StyledButton variant="outlined">VIEW WEEK-3 LEADERBOARD</StyledButton>
         </NavLink>
 
         {loading ? (
-          <Loading />
+          // <Loading />
+          <></>
         ) : (
-          <Container>
+          <Container style={{display:"none"}}>
             <input
               type="search"
               name="searchBar"

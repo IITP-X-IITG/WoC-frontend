@@ -16,7 +16,7 @@ const Events = () => {
     <div>
       <AnimatedBG />
       <Navigation />
-      <div className="event_head">
+      <div style={{display:"none"}}className="event_head">
         <h2 data-aos="zoom-in" data-aos-once="true">
           Events
         </h2>
