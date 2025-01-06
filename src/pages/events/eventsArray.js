@@ -1,13 +1,14 @@
 export const EventsArrayNew = [
+    
+]
+export const EventsArray = [
     {
         "eventName": "MERN Workshop",
         "eventDetails": "Join us live on December 22nd at 2:30 pm for a special online event with Viraj Jain from GeeksForGeeks as he takes us on a journey to learn the basics of Mern Stack. This session will help you grasp the basics of Frontend and Backend technologies, and help you get good at the most popular web developement frameworks out there. Don't miss this exciting opportunity to learn from an expert and kickstart your journey into the world of Development.",
         "eventImage": require("../Images/event1.jpg"),
-        "eventLink": "https://bit.ly/3Tw7GfF",
-        "eventButton": "Register Here"
+        "eventLink": "https://www.youtube.com/@codepeak8135",
+        "eventButton": "Our Youtube Channel"
     },
-]
-export const EventsArray = [
     {
         "eventName": "Flutter Workshop",
         "eventDetails": "Join us live on our youtube channel on December 11th at 2 pm for a special online event with Tanmoy Karmakar as he takes us on a journey to learn the basics of Flutter. This event is perfect for anyone interested in learning the basics of Flutter and how to get started building their own mobile apps. Don't miss this exciting opportunity to learn from an expert and kickstart your journey into the world of flutter development.",
