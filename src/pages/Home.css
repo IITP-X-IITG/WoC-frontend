@@ -61,7 +61,8 @@ svg {
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  width: 75%;
+  width: 60%;
+  /* gap: 30px; */
 }
 
 .spons_box_2 {
@@ -85,12 +86,17 @@ svg {
 }
 
 .main_spons_img {
+  height: 70px;
+  z-index: 2;
+}
+
+.main_spons_img3 {
   height: 50px;
   z-index: 2;
 }
 
 
-/*--------PAST SPONSORS-----------*/ 
+/*--------PAST SPONSORS-----------*/
 
 .past_spons_box {
   display: flex;

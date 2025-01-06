@@ -28,16 +28,16 @@ function Card() {
                                     </p>
                                 </div>
                                 <div className="d-grid gap-2 col-6 mx-auto register-button">
-	    {/*<NavLink to="/register/studentRegistration">*/}
+                                    {/*<NavLink to="/register/studentRegistration">*/}
 
-                                        <button
-                                            className="btn btn-primary btn-apply btn-phone btn-tab my-2"
-                                            type="button" disabled
-                                            >
-                                            Register Here
-                                        </button>
-                                    
-	    {/*</NavLink>*/}
+                                    <button
+                                        className="btn btn-primary btn-apply btn-phone btn-tab my-2"
+                                        type="button" disabled
+                                    >
+                                        Starting soon
+                                    </button>
+
+                                    {/*</NavLink>*/}
                                 </div>
                             </div>
                         </div>
@@ -59,12 +59,12 @@ function Card() {
                                 </div>
                                 <div className="d-grid gap-2 col-6 mx-auto">
                                     {/* <a href="https://forms.gle/6qDeUDr6AVypRixB6" rel="noreferrer" target="blank"> */}
-                                    <NavLink to = "/register/mentorRegistration">
+                                    <NavLink to="/register/mentorRegistration">
                                         <button className="btn btn-primary btn-apply my-2" type="button">
                                             Register Here
                                         </button>
                                     </NavLink>
-                                    
+
                                 </div>
                             </div>
                         </div>

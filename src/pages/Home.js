@@ -23,6 +23,8 @@ import quineLogo from '../pages/Images/quine_blue.svg';
 import osLogo from '../pages/Images/OS_logo.png';
 import taskadeLogo from '../pages/Images/taskadeLogo.png';
 import foss from '../pages/Images/logo-for-hackathon-organisers.svg';
+import njackLogo from '../pages/Images/NJACK logo.svg'
+import guwLogo from '../pages/Images/iitglogo.svg';
 //import logo_codepeak from './Images/LOGOCODEPEAK.png'
 import CountUp from '../components/Counter_up';
 import Animatedbg from '../components/Animatedbg';
@@ -67,8 +69,33 @@ export default function Home() {
             data-aos="zoom-in"
             data-aos-once="true"
           />
-          <p>Powered By</p>
+          <p>Organized By</p>
           <div className="main_spons_box">
+            <div className="spons_box_1">
+              <a href="https://njack.iitp.ac.in/" target="_blank" rel="noreferrer">
+                <img
+                  src={njackLogo}
+                  alt=""
+                  srcSet=""
+                  className="main_spons_img"
+                  data-aos="zoom-in"
+                  data-aos-once="true"
+                />
+              </a>
+              <a href="https://codingiitg.github.io/" target="_blank" rel="noreferrer">
+                <img
+                  src={guwLogo}
+                  alt=""
+                  srcSet=""
+                  className="main_spons_img3"
+                  data-aos="zoom-in"
+                  data-aos-once="true"
+                />
+              </a>
+
+            </div>
+          </div>
+          {/* <div className="main_spons_box">
             <div className="spons_box_1">
               <a href="https://www.geeksforgeeks.org/" target="_blank" rel="noreferrer">
                 <img
@@ -137,7 +164,7 @@ export default function Home() {
                 />
               </a>
             </div>
-          </div>
+          </div> */}
           <img src={hill} alt="" srcSet="" className="hill_img" />
         </div>
 

@@ -25,7 +25,7 @@ function FirstSection() {
                                 <div className="btnBox">
                                     <div className="d-grid gap-2 col-3 mx-auto">
                                         <a
-                                            href="https://drive.google.com/file/d/1zgjsiAMsqqExznSTFi1k3lloNOi7LY4O/view"
+                                            href="https://drive.google.com/file/d/1b3rpVZuoOANpbxXdGaXw4j3y9vpJEA_V/view?usp=drive_link"
                                             target="_blank"
                                             rel="noreferrer"
                                         >
@@ -37,7 +37,7 @@ function FirstSection() {
                                     <div className="d-grid gap-2 col-3 mx-auto">
                                         <a href={StudentGuide} target="_blank" rel="noreferrer">
                                             {' '}
-                                            <button className="btn btn-primary btn-apply" type="button">
+                                            <button disabled className="btn btn-primary btn-apply" type="button">
                                                 Student Guide
                                             </button>
                                         </a>
