@@ -27,7 +27,7 @@ export default function Team() {
                 <Advisory />
                 <Coordinators />
                 <Tech />
-                <Sponsorship />
+                {/* <Sponsorship /> */}
             </div>
             <Footer />
         </div>

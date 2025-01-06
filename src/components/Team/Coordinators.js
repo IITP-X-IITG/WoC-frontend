@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 // import images
 import Kushal from "../resources/image_kushal.jpg";
 import Vinayak from "../resources/vinayak.jpg";
-import Atri from "../resources/image_profile.jpg";
+import rupayan from "../resources/image_profile.jpg";
+import nikhil from "../resources/img_nikhil.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 // Import css files
@@ -33,6 +34,14 @@ export default function Coordinators() {
           <div>
             <div className="coord">
               <div className="icon">
+                <img src={rupayan} alt="Rupayan" />
+                <Namecard
+                  name="Rupayan Daripa"
+                  link1="https://www.linkedin.com/in/rupayan-daripa-0ba98a261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  link2="mailto:rupayandaripa@gmail.com"
+                />
+              </div>
+              <div className="icon">
                 <img src={Kushal} alt="Kushal Agarwal " />
                 <Namecard
                   name="Kushal Agarwal "
@@ -40,6 +49,8 @@ export default function Coordinators() {
                   link2="mailto:kushalag02@gmail.com"
                 />
               </div>
+
+
               <div className="icon">
                 <img src={Vinayak} alt="Vinayak Goyal" />
                 <Namecard
@@ -48,12 +59,16 @@ export default function Coordinators() {
                   link2="mailto:vinayakgoyal2410@gmail.com"
                 />
               </div>
+            </div>
+          </div>
+          <div>
+            <div className="coord">
               <div className="icon">
-                <img src={Atri} alt="Atri Chattopadhyay" />
+                <img src={nikhil} alt="Nikhil" />
                 <Namecard
-                  name="Atri Chattopadhyay"
-                  link1="https://www.linkedin.com/in/atri-chattopadhyay-777b5725a/"
-                  link2="mailto:print.atri@gmail.com"
+                  name="Nikhil Raj"
+                  link1="https://www.linkedin.com/in/nikhil-raj07/"
+                  link2="mailto:raj25222004@gmail.com"
                 />
               </div>
             </div>
@@ -65,6 +80,16 @@ export default function Coordinators() {
         <Slider {...settings}>
           <div>
             <div className="coord">
+
+
+              <div className="icon">
+                <img src={rupayan} alt="Rupayan" />
+                <Namecard
+                  name="Rupayan Daripa"
+                  link1="https://www.linkedin.com/in/rupayan-daripa-0ba98a261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  link2="mailto:rupayandaripa@gmail.com"
+                />
+              </div>
               <div className="icon">
                 <img src={Kushal} alt="Kushal Agarwal " />
                 <Namecard
@@ -73,6 +98,11 @@ export default function Coordinators() {
                   link2="mailto:kushalag02@gmail.com"
                 />
               </div>
+            </div>
+          </div>
+          <div>
+            <div className="coord">
+
               <div className="icon">
                 <img src={Vinayak} alt="Vinayak Goyal" />
                 <Namecard
@@ -81,18 +111,15 @@ export default function Coordinators() {
                   link2="mailto:vinayakgoyal2410@gmail.com"
                 />
               </div>
-            </div>
-          </div>
-          <div>
-            <div className="coord">
               <div className="icon">
-                <img src={Atri} alt="Atri Chattopadhyay" />
+                <img src={nikhil} alt="Nikhil" />
                 <Namecard
-                  name="Atri Chattopadhyay"
-                  link1="https://www.linkedin.com/in/atri-chattopadhyay-777b5725a/"
-                  link2="mailto:print.atri@gmail.com"
+                  name="Nikhil Raj"
+                  link1="https://www.linkedin.com/in/nikhil-raj07/"
+                  link2="mailto:raj25222004@gmail.com"
                 />
               </div>
+
             </div>
           </div>
         </Slider>

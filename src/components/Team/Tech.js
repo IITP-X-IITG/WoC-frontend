@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 // image import
 import Kushal from "../resources/image_kushal.jpg";
 import Priyanshi from "../resources/pryanshi.jpg";
+import Soumyajyoti from "../resources/image_profile.jpg";
+import vinod from "../resources/image_vinod.jpg"
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -34,19 +36,19 @@ export default function Tech() {
           <div>
             <div className="coord">
               <div className="icon">
-                <img src={Kushal} alt="Kushal Agarwal " />
+                <img src={Soumyajyoti} alt="Soumyajyoti Mohanta" />
                 <Namecard
-                  name="Kushal Agarwal "
-                  link1="https://www.linkedin.com/in/kushal-agarwal-03868225a/"
-                  link2="mailto:kushalag02@gmail.com"
+                  name="Soumyajyoti Mohanta"
+                  link1="https://www.linkedin.com/in/soumyajyoti-mohanta-9b832a309/"
+                  link2="mailto:soumyajyotimohanta@gmail.com"
                 />
               </div>
               <div className="icon">
-                <img src={Priyanshi} alt="Priyanshi Sharma " />
+                <img src={vinod} alt="Vinod Singh Rathore " />
                 <Namecard
-                  name="Priyanshi Sharma "
-                  link1="https://www.linkedin.com/in/priyanshi-sharma-bb936625a/"
-                  link2="mailto:Sharmapriyanshi178@gmail.com"
+                  name="Vinod Singh Rathore "
+                  link1="https://www.linkedin.com/in/vin0drath0re/"
+                  link2="mailto:vinodrathore2107@gmail.com"
                 />
               </div>
             </div>
@@ -87,19 +89,19 @@ export default function Tech() {
           <div>
             <div className="coord">
               <div className="icon">
-                <img src={Kushal} alt="Kushal Agarwal " />
+                <img src={Soumyajyoti} alt="Soumyajyoti Mohanta" />
                 <Namecard
-                  name="Kushal Agarwal "
-                  link1="https://www.linkedin.com/in/kushal-agarwal-03868225a/"
-                  link2="mailto:kushalag02@gmail.com"
+                  name="Soumyajyoti Mohanta"
+                  link1="https://www.linkedin.com/in/soumyajyoti-mohanta-9b832a309/"
+                  link2="mailto:soumyajyotimohanta@gmail.com"
                 />
               </div>
               <div className="icon">
-                <img src={Priyanshi} alt="Priyanshi Sharma " />
+                <img src={vinod} alt="Vinod Singh Rathore " />
                 <Namecard
-                  name="Priyanshi Sharma "
-                  link1="https://www.linkedin.com/in/priyanshi-sharma-bb936625a/"
-                  link2="mailto:Sharmapriyanshi178@gmail.com"
+                  name="Vinod Singh Rathore "
+                  link1="https://www.linkedin.com/in/vin0drath0re/"
+                  link2="mailto:vinodrathore2107@gmail.com"
                 />
               </div>
             </div>
