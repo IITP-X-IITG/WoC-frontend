@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './register.css';
 import { useHistory } from 'react-router-dom';
-import { use } from 'react';
+
 export default function StudentForm() {
     const history = useHistory();
     const handleSubmit = (event) => {
