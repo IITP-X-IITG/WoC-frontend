@@ -8,7 +8,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 
-export default function Team() {
+export default function StudentRegistration() {
     React.useEffect(() => {
         Aos.init({ duration: 800 });
     }, []);
