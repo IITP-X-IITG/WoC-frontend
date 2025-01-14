@@ -38,12 +38,30 @@
     display: grid;
 }
 
+.confirm-container{
+    background-color: #2a3b50;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    padding: 40px;
+    color: white;
+    
+}
 
+.return-button{
+    margin-top: 20px;
+}
 
 
 
 @media screen and (max-width: 991px){
     .form-container{
+        width: 98%;
+    }
+    .confirm-container{
         width: 98%;
     }
 }
