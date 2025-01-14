@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './register.css';
+import { useHistory } from 'react-router-dom';
+import { use } from 'react';
 export default function StudentForm() {
+    const history = useHistory();
     const handleSubmit = (event) => {
+        
         event.preventDefault();
         const form = event.target;
         const formdata = new FormData(form);
@@ -17,6 +21,9 @@ export default function StudentForm() {
             },
             body: JSON.stringify(final)
         });
+
+        history.push('/register/confirmation');
+        
     }
     return (
         <div className="form-container">

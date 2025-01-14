@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './register.css';
+import { useHistory } from 'react-router-dom';
 export default function MentorForm() {
+    const history = useHistory();
     const handleSubmit = (event) => {
         event.preventDefault();
         const form = event.target;
@@ -17,6 +19,7 @@ export default function MentorForm() {
             },
             body: JSON.stringify(final)
         });
+        history.push('/register/confirmation')
     }
     return (
         <div className="form-container">
