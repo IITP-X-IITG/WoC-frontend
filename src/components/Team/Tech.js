@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 // image import
 import Kushal from "../resources/image_kushal.jpg";
 import Priyanshi from "../resources/pryanshi.jpg";
-import Soumyajyoti from "../resources/image_profile.jpg";
+import Soumyajyoti from "../resources/soumya.jpeg";
 import vinod from "../resources/image_vinod.jpg"
 
 import Aos from "aos";
