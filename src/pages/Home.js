@@ -375,7 +375,7 @@ export default function Home() {
                 src={taskadeLogo}
                 alt=""
                 srcSet=""
-                data-aos="zoom-out"
+                data-aos="zoom-in"
                 data-aos-once="true"
                 style={{ height: '60px', width: 'auto' }}
               />

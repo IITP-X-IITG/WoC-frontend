@@ -16,6 +16,7 @@ import Team from './pages/Team';
 import Reward from './pages/Reward/reward';
 import ScrollToTop from './components/ScrollToTop';
 import Events from './pages/events/events';
+import Confirmation from './pages/Confimation.js';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/register/studentRegistration" component={StudentRegistration} />
           <Route path="/register/mentorRegistration" component={MentorRegistration} />
+          <Route path="/register/confirmation" component={Confirmation} />
           <Route path="/register" component={Conduct} />
           <Route path="/leaderboard/weekly" component={WeeklyBoard} />
           <Route path="/leaderboard/weekly2" component={WeeklySecond} />
