@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './register.css';
 import { useHistory } from 'react-router-dom';
 export default function MentorForm() {
-    const history = useHistory();
+    let history = useHistory();
     const handleSubmit = (event) => {
         event.preventDefault();
         const form = event.target;
@@ -18,8 +18,17 @@ export default function MentorForm() {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(final)
+        }).then(resp => resp.json()).then(data => {
+            if ("message" in data) {
+                history.push('/register/confirmation');
+            } else {
+                if (typeof data.error == "string") {
+                    alert(data.error);
+                } else {
+                    alert(data.error[0].msg);
+                }
+            }
         });
-        history.push('/register/confirmation')
     }
     return (
         <div className="form-container">

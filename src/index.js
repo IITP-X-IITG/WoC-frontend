@@ -5,10 +5,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './Fonts/Gilroy-Medium.ttf';
 
-navigator.serviceWorker.getRegistrations().then(function(registrations) {
- for(let registration of registrations) {
-  registration.unregister()
-} })
+//navigator.serviceWorker.getRegistrations().then(function(registrations) {
+// for(let registration of registrations) {
+//  registration.unregister()
+//} })
 
 ReactDOM.render(
   <React.StrictMode>
@@ -21,3 +21,4 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+/* vi: set et sw=2: */
