@@ -46,7 +46,20 @@ export default function MentorForm() {
 
                 <div className="input-field">
                     <label>Contact No.*</label>
-                    <input type="tel" className="form-control" placeholder="Enter your contact number" name="phoneno" required />
+                    <input 
+                        type="tel"
+                        className="form-control"
+                        placeholder="Enter your contact number"
+                        name="phoneno"
+                        pattern="[0-9]*"
+                        maxLength="10"
+                        onKeyPress={(e) => {
+                            if (!/[0-9]/.test(e.key)) {
+                                e.preventDefault();
+                            }
+                        }}
+                        required 
+                    />
                 </div>
 
                 <div className="input-field">
@@ -65,8 +78,8 @@ export default function MentorForm() {
                 </div>
 
                 <div className="input-field">
-                    <label>Other Profile URL(s) [Bitbucket/LinkedIn/Your Personal Website]</label>
-                    <input type="url" className="form-control" placeholder="Enter other profile URLs" name="otherProfile" />
+                    <label>Other Profile URL(s) [Bitbucket/LinkedIn/Your Personal Website]*</label>
+                    <input type="url" className="form-control" placeholder="Enter other profile URLs" name="otherProfile" required/>
                 </div>
 
                 <div className="input-field">
