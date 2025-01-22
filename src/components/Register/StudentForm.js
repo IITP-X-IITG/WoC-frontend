@@ -4,7 +4,7 @@ import './register.css';
 import { useHistory } from 'react-router-dom';
 
 export default function StudentForm() {
-    const history = useHistory();
+    let history = useHistory();
     const handleSubmit = (event) => {
         
         event.preventDefault();
@@ -20,9 +20,17 @@ export default function StudentForm() {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(final)
+        }).then(resp => resp.json()).then(data => {
+            if ("message" in data) {
+                history.push('/register/confirmation');
+            } else {
+                if (typeof data.error == "string") {
+                    alert(data.error);
+                } else {
+                    alert(data.error[0].msg);
+                }
+            }
         });
-
-        history.push('/register/confirmation');
         
     }
     return (

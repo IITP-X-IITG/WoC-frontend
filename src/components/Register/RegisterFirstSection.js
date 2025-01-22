@@ -1,8 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Logo from '../../pages/Images/logo_right.png';
-import MentorGuide from '../../Files/MENTORSGUIDE.pdf';
-import StudentGuide from '../../Files/STUDENTGUIDE.pdf';
 
 function FirstSection() {
     return (
@@ -25,7 +23,7 @@ function FirstSection() {
                                 <div className="btnBox">
                                     <div className="d-grid gap-2 col-3 mx-auto">
                                         <a
-                                            href="https://drive.google.com/file/d/1b3rpVZuoOANpbxXdGaXw4j3y9vpJEA_V/view?usp=drive_link"
+                                            href="https://drive.google.com/file/d/1b3rpVZuoOANpbxXdGaXw4j3y9vpJEA_V/view"
                                             target="_blank"
                                             rel="noreferrer"
                                         >
@@ -35,7 +33,7 @@ function FirstSection() {
                                         </a>
                                     </div>
                                     <div className="d-grid gap-2 col-3 mx-auto">
-                                        <a href={StudentGuide} target="_blank" rel="noreferrer">
+                                        <a href="https://drive.google.com/file/d/1vz9lyOorPp7NqUxE45zVeJ4MBU6GRSut/view" target="_blank" rel="noreferrer">
                                             {' '}
                                             <button className="btn btn-primary btn-apply" type="button">
                                                 Student Guide
