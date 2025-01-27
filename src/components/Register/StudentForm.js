@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './register.css';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export default function StudentForm() {
-    let history = useHistory();
+    let navigate = useNavigate();
     const handleSubmit = (event) => {
         
         event.preventDefault();
@@ -22,7 +22,7 @@ export default function StudentForm() {
             body: JSON.stringify(final)
         }).then(resp => resp.json()).then(data => {
             if ("message" in data) {
-                history.push('/register/confirmation');
+                navigate('/register/confirmation');
             } else {
                 if (typeof data.error == "string") {
                     alert(data.error);

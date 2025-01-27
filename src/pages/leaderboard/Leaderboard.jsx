@@ -10,7 +10,7 @@ import { NavLink } from "react-router-dom";
 import Avatar from "@mui/material/Avatar";
 import styled from "styled-components";
 import Button from '@mui/material/Button';
-import { Link, useHistory } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 const Leaderboard = () => {
   const [fi, setFi] = useState([]);
   const [se, setSe] = useState([]);

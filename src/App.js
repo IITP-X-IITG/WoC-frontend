@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Home from './pages/Home';
 import ScrollButton from './components/ScrollButton';
-import { Route, Switch, BrowserRouter } from 'react-router-dom';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import Conduct from './pages/Conduct/Conduct.js';
 import StudentRegistration from './pages/StudentRegistration.js'
 import MentorRegistration from './pages/MentorRegistration.js'
@@ -23,7 +23,7 @@ function App() {
     <div className="App">
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <ScrollToTop />
-        <Switch>
+        <Routes>
           <Route exact path="/" component={Home} />
           <Route path="/register/studentRegistration" component={StudentRegistration} />
           <Route path="/register/mentorRegistration" component={MentorRegistration} />
@@ -38,7 +38,7 @@ function App() {
           <Route path="/team" component={Team} />
           <Route path="/reward" component={Reward} />
           <Route path='/events' component={Events} />
-        </Switch>
+        </Routes>
       </BrowserRouter>
       <ScrollButton />
     </div>
