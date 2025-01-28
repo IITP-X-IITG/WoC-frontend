@@ -24,20 +24,20 @@ function App() {
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <ScrollToTop />
         <Routes>
-          <Route exact path="/" component={Home} />
-          <Route path="/register/studentRegistration" component={StudentRegistration} />
-          <Route path="/register/mentorRegistration" component={MentorRegistration} />
-          <Route path="/register/confirmation" component={Confirmation} />
-          <Route path="/register" component={Conduct} />
-          <Route path="/leaderboard/weekly" component={WeeklyBoard} />
-          <Route path="/leaderboard/weekly2" component={WeeklySecond} />
-          <Route path="/leaderboard/weekly3" component={WeeklyThird} />
-          <Route path="/leaderboard" component={LeaderboardMain} />
-          <Route path="/points/:id" component={PointsMain} />
-          <Route path="/project" component={Project} />
-          <Route path="/team" component={Team} />
-          <Route path="/reward" component={Reward} />
-          <Route path='/events' component={Events} />
+          <Route exact path="/" element={<Home />} />
+          <Route path="/register/studentRegistration" element={<StudentRegistration />} />
+          <Route path="/register/mentorRegistration" element={<MentorRegistration />} />
+          <Route path="/register/confirmation" element={<Confirmation />} />
+          <Route path="/register" element={<Conduct />} />
+          <Route path="/leaderboard/weekly" element={<WeeklyBoard />} />
+          <Route path="/leaderboard/weekly2" element={<WeeklySecond />} />
+          <Route path="/leaderboard/weekly3" element={<WeeklyThird />} />
+          <Route path="/leaderboard" element={<LeaderboardMain />} />
+          <Route path="/points/:id" element={<PointsMain />} />
+          <Route path="/project" element={<Project />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/reward" element={<Reward />} />
+          <Route path='/events' element={<Events />} />
         </Routes>
       </BrowserRouter>
       <ScrollButton />
