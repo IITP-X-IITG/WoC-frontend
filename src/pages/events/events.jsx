@@ -32,7 +32,7 @@ const Events = () => {
               data-aos-once="true"
             >
               <img
-                src={event.eventImage.default}
+                src={event.eventImage}
                 alt={event.eventName}
                 className="eventImg"
               />
@@ -68,7 +68,7 @@ const Events = () => {
               data-aos-once="true"
             >
               <img
-                src={event.eventImage.default}
+                src={event.eventImage}
                 alt={event.eventName}
                 className="eventImg"
               />
