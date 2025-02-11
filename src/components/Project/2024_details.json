@@ -1,0 +1,79 @@
+[
+    {
+        "repo-url": "https://oblv.notion.site/63e8e000a65446218e1667b23b723c0d?v=65cd1ed83d05491ea6bd910dbd1cc4e2&pvs=4",
+        "title": "Sample Project",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ducimus vitae numquam consectetur, repudiandae impedit, natus ab beatae eius aperiam dolores ea fuga inventore.",
+        "mentors": [
+            "github-username"
+        ],
+        "lang": [
+            "Python"
+        ],
+        "tag": [
+            "Python",
+            "Data Science",
+            "Data Privacy",
+            "Data Visualisation",
+            "ML",
+            "CLI"
+        ]
+    },
+    {
+        "repo-url": "https://oblv.notion.site/63e8e000a65446218e1667b23b723c0d?v=65cd1ed83d05491ea6bd910dbd1cc4e2&pvs=4",
+        "title": "Sample Project",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ducimus vitae numquam consectetur, repudiandae impedit, natus ab beatae eius aperiam dolores ea fuga inventore.",
+        "mentors": [
+            "github-username"
+        ],
+        "lang": [
+            "Python"
+        ],
+        "tag": [
+            "Python",
+            "Data Science",
+            "Data Privacy",
+            "Data Visualisation",
+            "ML",
+            "CLI"
+        ]
+    },
+    {
+        "repo-url": "https://oblv.notion.site/63e8e000a65446218e1667b23b723c0d?v=65cd1ed83d05491ea6bd910dbd1cc4e2&pvs=4",
+        "title": "Sample Project",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ducimus vitae numquam consectetur, repudiandae impedit, natus ab beatae eius aperiam dolores ea fuga inventore.",
+        "mentors": [
+            "github-username"
+        ],
+        "lang": [
+            "Python"
+        ],
+        "tag": [
+            "Python",
+            "Data Science",
+            "Data Privacy",
+            "Data Visualisation",
+            "ML",
+            "CLI"
+        ]
+    },
+    {
+        "repo-url": "https://oblv.notion.site/63e8e000a65446218e1667b23b723c0d?v=65cd1ed83d05491ea6bd910dbd1cc4e2&pvs=4",
+        "title": "Sample Project",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ducimus vitae numquam consectetur, repudiandae impedit, natus ab beatae eius aperiam dolores ea fuga inventore.",
+        "mentors": [
+            "github-username"
+        ],
+        "lang": [
+            "Python"
+        ],
+        "tag": [
+            "Python",
+            "Data Science",
+            "Data Privacy",
+            "Data Visualisation",
+            "ML",
+            "CLI"
+        ]
+    }
+    
+]

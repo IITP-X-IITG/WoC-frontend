@@ -17,6 +17,10 @@ import Reward from './pages/Reward/reward';
 import ScrollToTop from './components/ScrollToTop';
 import Events from './pages/events/events';
 import Confirmation from './pages/Confimation.js';
+import Login from './pages/Login';
+import StudentProfile from './pages/StudentProfile';
+import MentorProfile from './pages/MentorProfile';
+import ChangePassword from './pages/ChangePassword.js';
 
 function App() {
   return (
@@ -38,6 +42,12 @@ function App() {
           <Route path="/team" element={<Team />} />
           <Route path="/reward" element={<Reward />} />
           <Route path='/events' element={<Events />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/studentProfile' element={<StudentProfile />} />
+          <Route path='/mentorProfile' element={<MentorProfile />} />
+          <Route path='/changePassword' element={<ChangePassword />} />
+
+
         </Routes>
       </BrowserRouter>
       <ScrollButton />

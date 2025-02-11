@@ -2,14 +2,12 @@ import React from 'react';
 import Navigation from '../components/Navigation';
 import AnimatedBG from '../components/Animatedbg';
 import Footer from '../components/footer';
-
-import '../components/Register/register.css'
+import StudentDashboard from '../components/StudentDashboard';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import StudentForm from '../components/Register/StudentForm';
 
 
-export default function StudentRegistration() {
+export default function StudentProfile() {
     React.useEffect(() => {
         Aos.init({ duration: 800 });
     }, []);
@@ -19,12 +17,13 @@ export default function StudentRegistration() {
             <Navigation />
             <div className="slider">
                 <h2 data-aos="zoom-in" data-aos-once="true">
-                    STUDENT REGISTRATION
+                    YOUR DASHBOARD
                 </h2>
                 <hr />
             </div>
-          
-                <StudentForm/>
+            
+                <StudentDashboard/>
+                
             <Footer />
         </div>
     );
