@@ -21,7 +21,41 @@
 }
 .bloc-tabs {
   display: flex;
+  width: 100%;
+  
 }
+.bloc-tabs-hidden {
+  display: none;
+}
+
+.bloc-tabs-container {
+  display: grid;
+  height: 55px;
+  
+}
+
+.project-title{
+
+  align-self: center;
+  justify-self: center;
+  
+}
+.project-title h1{
+  color: white;
+  
+}
+
+.project-title hr{
+  background-color: white; 
+    /* width: 9%; */
+    width: 100%;
+    display: block; 
+    margin: auto;
+    margin-bottom:50px;
+    font-size: 3rem; 
+    height: 3px;
+}
+
 .tabs {
   padding: 15px;
   text-align: center;
@@ -165,8 +199,37 @@ button {
 .yr-2021 {
   color: white;
 }
+.project-btn-container {
+  display: flex;
+  width: 97%;
+  margin-bottom: 2rem;
+  align-self: center;
+}
+
+.project-btn-container .btn {
+  display: block;
+  padding: 1rem;
+  border: 2px solid white;
+  background-color: #17263d;
+
+
+}
+
+
+.project-btn-container :nth-child(1) {
+
+}
+
+.project-btn-container :nth-child(2) {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+
 
 @media only screen and (max-width: 767px) {
+
+
   .nwoc-repo-card {
     height: 255px;
     width: 83vw;
@@ -208,6 +271,9 @@ button {
   }
 }
 @media only screen and (min-width: 767px) and (max-width: 1155px) {
+
+ 
+ 
  
   .container-project{
     margin:0;
@@ -245,6 +311,9 @@ button {
   }
 }
 @media only screen and (max-width: 321px){
+  .project-btn-container{
+    width: 97vw;
+  }
   .nwoc-repo-card {
     width: 97vw;
     height:240px;
@@ -257,3 +326,4 @@ button {
    margin-left: 23px;
   }
 }
+

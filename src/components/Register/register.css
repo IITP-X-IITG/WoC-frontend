@@ -5,12 +5,28 @@
     padding-bottom: 5px;
     margin-bottom: 30px;
     border-radius: 20px;
+    padding: 40px;  
+}
+.login-container{
+    background-color: #2a3b50;
+    width: 500px;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    border-radius: 20px;
     padding: 40px;
     
 }
 
+.submit-button{
+    width: 100%;
+}
+
+
+
 .input-field{
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .input-field input, .input-field select, .input-field textarea{
@@ -28,6 +44,11 @@
     color: white;
 }
 
+.input-field textarea{
+    overflow: hidden;
+    resize: none;
+}
+
 .input-field label{
     text-align: left;
     color: white;
@@ -35,7 +56,8 @@
 }
 
 .button-container{
-    display: grid;
+    display: flex;
+    margin-top: 40px;
 }
 
 .confirm-container{
@@ -55,6 +77,63 @@
     margin-top: 20px;
 }
 
+.login-btn{
+    
+    width: 7rem;
+    justify-self: end;
+    margin-left: auto;
+    margin-right: 0;
+    
+}
+
+
+
+
+
+
+.login-radio {
+    display: none;
+  }
+.login-label {
+    position: relative;
+    color: white;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8em;
+    border: 1px solid white;
+    border-radius: 0;
+    
+  }
+  
+
+  
+  .login-radio:checked + .login-label {
+    background-color: #0d6efd;
+    color: #ffffff;
+    border: 1px solid #0d6efd;
+
+  }
+
+  .login-radio:hover + .login-label:hover {
+    border: 1px solid #0d6efd;
+    
+    color: #ffffff;
+  }
+
+.login-radio-container{
+    display: flex;
+    justify-content: center;
+    justify-self: start;
+    width: auto;
+}
+
+.login-radio-container :nth-child(2){
+    border-radius: 0.5em 0 0 0.5em;
+}
+.login-radio-container :nth-child(4){
+    border-radius: 0 0.5em 0.5em 0;
+}
 
 
 @media screen and (max-width: 991px){
@@ -64,4 +143,28 @@
     .confirm-container{
         width: 98%;
     }
+    .login-container{
+        width: 90%;
+    }
 }
+
+@media screen and (max-width: 425px){
+    .button-container{
+        flex-direction: column;
+        align-self: center;
+    }
+    .login-btn{
+        margin: auto;
+        margin-top: 25px;
+        width: 100%;
+    }
+    .button-container{
+        margin-top: 25px;
+    }
+    .login-label{
+        width: 50%;
+        justify-content: center;
+    }
+    
+}
+    

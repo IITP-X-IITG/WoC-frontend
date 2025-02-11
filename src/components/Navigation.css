@@ -53,3 +53,31 @@
 .navbar-light .navbar-toggler-icon {
     background-image: url('../pages/Images/white_nav.png');
 }
+
+.profile-button{
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 40px;
+}
+
+.profile-button img{
+    width: 30px;
+    border-radius: 50%;
+}
+
+.profile-button-collapse{
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    .profile-button-collapse{
+        display: block;
+    }
+    .profile-button{
+        display: none;
+    }
+
+
+}
+
+

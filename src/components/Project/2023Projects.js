@@ -5,7 +5,7 @@ import dagshub from "../../pages/Images/dagshub.png";
 import clueless from "../../pages/Images/clueless.png";
 import flutterK from "../../pages/Images/flutterK.png";
 
-function Project2021_Search() {
+function Project2023_Search() {
     let [projects, setProjects] = useState(data);
 
     const searchHandler = (e) => {
@@ -231,4 +231,4 @@ function Project2021_Search() {
         </>
     );
 }
-export default Project2021_Search;
+export default Project2023_Search;
