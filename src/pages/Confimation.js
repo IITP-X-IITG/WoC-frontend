@@ -9,14 +9,14 @@ import 'aos/dist/aos.css';
 
 export default function Confirmation() {
     React.useEffect(() => {
-        Aos.init({ duration: 800 });
+        Aos.init({ duration: 400 });
     }, []);
     return (
         <div>
             <AnimatedBG />
             <Navigation />
             <hr />
-            <ConfirmMessage data-aos="zoom-in" data-aos-once="true"/>
+            <ConfirmMessage/>
             <Footer />
         </div>
     );

@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
 export default function ConfirmMessage() {
     return (
         
-        <div className="confirm-container" data-aos="flip-left" data-aos-once="true">
+        <div className="confirm-container" data-aos="zoom-in" data-aos-once="true">
             <h4>Registration Successful!</h4>
             <br/>
             You have successfully registered for CodePeak 2025.
