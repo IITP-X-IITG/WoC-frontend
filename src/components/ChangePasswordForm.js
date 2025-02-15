@@ -3,7 +3,42 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './Register/register.css';
 
 export default function ChangePasswordForm() {
-    const handleSubmit = (event) => {};
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        const form = event.target;
+        const formdata = new FormData(form);
+        const final = {};
+        for (const p of formdata) {
+            final[p[0]] = p[1];
+        }
+        console.log(final); // TODO get user email from authstore...
+        return
+        // email
+        // oldPassword
+        // newPassword
+        fetch("/api/password/update", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(final)
+        }).then(resp => {
+            if (resp.ok) return resp.json();
+            // else throw resp;
+        }).then(data => {
+            console.log(data)
+            // navigate(isstudent?'/studentProfile':'/mentorProfile');
+        }).catch(async resp => {
+            let data = await resp.json();
+            if ("message" in data) {
+                alert(data.message);
+            }else if (typeof data.error == "string") {
+                alert(data.error);
+            } else {
+                alert(data.error[0].msg);
+            }
+        })
+    };
 
     return (
         <div className="login-container">
@@ -16,7 +51,7 @@ export default function ChangePasswordForm() {
                         type="password"
                         className="form-control"
                         placeholder="Enter your old password"
-                        name="password"
+                        name="old_password"
                         required
                     />
                 </div>
@@ -26,7 +61,7 @@ export default function ChangePasswordForm() {
                         type="password"
                         className="form-control"
                         placeholder="Enter your new password"
-                        name="password"
+                        name="new_password"
                         required
                     />
                 </div>
@@ -36,7 +71,7 @@ export default function ChangePasswordForm() {
                         type="password"
                         className="form-control"
                         placeholder="Confirm your new password"
-                        name="password"
+                        name="confirm_new_password"
                         required
                     />
                 </div>

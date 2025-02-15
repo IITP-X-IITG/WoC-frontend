@@ -63,7 +63,7 @@ export default function StudentForm() {
 
                 <div className="input-field">
                     <label>Email provided by your Institute</label>
-                    <input type="email" className="form-control" placeholder="Enter your work email" name="instituteEmail" />
+                    <input type="email" className="form-control" placeholder="Enter your work email" name="instituteEmail" required />
                 </div>
 
                 <div className="input-field">

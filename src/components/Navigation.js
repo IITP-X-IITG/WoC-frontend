@@ -10,8 +10,11 @@ import ProfileImage from '../pages/Images/Default_pfp.jpg';
 
 import CustomLink from './CustomLink';
 import CustomProfileLink from './CustomProfileLink';
+import {useAuthStore} from "../store/authStore.jsx";
+
 
 export default function Navigation(props) {
+    const {isAuthenticated, isMentor} = useAuthStore((state) => state);
     return (
         <div style={style_nav}>
             <Navbar bg="light" expand="xl" className={props.hasShadow ? 'shadow' : ''}>
@@ -24,7 +27,7 @@ export default function Navigation(props) {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto nav-list">
-                            <CustomProfileLink className="profile-button-collapse" to="/login">Profile</CustomProfileLink>
+                            <CustomProfileLink className="profile-button-collapse" to={isAuthenticated?`/${isMentor?'mentor':'student'}Profile`:"/login"}>Profile</CustomProfileLink>
                             <CustomLink to="/">Home</CustomLink>
                             <CustomLink to="/leaderboard">Leaderboard</CustomLink>
                             <CustomLink to="/register">Register</CustomLink>
@@ -36,7 +39,7 @@ export default function Navigation(props) {
 
                         <NavLink
                             className="profile-button"
-                            to="/login"
+                            to={isAuthenticated?`/${isMentor?'mentor':'student'}Profile`:"/login"}
                             // activeStyle={{
                             //     border: '2px solid #589ba2',
                             // }}
