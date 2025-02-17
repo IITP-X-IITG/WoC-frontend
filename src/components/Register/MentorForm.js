@@ -1,9 +1,15 @@
-import React, { Component } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './register.css';
 import { useNavigate } from 'react-router-dom';
+
 export default function MentorForm() {
     let navigate = useNavigate();
+    const [projectDetails, setProjectDetails] = useState("");
+    const [projectList, setProjectList] = useState("");
+    const projectDetailsRef = useRef();
+    const projectListRef = useRef();
+
     const handleSubmit = (event) => {
         event.preventDefault();
         const form = event.target;
@@ -29,7 +35,26 @@ export default function MentorForm() {
                 }
             }
         });
-    }
+    };
+
+    useEffect(() => {
+        projectDetailsRef.current.style.height = 'auto';
+        projectDetailsRef.current.style.height = projectDetailsRef.current.scrollHeight + 'px';
+    }, [projectDetails]);
+
+    useEffect(() => {
+        projectListRef.current.style.height = 'auto';
+        projectListRef.current.style.height = projectListRef.current.scrollHeight + 'px';
+    }, [projectList]);
+
+    const handleProjectDetailsChange = (e) => {
+        setProjectDetails(e.target.value);
+    };
+
+    const handleProjectListChange = (e) => {
+        setProjectList(e.target.value);
+    };
+
     return (
         <div className="form-container">
             <form className="form" onSubmit={handleSubmit}>
@@ -93,7 +118,16 @@ export default function MentorForm() {
 
                 <div className="input-field">
                     <label>List links to the projects that you wish to be a part of CodePeak *</label>
-                    <textarea className="form-control" rows="3" placeholder="Enter project links" name="projectList" required></textarea>
+                    <textarea
+                        className="form-control"
+                        style={{ height: projectListRef.current ? projectListRef.current.scrollHeight + 'px' : 'auto' }}
+                        placeholder="Enter project links"
+                        name="projectList"
+                        required
+                        value={projectList}
+                        onChange={handleProjectListChange}
+                        ref={projectListRef}
+                    ></textarea>
                 </div>
 
                 <div className="input-field">
@@ -117,11 +151,19 @@ export default function MentorForm() {
 
                 <div className="input-field">
                     <label>Details about the project</label>
-                    <textarea className="form-control" rows="3" placeholder="Provide project details" name="projectDetails"></textarea>
+                    <textarea
+                        className="form-control"
+                        style={{ height: projectDetailsRef.current ? projectDetailsRef.current.scrollHeight + 'px' : 'auto' }}
+                        placeholder="Provide project details"
+                        name="projectDetails"
+                        value={projectDetails}
+                        onChange={handleProjectDetailsChange}
+                        ref={projectDetailsRef}
+                    ></textarea>
                 </div>
 
                 <div className="button-container">
-                    <button type="submit" className="btn btn-primary">
+                    <button type="submit" className="btn btn-primary submit-button">
                         Submit
                     </button>
                 </div>
