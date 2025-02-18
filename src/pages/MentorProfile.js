@@ -8,7 +8,7 @@ import 'aos/dist/aos.css';
 import MentorDashboard from '../components/MentorDashboard';
 
 
-export default function StudentProfile() {
+export default function MentorProfile() {
     React.useEffect(() => {
         Aos.init({ duration: 800 });
     }, []);

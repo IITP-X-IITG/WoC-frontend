@@ -59,7 +59,7 @@ export default function MentorDashboard() {
   }, []);
 
   return (
-    <div className="d-flex">
+    <div className="d-flex m-3">
       {/* Sidebar with transparent background */}
       <div className="border-end" style={{ 
         width: '250px', 
