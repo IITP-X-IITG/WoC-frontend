@@ -18,20 +18,31 @@ import ScrollToTop from './components/ScrollToTop';
 import Events from './pages/events/events';
 import Confirmation from './pages/Confimation.js';
 import Login from './pages/Login';
+import Logout from './pages/Logout';
 import StudentProfile from './pages/StudentProfile';
 import MentorProfile from './pages/MentorProfile';
 import ChangePassword from './pages/ChangePassword.js';
+import {useAuthStore} from "./store/authStore.jsx";
+import { useEffect } from 'react';
+import {RedirectAuthenticatedUser, ProtectedRoutes} from "./utils/auth.js"
 
 function App() {
+  const {checkAuth, isLoading, isCheckingAuth} = useAuthStore((state) => state);
+  useEffect(() => {
+    checkAuth();
+  }, [checkAuth]);
+
+  if (isCheckingAuth || isLoading) <>Loading...</>;
+
   return (
     <div className="App">
       <BrowserRouter>
         <ScrollToTop />
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="/register/studentRegistration" element={<StudentRegistration />} />
-          <Route path="/register/mentorRegistration" element={<MentorRegistration />} />
-          <Route path="/register/confirmation" element={<Confirmation />} />
+          <Route path="/register/studentRegistration" element={<RedirectAuthenticatedUser><StudentRegistration /></RedirectAuthenticatedUser>} />
+          <Route path="/register/mentorRegistration" element={<RedirectAuthenticatedUser><MentorRegistration /></RedirectAuthenticatedUser>} />
+          <Route path="/register/confirmation" element={<RedirectAuthenticatedUser><Confirmation /></RedirectAuthenticatedUser>} />
           <Route path="/register" element={<Conduct />} />
           <Route path="/leaderboard/weekly" element={<WeeklyBoard />} />
           <Route path="/leaderboard/weekly2" element={<WeeklySecond />} />
@@ -42,9 +53,10 @@ function App() {
           <Route path="/team" element={<Team />} />
           <Route path="/reward" element={<Reward />} />
           <Route path='/events' element={<Events />} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/studentProfile' element={<StudentProfile />} />
-          <Route path='/mentorProfile' element={<MentorProfile />} />
+          <Route path='/login' element={<RedirectAuthenticatedUser><Login /></RedirectAuthenticatedUser>} />
+          <Route path='/logout' element={<Logout />} />
+          <Route path='/studentProfile' element={<ProtectedRoutes student><StudentProfile /></ProtectedRoutes>} />
+          <Route path='/mentorProfile' element={<ProtectedRoutes mentor><MentorProfile /></ProtectedRoutes>} />
           <Route path='/changePassword' element={<ChangePassword />} />
 
 

@@ -1,9 +1,44 @@
 import React, { Component } from 'react';
+import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Register/register.css';
 
 export default function LoginForm() {
-    const handleSubmit = (event) => {};
+    let navigate = useNavigate();
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        const form = event.target;
+        const formdata = new FormData(form);
+        const final = {};
+        for (const p of formdata) {
+            final[p[0]] = p[1];
+        }
+        if (final["student_or_mentor"] === undefined) return alert("Please Select Your Role: Student or Mentor");
+        const isstudent = final["student_or_mentor"] === 'student';
+        delete final["student_or_mentor"];
+
+        fetch(`/api/login/${isstudent?"students":"mentors"}`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(final)
+        }).then(resp => {
+            if (resp.ok) return resp.json();
+            else throw resp;
+        }).then(data => {
+            navigate(isstudent?'/studentProfile':'/mentorProfile');
+        }).catch(async resp => {
+            let data = await resp.json();
+            if ("message" in data) {
+                alert(data.message);
+            }else if (typeof data.error == "string") {
+                alert(data.error);
+            } else {
+                alert(data.error[0].msg);
+            }
+        })
+    };
 
     return (
         <div className="login-container">
@@ -26,11 +61,10 @@ export default function LoginForm() {
 
                 <div className="button-container">
                     <div className="login-radio-container">
-                    <input className="login-radio" type="radio" name="payment" id="card"/>
-                    <label className='login-label btn' htmlFor="card"><div>Student</div></label>
-                    <input className='login-radio' type="radio" name="payment" id="cash" />
-                    <label className='login-label btn' htmlFor="cash"><div>Mentor</div></label>
-
+                        <input className="login-radio" type="radio" name="student_or_mentor" id="isstudent" value="student"/>
+                        <label className='login-label btn' htmlFor="isstudent"><div>Student</div></label>
+                        <input className='login-radio' type="radio" name="student_or_mentor" id="ismentor" value="mentor"/>
+                        <label className='login-label btn' htmlFor="ismentor"><div>Mentor</div></label>
                     </div>
                     <button type="submit" className="btn btn-primary login-btn">
                         Login

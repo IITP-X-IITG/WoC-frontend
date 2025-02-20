@@ -88,8 +88,8 @@ export default function MentorProject() {
                 </form>
             </div>
             <div className="dashboard-btn-container">
-                <button className="btn btn-primary">Change Password</button>
-                <button className="btn btn-danger">Log Out</button>
+                <a className="btn btn-primary" href='/changePassword'>Change Password</a>
+                <a className="btn btn-danger" href='/logout'>Log Out</a>
             </div>
             </div>
         </>
