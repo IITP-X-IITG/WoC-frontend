@@ -12,9 +12,8 @@ export default function MentorDashboard() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`/api/transactions/mentor-project`, {
+        const response = await fetch(`/api/transactions/mentor-project?mentor=${encodeURIComponent(mentorGit)}`, {
           method: "GET",
-          query: { mentorGit },
           headers: {
             "Content-Type": "application/json"
           },
@@ -41,7 +40,7 @@ export default function MentorDashboard() {
           // Sort into issues or PRs
           if (item.type === 'issues') {
             issuesData.push(formattedItem);
-          } else if (item.type === 'pr') {
+          } else if (item.type === 'pull') {
             prsData.push(formattedItem);
           }
         });
