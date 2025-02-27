@@ -12,9 +12,8 @@ export default function MentorDashboard() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`/api/transactions/mentor-project`, {
+        const response = await fetch(`/api/transactions/mentor-project?mentor=${encodeURIComponent(mentorGit)}`, {
           method: "GET",
-          query: { mentorGit },
           headers: {
             "Content-Type": "application/json"
           },
