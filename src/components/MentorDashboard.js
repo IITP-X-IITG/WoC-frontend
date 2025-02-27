@@ -40,7 +40,7 @@ export default function MentorDashboard() {
           // Sort into issues or PRs
           if (item.type === 'issues') {
             issuesData.push(formattedItem);
-          } else if (item.type === 'pr') {
+          } else if (item.type === 'pull') {
             prsData.push(formattedItem);
           }
         });
