@@ -18,32 +18,52 @@ export const useAuthStore = create((set) => ({
 	isLoading: false,
 	isCheckingAuth: true,
 	checkAuth: async () => {
-		set({ isCheckingAuth: true, error: null });
-		fetch("/api/check-auth", {
-			method: "POST",
-			headers: {
-				"Content-Type": "application/json"
+		document.cookie.split(';').map(async cookie => {
+			const [key, value] = cookie.split('=');
+			if (key.trim() === 'token') {
+				set({ isCheckingAuth: true, error: null });
+				fetch("/api/auth", {
+					method: "GET",
+					headers: {
+						authorization: `Bearer ${value}`
+					}
+				}).then(resp => {
+					if (resp.ok) return resp.json();
+					else throw resp;
+				}).then(data => {
+					console.log(data);
+
+					// TODO: localStorage.setItem("auth", true); // to skip initial loading... and wating to complete api/check-auth
+					set({ 
+						isAuthenticated: true, 
+						isCheckingAuth: false, 
+						isMentor: data.type === "mentor",
+						user: {
+							email: data.email,
+							github: data.github,
+							type: data.type
+						} 
+					});
+				}).catch(async resp => {
+					let data = await resp.json();
+					if ("message" in data) {
+						set({ error: data.message, isCheckingAuth: false, isAuthenticated: false });
+					} else if (typeof data.error == "string") {
+						set({ error: data.error, isCheckingAuth: false, isAuthenticated: false });
+					} else {
+						set({ error: data.error[0].msg, isCheckingAuth: false, isAuthenticated: false });
+					}
+				});
 			}
-		}).then(resp => {
-            if (resp.ok) return resp.json();
-            else throw resp;
-        }).then(data => {
-			console.log(data);
-			
-			// TODO: localStorage.setItem("auth", true); // to skip initial loading... and wating to complete api/check-auth
-			set({ isAuthenticated: true, isCheckingAuth: false, isMentor: data.isMentor });
-        }).catch(async resp => {
-            let data = await resp.json();
-            if ("message" in data) {
-				set({ error: data.message, isCheckingAuth: false, isAuthenticated: false });
-            }else if (typeof data.error == "string") {
-				set({ error: data.error, isCheckingAuth: false, isAuthenticated: false });
-            } else {
-				set({ error: data.error[0].msg, isCheckingAuth: false, isAuthenticated: false });
-            }
-        });
+		})
 	},
 	logout: async () => {
+		document.cookie.split(';').map(async cookie => {
+			const [key, value] = cookie.split('=');
+			if (key.trim() === 'token') {
+				document.cookie = `token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+			}
+		});
 		set({ isLoading: true });
 		// TODO: localStorage.removeItem("auth"); // to skip initial loading... and wating to complete api/check-auth
 		const resp = await fetch("/api/logout", {
@@ -52,7 +72,7 @@ export const useAuthStore = create((set) => ({
 				"Content-Type": "application/json"
 			}
 		})
-        if (!resp.ok) throw resp;
-        set({ isAuthenticated: false, error: null, isLoading: false, isCheckingAuth: false });
+		if (!resp.ok) throw resp;
+		set({ isAuthenticated: false, error: null, isLoading: false, isCheckingAuth: false });
 	}
 }));
