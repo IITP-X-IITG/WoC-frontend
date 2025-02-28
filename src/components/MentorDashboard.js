@@ -204,7 +204,7 @@ export default function MentorDashboard({ mentorGit, email }) {
                                   size="sm" 
                                   className="ms-2"
                                   as="a" 
-                                  href={`${issue.url}/issues/${issue.number}`}
+                                  href={`${issue.url}`}
                                   target="_blank"
                                   rel="noopener noreferrer"
                                 >
@@ -247,7 +247,7 @@ export default function MentorDashboard({ mentorGit, email }) {
                                   size="sm" 
                                   className="ms-2"
                                   as="a" 
-                                  href={`${pr.url}/pull/${pr.number}`}
+                                  href={`${pr.url}`}
                                   target="_blank"
                                   rel="noopener noreferrer"
                                 >
