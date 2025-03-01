@@ -23,11 +23,9 @@ export default function LoginForm() {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(final)
-        }).then(resp => {
-            if (resp.ok) return resp.json();
+        }).then(async resp => {
+            if (resp.ok) window.location.reload(); // because of procted route it doesnot redericts , this is the most simple way to do it as it calls authStore in reload and it will redirect to the correct page
             else throw resp;
-        }).then(data => {
-            navigate(isstudent?'/studentProfile':'/mentorProfile');
         }).catch(async resp => {
             let data = await resp.json();
             if ("message" in data) {
