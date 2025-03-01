@@ -18,9 +18,19 @@ export const useAuthStore = create((set) => ({
 	isLoading: false,
 	isCheckingAuth: true,
 	checkAuth: async () => {
-		document.cookie.split(';').map(async cookie => {
+		const allcookies = document.cookie.split(';');
+		if (allcookies.length === 0) {
+			// If the status code is 401, logout the user
+			localStorage.setItem("auth", 'false');
+			localStorage.removeItem("isMentor");
+			document.cookie = `token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`; // Clear token cookie
+			set({ error: "Unauthorized", isCheckingAuth: false, isAuthenticated: false });
+		}
+		let is_token_found = false;
+		allcookies.map(async (cookie, index) => {
 			const [key, value] = cookie.split('=');
 			if (key.trim() === 'token') {
+				is_token_found = true;
 				set({ isCheckingAuth: true, error: null });
 				fetch("/api/auth", {
 					method: "GET",
@@ -45,8 +55,13 @@ export const useAuthStore = create((set) => ({
 						} 
 					});
 				}).catch(async resp => {
+					if (resp.status === 401) {
+						// If the status code is 401, logout the user
+						localStorage.setItem("auth", 'false');
+						localStorage.removeItem("isMentor");
+						document.cookie = `token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`; // Clear token cookie
+					}
 					let data = await resp.json();
-					// TODO: if error code is 404
 					if ("message" in data) {
 						set({ error: data.message, isCheckingAuth: false, isAuthenticated: false });
 					} else if (typeof data.error == "string") {
@@ -55,6 +70,13 @@ export const useAuthStore = create((set) => ({
 						set({ error: data.error[0].msg, isCheckingAuth: false, isAuthenticated: false });
 					}
 				});
+			}
+			if (index >= allcookies.length - 1 && !is_token_found){
+				// If the status code is 401, logout the user
+				localStorage.setItem("auth", 'false');
+				localStorage.removeItem("isMentor");
+				document.cookie = `token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`; // Clear token cookie
+				set({ error: "Unauthorized", isCheckingAuth: false, isAuthenticated: false });
 			}
 		})
 	},
