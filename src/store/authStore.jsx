@@ -45,9 +45,15 @@ export const useAuthStore = create((set) => ({
 						} 
 					});
 				}).catch(async resp => {
-					let data = await resp.json();
-					// TODO: if error code is 404
-					if ("message" in data) {
+					let data = resp.status !== 401?await resp.json():null;
+					if (resp.status === 401) {
+						// If the status code is 401, logout the user
+						localStorage.setItem("auth", 'false');
+						localStorage.removeItem("isMentor");
+						document.cookie = `token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`; // Clear token cookie
+						set({ isAuthenticated: false, isMentor: null, user: null, error: null, isCheckingAuth: false });
+					}
+					else if ("message" in data) {
 						set({ error: data.message, isCheckingAuth: false, isAuthenticated: false });
 					} else if (typeof data.error == "string") {
 						set({ error: data.error, isCheckingAuth: false, isAuthenticated: false });
