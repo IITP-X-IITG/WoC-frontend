@@ -23,11 +23,9 @@ export default function LoginForm() {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(final)
-        }).then(resp => {
-            if (resp.ok) return resp.json();
+        }).then(async resp => {
+            if (resp.ok) window.location.reload();
             else throw resp;
-        }).then(data => {
-            navigate(isstudent?'/studentProfile':'/mentorProfile');
         }).catch(async resp => {
             let data = await resp.json();
             if ("message" in data) {
