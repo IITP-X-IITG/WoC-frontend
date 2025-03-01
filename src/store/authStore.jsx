@@ -12,8 +12,8 @@ import { create } from "zustand";
 
 export const useAuthStore = create((set) => ({
 	user: null,
-	isMentor: null,
-	isAuthenticated: false,
+	isMentor: localStorage.getItem('isMentor') === 'true',
+	isAuthenticated: localStorage.getItem('auth') === 'true',
 	error: null,
 	isLoading: false,
 	isCheckingAuth: true,
@@ -32,8 +32,8 @@ export const useAuthStore = create((set) => ({
 					else throw resp;
 				}).then(data => {
 					console.log(data);
-
-					// TODO: localStorage.setItem("auth", true); // to skip initial loading... and wating to complete api/check-auth
+					localStorage.setItem("auth", true);
+					localStorage.setItem("isMentor", data.type === "mentor");
 					set({ 
 						isAuthenticated: true, 
 						isCheckingAuth: false, 
@@ -46,6 +46,7 @@ export const useAuthStore = create((set) => ({
 					});
 				}).catch(async resp => {
 					let data = await resp.json();
+					// TODO: if error code is 404
 					if ("message" in data) {
 						set({ error: data.message, isCheckingAuth: false, isAuthenticated: false });
 					} else if (typeof data.error == "string") {
@@ -65,7 +66,8 @@ export const useAuthStore = create((set) => ({
 			}
 		});
 		set({ isLoading: true });
-		// TODO: localStorage.removeItem("auth"); // to skip initial loading... and wating to complete api/check-auth
+		localStorage.setItem("auth", false);
+		localStorage.removeItem("isMentor");
 		const resp = await fetch("/api/logout", {
 			method: "POST",
 			headers: {

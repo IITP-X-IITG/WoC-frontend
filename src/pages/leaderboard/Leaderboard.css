@@ -1,5 +1,5 @@
 body {
-  font-family: "Gilroy-Medium";
+  font-family: "Gilroy-Medium", sans-serif;
 }
 
 .space {
@@ -14,13 +14,14 @@ body {
   color: #fff;
   background-color: #12263f;
   font-size: 2em;
+  text-align: center;
+  font-weight: 600;
 }
 
 .subtitle {
   color: #fff;
   background-color: #12263f;
   font-size: 5em;
-
 }
 
 .tablee {
@@ -29,6 +30,16 @@ body {
     rgba(107, 54, 54, 0.05) 0px 0px 0px 1px inset;
   border-radius: 1em;
   background-color: white;
+  margin-top: 2rem;
+}
+
+#searchBar {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 1rem;
 }
 
 thead {
@@ -37,10 +48,6 @@ thead {
   font-size: 1.2em;
 }
 
-/* thead th {
-  padding: 0.7em !important;
-  /* display: flex; */
-/* } */
 table {
   margin-bottom: 0 !important;
   padding: 0;
@@ -48,15 +55,8 @@ table {
   border-radius: 1em;
 }
 
-/* #bggg{
-  height: 350px;
-  width: 100%;
-  margin-bottom: 20px;
-  background-color: #12263f;
-} */
 .leader-stars,
-.leader-twinkling,
-.leader-clouds {
+.leader-twinkling {
   position: absolute;
   display: block;
   top: 0;
@@ -78,12 +78,6 @@ table {
   animation: move-twink-back 200s linear infinite;
 }
 
-.leader-clouds {
-  z-index: 2;
-  background: transparent url("https://image.ibb.co/bT4N7T/clouds.png") repeat top center;
-  animation: move-clouds-back 200s linear infinite;
-}
-
 @keyframes move-twink-back {
   from {
     background-position: 0 0;
@@ -94,54 +88,40 @@ table {
   }
 }
 
-@keyframes move-clouds-back {
-  from {
-    background-position: 0 0;
-  }
-
-  to {
-    background-position: 10000px 0;
-  }
-}
-
-.bg-relative {
-  position: absolute;
-  top: 40vh;
-  background-color: #12263f;
-  padding-top: 20vh;
-
-}
-
 /* Row CSS */
-
-#dp {
-  border-radius: 50%;
-  height: 2.8em;
-  /* padding: 0.2em; */
-  /* margin: 1em; */
+thead {
+  display: flex;
 }
 
+tr {
+  display: flex;
+}
+
+.left-position {
+  display: flex;
+  width: 20%;
+  padding: 1rem 1.5rem;
+  justify-content: center;
+}
+
+.middle-id {
+  display: flex;
+  width: 50%;
+  padding: 1rem 1.5rem;
+}
+
+.right-score {
+  display: flex;
+  width: 30%;
+  padding: 1rem 1.5rem;
+  justify-content: center;
+}
 
 /* Pagination Nav */
 .pagination {
   display: flex;
   justify-content: space-between;
-}
-
-@media only screen and (max-width: 1000px) {
-  .pagination {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 1em;
-  }
-
-  .pagination-left {
-    justify-content: space-between;
-  }
-
-  .pagination-right input {
-    max-width: 5em;
-  }
+  padding: 1rem;
 }
 
 .pagination-left,
@@ -183,12 +163,26 @@ table {
 .pagination-right span {
   background-color: rgb(204, 231, 255);
   color: #2e63a5;
-  /* border-color: #12263f85; */
   border: none;
 }
 
-@media only screen and (max-width:450px) {
+@media only screen and (max-width: 1000px) {
+  .pagination {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+  }
 
+  .pagination-left {
+    justify-content: space-between;
+  }
+
+  .pagination-right input {
+    max-width: 5em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
   .pagination-left,
   .pagination-right {
     display: flex;
@@ -205,39 +199,4 @@ table {
     margin-top: 10px;
     margin-bottom: 10px;
   }
-
-  .btn_weekly {
-    margin-left: 0px;
-    top: 5%;
-  }
-}
-
-
-thead {
-  display: flex;
-}
-
-tr {
-  display: flex;
-}
-
-.left-position {
-  display: flex;
-  width: 20%;
-  padding: 1rem 1.5rem;
-  justify-content: center;
-}
-
-
-.middle-id {
-  display: flex;
-  width: 50%;
-  padding: 1rem 1.5rem;
-}
-
-.right-score {
-  display: flex;
-  width: 30%;
-  padding: 1rem 1.5rem;
-  justify-content: center;
 }

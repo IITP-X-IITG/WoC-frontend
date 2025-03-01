@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Animatedbg from "../components/Animatedbg";
 import Navigation from "../components/Navigation";
 import Footer from "../components/footer";
