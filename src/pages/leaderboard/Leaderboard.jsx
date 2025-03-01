@@ -1,106 +1,54 @@
-import React, { useMemo, useState, useEffect } from "react";
-import Navigation from "../../components/Navigation";
-import style from "./Leaderboard.css";
+import React, { useState, useEffect } from "react";
+import { Container, Dropdown } from "react-bootstrap";
 import BTable from "react-bootstrap/Table";
-import Container from "react-bootstrap/Container";
 import { usePagination, useTable } from "react-table";
-import { Dropdown } from "react-bootstrap";
-import Loading from "../../components/leaderboard/Loading";
 import { NavLink } from "react-router-dom";
 import Avatar from "@mui/material/Avatar";
 import styled from "styled-components";
-import Button from '@mui/material/Button';
-import { Link, useNavigate } from 'react-router-dom';
+import Navigation from "../../components/Navigation";
+import Loading from "../../components/leaderboard/Loading";
+
 const Leaderboard = () => {
-  const [fi, setFi] = useState([]);
-  const [se, setSe] = useState([]);
+  const [leaderboardData, setLeaderboardData] = useState([]);
+  const [filteredData, setFilteredData] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    async function getCSV() {
+    async function fetchLeaderboard() {
       try {
-        const target = `https://docs.google.com/spreadsheets/d/1YAfYi9bDKHytKKAeJMyubdo4XyethwSsezIRr2TP-CY/export?gid=0&format=csv`;
-        const result = await fetch(target);
-        const data = await result.text();
-        var rows = data.toString().split("\r");
-
-        let arr = [];
-        for (let i = 0;i < rows.length;i++) {
-          let str = "";
-          let temp = [];
-          if (i === 0) {
-            for (let j = 0;j < rows[i].length;j++) {
-              str += rows[i][j];
-            }
-            temp = str.split(",");
-          } else {
-            let str = "";
-            for (let j = 1;j < rows[i].length;j++) {
-              str += rows[i][j];
-            }
-            temp = str.split(",");
-          }
-          let x = temp[1];
-          temp[1] = temp[0];
-          temp[0] = Number(x);
-          arr.push(temp);
-        }
-        arr.sort(function (a, b) {
-          return a[0] - b[0];
+        const response = await fetch("/api/transactions/leaderboard", {
+          method: "GET",
         });
-
-        let finalArr = [];
-        for (let i = arr.length - 1;i >= 0;i--) {
-          let score = {};
-          score["rank"] = arr.length - i;
-          score["gitid"] = arr[i][1];
-          score["points"] = arr[i][0];
-          finalArr.push(score);
+        const result = await response.json();
+        
+        if (result.message === "Leaderboard fetched successfully") {
+          // Process data and add rank
+          const processedData = result.data
+            .sort((a, b) => b.points - a.points) // Sort by points in descending order
+            .map((item, index) => ({
+              rank: index + 1,
+              gitid: item.student,
+              points: item.points.toFixed(2),
+              lastUpdated: new Date(item.lastUpdated).toLocaleDateString()
+            }));
+          
+          setLeaderboardData(processedData);
+          setFilteredData(processedData);
+          setLoading(false);
+        } else {
+          console.error("Failed to fetch leaderboard data");
+          setLoading(false);
         }
-
-        // for(let i = 0; i < rows.length ; i++){
-        //     let str = rows[i];
-        //     if(i == rows.length - 1){
-        //     }
-        //     else{
-        //       let s = "";
-        //       for(let j = 0; j < str.length - 1; j++){
-        //         s += str[j];
-        //       }
-        //       str = s;
-        //     }
-
-        //     let score = {};
-
-        //     let arr = [];
-        //     let temp = "";
-        //     for(let j = 0; j < str.length; j++){
-        //         if(str[j] == ","){
-        //           arr.push(temp);
-        //           temp = "";
-        //         }
-        //         else{
-        //           temp += str[j];
-        //         }
-        //     }
-        //     arr.push(temp);
-        // Hi
-        //   score["rank"] = i+1;
-        //   score["gitid"] = arr[0];
-        //   score["points"] = arr[1];
-        //   tempfi.push(score);
-        // }
-        setFi(finalArr);
-        setSe(finalArr);
-        setLoading(false);
       } catch (error) {
-        console.log(error.message);
+        console.error("Error fetching leaderboard:", error);
+        setLoading(false);
       }
     }
-    getCSV();
+    
+    fetchLeaderboard();
   }, []);
 
-  const columns = useMemo(
+  const columns = React.useMemo(
     () => [
       {
         Header: "Position",
@@ -118,20 +66,20 @@ const Leaderboard = () => {
     []
   );
 
-  let data = useMemo(() => fi, [fi]);
-  let data_dup = useMemo(() => se, [se]);
-
   const SearchHandler = (e) => {
-    let query = e.target.value.toLowerCase();
-    let temp = [];
-    data_dup.forEach((user) => {
-      if (user.gitid.toLowerCase().includes(query)) temp.push(user);
-    });
-    setFi(temp);
+    const query = e.target.value.toLowerCase();
+    const filtered = leaderboardData.filter((user) => 
+      user.gitid.toLowerCase().includes(query)
+    );
+    setFilteredData(filtered);
   };
 
   const tableInstance = useTable(
-    { columns, data, initialState: { pageIndex: 0, pageSize: 5 } },
+    { 
+      columns, 
+      data: filteredData,
+      initialState: { pageIndex: 0, pageSize: 10 } 
+    },
     usePagination
   );
 
@@ -155,28 +103,14 @@ const Leaderboard = () => {
       <Navigation />
       <div className="leader-stars"></div>
       <div className="leader-twinkling"></div>
-      <div style={style}>
+      <div>
         <div className="space"></div>
-        <div className="title mb-5 p-3">LEADERBOARD 2024</div>
-        <div className="subtitle mb-5 p-3">Coming soon...</div>
-
-        <NavLink style={{display:"none"}} to="/leaderboard/weekly">
-          <StyledButton1 variant="outlined">VIEW WEEK-1 LEADERBOARD</StyledButton1>
-        </NavLink>
-
-        <NavLink style={{display:"none"}} to="/leaderboard/weekly2">
-          <StyledButton variant="outlined">VIEW WEEK-2 LEADERBOARD</StyledButton>
-        </NavLink>
-
-        <NavLink style={{display:"none"}} to="/leaderboard/weekly3">
-          <StyledButton variant="outlined">VIEW WEEK-3 LEADERBOARD</StyledButton>
-        </NavLink>
+        <div className="title mb-5 p-3">LEADERBOARD 2025</div>
 
         {loading ? (
-          // <Loading />
-          <></>
+          <Loading />
         ) : (
-          <Container style={{display:"none"}}>
+          <Container>
             <input
               type="search"
               name="searchBar"
@@ -186,82 +120,21 @@ const Leaderboard = () => {
             />
 
             <div className="tablee">
-              {/* <BTable responsive borderless striped hover>
-              <thead>
-                <tr className='mt-5'>
-                  <th>Position</th>
-                  <th>GitHub Handle</th>
-                  <th>Score</th>
-                </tr>
-              </thead>
-              <tbody>
-                {Array.from({ length: 5 }).map((_, index) => (
-                  <TableRow
-                    key={index}
-                    position={index + 1}
-                    handle={"akr-25"}
-                    dp={"https://avatars.githubusercontent.com/u/79211216?v=4"}
-                  />
-                ))}
-              </tbody>
-            </BTable> */}
-              {/* <BTable responsive borderless hover {...getTableProps()}>
-              <thead >
-                {headerGroups.map((headerGroup) => (
-                  <tr {...headerGroup.getHeaderGroupProps()}>
-                    {headerGroup.headers.map((column) => (
-                      <th {...column.getHeaderProps()}>
-                        <Heading>
-                        {column.render("Header")}
-                        </Heading>
-                      </th>
-                    ))}
-                  </tr>
-                ))}
-              </thead>
-              <tbody {...getTableBodyProps()}>
-                {page.map((row, i) => {
-                  prepareRow(row);
-                  return (
-                    <tr {...row.getRowProps()}>
-                      {row.cells.map((cell) => {
-                        if (cell["column"]["id"] !== "gitid")
-                          return (
-                            <td {...cell.getCellProps()}>
-                              <Name>
-                              {cell["value"]}
-                              </Name>
-                            </td>
-                          );
-                        else
-                          return (
-                            <td {...cell.getCellProps()}>
-                            <Name>
-                              <Image alt={cell["value"]} src={"https://github.com/"+cell["value"]+".png"} />
-                              <SLink to={'/points/' + cell["value"]}>{cell["value"]}</SLink>
-                            </Name>
-                            </td>
-                          );
-                      })}
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </BTable> */}
-
               <BTable responsive borderless hover>
                 <thead>
-                  <th className="left-position">Position</th>
-                  <th className="middle-id">Github ID</th>
-                  <th className="right-score">Score</th>
+                  <tr style={{width: "100%"}}>
+                    <th className="left-position">Position</th>
+                    <th className="middle-id">Github ID</th>
+                    <th className="right-score">Score</th>
+                  </tr>
                 </thead>
                 <tbody {...getTableBodyProps()}>
                   {page.map((row, i) => {
                     prepareRow(row);
                     return (
-                      <tr {...row.getRowProps()}>
+                      <tr {...row.getRowProps()} key={i}>
                         {row.cells.map((cell, index) => {
-                          if (cell["column"]["id"] === "gitid")
+                          if (cell.column.id === "gitid")
                             return (
                               <td
                                 className="middle-id"
@@ -269,32 +142,32 @@ const Leaderboard = () => {
                                 key={index}
                               >
                                 <Image
-                                  alt={cell["value"]}
+                                  alt={cell.value}
                                   src={
                                     "https://github.com/" +
-                                    cell["value"] +
+                                    cell.value +
                                     ".png"
                                   }
                                 />
-                                <SLink to={"/points/" + cell["value"]}>
-                                  {cell["value"]}
+                                <SLink to={"/points/" + cell.value}>
+                                  {cell.value}
                                 </SLink>
                               </td>
                             );
-                          else if (cell["column"]["id"] === "rank")
+                          else if (cell.column.id === "rank")
                             return (
                               <td
                                 className="left-position"
                                 {...cell.getCellProps()}
                                 key={index}
                               >
-                                {cell["value"] === 1 && <Gold>1</Gold>}
-                                {cell["value"] === 2 && <Silver>2</Silver>}
-                                {cell["value"] === 3 && <Bronze>3</Bronze>}
-                                {cell["value"] !== 1 &&
-                                  cell["value"] !== 2 &&
-                                  cell["value"] !== 3 && (
-                                    <Text>{cell["value"]}</Text>
+                                {cell.value === 1 && <Gold>1</Gold>}
+                                {cell.value === 2 && <Silver>2</Silver>}
+                                {cell.value === 3 && <Bronze>3</Bronze>}
+                                {cell.value !== 1 &&
+                                  cell.value !== 2 &&
+                                  cell.value !== 3 && (
+                                    <Text>{cell.value}</Text>
                                   )}
                               </td>
                             );
@@ -303,8 +176,9 @@ const Leaderboard = () => {
                               <td
                                 className="right-score"
                                 {...cell.getCellProps()}
+                                key={index}
                               >
-                                <Text>{cell["value"]}</Text>
+                                <Text>{cell.value}</Text>
                               </td>
                             );
                         })}
@@ -313,6 +187,7 @@ const Leaderboard = () => {
                   })}
                 </tbody>
               </BTable>
+              
               <div className="pagination">
                 <div className="pagination-left">
                   <span id="pageof">
@@ -365,7 +240,6 @@ const Leaderboard = () => {
 
                   <Dropdown>
                     <Dropdown.Toggle
-                      // variant='info'
                       style={{
                         backgroundColor: "#cce7ff",
                         marginLeft: "1em",
@@ -382,7 +256,7 @@ const Leaderboard = () => {
                         <Dropdown.Item
                           key={pageSize}
                           value={pageSize}
-                          onClick={(e) => {
+                          onClick={() => {
                             setPageSize(pageSize);
                           }}
                         >
@@ -397,15 +271,14 @@ const Leaderboard = () => {
           </Container>
         )}
         <div className="space"></div>
-        {/* <Footer bg="#12263F" /> */}
       </div>
-      {/* <ScrollButton /> */}
     </>
   );
 };
 
 export default Leaderboard;
 
+// Styled Components
 const Image = styled(Avatar)`
   margin: 2px 0px;
   margin-left: 15px;
@@ -468,29 +341,4 @@ const Bronze = styled.div`
   width: 25px;
   height: 25px;
   padding: 0.7rem;
-`;
-
-const StyledButton = styled.button`
-  background-color: #0d233b;
-  box-shadow: 0 0 11px #45889b;
-  color: #a6d2ff;
-  margin-left: 10px;
-  border: 2px solid #a6d2ff;
-  border-radius: 6px;
-  margin-top: -3%;
-  padding: 6px 12px 6px 12px;
-  
-  @media (max-width: 500px) {
-    margin-top: 3%;
-  }
-`;
-const StyledButton1 = styled.button`
-  background-color: #0d233b;
-  box-shadow: 0 0 11px #45889b;
-  color: #a6d2ff;
-  margin-left: 10px;
-  border: 2px solid #a6d2ff;
-  border-radius: 6px;
-  padding: 6px 12px 6px 12px;
-  margin-top: -3%;
 `;
