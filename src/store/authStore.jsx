@@ -90,13 +90,7 @@ export const useAuthStore = create((set) => ({
 		set({ isLoading: true });
 		localStorage.setItem("auth", false);
 		localStorage.removeItem("isMentor");
-		const resp = await fetch("/api/logout", {
-			method: "POST",
-			headers: {
-				"Content-Type": "application/json"
-			}
-		})
-		if (!resp.ok) throw resp;
+		
 		set({ isAuthenticated: false, error: null, isLoading: false, isCheckingAuth: false });
 	}
 }));
