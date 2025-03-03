@@ -55,8 +55,8 @@ function App() {
           <Route path='/events' element={<Events />} />
           <Route path='/login' element={<RedirectAuthenticatedUser><Login /></RedirectAuthenticatedUser>} />
           <Route path='/logout' element={<Logout />} />
-          <Route path='/studentProfile' element={ <StudentProfile />} />
-          <Route path='/mentorProfile' element={<MentorProfile />} />
+          <Route path='/studentProfile' element={<ProtectedRoutes student={true}><StudentProfile /></ProtectedRoutes>} />
+          <Route path='/mentorProfile' element={<ProtectedRoutes mentor={true}><MentorProfile /></ProtectedRoutes>} />
           <Route path='/changePassword' element={<ProtectedRoutes><ChangePassword /></ProtectedRoutes>} />
         </Routes>
       </BrowserRouter>
