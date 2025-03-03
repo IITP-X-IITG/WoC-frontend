@@ -12,6 +12,81 @@ export default function MentorDashboard({ mentorGit, email }) {
   const [projectData, setProjectData] = useState({});
   const [groupedProjects, setGroupedProjects] = useState({});
 
+  // First, let's add state to track points for each issue and PR
+  const [issuePoints, setIssuePoints] = useState({});
+  const [prPoints, setPrPoints] = useState({});
+
+  // Add this function to handle point changes for issues
+  const handleIssuePointChange = (id, value) => {
+    // Ensure value is not negative
+    const points = Math.max(0, parseInt(value) || 0);
+    setIssuePoints({
+      ...issuePoints,
+      [id]: points
+    });
+  };
+
+  // Add this function to handle point changes for PRs
+  const handlePRPointChange = (id, value) => {
+    // Ensure value is not negative
+    const points = Math.max(0, parseInt(value) || 0);
+    setPrPoints({
+      ...prPoints,
+      [id]: points
+    });
+  };
+
+  // Add this function to handle submission of points
+  const handleOnSubmit = async (id, points) => {
+    try {
+      const response = await fetch('/api/transactions/mentor-project', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          mentor: mentorGit,
+          email,
+          id,
+          points
+        })
+      });
+      const result = await response.json();
+      
+      if (response.ok) {
+        // Success case - update UI with the new points
+        // Update the local state to reflect the changes
+        if (issues.some(issue => issue.id === id)) {
+          setIssues(issues.map(issue => 
+            issue.id === id ? { ...issue, points } : issue
+          ));
+          setIssuePoints({
+            ...issuePoints,
+            [id]: points
+          });
+        } else if (pullRequests.some(pr => pr.id === id)) {
+          setPullRequests(pullRequests.map(pr => 
+            pr.id === id ? { ...pr, points } : pr
+          ));
+          setPrPoints({
+            ...prPoints,
+            [id]: points
+          });
+        }
+        
+        // Show success message
+        alert('Points updated successfully!');
+      } else {
+        // Error case
+        alert(`Failed to update points: ${result.message || 'Unknown error'}`);
+        console.error('Error updating points:', result);
+      }
+    } catch (error) {
+      console.error('Error submitting points:', error);
+      alert('Failed to submit points. Please try again.');
+    }
+  };
+
   // Use the mentorGit prop instead of hardcoding
   const mentorGitUrl = mentorGit || "";
 
@@ -34,7 +109,7 @@ export default function MentorDashboard({ mentorGit, email }) {
         result.data.forEach(item => {
           // Extract project URL and name
           const repoName = item.project.split('/')[4];
-          
+
           // Group projects by name
           if (!projectGroups[repoName]) {
             projectGroups[repoName] = {
@@ -70,7 +145,7 @@ export default function MentorDashboard({ mentorGit, email }) {
 
         // Convert grouped projects to array
         const groupedProjectsList = Object.values(projectGroups);
-        
+
         // Update state
         setGroupedProjects(projectGroups);
         setProjects(groupedProjectsList);
@@ -117,9 +192,9 @@ export default function MentorDashboard({ mentorGit, email }) {
         width: '250px',
         minHeight: '50vh',
         background: 'rgba(255, 255, 255, 0.1)',
-        backdropFilter: 'blur(5px)'
+        backdropFilter: 'blur(5px)',
+        padding: '30px 10px'
       }}>
-        <div className="p-3"></div>
         <h5 className="text-white mb-4" style={{
           fontSize: '1.5rem',
           fontWeight: 'bold'
@@ -183,7 +258,16 @@ export default function MentorDashboard({ mentorGit, email }) {
         <Container fluid className="">
           {activeProject ? (
             <>
-              <h4 className="text-white mt-3 mb-4">Project: {activeProject}</h4>
+              <h4 className="text-white mb-4"
+                style={{
+                  background: 'rgba(255, 255, 255, 0.1)',
+                  border: '1px solid rgba(255, 255, 255, 0.2)',
+                  color: 'white',
+                  borderRadius: '12px',
+                  padding: '16px 20px',
+                  cursor: 'pointer',
+                  backdropFilter: 'blur(5px)'
+                }}>Project: {activeProject}</h4>
               <Row className="g-4">
                 {/* Issues Column */}
                 <Col md={6}>
@@ -199,11 +283,11 @@ export default function MentorDashboard({ mentorGit, email }) {
                             >
                               <div className="d-flex align-items-center">
                                 <span className="fw-bold">Issue #{issue.number}</span>
-                                <Button 
-                                  variant="outline-secondary" 
-                                  size="sm" 
+                                <Button
+                                  variant="outline-secondary"
+                                  size="sm"
                                   className="ms-2"
-                                  as="a" 
+                                  as="a"
                                   href={`${issue.url}`}
                                   target="_blank"
                                   rel="noopener noreferrer"
@@ -211,13 +295,26 @@ export default function MentorDashboard({ mentorGit, email }) {
                                   <FaGithub />
                                 </Button>
                               </div>
+                              <div className="d-flex align-items-center">
                               <Form.Control
                                 type="number"
-                                value={issue.points}
-                                onChange={() => { }}
+                                value={issuePoints[issue.id] !== undefined ? issuePoints[issue.id] : issue.points}
+                                onChange={(e) => handleIssuePointChange(issue.id, e.target.value)}
                                 placeholder="Points"
                                 style={{ width: '70px' }}
+                                min="0"
                               />
+                              <Button
+                                  variant="outline-secondary"
+                                  size="sm"
+                                  className="ms-2"
+                                  rel="noopener noreferrer"
+                                  onClick={() => { handleOnSubmit(issue.id, issuePoints[issue.id]) }}
+                                  disabled={!issuePoints[issue.id] || issuePoints[issue.id] === 0}
+                                >
+                                  Submit
+                                </Button>
+                              </div>
                             </li>
                           ))
                         ) : (
@@ -242,11 +339,11 @@ export default function MentorDashboard({ mentorGit, email }) {
                             >
                               <div className="d-flex align-items-center">
                                 <span className="fw-bold">Pull #{pr.number}</span>
-                                <Button 
-                                  variant="outline-secondary" 
-                                  size="sm" 
+                                <Button
+                                  variant="outline-secondary"
+                                  size="sm"
                                   className="ms-2"
-                                  as="a" 
+                                  as="a"
                                   href={`${pr.url}`}
                                   target="_blank"
                                   rel="noopener noreferrer"
@@ -254,13 +351,27 @@ export default function MentorDashboard({ mentorGit, email }) {
                                   <FaGithub />
                                 </Button>
                               </div>
+
+                              <div className="d-flex align-items-center">
                               <Form.Control
                                 type="number"
-                                value={pr.points}
-                                onChange={() => { }}
+                                value={prPoints[pr.id] !== undefined ? prPoints[pr.id] : pr.points}
+                                onChange={(e) => handlePRPointChange(pr.id, e.target.value)}
                                 placeholder="Points"
                                 style={{ width: '70px' }}
+                                min="0"
                               />
+                              <Button
+                                  variant="outline-secondary"
+                                  size="sm"
+                                  className="ms-2"
+                                  rel="noopener noreferrer"
+                                  onClick={() => { handleOnSubmit(pr.id, prPoints[pr.id]) }}
+                                  disabled={!prPoints[pr.id] || prPoints[pr.id] === 0}
+                                >
+                                  Submit
+                                </Button>
+                              </div>
                             </li>
                           ))
                         ) : (
@@ -293,11 +404,6 @@ export default function MentorDashboard({ mentorGit, email }) {
             <Button variant="outline-danger">Remove Project</Button>
           </div>
         </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleModalClose}>
-            Close
-          </Button>
-        </Modal.Footer>
       </Modal>
     </div>
   );
