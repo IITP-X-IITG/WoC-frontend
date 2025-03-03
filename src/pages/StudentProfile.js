@@ -26,7 +26,7 @@ export default function StudentProfile() {
             </div>
             
             <StudentDashboard 
-                gitHub={user?.gitHub || ''} 
+                gitHub={user?.github || ''} 
                 email={user?.email || ''} 
             />
                 

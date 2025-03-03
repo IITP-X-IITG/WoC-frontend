@@ -110,3 +110,12 @@
   }
   
 }
+.dashboard-tbody .dashboard-tr {
+  flex-direction: column;
+  width: 100%;
+}
+
+.dashboard-tbody .dashboard-tr > div {
+  display: flex;
+  width: 100%;
+}
