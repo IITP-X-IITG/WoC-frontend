@@ -27,7 +27,7 @@ const Leaderboard = () => {
             .sort((a, b) => b.points - a.points) // Sort by points in descending order
             .map((item, index) => ({
               rank: index + 1,
-              gitid: item.student,
+              gitid: item.student.split("/")[3],
               points: item.points.toFixed(2),
               lastUpdated: new Date(item.lastUpdated).toLocaleDateString()
             }));

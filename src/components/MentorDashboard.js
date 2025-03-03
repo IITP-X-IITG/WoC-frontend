@@ -1,10 +1,11 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, use } from "react"
 import { Container, Row, Col, Card, Button, Form, Modal } from "react-bootstrap"
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"
 
 export default function MentorDashboard({ mentorGit, email }) {
+  const [data, setData] = useState([]);
   const [projects, setProjects] = useState([])
   const [issues, setIssues] = useState([])
   const [pullRequests, setPullRequests] = useState([])
@@ -84,36 +85,61 @@ export default function MentorDashboard({ mentorGit, email }) {
 
   const handleOnSubmit = async (id, points) => {
     try {
-      const response = await fetch("/api/transactions/mentor-project", {
+      // Find the item in either issues or pull requests
+      let item = issues.find(issue => issue.id === id);
+      if (!item) {
+        item = pullRequests.find(pr => pr.id === id);
+      }
+
+      if (!item) {
+        console.error('Could not find item with id:', id);
+        alert('Error: Item not found');
+        return;
+      }
+
+      // Get the project url from item
+      const projectUrl = item.url;
+
+      const studentUrl = data.map((item) => item.student);
+      console.log(studentUrl);
+
+      const response = await fetch("/api/transactions/update", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          mentor: mentorGit,
-          email,
-          id,
-          points,
-        }),
-      })
-      const result = await response.json()
+          student: studentUrl || "", // Use item.student if available, or empty string
+          project: projectUrl,
+          open: false,
+          points: points
+        })
+      });
+      const result = await response.json();
 
       if (response.ok) {
-        if (issues.some((issue) => issue.id === id)) {
-          setIssues(issues.map((issue) => (issue.id === id ? { ...issue, points } : issue)))
+        // Success case - update UI with the new points
+        // Update the local state to reflect the changes
+        if (issues.some(issue => issue.id === id)) {
+          setIssues(issues.map(issue =>
+            issue.id === id ? { ...issue, points } : issue
+          ));
           setIssuePoints({
             ...issuePoints,
-            [id]: points,
-          })
-        } else if (pullRequests.some((pr) => pr.id === id)) {
-          setPullRequests(pullRequests.map((pr) => (pr.id === id ? { ...pr, points } : pr)))
+            [id]: points
+          });
+        } else if (pullRequests.some(pr => pr.id === id)) {
+          setPullRequests(pullRequests.map(pr =>
+            pr.id === id ? { ...pr, points } : pr
+          ));
           setPrPoints({
             ...prPoints,
             [id]: points,
           })
         }
 
-        alert("Points updated successfully!")
+        // Show success message
+        alert('Points updated successfully!');
       } else {
         alert(`Failed to update points: ${result.message || "Unknown error"}`)
         console.error("Error updating points:", result)
@@ -129,67 +155,28 @@ export default function MentorDashboard({ mentorGit, email }) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // const response = await fetch(`/api/transactions/mentor-project?mentor=${encodeURIComponent(mentorGitUrl)}`, {
-        //   method: "GET",
-        //   headers: {
-        //     "Content-Type": "application/json"
-        //   },
-        // });
-        // const result = await response.json();
-        const result = {
-          message: "Transactions fetched successfully",
-          data: [
-            {
-              _id: "67c0ea9e05979f6045178972",
-              student: "https://github.com/HelloSniperMonkey",
-              mentor: "https://github.com/HelloSniperMonkey/",
-              project: "https://github.com/HelloSniperMonkey/tabnavi/pull/2",
-              type: "pull",
-              open: true,
-              points: 0,
-              __v: 0,
-            },
-            {
-              _id: "67c0ea9f05979f6045178977",
-              student: "https://github.com/HelloSniperMonkey",
-              mentor: "https://github.com/HelloSniperMonkey/",
-              project: "https://github.com/HelloSniperMonkey/tabnavi/issues/1",
-              type: "issues",
-              open: true,
-              points: 0,
-              __v: 0,
-            },
-            {
-              _id: "67c209e565b0a01de768dcea",
-              student: "https://github.apps/dependabot",
-              mentor: "https://github.com/HelloSniperMonkey/",
-              project: "https://github.com/HelloSniperMonkey/AI-flowchart-app/pull/5",
-              type: "pull",
-              open: true,
-              points: 0,
-              __v: 0,
-            },
-            {
-              _id: "67c33c93f3331f157d62d933",
-              student: "https://github.com/HelloSniperMonkey",
-              mentor: "https://github.com/HelloSniperMonkey/",
-              project: "https://github.com/HelloSniperMonkey/tabnavi/issues/3",
-              type: "issues",
-              open: true,
-              points: 0,
-              __v: 0,
-            },
-          ],
-        }
-        console.log(result)
+        const response = await fetch(`/api/transactions/mentor-project?mentor=${encodeURIComponent(mentorGitUrl)}`, {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json"
+          },
+        });
+        const result = await response.json();
+        setData(result.data);
+
+        console.log(result);
         // Parse and organize data
         const projectGroups = {}
         const projectDataMap = {}
 
-        result.data.forEach((item) => {
-  
-          const repoName = item.project.split("/")[4]
+        result.data.forEach(item => {
+          // Skip items where open is false
+          if (item.open === false) return;
+          
+          // Extract project URL and name
+          const repoName = item.project.split('/')[4];
 
+          // Group projects by name
           if (!projectGroups[repoName]) {
             projectGroups[repoName] = {
               name: repoName,
@@ -214,14 +201,15 @@ export default function MentorDashboard({ mentorGit, email }) {
             id: item._id,
             number: Number.parseInt(item.project.split("/").pop()), // Extract number from URL
             points: item.points,
-            url: item.project, 
-            student: item.student,
-          }
+            url: item.project,  // Store the full URL for linking
+            open: item.open
+          };
 
-          if (item.type === "issues") {
-            projectDataMap[repoName].issues.push(formattedItem)
-          } else if (item.type === "pull") {
-            projectDataMap[repoName].pullRequests.push(formattedItem)
+          // Sort into issues or PRs
+          if (item.type === 'issues') {
+            projectDataMap[repoName].issues.push(formattedItem);
+          } else if (item.type === 'pull') {
+            projectDataMap[repoName].pullRequests.push(formattedItem);
           }
         })
 
@@ -249,6 +237,7 @@ export default function MentorDashboard({ mentorGit, email }) {
 
   const handleModalOpen = (project) => {
     setSelectedProject(project)
+    console.log('hello', project);
     setShowModal(true)
   }
 
@@ -558,15 +547,15 @@ export default function MentorDashboard({ mentorGit, email }) {
                                 </Button>
                               </div>
                               <div className="d-flex align-items-center">
-                                <Form.Control
-                                  type="number"
-                                  value={issuePoints[issue.id] !== undefined ? issuePoints[issue.id] : issue.points}
-                                  onChange={(e) => handleIssuePointChange(issue.id, e.target.value)}
-                                  placeholder="Points"
-                                  style={{ width: "70px" }}
-                                  min="0"
-                                />
-                                <Button
+                                  <Form.Control
+                                    type="number"
+                                    value={issuePoints[issue.id] !== undefined ? issuePoints[issue.id] : issue.points}
+                                    onChange={(e) => handleIssuePointChange(issue.id, e.target.value)}
+                                    placeholder="Points"
+                                    style={{ width: "70px" }}
+                                    min="0"
+                                  />
+                                  <Button
                                   variant="outline-secondary"
                                   size="sm"
                                   className="ms-2"
@@ -622,7 +611,7 @@ export default function MentorDashboard({ mentorGit, email }) {
                                   value={prPoints[pr.id] !== undefined ? prPoints[pr.id] : pr.points}
                                   onChange={(e) => handlePRPointChange(pr.id, e.target.value)}
                                   placeholder="Points"
-                                  style={{ width: "70px" }}
+                                  style={{ width: '70px' }}
                                   min="0"
                                 />
                                 <Button
@@ -654,6 +643,7 @@ export default function MentorDashboard({ mentorGit, email }) {
               <p className="text-muted">Select a project to view details</p>
             </div>
           )}
+          
         </Container>
       </div>
 
