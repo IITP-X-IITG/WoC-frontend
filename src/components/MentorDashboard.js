@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, use } from 'react';
 import { Container, Row, Col, Card, Button, Form, Modal } from 'react-bootstrap';
 import { FaGithub } from 'react-icons/fa';
 
 export default function MentorDashboard({ mentorGit, email }) {
+  const [data, setData] = useState([]);
   const [projects, setProjects] = useState([]);
   const [issues, setIssues] = useState([]);
   const [pullRequests, setPullRequests] = useState([]);
@@ -39,25 +40,43 @@ export default function MentorDashboard({ mentorGit, email }) {
   // Add this function to handle submission of points
   const handleOnSubmit = async (id, points) => {
     try {
-      const response = await fetch('/api/transactions/mentor-project', {
+      // Find the item in either issues or pull requests
+      let item = issues.find(issue => issue.id === id);
+      if (!item) {
+        item = pullRequests.find(pr => pr.id === id);
+      }
+
+      if (!item) {
+        console.error('Could not find item with id:', id);
+        alert('Error: Item not found');
+        return;
+      }
+
+      // Get the project url from item
+      const projectUrl = item.url;
+
+      const studentUrl = data.map((item) => item.student);
+      console.log(studentUrl);
+
+      const response = await fetch('/api/transactions/update', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          mentor: mentorGit,
-          email,
-          id,
-          points
+          student: studentUrl || "", // Use item.student if available, or empty string
+          project: projectUrl,
+          open: false,
+          points: points
         })
       });
       const result = await response.json();
-      
+
       if (response.ok) {
         // Success case - update UI with the new points
         // Update the local state to reflect the changes
         if (issues.some(issue => issue.id === id)) {
-          setIssues(issues.map(issue => 
+          setIssues(issues.map(issue =>
             issue.id === id ? { ...issue, points } : issue
           ));
           setIssuePoints({
@@ -65,7 +84,7 @@ export default function MentorDashboard({ mentorGit, email }) {
             [id]: points
           });
         } else if (pullRequests.some(pr => pr.id === id)) {
-          setPullRequests(pullRequests.map(pr => 
+          setPullRequests(pullRequests.map(pr =>
             pr.id === id ? { ...pr, points } : pr
           ));
           setPrPoints({
@@ -73,7 +92,7 @@ export default function MentorDashboard({ mentorGit, email }) {
             [id]: points
           });
         }
-        
+
         // Show success message
         alert('Points updated successfully!');
       } else {
@@ -100,6 +119,7 @@ export default function MentorDashboard({ mentorGit, email }) {
           },
         });
         const result = await response.json();
+        setData(result.data);
 
         console.log(result);
         // Parse and organize data
@@ -107,6 +127,9 @@ export default function MentorDashboard({ mentorGit, email }) {
         const projectDataMap = {};
 
         result.data.forEach(item => {
+          // Skip items where open is false
+          if (item.open === false) return;
+          
           // Extract project URL and name
           const repoName = item.project.split('/')[4];
 
@@ -132,7 +155,8 @@ export default function MentorDashboard({ mentorGit, email }) {
             id: item._id,
             number: parseInt(item.project.split('/').pop()), // Extract number from URL
             points: item.points,
-            url: item.project  // Store the full URL for linking
+            url: item.project,  // Store the full URL for linking
+            open: item.open
           };
 
           // Sort into issues or PRs
@@ -170,6 +194,7 @@ export default function MentorDashboard({ mentorGit, email }) {
 
   const handleModalOpen = (project) => {
     setSelectedProject(project);
+    console.log('hello', project);
     setShowModal(true);
   };
 
@@ -296,15 +321,15 @@ export default function MentorDashboard({ mentorGit, email }) {
                                 </Button>
                               </div>
                               <div className="d-flex align-items-center">
-                              <Form.Control
-                                type="number"
-                                value={issuePoints[issue.id] !== undefined ? issuePoints[issue.id] : issue.points}
-                                onChange={(e) => handleIssuePointChange(issue.id, e.target.value)}
-                                placeholder="Points"
-                                style={{ width: '70px' }}
-                                min="0"
-                              />
-                              <Button
+                                <Form.Control
+                                  type="number"
+                                  value={issuePoints[issue.id] !== undefined ? issuePoints[issue.id] : issue.points}
+                                  onChange={(e) => handleIssuePointChange(issue.id, e.target.value)}
+                                  placeholder="Points"
+                                  style={{ width: '70px' }}
+                                  min="0"
+                                />
+                                <Button
                                   variant="outline-secondary"
                                   size="sm"
                                   className="ms-2"
@@ -353,15 +378,15 @@ export default function MentorDashboard({ mentorGit, email }) {
                               </div>
 
                               <div className="d-flex align-items-center">
-                              <Form.Control
-                                type="number"
-                                value={prPoints[pr.id] !== undefined ? prPoints[pr.id] : pr.points}
-                                onChange={(e) => handlePRPointChange(pr.id, e.target.value)}
-                                placeholder="Points"
-                                style={{ width: '70px' }}
-                                min="0"
-                              />
-                              <Button
+                                <Form.Control
+                                  type="number"
+                                  value={prPoints[pr.id] !== undefined ? prPoints[pr.id] : pr.points}
+                                  onChange={(e) => handlePRPointChange(pr.id, e.target.value)}
+                                  placeholder="Points"
+                                  style={{ width: '70px' }}
+                                  min="0"
+                                />
+                                <Button
                                   variant="outline-secondary"
                                   size="sm"
                                   className="ms-2"
@@ -388,6 +413,7 @@ export default function MentorDashboard({ mentorGit, email }) {
               <p className="text-muted">Select a project to view details</p>
             </div>
           )}
+          
         </Container>
       </div>
 
