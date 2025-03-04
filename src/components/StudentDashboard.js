@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './Dashboard.css';
 
-const StudentDashboard = ({ gitHub, email }) => {
+const StudentDashboard = ({ github, email }) => {
   const [projects, setProjects] = useState([]);
-  const giturl = gitHub | "";
+  const giturl = github;
 
   useEffect(() => {
     if (giturl) {
@@ -25,7 +25,7 @@ const StudentDashboard = ({ gitHub, email }) => {
       };
       fetchProjects();
     }
-  }, [gitHub]);
+  }, [github]);
 
   return (
     <>
