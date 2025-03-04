@@ -100,8 +100,12 @@ export default function MentorDashboard({ mentorGit, email }) {
       // Get the project url from item
       const projectUrl = item.url;
 
-      const studentUrl = data.map((item) => item.student);
-      console.log(studentUrl);
+      let studentUrl = "";
+      data.forEach(element => {
+        if(element._id === id)
+          studentUrl = element.student;
+      });
+      // console.log(studentUrl);
 
       const response = await fetch("/api/transactions/update", {
         method: "POST",
