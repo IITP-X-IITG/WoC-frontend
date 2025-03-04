@@ -100,13 +100,26 @@ export default function MentorDashboard({ mentorGit, email }) {
       // Get the project url from item
       const projectUrl = item.url;
 
-      const studentUrl = data.map((item) => item.student);
-      console.log(studentUrl);
+      let studentUrl = "";
+      data.forEach(element => {
+        if(element._id === id)
+          studentUrl = element.student;
+      });
+
+      let reqValue="";
+      const allcookies = document.cookie.split(';');
+      allcookies.map(async (cookie, index) => {
+        const [key, value] = cookie.split('=');
+        if (key.trim() === 'token') {
+          reqValue = value;
+        }
+      });
 
       const response = await fetch("/api/transactions/update", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
+          "Content-Type": "application/json" ,
+          authorization: `Bearer ${reqValue}`
         },
         body: JSON.stringify({
           student: studentUrl || "", // Use item.student if available, or empty string
@@ -118,24 +131,23 @@ export default function MentorDashboard({ mentorGit, email }) {
       const result = await response.json();
 
       if (response.ok) {
-        // Success case - update UI with the new points
-        // Update the local state to reflect the changes
+        // Success case - update UI by removing the item that has been assigned points
         if (issues.some(issue => issue.id === id)) {
-          setIssues(issues.map(issue =>
-            issue.id === id ? { ...issue, points } : issue
-          ));
-          setIssuePoints({
-            ...issuePoints,
-            [id]: points
-          });
+          // Remove the issue from the list
+          setIssues(issues.filter(issue => issue.id !== id));
+          
+          // Clean up the points state
+          const updatedIssuePoints = { ...issuePoints };
+          delete updatedIssuePoints[id];
+          setIssuePoints(updatedIssuePoints);
         } else if (pullRequests.some(pr => pr.id === id)) {
-          setPullRequests(pullRequests.map(pr =>
-            pr.id === id ? { ...pr, points } : pr
-          ));
-          setPrPoints({
-            ...prPoints,
-            [id]: points,
-          })
+          // Remove the pull request from the list
+          setPullRequests(pullRequests.filter(pr => pr.id !== id));
+          
+          // Clean up the points state
+          const updatedPrPoints = { ...prPoints };
+          delete updatedPrPoints[id];
+          setPrPoints(updatedPrPoints);
         }
 
         // Show success message
@@ -150,9 +162,8 @@ export default function MentorDashboard({ mentorGit, email }) {
     }
   }
 
-  const mentorGitUrl = mentorGit || ""
-
   useEffect(() => {
+    const mentorGitUrl = mentorGit
     const fetchData = async () => {
       try {
         const response = await fetch(`/api/transactions/mentor-project?mentor=${encodeURIComponent(mentorGitUrl)}`, {
@@ -230,10 +241,10 @@ export default function MentorDashboard({ mentorGit, email }) {
       }
     }
 
-    if (true) {
+    if (mentorGitUrl) {
       fetchData()
     }
-  }, [])
+  }, [mentorGit])
 
   const handleModalOpen = (project) => {
     setSelectedProject(project)

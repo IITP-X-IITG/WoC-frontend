@@ -31,7 +31,6 @@
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-testing-library": "^7.1.1",
     "http-proxy-middleware": "^3.0.3",
-    "infinite-react-carousel": "^1.2.11",
     "jquery": "^3.7.1",
     "mdbreact": "^5.2.0",
     "react": "^19.0.0",

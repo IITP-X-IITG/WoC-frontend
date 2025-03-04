@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import data from "./2024_details.json";
 import dagshub from "../../pages/Images/dagshub.png";
@@ -6,9 +6,24 @@ import clueless from "../../pages/Images/clueless.png";
 import flutterK from "../../pages/Images/flutterK.png";
 
 function Project2023_Search() {
-    let [projects, setProjects] = useState(data);
+    let [projects, setProjects] = useState([]);
 
-    
+    useEffect(() => {
+        // Fetch data when component mounts
+        const fetchData = async () => {
+            try {
+                const response = await fetch("/api/add-project/get-all");
+                const result = await response.json();
+                console.log(result.data);
+                console.log(projects)
+                setProjects(result.data || []);
+            } catch (error) {
+                console.error("Error fetching additional projects:", error);
+            }
+        };
+        
+        fetchData();
+    }, []);
 
     const searchHandler = (e) => {
         console.log(e.target.value);
@@ -16,10 +31,10 @@ function Project2023_Search() {
         let temp = [];
         data.forEach((project) => {
             let flag = false;
-            project.tag.map((t) => {
+            project.tags.map((t) => {
                 if (t.toLowerCase().includes(query)) flag = true;
             });
-            project.lang.map((lan) => {
+            project.languages.map((lan) => {
                 if (lan.toLowerCase().includes(query)) flag = true;
             });
             if (flag) temp.push(project);
@@ -45,7 +60,7 @@ function Project2023_Search() {
                                 [
                                     el.dagshub === true ? (
                                         <div className="nwoc-repo-card">
-                                            <a href={el["repo-url"]} target="_blank" rel="noreferrer">
+                                            <a href={el["githubLink"]} target="_blank" rel="noreferrer">
                                                 <div className="repo-heading">
                                                     <img
                                                         src={dagshub}
@@ -54,7 +69,7 @@ function Project2023_Search() {
                                                     />
                                                     <a
                                                         className="repo-title-aviyel"
-                                                        href={el["repo-url"]}
+                                                        href={el["githubLink"]}
                                                         target="_blank"
                                                         rel="noreferrer"
                                                     >
@@ -62,7 +77,7 @@ function Project2023_Search() {
                                                     </a>
                                                 </div>
                                             </a>{" "}
-                                            <div className="repo-desc">{el.desc}</div>
+                                            <div className="repo-desc">{el.description}</div>
                                             <ul className="repo-stats">
                                                 <li>
                                                     <img
@@ -70,7 +85,7 @@ function Project2023_Search() {
                                                         src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"
                                                         alt=""
                                                     />{" "}
-                                                    {el.lang.toString().replaceAll(",", "/")}
+                                                    {el.languages.toString().replaceAll(",", "/")}
                                                 </li>
                                                 <li>
                                                     <img
@@ -78,7 +93,7 @@ function Project2023_Search() {
                                                         src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"
                                                         alt=""
                                                     />{" "}
-                                                    {el.tag.toString().replaceAll(",", "/")}
+                                                    {el.tags.toString().replaceAll(",", "/")}
                                                 </li>
                                             </ul>
                                         </div>
@@ -87,7 +102,7 @@ function Project2023_Search() {
                                             !el.flutterK ? (
                                                 <div className="nwoc-repo-card">
                                                     <a
-                                                        href={el["repo-url"]}
+                                                        href={el["githubLink"]}
                                                         target="_blank"
                                                         rel="noreferrer"
                                                     >
@@ -99,7 +114,7 @@ function Project2023_Search() {
                                                             />
                                                             <a
                                                                 className="repo-title-aviyel"
-                                                                href={el["repo-url"]}
+                                                                href={el["githubLink"]}
                                                                 target="_blank"
                                                                 rel="noreferrer"
                                                             >
@@ -107,7 +122,7 @@ function Project2023_Search() {
                                                             </a>
                                                         </div>
                                                     </a>{" "}
-                                                    <div className="repo-desc">{el.desc}</div>
+                                                    <div className="repo-desc">{el.description}</div>
                                                     <ul className="repo-stats">
                                                         <li>
                                                             <img
@@ -115,7 +130,7 @@ function Project2023_Search() {
                                                                 src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"
                                                                 alt=""
                                                             />{" "}
-                                                            {el.lang.toString().replaceAll(",", "/")}
+                                                            {el.languages.toString().replaceAll(",", "/")}
                                                         </li>
                                                         <li>
                                                             <img
@@ -123,14 +138,14 @@ function Project2023_Search() {
                                                                 src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"
                                                                 alt=""
                                                             />{" "}
-                                                            {el.tag.toString().replaceAll(",", "/")}
+                                                            {el.tags.toString().replaceAll(",", "/")}
                                                         </li>
                                                     </ul>
                                                 </div>
                                             ) : (
                                                 <div className="nwoc-repo-card">
                                                     <a
-                                                        href={el["repo-url"]}
+                                                        href={el["githubLink"]}
                                                         target="_blank"
                                                         rel="noreferrer"
                                                     >
@@ -142,7 +157,7 @@ function Project2023_Search() {
                                                             />
                                                             <a
                                                                 className="repo-title-aviyel"
-                                                                href={el["repo-url"]}
+                                                                href={el["githubLink"]}
                                                                 target="_blank"
                                                                 rel="noreferrer"
                                                             >
@@ -150,7 +165,7 @@ function Project2023_Search() {
                                                             </a>
                                                         </div>
                                                     </a>{" "}
-                                                    <div className="repo-desc">{el.desc}</div>
+                                                    <div className="repo-desc">{el.description}</div>
                                                     <ul className="repo-stats">
                                                         <li>
                                                             <img
@@ -158,7 +173,7 @@ function Project2023_Search() {
                                                                 src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"
                                                                 alt=""
                                                             />{" "}
-                                                            {el.lang.toString().replaceAll(",", "/")}
+                                                            {el.languages.toString().replaceAll(",", "/")}
                                                         </li>
                                                         <li>
                                                             <img
@@ -166,7 +181,7 @@ function Project2023_Search() {
                                                                 src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"
                                                                 alt=""
                                                             />{" "}
-                                                            {el.tag.toString().replaceAll(",", "/")}
+                                                            {el.tags.toString().replaceAll(",", "/")}
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -176,7 +191,7 @@ function Project2023_Search() {
                                 ]
                             ) : (
                                 <div className="nwoc-repo-card">
-                                    <a href={el["repo-url"]} target="_blank" rel="noreferrer">
+                                    <a href={el["githubLink"]} target="_blank" rel="noreferrer">
                                         <div className="repo-heading">
                                             <img
                                                 className="githubimg"
@@ -185,7 +200,7 @@ function Project2023_Search() {
                                             />
                                             <a
                                                 className="repo-title"
-                                                href={el["repo-url"]}
+                                                href={el["githubLink"]}
                                                 target="_blank"
                                                 rel="noreferrer"
                                             >
@@ -193,18 +208,18 @@ function Project2023_Search() {
                                             </a>
                                         </div>
                                     </a>{" "}
-                                    <div className="repo-desc">{el.desc}</div>
+                                    <div className="repo-desc">{el.description}</div>
                                     <div className="repo-mentors">
-                                        Mentors: {"  "}
-                                        {el.mentors.map((mentor) => (
+                                        Mentor: {"  "}
+                                        {el.mentor &&
                                             <a
-                                                href={"https://github.com/" + mentor}
+                                                href={el.mentorGithub}
                                                 target="_blank"
                                                 rel="noreferrer"
                                             >
-                                                {mentor + " "}
+                                                {el.mentor + " "}
                                             </a>
-                                        ))}
+                                        }
                                     </div>
                                     <ul className="repo-stats">
                                         <li>
@@ -213,7 +228,7 @@ function Project2023_Search() {
                                                 src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"
                                                 alt=""
                                             />{" "}
-                                            {el.lang.toString().replaceAll(",", "/")}
+                                            {el.languages.toString().replaceAll(",", "/")}
                                         </li>
                                         <li>
                                             <img
@@ -221,7 +236,7 @@ function Project2023_Search() {
                                                 src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"
                                                 alt=""
                                             />{" "}
-                                            {el.tag.toString().replaceAll(",", "/")}
+                                            {el.tags.toString().replaceAll(",", "/")}
                                         </li>
                                     </ul>
                                 </div>
