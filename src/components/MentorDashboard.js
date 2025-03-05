@@ -347,6 +347,8 @@ export default function MentorDashboard({ mentorGit, email }) {
 
           // Extract project URL and name
           const repoName = item.project.split('/')[4];
+          const repoOwner = item.project.split('/')[3];
+          const repoUrl = `https://github.com/${repoOwner}/${repoName}`;
 
           // Group projects by name
           if (!projectGroups[repoName]) {
@@ -354,7 +356,7 @@ export default function MentorDashboard({ mentorGit, email }) {
               name: repoName,
               urls: new Set([item.project]),
               description: `Repository for ${repoName}`,
-              repoUrl: `https://github.com/HelloSniperMonkey/${repoName}`,
+              repoUrl: repoUrl,
               students: new Set([item.student]),
             }
           } else {
