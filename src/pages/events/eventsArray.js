@@ -2,11 +2,19 @@ import event1 from "../Images/event1.jpg";
 import FlutterWorkshop from "../Images/FlutterWorkshop.png";
 import GFGSession from "../Images/GFG Session.png";
 import GSOC_Session from "../Images/GSOC_Session.png";
+import foss from "../Images/foss2.png";
 
 export const EventsArrayNew = [
-    
+    {
+        "eventName": "CodePeak 2025 Orientation: Embark on Your Open Source Journey",
+        "eventDetails": "Join us for the CodePeak 2025 Orientation Session, co-hosted by NJACK IIT Patna and the Coding Club IIT Guwahati. Discover how CodePeak fosters collaboration and innovation in open-source development. Learn about participation guidelines, project highlights, mentorship opportunities, and how you can contribute to impactful projects. Whether you're a beginner or an experienced developer, CodePeak offers a platform to enhance your skills and make meaningful contributions. For more information, visit our official website: https://codepeak.technology",
+        "eventImage": foss,
+        "eventLink": "https://www.youtube.com/live/QIllWjbOnBI",
+        "eventButton": "Our Youtube Channel"
+    },
 ]
 export const EventsArray = [
+    
     {
         "eventName": "MERN Workshop",
         "eventDetails": "Join us live on December 22nd at 2:30 pm for a special online event with Viraj Jain from GeeksForGeeks as he takes us on a journey to learn the basics of Mern Stack. This session will help you grasp the basics of Frontend and Backend technologies, and help you get good at the most popular web developement frameworks out there. Don't miss this exciting opportunity to learn from an expert and kickstart your journey into the world of Development.",
@@ -35,5 +43,5 @@ export const EventsArray = [
         "eventLink": "https://youtube.com/live/ocxSm-Q2HqU?feature=share",
         "eventButton": "Our Youtube Channel"
     }
-
+    
 ]

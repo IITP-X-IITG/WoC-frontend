@@ -21,6 +21,17 @@ export default function MentorDashboard({ mentorGit, email }) {
   const [isDeleting, setIsDeleting] = useState(false);
   const [deleteError, setDeleteError] = useState('');
 
+  const [showEditModal, setShowEditModal] = useState(false);
+  const [editFormData, setEditFormData] = useState({
+    name: '',
+    description: '',
+    languages: [],
+    tags: []
+  });
+  const [editError, setEditError] = useState('');
+  const [isEditing, setIsEditing] = useState(false);
+  const [languageInput, setLanguageInput] = useState('');
+  const [tagInput, setTagInput] = useState('');
 
   const handleDeleteProject = async () => {
     if (deleteConfirmText !== selectedProject) return;
@@ -28,12 +39,25 @@ export default function MentorDashboard({ mentorGit, email }) {
     setIsDeleting(true);
     setDeleteError('');
 
+    let reqValue = "";
+    const allcookies = document.cookie.split(';');
+    allcookies.map(async (cookie, index) => {
+      const [key, value] = cookie.split('=');
+      if (key.trim() === 'token') {
+        reqValue = value;
+      }
+    });
+
     try {
-      const response = await fetch(`/api/projects/${selectedProject}`, {
+      const response = await fetch(`/api/add-project/delete`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
-        }
+          'authorization': `Bearer ${reqValue}`,
+        },
+        body: JSON.stringify({
+          githubLink: groupedProjects[selectedProject]?.repoUrl,
+        }),
       });
 
       if (!response.ok) throw new Error('Failed to delete project');
@@ -59,6 +83,143 @@ export default function MentorDashboard({ mentorGit, email }) {
       setDeleteError(error.message || 'Failed to delete project');
     } finally {
       setIsDeleting(false);
+    }
+  };
+
+  const handleEditModalOpen = async () => {
+    try {
+      const response = await fetch(`/api/add-project/get?githubLink=${encodeURIComponent(groupedProjects[selectedProject]?.repoUrl)}`, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        }
+      });
+      
+      const responseData = await response.json();
+      console.log('Project data response:', responseData);
+      
+      if (responseData.data) {
+        setEditFormData({
+          name: responseData.data.title || '',
+          description: responseData.data.description || '',
+          languages: responseData.data.languages || [],
+          tags: responseData.data.tags || []
+        });
+      } else {
+        console.error('No data found in response', responseData);
+      }
+    } catch (error) {
+      console.error('Failed to fetch project data:', error);
+    }
+    
+    setShowEditModal(true);
+  };
+
+  const handleEditModalClose = () => {
+    setShowEditModal(false);
+    setEditError('');
+    setIsEditing(false);
+  };
+
+  const addLanguage = () => {
+    if (languageInput.trim() !== '') {
+      setEditFormData({
+        ...editFormData,
+        languages: [...editFormData.languages, languageInput.trim()]
+      });
+      setLanguageInput('');
+    }
+  };
+
+  const removeLanguage = (index) => {
+    const updatedLanguages = [...editFormData.languages];
+    updatedLanguages.splice(index, 1);
+    setEditFormData({
+      ...editFormData,
+      languages: updatedLanguages
+    });
+  };
+
+  const addTag = () => {
+    if (tagInput.trim() !== '') {
+      setEditFormData({
+        ...editFormData,
+        tags: [...editFormData.tags, tagInput.trim()]
+      });
+      setTagInput('');
+    }
+  };
+
+  const removeTag = (index) => {
+    const updatedTags = [...editFormData.tags];
+    updatedTags.splice(index, 1);
+    setEditFormData({
+      ...editFormData,
+      tags: updatedTags
+    });
+  };
+
+  const handleEditProject = async () => {
+    setIsEditing(true);
+    setEditError('');
+
+    let reqValue = "";
+    const allcookies = document.cookie.split(';');
+    allcookies.map(async (cookie, index) => {
+      const [key, value] = cookie.split('=');
+      if (key.trim() === 'token') {
+        reqValue = value;
+      }
+    });
+
+    try {
+      const response = await fetch(`/api/add-project/update`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'authorization': `Bearer ${reqValue}`,
+        },
+        body: JSON.stringify({
+          title: editFormData.name,
+          description: editFormData.description,
+          languages: editFormData.languages,
+          tags: editFormData.tags,
+          githubLink: groupedProjects[selectedProject]?.repoUrl
+        }),
+      });
+
+      if (!response.ok) throw new Error('Failed to edit project');
+
+      const updatedProjects = projects.map(p =>
+        p.name === selectedProject ? { ...p, name: editFormData.name } : p
+      );
+      setProjects(updatedProjects);
+
+      const newGrouped = { ...groupedProjects };
+      newGrouped[editFormData.name] = {
+        ...newGrouped[selectedProject],
+        name: editFormData.name,
+        description: editFormData.description,
+        languages: editFormData.languages,
+        tags: editFormData.tags
+      };
+      delete newGrouped[selectedProject];
+      setGroupedProjects(newGrouped);
+
+      const newProjectData = { ...projectData };
+      newProjectData[editFormData.name] = newProjectData[selectedProject];
+      delete newProjectData[selectedProject];
+      setProjectData(newProjectData);
+
+      if (activeProject === selectedProject) {
+        setActiveProject(editFormData.name);
+      }
+
+      setShowEditModal(false);
+    } catch (error) {
+      setEditError(error.message || 'Failed to edit project');
+    } finally {
+      setIsEditing(false);
     }
   };
 
@@ -102,11 +263,11 @@ export default function MentorDashboard({ mentorGit, email }) {
 
       let studentUrl = "";
       data.forEach(element => {
-        if(element._id === id)
+        if (element._id === id)
           studentUrl = element.student;
       });
 
-      let reqValue="";
+      let reqValue = "";
       const allcookies = document.cookie.split(';');
       allcookies.map(async (cookie, index) => {
         const [key, value] = cookie.split('=');
@@ -118,7 +279,7 @@ export default function MentorDashboard({ mentorGit, email }) {
       const response = await fetch("/api/transactions/update", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json" ,
+          "Content-Type": "application/json",
           authorization: `Bearer ${reqValue}`
         },
         body: JSON.stringify({
@@ -135,7 +296,7 @@ export default function MentorDashboard({ mentorGit, email }) {
         if (issues.some(issue => issue.id === id)) {
           // Remove the issue from the list
           setIssues(issues.filter(issue => issue.id !== id));
-          
+
           // Clean up the points state
           const updatedIssuePoints = { ...issuePoints };
           delete updatedIssuePoints[id];
@@ -143,7 +304,7 @@ export default function MentorDashboard({ mentorGit, email }) {
         } else if (pullRequests.some(pr => pr.id === id)) {
           // Remove the pull request from the list
           setPullRequests(pullRequests.filter(pr => pr.id !== id));
-          
+
           // Clean up the points state
           const updatedPrPoints = { ...prPoints };
           delete updatedPrPoints[id];
@@ -183,7 +344,7 @@ export default function MentorDashboard({ mentorGit, email }) {
         result.data.forEach(item => {
           // Skip items where open is false
           if (item.open === false) return;
-          
+
           // Extract project URL and name
           const repoName = item.project.split('/')[4];
 
@@ -192,7 +353,7 @@ export default function MentorDashboard({ mentorGit, email }) {
             projectGroups[repoName] = {
               name: repoName,
               urls: new Set([item.project]),
-              description: `Repository for ${repoName}`, 
+              description: `Repository for ${repoName}`,
               repoUrl: `https://github.com/HelloSniperMonkey/${repoName}`,
               students: new Set([item.student]),
             }
@@ -248,7 +409,6 @@ export default function MentorDashboard({ mentorGit, email }) {
 
   const handleModalOpen = (project) => {
     setSelectedProject(project)
-    console.log('hello', project);
     setShowModal(true)
   }
 
@@ -258,7 +418,7 @@ export default function MentorDashboard({ mentorGit, email }) {
     setDeleteConfirmText("");
 
   }
-  const handleDeleteModalClose=()=>{
+  const handleDeleteModalClose = () => {
     setDeleteConfirmText("");
     setShowDeleteModal(false);
 
@@ -558,15 +718,15 @@ export default function MentorDashboard({ mentorGit, email }) {
                                 </Button>
                               </div>
                               <div className="d-flex align-items-center">
-                                  <Form.Control
-                                    type="number"
-                                    value={issuePoints[issue.id] !== undefined ? issuePoints[issue.id] : issue.points}
-                                    onChange={(e) => handleIssuePointChange(issue.id, e.target.value)}
-                                    placeholder="Points"
-                                    style={{ width: "70px" }}
-                                    min="0"
-                                  />
-                                  <Button
+                                <Form.Control
+                                  type="number"
+                                  value={issuePoints[issue.id] !== undefined ? issuePoints[issue.id] : issue.points}
+                                  onChange={(e) => handleIssuePointChange(issue.id, e.target.value)}
+                                  placeholder="Points"
+                                  style={{ width: "70px" }}
+                                  min="0"
+                                />
+                                <Button
                                   variant="outline-secondary"
                                   size="sm"
                                   className="ms-2"
@@ -654,7 +814,7 @@ export default function MentorDashboard({ mentorGit, email }) {
               <p className="text-muted">Select a project to view details</p>
             </div>
           )}
-          
+
         </Container>
       </div>
 
@@ -669,7 +829,9 @@ export default function MentorDashboard({ mentorGit, email }) {
             <Button variant="outline-primary" onClick={handleProjectDetail}>
               View Project Details
             </Button>
-            <Button variant="outline-secondary">Edit Project</Button>
+            <Button variant="outline-secondary" onClick={handleEditModalOpen}>
+              Edit Project
+            </Button>
             <Button
               variant="outline-danger"
               onClick={() => {
@@ -724,6 +886,106 @@ export default function MentorDashboard({ mentorGit, email }) {
             disabled={deleteConfirmText !== selectedProject || isDeleting}
           >
             {isDeleting ? 'Deleting...' : 'Delete Project'}
+          </Button>
+        </Modal.Footer>
+      </Modal>
+
+      <Modal show={showEditModal} onHide={handleEditModalClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Edit Project</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          {editError && <div className="text-danger mb-3">{editError}</div>}
+
+          <Form>
+            <Form.Group className="mb-3">
+              <Form.Label>Project Name</Form.Label>
+              <Form.Control
+                type="text"
+                value={editFormData.name}
+                onChange={(e) => setEditFormData({ ...editFormData, name: e.target.value })}
+                placeholder="Project name"
+              />
+            </Form.Group>
+
+            <Form.Group className="mb-3">
+              <Form.Label>Description</Form.Label>
+              <Form.Control
+                as="textarea"
+                rows={3}
+                value={editFormData.description}
+                onChange={(e) => setEditFormData({ ...editFormData, description: e.target.value })}
+                placeholder="Project description"
+              />
+            </Form.Group>
+
+            <Form.Group className="mb-3">
+              <Form.Label>Languages</Form.Label>
+              <div className="d-flex mb-2">
+                <Form.Control
+                  type="text"
+                  value={languageInput}
+                  onChange={(e) => setLanguageInput(e.target.value)}
+                  placeholder="Add a language"
+                />
+                <Button variant="outline-primary" className="ms-2" onClick={addLanguage}>Add</Button>
+              </div>
+              <div className="d-flex flex-wrap gap-2 mt-2">
+                {editFormData.languages.map((lang, index) => (
+                  <div key={index} className="badge bg-primary d-flex align-items-center">
+                    {lang}
+                    <button
+                      type="button"
+                      className="btn-close btn-close-white ms-2"
+                      style={{ fontSize: '0.5rem' }}
+                      onClick={() => removeLanguage(index)}
+                    />
+                  </div>
+                ))}
+              </div>
+            </Form.Group>
+
+            <Form.Group className="mb-3">
+              <Form.Label>Tags</Form.Label>
+              <div className="d-flex mb-2">
+                <Form.Control
+                  type="text"
+                  value={tagInput}
+                  onChange={(e) => setTagInput(e.target.value)}
+                  placeholder="Add a tag"
+                />
+                <Button variant="outline-primary" className="ms-2" onClick={addTag}>Add</Button>
+              </div>
+              <div className="d-flex flex-wrap gap-2 mt-2">
+                {editFormData.tags.map((tag, index) => (
+                  <div key={index} className="badge bg-secondary d-flex align-items-center">
+                    {tag}
+                    <button
+                      type="button"
+                      className="btn-close btn-close-white ms-2"
+                      style={{ fontSize: '0.5rem' }}
+                      onClick={() => removeTag(index)}
+                    />
+                  </div>
+                ))}
+              </div>
+            </Form.Group>
+          </Form>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button
+            variant="secondary"
+            onClick={handleEditModalClose}
+            disabled={isEditing}
+          >
+            Cancel
+          </Button>
+          <Button
+            variant="primary"
+            onClick={handleEditProject}
+            disabled={!editFormData.name || isEditing}
+          >
+            {isEditing ? 'Saving...' : 'Save Changes'}
           </Button>
         </Modal.Footer>
       </Modal>
