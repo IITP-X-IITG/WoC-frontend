@@ -172,6 +172,15 @@ export default function MentorDashboard({ mentorGit, email }) {
       }
     });
 
+    // Store the repoUrl before making any state changes
+    const currentRepoUrl = groupedProjects[selectedProject]?.repoUrl || `${mentorGit}${selectedProject}`;
+    console.log('Current repo URL:', currentRepoUrl);
+    if (!currentRepoUrl) {
+      setEditError('Repository URL not found');
+      setIsEditing(false);
+      return;
+    }
+
     try {
       const response = await fetch(`/api/add-project/update`, {
         method: 'POST',
@@ -184,7 +193,7 @@ export default function MentorDashboard({ mentorGit, email }) {
           description: editFormData.description,
           languages: editFormData.languages,
           tags: editFormData.tags,
-          githubLink: groupedProjects[selectedProject]?.repoUrl
+          githubLink: currentRepoUrl // Use the stored URL
         }),
       });
 
@@ -201,7 +210,8 @@ export default function MentorDashboard({ mentorGit, email }) {
         name: editFormData.name,
         description: editFormData.description,
         languages: editFormData.languages,
-        tags: editFormData.tags
+        tags: editFormData.tags,
+        repoUrl: currentRepoUrl // Ensure repoUrl is preserved
       };
       delete newGrouped[selectedProject];
       setGroupedProjects(newGrouped);
@@ -214,6 +224,9 @@ export default function MentorDashboard({ mentorGit, email }) {
       if (activeProject === selectedProject) {
         setActiveProject(editFormData.name);
       }
+      
+      // Update selectedProject to the new name
+      setSelectedProject(editFormData.name);
 
       setShowEditModal(false);
     } catch (error) {
