@@ -149,9 +149,9 @@ const Leaderboard = () => {
                                     ".png"
                                   }
                                 />
-                                <SLink to={"/points/" + cell.value}>
+                                <Text>
                                   {cell.value}
-                                </SLink>
+                                </Text>
                               </td>
                             );
                           else if (cell.column.id === "rank")
