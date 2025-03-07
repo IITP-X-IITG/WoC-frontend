@@ -134,7 +134,7 @@ button {
   display: block;
   margin-bottom: 15px;
   padding: 18px;
-  height: 250px;
+  min-height: 250px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   position: relative;
@@ -166,6 +166,7 @@ button {
 }
 .repo-desc {
   margin-top: 10px;
+  margin-bottom: 66px;
   text-align: left;
   font-size: 15px;
   color: white;
