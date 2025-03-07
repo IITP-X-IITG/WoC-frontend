@@ -733,14 +733,16 @@ export default function MentorDashboard({ mentorGit, email }) {
                                 </Button>
                               </div>
                               <div className="d-flex align-items-center">
-                                <Form.Control
-                                  type="number"
+                                <Form.Select
                                   value={issuePoints[issue.id] !== undefined ? issuePoints[issue.id] : issue.points}
                                   onChange={(e) => handleIssuePointChange(issue.id, e.target.value)}
-                                  placeholder="Points"
-                                  style={{ width: "70px" }}
-                                  min="0"
-                                />
+                                  style={{ width: "100px" }}
+                                >
+                                  <option value="">Points</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                </Form.Select>
                                 <Button
                                   variant="outline-secondary"
                                   size="sm"
@@ -792,14 +794,16 @@ export default function MentorDashboard({ mentorGit, email }) {
                               </div>
 
                               <div className="d-flex align-items-center">
-                                <Form.Control
-                                  type="number"
+                                <Form.Select
                                   value={prPoints[pr.id] !== undefined ? prPoints[pr.id] : pr.points}
                                   onChange={(e) => handlePRPointChange(pr.id, e.target.value)}
-                                  placeholder="Points"
-                                  style={{ width: '70px' }}
-                                  min="0"
-                                />
+                                  style={{ width: "100px" }}
+                                >
+                                  <option value="">Points</option>
+                                  <option value="5">5</option>
+                                  <option value="10">10</option>
+                                  <option value="20">20</option>
+                                </Form.Select>
                                 <Button
                                   variant="outline-secondary"
                                   size="sm"
