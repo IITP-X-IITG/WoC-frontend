@@ -340,72 +340,97 @@ export default function MentorDashboard({ mentorGit, email }) {
     const mentorGitUrl = mentorGit
     const fetchData = async () => {
       try {
-        const response = await fetch(`/api/transactions/mentor-project?mentor=${encodeURIComponent(mentorGitUrl)}`, {
+        // Step 1: Fetch projects under the mentor
+        const projectsResponse = await fetch(`/api/add-project/mentor?mentorGithub=${encodeURIComponent(mentorGitUrl)}`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json"
           },
         });
-        const result = await response.json();
-        setData(result.data);
-
-        console.log(result);
-        // Parse and organize data
+        const projectsResult = await projectsResponse.json();
+        
+        // Initialize data structures
         const projectGroups = {}
         const projectDataMap = {}
-
-        result.data.forEach(item => {
-          // Skip items where open is false
-          if (item.open === false) return;
-
-          // Extract project URL and name
-          const repoName = item.project.split('/')[4];
-          const repoOwner = item.project.split('/')[3];
-          const repoUrl = `https://github.com/${repoOwner}/${repoName}`;
-
-          // Group projects by name
-          if (!projectGroups[repoName]) {
-            projectGroups[repoName] = {
-              name: repoName,
-              urls: new Set([item.project]),
-              description: `Repository for ${repoName}`,
-              repoUrl: repoUrl,
-              students: new Set([item.student]),
+        let allData = []
+        
+        // Process projects data
+        if (projectsResult.data && projectsResult.data.length > 0) {
+          for (const project of projectsResult.data) {
+            const repoUrl = project.githubLink;
+            const repoName = project.title;
+            
+            // Step 2: For each project, fetch issues and PRs
+            const transactionsResponse = await fetch(`/api/transactions/project?project=${encodeURIComponent(repoUrl)}`, {
+              method: "GET",
+              headers: {
+                "Content-Type": "application/json"
+              },
+            });
+            const transactionsResult = await transactionsResponse.json();
+            
+            if (transactionsResult.data) {
+              // Add to our combined data array for reference
+              allData = [...allData, ...transactionsResult.data];
+              
+              // Initialize project in our data structures
+              if (!projectGroups[repoName]) {
+                projectGroups[repoName] = {
+                  name: repoName,
+                  urls: new Set([repoUrl]),
+                  description: project.description || `Repository for ${repoName}`,
+                  repoUrl: repoUrl,
+                  languages: project.languages || [],
+                  tags: project.tags || [],
+                  students: new Set(),
+                }
+              }
+              
+              if (!projectDataMap[repoName]) {
+                projectDataMap[repoName] = {
+                  issues: [],
+                  pullRequests: [],
+                }
+              }
+              
+              // Process transactions data
+              transactionsResult.data.forEach(item => {
+                // Skip items where open is false
+                if (item.open === false) return;
+                
+                // Add student to the set
+                if (item.student) {
+                  projectGroups[repoName].students.add(item.student);
+                }
+                
+                const formattedItem = {
+                  id: item._id,
+                  number: Number.parseInt(item.project.split("/").pop()), // Extract number from URL
+                  points: item.points,
+                  url: item.project,  // Store the full URL for linking
+                  open: item.open
+                };
+                
+                // Sort into issues or PRs
+                if (item.type === 'issues') {
+                  projectDataMap[repoName].issues.push(formattedItem);
+                } else if (item.type === 'pull') {
+                  projectDataMap[repoName].pullRequests.push(formattedItem);
+                }
+              });
             }
-          } else {
-            projectGroups[repoName].urls.add(item.project)
-            projectGroups[repoName].students.add(item.student)
           }
-
-          if (!projectDataMap[repoName]) {
-            projectDataMap[repoName] = {
-              issues: [],
-              pullRequests: [],
-            }
-          }
-
-          const formattedItem = {
-            id: item._id,
-            number: Number.parseInt(item.project.split("/").pop()), // Extract number from URL
-            points: item.points,
-            url: item.project,  // Store the full URL for linking
-            open: item.open
-          };
-
-          // Sort into issues or PRs
-          if (item.type === 'issues') {
-            projectDataMap[repoName].issues.push(formattedItem);
-          } else if (item.type === 'pull') {
-            projectDataMap[repoName].pullRequests.push(formattedItem);
-          }
-        })
-
+        }
+        
+        // Store the complete data for reference
+        setData(allData);
+        
         const groupedProjectsList = Object.values(projectGroups)
-
+        
         setGroupedProjects(projectGroups)
         setProjects(groupedProjectsList)
         setProjectData(projectDataMap)
-
+        
         if (groupedProjectsList.length > 0) {
           const firstProject = groupedProjectsList[0]
           setActiveProject(firstProject.name)
@@ -416,7 +441,7 @@ export default function MentorDashboard({ mentorGit, email }) {
         console.error("Error fetching data:", error)
       }
     }
-
+    
     if (mentorGitUrl) {
       fetchData()
     }
