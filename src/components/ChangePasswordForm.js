@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Register/register.css';
+import { useAuthStore } from '../store/authStore';
 
 export default function ChangePasswordForm() {
+    const { user } = useAuthStore((state) => state);
     const handleSubmit = (event) => {
         event.preventDefault();
         const form = event.target;
@@ -12,19 +14,27 @@ export default function ChangePasswordForm() {
             final[p[0]] = p[1];
         }
         console.log(final); // TODO get user email from authstore...
-        return
-        // email
-        // oldPassword
-        // newPassword
+        // return
+        if(final.new_password !== final.confirm_new_password){
+            alert("Passwords do not match");
+            return;
+        }
         fetch("/api/password/update", {
             method: "POST",
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
             },
-            body: JSON.stringify(final)
-        }).then(resp => {
-            if (resp.ok) return resp.json();
-            // else throw resp;
+            body: JSON.stringify({
+                "email": user?.email || "",
+                "oldPassword": final.old_password,
+                "newPassword": final.new_password,
+                "type": user?.type || ""
+            })
+        }).then(async resp => {
+            if (resp.ok) {
+                alert("Password updated successfully");
+                return resp.json();
+            } else throw resp;
         }).then(data => {
             console.log(data)
             // navigate(isstudent?'/studentProfile':'/mentorProfile');
