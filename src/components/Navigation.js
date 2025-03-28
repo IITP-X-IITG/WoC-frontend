@@ -32,7 +32,7 @@ export default function Navigation(props) {
                             <CustomLink to="/leaderboard">Leaderboard</CustomLink>
                             <CustomLink to="/register">Register</CustomLink>
                             <CustomLink to="/project">Projects</CustomLink>
-                            <CustomLink to="/reward" style={{ display: 'none' }}>Rewards</CustomLink>
+                            {/* <CustomLink to="/reward" style={{ display: 'none' }}>Rewards</CustomLink> */}
                             <CustomLink to="/team">Team</CustomLink>
                             <CustomLink to="/events">Events</CustomLink>
                         </Nav>
