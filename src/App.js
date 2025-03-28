@@ -51,7 +51,7 @@ function App() {
           <Route path="/points/:id" element={<PointsMain />} />
           <Route path="/project" element={<Project />} />
           <Route path="/team" element={<Team />} />
-          <Route path="/reward" element={<Reward />} />
+          {/* <Route path="/reward" element={<Reward />} /> */}
           <Route path='/events' element={<Events />} />
           <Route path='/login' element={<RedirectAuthenticatedUser><Login /></RedirectAuthenticatedUser>} />
           <Route path='/logout' element={<Logout />} />

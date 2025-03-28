@@ -24,6 +24,7 @@ const Leaderboard = () => {
         if (result.message === "Leaderboard fetched successfully") {
           // Process data and add rank
           const processedData = result.data
+            .filter(item => item.points > 0)
             .sort((a, b) => b.points - a.points) // Sort by points in descending order
             .map((item, index) => ({
               rank: index + 1,
